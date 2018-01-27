@@ -710,7 +710,326 @@ talk B
 
 2. El usuario B recibe una invitación para el chat, entonces debe responder con:
 
-3. Se inicia la conversación
+3. Se inicia la conversación.
+
+mail
+
+Envía mensajes entre usuarios del sistema que no estén en línea. Los mensajes son almacenados en el mailbox del usuario, los cuales podrán ser leídos con el mismo comando mail
+
+mail nombreUsuario
+subject: mensaje
+mensaje de prueba
+.
+
+Para terminar la edición del mensaje y enviarlo, debemos incluir un punto al inicio de una línea en blanco.
+
+Para leer el correo se utiliza el comando mail:
+
+[user2@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/user2": 5 messages 1 unread
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+>U  2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/573   "aaaa"
+    3 user3@luiscarrera.pe  Sat Jan 27 17:01  19/584   "examen final 2"
+    4 Mail Delivery System  Sat Jan 27 17:07  74/2246  "Undelivered Mail Returned to Sender"
+    5 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+&
+
+El símbolo > indica el correo "activo"
+Los comandos se escriben luego del símbolo &
+Si se presiona la tecla eneter se ve el mensaje activo.
+Si se presiona un número, se verá el contenido del mensaje identificado con ese número.
+Para responder se utiliza la tecla R y el número del mensaje.
+
+archivo /etc/passwd
+
+Este archivo contiene la información de los usuarios que pueden acceder al sistema, es un archivo de texto delimitado.
+Donde el delimitado es el caracter:
+
+formato
+
+Investigar el campo get.
+
+dovenull:x:495:491:Dovecot's unauthorized user:/usr/libexec/dovecot:/sbin/nologin
+	|	 |	|	|				|						|					|	
+	|	 | uid  |				|						|					|
+	|	 |	   guid				|						|					|
+	|	 |					Comentario o campo GECOS	|					|
+	|	clave											|			Programa de inicio
+	|													|
+Nombre del usuarios 								Directorio hogar
+
+
+SHELL
+
+Programa que permite la interacción del usuario con el sistema operativo para ejecutar las tareas de: ejecutar comandos.
+Los comandos son archivos almacenados en el sistema de archivos, generalmente en las carpetas /bin/,/usr/bin,/usr/local/bin, /usr/bin.
+
+Para que un programa sea reconocido como un shell, debe tener las siguientes características:
+- Debe proporcionar la expansión de variables.
+- Debe realizar la expansión de variables.
+- Debe proporcionar sustitución de nombres de archivo.
+- Debe implementar la redirección de entrada y salida.
+- Debe proporcionar un lenguaje de programación interpretado.
+
+Ejemplos: sh, bash, csh, zsh, csh......
+
+- Línea de comandos
+
+La línea de comandos está compuesta por:
+
+prompt comando opciones enter
+
+donde:
+	prompt
+	Cadena de texto que le indica al usuario que el shell está esperando por sus órdenes.
+	Por regla general si el prompt acaba en $ el usuario es un usuario normal
+	Si el prompt acaba en # el usuario es un superusuario (root)
+	Existen también prompts secundarios, que indican que el shell está esperando que se digite la línea completa de comandos.
+
+	comando
+
+		Nombre del comando que se quiere ejecutar
+	opciones
+		Caracteres precedidos de guion que afecta el comportamiento del comando.
+	enter
+		Digitalización de la tecla enter que le indica al shell que se terminó de escribir el comando.
+Al finalizar de escribir el comando shell pasa a analizar la línea de comando en busca de caracteres especiales para realizar las tareas indicadas respectivamente.
+
+Expansión de variables
+
+Tarea de reemplazar el nombre de una variable por su contenido.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+La tarea es procesar de datos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[user2@luiscarrera ~]$ ls
+dead.letter  github
+[user2@luiscarrera ~]$ cd github/
+[user2@luiscarrera github]$ echo "Hola mundo" > hola.tex
+[user2@luiscarrera github]$ ls
+hola.tex
+[user2@luiscarrera github]$ cat hola.tex
+Hola mundo
+[user2@luiscarrera github]$ CURSO="Linux Administracion"
+[user2@luiscarrera github]$ echo Universidad Nacional de Ingeniería
+Universidad Nacional de Ingeniería
+[user2@luiscarrera github]$ echo CURSO
+CURSO
+[user2@luiscarrera github]$
+
+[user2@luiscarrera github]$ echo $CURSO
+Linux Administracion
+[user2@luiscarrera github]$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[user2@luiscarrera github]$ set
+BASH=/bin/bash
+BASHOPTS=checkwinsize:cmdhist:expand_aliases:extquote:force_fignore:hostcomplete:interactive_comments:login_shell:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_LINENO=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="4" [1]="1" [2]="2" [3]="1" [4]="release" [5]="x86_64-redhat-linux-gnu")
+BASH_VERSION='4.1.2(1)-release'
+COLORS=/etc/DIR_COLORS
+COLUMNS=207
+CURSO='Linux Administracion'
+CVS_RSH=ssh
+DIRSTACK=()
+EUID=503
+GROUPS=()
+G_BROKEN_FILENAMES=1
+HISTCONTROL=ignoredups
+HISTFILE=/home/user2/.bash_history
+HISTFILESIZE=1000
+HISTSIZE=1000
+HOME=/home/user2
+HOSTNAME=luiscarrera.pe
+HOSTTYPE=x86_64
+ID=503
+IFS=$' \t\n'
+KDEDIRS=/usr
+KDE_IS_PRELINKED=1
+LANG=es_ES.UTF-8
+LESSOPEN='|/usr/bin/lesspipe.sh %s'
+LINES=61
+LOADEDMODULES=
+LOGNAME=user2
+LS_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+MACHTYPE=x86_64-redhat-linux-gnu
+MAIL=/var/spool/mail/user2
+MAILCHECK=60
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+MODULESHOME=/usr/share/Modules
+OLDPWD=/home/user2
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/user2/bin
+PIPESTATUS=([0]="0")
+PPID=1591
+PROMPT_COMMAND='printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"'
+PS1='[\u@\h \W]\$ '
+PS2='> '
+PS4='+ '
+PWD=/home/user2/github
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+QTLIB=/usr/lib64/qt-3.3/lib
+SELINUX_LEVEL_REQUESTED=
+SELINUX_ROLE_REQUESTED=
+SELINUX_USE_CURRENT_RANGE=
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:emacs:hashall:histexpand:history:interactive-comments:monitor
+SHLVL=1
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_CLIENT='172.17.2.219 58466 22'
+SSH_CONNECTION='172.17.2.219 58466 172.17.2.229 22'
+SSH_TTY=/dev/pts/9
+TERM=xterm
+UID=503
+USER=user2
+_=pwd
+colors=/etc/DIR_COLORS
+shell=bash
+__udisks ()
+{
+    local IFS='
+';
+    local cur="${COMP_WORDS[COMP_CWORD]}";
+    if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--show-info" ]; then
+        COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+    else
+        if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--inhibit-polling" ]; then
+            COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+        else
+            if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--mount" ]; then
+                COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+            else
+                if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--unmount" ]; then
+                    COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+                else
+                    if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--detach" ]; then
+                        COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+                    else
+                        if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--ata-smart-refresh" ]; then
+                            COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+                        else
+                            if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--ata-smart-simulate" ]; then
+                                _filedir || return 0;
+                            else
+                                if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--set-spindown" ]; then
+                                    COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+                                else
+                                    if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--poll-for-media" ]; then
+                                        COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+                                    else
+                                        COMPREPLY=($(IFS=: compgen -W "--dump:--inhibit-polling:--inhibit-all-polling:--enumerate:--enumerate-device-files:--monitor:--monitor-detail:--show-info:--help:--mount:--mount-fstype:--mount-options:--unmount:--unmount-options:--detach:--detach-options:--ata-smart-refresh:--ata-smart-wakeup:--ata-smart-simulate:--set-spindown:--set-spindown-all:--spindown-timeout:--poll-for-media" -- $cur));
+                                    fi;
+                                fi;
+                            fi;
+                        fi;
+                    fi;
+                fi;
+            fi;
+        fi;
+    fi
+}
+_module ()
+{
+    local cur="$2" prev="$3" cmds opts;
+    COMPREPLY=();
+    cmds="add apropos avail clear display help        initadd initclear initlist initprepend initrm initswitch        keyword list load purge refresh rm show swap switch             unload unuse update use whatis";
+    opts="-c -f -h -i -l -s -t -u -v -H -V            --create --force  --help  --human   --icase             --long   --silent --terse --userlvl --verbose --version";
+    case "$prev" in
+        add | load)
+            COMPREPLY=($(compgen -W "$(_module_not_yet_loaded)" -- "$cur"))
+        ;;
+        rm | remove | unload | switch | swap)
+            COMPREPLY=($(IFS=: compgen -W "${LOADEDMODULES}" -- "$cur"))
+        ;;
+        unuse)
+            COMPREPLY=($(IFS=: compgen -W "${MODULEPATH}" -- "$cur"))
+        ;;
+        use | *-a*)
+
+        ;;
+        -u | --userlvl)
+            COMPREPLY=($(compgen -W "novice expert advanced" -- "$cur"))
+        ;;
+        display | help | show | whatis)
+            COMPREPLY=($(compgen -W "$(_module_avail)" -- "$cur"))
+        ;;
+        *)
+            if test $COMP_CWORD -gt 2; then
+                _module_long_arg_list "$cur";
+            else
+                case "$cur" in
+                    ls)
+                        COMPREPLY="list"
+                    ;;
+                    r*)
+                        COMPREPLY="rm"
+                    ;;
+                    sw*)
+                        COMPREPLY="switch"
+                    ;;
+                    -*)
+                        COMPREPLY=($(compgen -W "$opts" -- "$cur"))
+                    ;;
+                    *)
+                        COMPREPLY=($(compgen -W "$cmds" -- "$cur"))
+                    ;;
+                esac;
+            fi
+        ;;
+    esac
+}
+_module_avail ()
+{
+    /usr/bin/modulecmd bash -t avail 2>&1 | sed '
+                /:$/d;
+                /:ERROR:/d;
+                s#^\(.*\)/\(.\+\)(default)#\1\n\1\/\2#;
+                s#/(default)##g;
+                s#/*$##g;'
+}
+_module_long_arg_list ()
+{
+    local cur="$1" i;
+    if [[ ${COMP_WORDS[COMP_CWORD-2]} == sw* ]]; then
+        COMPREPLY=($(compgen -W "$(_module_not_yet_loaded)" -- "$cur"));
+        return;
+    fi;
+    for ((i = COMP_CWORD - 1; i > 0; i--))
+    do
+        case ${COMP_WORDS[$i]} in
+            add | load)
+                COMPREPLY=($(compgen -W "$(_module_not_yet_loaded)" -- "$cur"));
+                break
+            ;;
+            rm | remove | unload | switch | swap)
+                COMPREPLY=($(IFS=: compgen -W "${LOADEDMODULES}" -- "$cur"));
+                break
+            ;;
+        esac;
+    done
+}
+_module_not_yet_loaded ()
+{
+    comm -23 <(_module_avail|sort) <(tr : '\n' <<<${LOADEDMODULES}|sort)
+}
+module ()
+{
+    eval `/usr/bin/modulecmd bash $*`
+}
+[user2@luiscarrera github]$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 write user1
 
 wall
@@ -824,4 +1143,1203 @@ Instructor: Luis Carrera / lcarrera@uni.edu.pe
 Horario: SA 15:00 - 21:00
 Duración 24 hrs / 4 clases 
 Calificación: exámenes y ejercicios en clase
-Nota mínima: 14
+Nota mínima: 
+
+[user2@luiscarrera ~]$ mail -u
+mail: option requires an argument -- u
+Usage: mail -eiIUdEFntBDNHRV~ -T FILE -u USER -h hops -r address -s SUBJECT -a FILE -q FILE -f FILE -A ACCOUNT -b USERS -c USERS -S OPTION users
+[user2@luiscarrera ~]$ mailq
+-Queue ID- --Size-- ----Arrival Time---- -Sender/Recipient-------
+C677D1C1E8F      448 Sat Jan 27 17:06:08  user4@luiscarrera.pe
+(connect to alt2.gmail-smtp-in.l.google.com[2a00:1450:400c:c00::1a]:25: Network is unreachable)
+                                         roberthofranco@gmail.com
+
+711D91C1E8B      438 Sat Jan 27 17:05:43  lcarrera@luiscarrera.pe
+  (connect to ALT2.ASPMX.L.GOOGLE.COM[173.194.76.26]:25: Connection timed out)
+                                         lcarrera@uni.edu.pe
+
+896731C1E99      461 Sat Jan 27 17:07:00  user5@luiscarrera.pe
+(connect to alt2.gmail-smtp-in.l.google.com[2a00:1450:400c:c00::1a]:25: Network is unreachable)
+                                         ivanriqueros12@gmail.com
+
+1116F1C1E98      440 Sat Jan 27 17:06:59  user9@luiscarrera.pe
+(connect to alt2.gmail-smtp-in.l.google.com[2a00:1450:400c:c00::1a]:25: Network is unreachable)
+                                         brayamperez105@gmail.com
+
+664F81C1E97      437 Sat Jan 27 17:06:56  user2@luiscarrera.pe
+(connect to alt2.gmail-smtp-in.l.google.com[2a00:1450:400c:c00::1a]:25: Network is unreachable)
+                                         carlosal1015@gmail.com
+
+650FA1C1E92      441 Sat Jan 27 17:06:40  user6@luiscarrera.pe
+(connect to alt2.gmail-smtp-in.l.google.com[2a00:1450:400c:c00::1a]:25: Network is unreachable)
+                                         angeltomez28@gmail.com
+
+01A991C1E9A      440 Sat Jan 27 17:07:07  user7@luiscarrera.pe
+(delivery temporarily suspended: connect to alt2.gmail-smtp-in.l.google.com[2a00:1450:400c:c00::1a]:25: Network is unreachable)
+                                         luismebo@gmail.com
+
+931EF1C1F1D      447 Sat Jan 27 17:07:58  user8@luiscarrera.pe
+(delivery temporarily suspended: connect to alt2.gmail-smtp-in.l.google.com[2a00:1450:400c:c00::1a]:25: Network is unreachable)
+                                         diegoojunnior@gmail.com
+
+D017C1C1E91      429 Sat Jan 27 17:06:30  user3@luiscarrera.pe
+(connect to hotmail-com.olc.protection.outlook.com[104.47.40.33]:25: Connection timed out)
+                                         cesar_4599@hotmail.com
+
+-- 5 Kbytes in 9 Requests.
+
+Expansión de variables
+Tarea de reemplazar el nombre de una variable por su contenido.
+Variables predefinidas
+USER (nombre del usuario)
+PWD (Directorio de trabajo)
+PS1='[\u@\h \W]\$ ' (prompt principal).
+
+Todo es un archivo
+
+ls no ve los nombre ttyx
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[user2@luiscarrera ~]$ ls /etc
+abrt                   cgconfig.conf              drirc          gssapi_mech.conf  kderc           mime.types        pango                         quotagrpadmins    sane.d          sysconfig
+acpi                   cgrules.conf               eclipse.ini    gtk-2.0           kdump-adv-conf  minicom.users     passwd                        quotatab          sasl2           sysctl.conf
+adjtime                cgsnapshot_blacklist.conf  elinks.conf    hal               kdump.conf      mke2fs.conf       passwd-                       rc                scl             system-release
+akonadi                chkconfig.d                enscript.cfg   hba.conf          krb5.conf       modprobe.d        pbm2ppa.conf                  rc0.d             securetty       system-release-cpe
+aliases                compat-openmpi-psm-x86_64  environment    host.conf         ksysguarddrc    modulefiles       pcmcia                        rc1.d             security        target
+aliases.db             compat-openmpi-x86_64      ethers         hosts             latrace.conf    motd              pear                          rc2.d             selinux         termcap
+alsa                   ConsoleKit                 event.d        hosts.allow       latrace.d       mtab              pear.conf                     rc3.d             services        terminfo
+alternatives           cron.d                     exports        hosts.deny        ld.so.cache     mtools.conf       Pegasus                       rc4.d             sestatus.conf   texmf
+amanda                 cron.daily                 favicon.png    hp                ld.so.conf      multipath         php.d                         rc5.d             setuptool.d     tgt
+anacrontab             cron.deny                  fcoe           htdig             ld.so.conf.d    my.cnf            php.ini                       rc6.d             sfcb            tomcat6
+ant.conf               cron.hourly                festival       httpd             libaudit.conf   nanorc            pinforc                       rc.d              sgml            Trolltech.conf
+ant.d                  cron.monthly               filesystems    ibm_hosts         libibverbs.d    netconfig         pki                           rc.local          shadow          udev
+anthy-conf             crontab                    firefox        idmapd.conf       libreport       NetworkManager    plymouth                      rc.sysinit        shadow-         udev.d
+asound.conf            cron.weekly                fonts          ImageMagick       libuser.conf    networks          pm                            rdma              shells          updatedb.conf
+at.deny                crypttab                   foomatic       init              libvirt         nfsmount.conf     pm-utils-hd-apm-restore.conf  readahead.conf    skel            vimrc
+audisp                 csh.cshrc                  fprintd.conf   init.d            localtime       nsswitch.conf     pnm2ppa.conf                  reader.conf       slp.conf        virc
+audit                  csh.login                  fstab          inittab           login.defs      ntp               polkit-1                      reader.conf.d     slp.spi         vsftpd
+autofs_ldap_auth.conf  cups                       gai.conf       inputrc           logrotate.conf  ntp.conf          popt.d                        redhat-lsb        smartd.conf     warnquota.conf
+auto.master            dbus-1                     gconf          ipa               logrotate.d     numad.conf        portreserve                   redhat-release    snmp            webalizer.conf
+auto.misc              default                    gcrypt         iproute2          lsb-release     obex-data-server  postfix                       request-key.conf  sos.conf        wgetrc
+auto.net               depmod.d                   gdm            ipsec.conf        lsb-release.d   odbc.ini          ppp                           request-key.d     sound           wpa_supplicant
+auto.smb               dhcp                       ggz.modules.d  ipsec.d           ltrace.conf     odbcinst.ini      prelink.cache                 resolv.conf       ssh             wvdial.conf
+avahi                  DIR_COLORS                 ghostscript    ipsec.secrets     lvm             oddjob            prelink.conf                  rpc               ssl             X11
+bash_completion.d      DIR_COLORS.256color        gimp           iscsi             magic           oddjobd.conf      prelink.conf.d                rpm               sssd            xdg
+bashrc                 DIR_COLORS.lightbgcolor    gnome-vfs-2.0  issue             mail            oddjobd.conf.d    printcap                      rpmdevtools       statetab        xinetd.conf
+blkid                  dirsrv                     gnupg          issue.net         mailcap         openldap          profile                       rpmlint           statetab.d      xinetd.d
+bluetooth              dnsmasq.conf               group          java              mail.rc         openwsman         profile.d                     rsyslog.conf      subversion      xml
+bonobo-activation      dnsmasq.d                  group-         jvm               makedev.d       opt               protocols                     rsyslog.d         sudo.conf       yp.conf
+cas.conf               dovecot                    grub.conf      jvm-commmon       man.config      PackageKit        pulse                         rwtab             sudoers         yum
+centos-release         dracut.conf                gshadow        kde               maven           pam.d             purple                        rwtab.d           sudoers.d       yum.conf
+certmonger             dracut.conf.d              gshadow-       kde4rc            mcelog          pam_pkcs11        qpid                          samba             sudo-ldap.conf  yum.repos.d
+[user2@luiscarrera ~]$ ls /etc/
+abrt                   cgconfig.conf              drirc          gssapi_mech.conf  kderc           mime.types        pango                         quotagrpadmins    sane.d          sysconfig
+acpi                   cgrules.conf               eclipse.ini    gtk-2.0           kdump-adv-conf  minicom.users     passwd                        quotatab          sasl2           sysctl.conf
+adjtime                cgsnapshot_blacklist.conf  elinks.conf    hal               kdump.conf      mke2fs.conf       passwd-                       rc                scl             system-release
+akonadi                chkconfig.d                enscript.cfg   hba.conf          krb5.conf       modprobe.d        pbm2ppa.conf                  rc0.d             securetty       system-release-cpe
+aliases                compat-openmpi-psm-x86_64  environment    host.conf         ksysguarddrc    modulefiles       pcmcia                        rc1.d             security        target
+aliases.db             compat-openmpi-x86_64      ethers         hosts             latrace.conf    motd              pear                          rc2.d             selinux         termcap
+alsa                   ConsoleKit                 event.d        hosts.allow       latrace.d       mtab              pear.conf                     rc3.d             services        terminfo
+alternatives           cron.d                     exports        hosts.deny        ld.so.cache     mtools.conf       Pegasus                       rc4.d             sestatus.conf   texmf
+amanda                 cron.daily                 favicon.png    hp                ld.so.conf      multipath         php.d                         rc5.d             setuptool.d     tgt
+anacrontab             cron.deny                  fcoe           htdig             ld.so.conf.d    my.cnf            php.ini                       rc6.d             sfcb            tomcat6
+ant.conf               cron.hourly                festival       httpd             libaudit.conf   nanorc            pinforc                       rc.d              sgml            Trolltech.conf
+ant.d                  cron.monthly               filesystems    ibm_hosts         libibverbs.d    netconfig         pki                           rc.local          shadow          udev
+anthy-conf             crontab                    firefox        idmapd.conf       libreport       NetworkManager    plymouth                      rc.sysinit        shadow-         udev.d
+asound.conf            cron.weekly                fonts          ImageMagick       libuser.conf    networks          pm                            rdma              shells          updatedb.conf
+at.deny                crypttab                   foomatic       init              libvirt         nfsmount.conf     pm-utils-hd-apm-restore.conf  readahead.conf    skel            vimrc
+audisp                 csh.cshrc                  fprintd.conf   init.d            localtime       nsswitch.conf     pnm2ppa.conf                  reader.conf       slp.conf        virc
+audit                  csh.login                  fstab          inittab           login.defs      ntp               polkit-1                      reader.conf.d     slp.spi         vsftpd
+autofs_ldap_auth.conf  cups                       gai.conf       inputrc           logrotate.conf  ntp.conf          popt.d                        redhat-lsb        smartd.conf     warnquota.conf
+auto.master            dbus-1                     gconf          ipa               logrotate.d     numad.conf        portreserve                   redhat-release    snmp            webalizer.conf
+auto.misc              default                    gcrypt         iproute2          lsb-release     obex-data-server  postfix                       request-key.conf  sos.conf        wgetrc
+auto.net               depmod.d                   gdm            ipsec.conf        lsb-release.d   odbc.ini          ppp                           request-key.d     sound           wpa_supplicant
+auto.smb               dhcp                       ggz.modules.d  ipsec.d           ltrace.conf     odbcinst.ini      prelink.cache                 resolv.conf       ssh             wvdial.conf
+avahi                  DIR_COLORS                 ghostscript    ipsec.secrets     lvm             oddjob            prelink.conf                  rpc               ssl             X11
+bash_completion.d      DIR_COLORS.256color        gimp           iscsi             magic           oddjobd.conf      prelink.conf.d                rpm               sssd            xdg
+bashrc                 DIR_COLORS.lightbgcolor    gnome-vfs-2.0  issue             mail            oddjobd.conf.d    printcap                      rpmdevtools       statetab        xinetd.conf
+blkid                  dirsrv                     gnupg          issue.net         mailcap         openldap          profile                       rpmlint           statetab.d      xinetd.d
+bluetooth              dnsmasq.conf               group          java              mail.rc         openwsman         profile.d                     rsyslog.conf      subversion      xml
+bonobo-activation      dnsmasq.d                  group-         jvm               makedev.d       opt               protocols                     rsyslog.d         sudo.conf       yp.conf
+cas.conf               dovecot                    grub.conf      jvm-commmon       man.config      PackageKit        pulse                         rwtab             sudoers         yum
+centos-release         dracut.conf                gshadow        kde               maven           pam.d             purple                        rwtab.d           sudoers.d       yum.conf
+certmonger             dracut.conf.d              gshadow-       kde4rc            mcelog          pam_pkcs11        qpid                          samba             sudo-ldap.conf  yum.repos.d
+[user2@luiscarrera ~]$
+[user2@luiscarrera ~]$ ls -l /etc/
+total 2880
+drwxr-xr-x.  3 root         root      4096 ene 27 16:20 abrt
+drwxr-xr-x.  4 root         root      4096 ene 26 15:28 acpi
+-rw-r--r--.  1 root         root        44 ene 26 20:45 adjtime
+drwxr-xr-x.  2 root         root      4096 ene 26 15:24 akonadi
+-rw-r--r--.  1 root         root      1512 ene 12  2010 aliases
+-rw-r--r--.  1 root         root     12288 ene 26 15:38 aliases.db
+drwxr-xr-x.  2 root         root      4096 ene 26 15:25 alsa
+drwxr-xr-x.  2 root         root      4096 ene 27 16:24 alternatives
+drwxr-xr-x.  3 amandabackup disk      4096 ene 26 15:26 amanda
+-rw-r--r--.  1 root         root       541 jul 18  2011 anacrontab
+-rw-r--r--.  1 root         root       391 may 19  2009 ant.conf
+drwxr-xr-x.  2 root         root      4096 ene 26 15:17 ant.d
+-rw-r--r--.  1 root         root       245 nov 10  2010 anthy-conf
+-rw-r--r--.  1 root         root       148 may 14  2009 asound.conf
+-rw-r--r--.  1 root         root         1 ene 30  2012 at.deny
+drwxr-x---.  3 root         root      4096 ene 26 15:31 audisp
+drwxr-x---.  2 root         root      4096 ene 26 15:31 audit
+-rw-------.  1 root         root       232 feb 22  2013 autofs_ldap_auth.conf
+-rw-r--r--.  1 root         root       658 feb 22  2013 auto.master
+-rw-r--r--.  1 root         root       524 feb 22  2013 auto.misc
+-rwxr-xr-x.  1 root         root      1260 feb 22  2013 auto.net
+-rwxr-xr-x.  1 root         root       687 feb 22  2013 auto.smb
+drwxr-xr-x.  2 root         root      4096 ene 26 15:17 avahi
+drwxr-xr-x.  2 root         root      4096 ene 27 16:17 bash_completion.d
+-rw-r--r--.  1 root         root      2681 oct 15  2012 bashrc
+drwxr-xr-x.  2 root         root      4096 ene 26 20:41 blkid
+drwxr-xr-x.  2 root         root      4096 ene 26 15:25 bluetooth
+drwxr-xr-x.  2 root         root      4096 ene 26 15:10 bonobo-activation
+-rw-r--r--.  1 root         root      1780 oct 15  2009 cas.conf
+-rw-r--r--.  1 root         root        27 feb 25  2013 centos-release
+drwxr-xr-x.  2 root         root      4096 ene 26 15:21 certmonger
+-rw-r--r--.  1 root         root       812 feb 21  2013 cgconfig.conf
+-rw-r--r--.  1 root         root      1705 feb 21  2013 cgrules.conf
+-rw-r--r--.  1 root         root       161 feb 21  2013 cgsnapshot_blacklist.conf
+drwxr-xr-x.  2 root         root      4096 jun 22  2012 chkconfig.d
+drwxr-xr-x.  2 root         root      4096 ene 26 15:14 compat-openmpi-psm-x86_64
+drwxr-xr-x.  2 root         root      4096 ene 26 15:30 compat-openmpi-x86_64
+drwxr-xr-x.  5 root         root      4096 ene 26 15:14 ConsoleKit
+drwxr-xr-x.  2 root         root      4096 ene 26 15:28 cron.d
+drwxr-xr-x.  2 root         root      4096 ene 26 15:31 cron.daily
+-rw-r--r--.  1 root         root         0 jul 18  2011 cron.deny
+drwxr-xr-x.  2 root         root      4096 ene 26 15:32 cron.hourly
+drwxr-xr-x.  2 root         root      4096 ene 26 15:28 cron.monthly
+-rw-r--r--.  1 root         root       457 sep 26  2011 crontab
+drwxr-xr-x.  2 root         root      4096 sep 26  2011 cron.weekly
+-rw-r--r--.  1 root         root         0 ene 26 15:02 crypttab
+-rw-r--r--.  1 root         root      1602 oct 15  2012 csh.cshrc
+-rw-r--r--.  1 root         root       794 oct 15  2012 csh.login
+drwxr-xr-x.  5 root         lp        4096 ene 26 15:30 cups
+drwxr-xr-x.  4 root         root      4096 ene 26 15:09 dbus-1
+drwxr-xr-x.  2 root         root      4096 ene 26 15:09 default
+drwxr-xr-x.  2 root         root      4096 ene 26 15:10 depmod.d
+drwxr-x---.  3 root         root      4096 feb 22  2013 dhcp
+-rw-r--r--.  1 root         root      4439 abr 17  2012 DIR_COLORS
+-rw-r--r--.  1 root         root      5139 abr 17  2012 DIR_COLORS.256color
+-rw-r--r--.  1 root         root      4113 abr 17  2012 DIR_COLORS.lightbgcolor
+drwxr-xr-x.  4 root         root      4096 ene 26 15:23 dirsrv
+-rw-r--r--.  1 root         root     21214 feb 21  2013 dnsmasq.conf
+drwxr-xr-x.  2 root         root      4096 feb 21  2013 dnsmasq.d
+drwxr-xr-x.  3 root         root      4096 ene 26 15:28 dovecot
+-rw-r--r--.  1 root         root       519 feb 22  2013 dracut.conf
+drwxr-xr-x.  2 root         root      4096 feb 22  2013 dracut.conf.d
+-rw-r--r--.  1 root         root      1323 feb 22  2013 drirc
+-rw-r--r--.  1 root         root       986 oct 25  2011 eclipse.ini
+-rw-r--r--.  1 root         root      1093 jul  1  2011 elinks.conf
+-rw-r--r--.  1 root         root      4843 nov 11  2010 enscript.cfg
+-rw-r--r--.  1 root         root         0 oct 15  2012 environment
+-rw-r--r--.  1 root         root        28 may 10  2012 ethers
+drwxr-xr-x.  2 root         root      4096 ene 26 15:14 event.d
+-rw-r--r--.  1 root         root         0 ene 12  2010 exports
+lrwxrwxrwx.  1 root         root        56 ene 26 15:10 favicon.png -> /usr/share/icons/hicolor/16x16/apps/system-logo-icon.png
+drwxr-xr-x.  2 root         root      4096 ene 26 15:25 fcoe
+drwxr-xr-x.  2 root         root      4096 ene 26 15:12 festival
+-rw-r--r--.  1 root         root        64 oct 15  2012 filesystems
+drwxr-xr-x.  3 root         root      4096 ene 27 16:21 firefox
+drwxr-xr-x.  4 root         root      4096 ene 26 15:10 fonts
+drwxr-xr-x.  2 root         root      4096 ene 26 15:24 foomatic
+-rw-r--r--.  1 root         root        20 jun 22  2012 fprintd.conf
+-rw-r--r--.  1 root         root       805 ene 26 15:02 fstab
+-rw-r--r--.  1 root         root         0 feb 21  2013 gai.conf
+drwxr-xr-x.  7 root         root      4096 ene 26 15:14 gconf
+drwxr-xr-x.  2 root         root      4096 abr 16  2012 gcrypt
+drwxr-xr-x.  6 root         root      4096 ene 27 16:18 gdm
+drwxr-xr-x.  2 root         root      4096 ene 26 15:27 ggz.modules.d
+drwxr-xr-x.  3 root         root      4096 ene 26 15:12 ghostscript
+drwxr-xr-x.  3 root         root      4096 mar 21  2017 gimp
+drwxr-xr-x.  3 root         root      4096 ene 26 15:14 gnome-vfs-2.0
+drwxr-xr-x.  2 root         root      4096 nov 11  2010 gnupg
+-rw-r--r--.  1 root         root      1167 ene 27 16:16 group
+-rw-r--r--.  1 root         root      1153 ene 27 15:24 group-
+lrwxrwxrwx.  1 root         root        22 ene 26 15:36 grub.conf -> ../boot/grub/grub.conf
+----------.  1 root         root       955 ene 27 16:16 gshadow
+----------.  1 root         root       944 ene 27 15:24 gshadow-
+-rw-r--r--.  1 root         root       801 jul 19  2011 gssapi_mech.conf
+drwxr-xr-x.  2 root         root      4096 ene 27 16:24 gtk-2.0
+drwxr-xr-x.  3 root         root      4096 ene 26 15:23 hal
+-rw-r--r--.  1 root         root       871 ene 26 15:12 hba.conf
+-rw-r--r--.  1 root         root         9 oct 15  2012 host.conf
+-rw-r--r--.  2 root         root       186 ene 27 16:57 hosts
+-rw-r--r--.  1 root         root       370 ene 12  2010 hosts.allow
+-rw-r--r--.  1 root         root       460 ene 12  2010 hosts.deny
+drwxr-xr-x.  2 root         root      4096 ene 26 15:24 hp
+drwxr-xr-x.  2 root         root      4096 ene 26 15:12 htdig
+drwxr-xr-x.  5 root         root      4096 ene 26 15:21 httpd
+-rw-r--r--.  1 root         root      1066 feb 21  2013 ibm_hosts
+-rw-r--r--.  1 root         root      3581 feb 21  2013 idmapd.conf
+drwxr-xr-x.  2 root         root      4096 ene 27 16:18 ImageMagick
+drwxr-xr-x.  2 root         root      4096 ene 26 15:28 init
+lrwxrwxrwx.  1 root         root        11 ene 26 15:09 init.d -> rc.d/init.d
+-rw-r--r--.  1 root         root       884 ene 26 15:36 inittab
+-rw-r--r--.  1 root         root       942 ene 12  2010 inputrc
+drwxr-xr-x.  3 root         root      4096 ene 26 15:25 ipa
+drwxr-xr-x.  2 root         root      4096 ene 26 15:20 iproute2
+-rw-------.  1 root         root       710 sep 24  2012 ipsec.conf
+drwx------.  3 root         root      4096 ene 26 15:28 ipsec.d
+-rw-------.  1 root         root        31 sep 24  2012 ipsec.secrets
+drwxr-xr-x.  2 root         root      4096 ene 26 15:28 iscsi
+-rw-r--r--.  1 root         root        47 feb 25  2013 issue
+-rw-r--r--.  1 root         root        46 feb 25  2013 issue.net
+drwxr-xr-x.  3 root         root      4096 ene 26 15:10 java
+drwxr-xr-x.  2 root         root      4096 nov 11  2010 jvm
+drwxr-xr-x.  2 root         root      4096 nov 11  2010 jvm-commmon
+drwxr-xr-x.  5 root         root      4096 ene 26 15:12 kde
+-rw-r--r--.  1 root         root       271 jul  8  2008 kde4rc
+-rw-r--r--.  1 root         root       204 jul  8  2008 kderc
+drwxr-xr-x.  4 root         root      4096 ene 26 15:22 kdump-adv-conf
+-rw-r--r--.  1 root         root      6135 ene 26 20:39 kdump.conf
+-rw-r--r--.  1 root         root       449 dic 18  2012 krb5.conf
+-rw-r--r--.  1 root         root      1127 ene 16  2009 ksysguarddrc
+-rw-r--r--.  1 root         root      1662 nov 11  2010 latrace.conf
+drwxr-xr-x.  3 root         root      4096 ene 26 15:32 latrace.d
+-rw-r--r--.  1 root         root    135073 ene 27 16:24 ld.so.cache
+-rw-r--r--.  1 root         root        28 may  4  2010 ld.so.conf
+drwxr-xr-x.  2 root         root      4096 ene 27 16:21 ld.so.conf.d
+-rw-r-----.  1 root         root       191 mar  1  2012 libaudit.conf
+drwxr-xr-x.  2 root         root      4096 ene 26 15:31 libibverbs.d
+drwxr-xr-x.  5 root         root      4096 ene 27 16:19 libreport
+-rw-r--r--.  1 root         root      2293 abr  5  2012 libuser.conf
+drwxr-xr-x.  2 root         root      4096 ene 26 15:23 libvirt
+-rw-r--r--.  2 root         root       395 ene 23  2013 localtime
+-rw-r--r--.  1 root         root      1816 jun 28  2011 login.defs
+-rw-r--r--.  1 root         root       662 ago 29  2007 logrotate.conf
+drwxr-xr-x.  2 root         root      4096 ene 26 15:31 logrotate.d
+-rw-r--r--.  1 root         root       152 ene 26 15:24 lsb-release
+drwxr-xr-x.  2 root         root      4096 ene 26 15:24 lsb-release.d
+-rw-r--r--.  1 root         root     10814 feb 20  2006 ltrace.conf
+drwxr-xr-x.  5 root         root      4096 ene 26 15:27 lvm
+-rw-r--r--.  1 root         root       111 oct  4  2012 magic
+drwxr-xr-x.  3 root         root      4096 ene 26 15:28 mail
+-rw-r--r--.  1 root         root       272 nov 17  2009 mailcap
+-rw-r--r--.  1 root         root      1909 ago 22  2010 mail.rc
+drwxr-xr-x.  2 root         root      4096 ene 26 15:14 makedev.d
+-rw-r--r--.  1 root         root      4940 feb 21  2013 man.config
+drwxr-xr-x.  3 root         root      4096 ene 26 15:10 maven
+drwxr-xr-x.  2 root         root      4096 ene 26 15:32 mcelog
+-rw-r--r--.  1 root         root     43591 sep 23  2011 mime.types
+-rw-r--r--.  1 root         root      1112 mar 30  2003 minicom.users
+-rw-r--r--.  1 root         root       801 sep  7  2009 mke2fs.conf
+drwxr-xr-x.  2 root         root      4096 ene 26 15:32 modprobe.d
+drwxr-xr-x.  2 root         root      4096 ene 26 15:30 modulefiles
+-rw-r--r--.  1 root         root         0 ene 12  2010 motd
+-rw-r--r--.  1 root         root       424 ene 27 15:06 mtab
+-rw-r--r--.  1 root         root      2620 ago 16  2010 mtools.conf
+drwxr-xr-x.  2 root         root      4096 feb 22  2013 multipath
+-rw-r--r--.  1 root         root       251 dic  7  2012 my.cnf
+-rw-r--r--.  1 root         root      7846 nov 12  2010 nanorc
+-rw-r--r--.  1 root         root       767 nov 30  2009 netconfig
+drwxr-xr-x.  5 root         root      4096 ene 27 16:19 NetworkManager
+-rw-r--r--.  1 root         root        58 feb 22  2013 networks
+-rw-r--r--.  1 root         root      3390 feb 21  2013 nfsmount.conf
+-rw-r--r--.  1 root         root      1688 may  4  2010 nsswitch.conf
+drwxr-xr-x.  3 root         root      4096 ene 26 15:24 ntp
+-rw-r--r--.  1 root         root      1923 ene 10  2013 ntp.conf
+-rw-r--r--.  1 root         root        91 oct 15  2012 numad.conf
+drwxr-xr-x.  2 root         root      4096 ene 26 15:16 obex-data-server
+-rw-r--r--.  1 root         root         0 nov 29  2012 odbc.ini
+-rw-r--r--.  1 root         root       575 nov 29  2012 odbcinst.ini
+drwxr-xr-x.  2 root         root      4096 jun 25  2011 oddjob
+-rw-r--r--.  1 root         root      4922 jun 25  2011 oddjobd.conf
+drwxr-xr-x.  2 root         root      4096 ene 26 15:25 oddjobd.conf.d
+drwxr-xr-x.  4 root         root      4096 ene 26 15:27 openldap
+drwxr-xr-x.  2 root         root      4096 ene 26 15:30 openwsman
+drwxr-xr-x.  2 root         root      4096 sep 23  2011 opt
+drwxr-xr-x.  2 root         root      4096 ene 27 16:17 PackageKit
+drwxr-xr-x.  2 root         root      4096 ene 27 16:22 pam.d
+drwxr-xr-x.  2 root         root      4096 ene 26 15:13 pam_pkcs11
+drwxr-xr-x.  3 root         root      4096 ene 26 15:15 pango
+-rw-r--r--.  1 root         root      2925 ene 27 16:16 passwd
+-rw-r--r--.  1 root         root      2884 ene 27 15:24 passwd-
+-rw-r--r--.  1 root         root      1362 ago 22  2010 pbm2ppa.conf
+drwxr-xr-x.  2 root         root      4096 ene 26 15:25 pcmcia
+drwxr-xr-x.  2 root         root      4096 dic  7  2011 pear
+-rw-r--r--.  1 root         root       946 dic  7  2011 pear.conf
+drwxr-xr-x.  2 root         pegasus   4096 ene 27 14:38 Pegasus
+drwxr-xr-x.  2 root         root      4096 ene 26 15:30 php.d
+-rw-r--r--.  1 root         root     69097 feb 21  2013 php.ini
+-rw-r--r--.  1 root         root      2872 ago 20  2010 pinforc
+drwxr-xr-x. 10 root         root      4096 ene 27 16:17 pki
+drwxr-xr-x.  2 root         root      4096 ene 27 16:17 plymouth
+drwxr-xr-x.  5 root         root      4096 ene 26 15:09 pm
+-rw-r--r--.  1 root         root       370 jul 18  2012 pm-utils-hd-apm-restore.conf
+-rw-r--r--.  1 root         root      6300 ago 22  2010 pnm2ppa.conf
+drwxr-xr-x.  5 root         root      4096 ene 26 15:14 polkit-1
+drwxr-xr-x.  2 root         root      4096 ago 21  2010 popt.d
+drwxr-xr-x.  2 root         root      4096 ene 26 15:28 portreserve
+drwxr-xr-x.  2 root         root      4096 ene 26 15:21 postfix
+drwxr-xr-x.  3 root         root      4096 ene 27 16:19 ppp
+-rw-r--r--.  1 root         root    699492 ene 27 15:33 prelink.cache
+-rw-r--r--.  1 root         root       789 may 20  2009 prelink.conf
+drwxr-xr-x.  2 root         root      4096 ene 27 16:22 prelink.conf.d
+-rw-r--r--.  1 root         root       233 ene 12  2010 printcap
+-rw-r--r--.  1 root         root      1796 oct 15  2012 profile
+drwxr-xr-x.  2 root         root      4096 ene 27 16:21 profile.d
+-rw-r--r--.  1 root         root      6455 ene 12  2010 protocols
+drwxr-xr-x.  2 root         root      4096 ene 26 15:25 pulse
+drwxr-xr-x.  2 root         root      4096 ene 27 16:18 purple
+drwxr-xr-x.  2 root         root      4096 ene 26 15:21 qpid
+-rw-r--r--.  1 root         root       220 oct 13  2008 quotagrpadmins
+-rw-r--r--.  1 root         root       259 nov 20  2012 quotatab
+lrwxrwxrwx.  1 root         root         7 ene 26 15:20 rc -> rc.d/rc
+lrwxrwxrwx.  1 root         root        10 ene 26 15:20 rc0.d -> rc.d/rc0.d
+lrwxrwxrwx.  1 root         root        10 ene 26 15:20 rc1.d -> rc.d/rc1.d
+lrwxrwxrwx.  1 root         root        10 ene 26 15:20 rc2.d -> rc.d/rc2.d
+lrwxrwxrwx.  1 root         root        10 ene 26 15:20 rc3.d -> rc.d/rc3.d
+lrwxrwxrwx.  1 root         root        10 ene 26 15:20 rc4.d -> rc.d/rc4.d
+lrwxrwxrwx.  1 root         root        10 ene 26 15:20 rc5.d -> rc.d/rc5.d
+lrwxrwxrwx.  1 root         root        10 ene 26 15:20 rc6.d -> rc.d/rc6.d
+drwxr-xr-x. 10 root         root      4096 ene 26 15:20 rc.d
+lrwxrwxrwx.  1 root         root        13 ene 26 15:20 rc.local -> rc.d/rc.local
+lrwxrwxrwx.  1 root         root        15 ene 26 15:20 rc.sysinit -> rc.d/rc.sysinit
+drwxr-xr-x.  2 root         root      4096 ene 26 15:31 rdma
+-rw-r--r--.  1 root         root       966 ago 23  2010 readahead.conf
+-rw-r--r--.  1 root         root       435 ene 27 14:38 reader.conf
+drwxr-xr-x.  2 root         root      4096 ene 26 15:23 reader.conf.d
+drwxr-xr-x.  2 root         root      4096 ene 26 15:24 redhat-lsb
+lrwxrwxrwx.  1 root         root        14 ene 26 15:20 redhat-release -> centos-release
+-rw-r--r--.  1 root         root      1484 jun 22  2012 request-key.conf
+drwxr-xr-x.  2 root         root      4096 ene 26 15:27 request-key.d
+-rw-r--r--.  1 root         root       300 ene 27 15:12 resolv.conf
+-rw-r--r--.  1 root         root      1615 may  4  2010 rpc
+drwxr-xr-x.  2 root         root      4096 ene 27 16:19 rpm
+drwxr-xr-x.  2 root         root      4096 ene 26 15:25 rpmdevtools
+drwxr-xr-x.  2 root         root      4096 ene 26 15:13 rpmlint
+-rw-r--r--.  1 root         root      3167 ene 26 15:28 rsyslog.conf
+drwxr-xr-x.  2 root         root      4096 feb 22  2013 rsyslog.d
+-rw-r--r--.  1 root         root       930 feb 22  2013 rwtab
+drwxr-xr-x.  2 root         root      4096 ene 26 15:24 rwtab.d
+drwxr-xr-x.  2 root         root      4096 ene 26 15:27 samba
+drwxr-xr-x.  3 root         root      4096 ene 26 15:20 sane.d
+drwxr-xr-x.  2 root         root      4096 ene 26 15:23 sasl2
+drwxr-xr-x.  3 root         root      4096 ene 26 15:32 scl
+-rw-------.  1 root         root       122 ene 12  2010 securetty
+drwxr-xr-x.  6 root         root      4096 ene 26 15:20 security
+drwxr-xr-x.  3 root         root      4096 ene 26 15:21 selinux
+-rw-r--r--.  1 root         root    641020 oct 15  2012 services
+-rw-r--r--.  1 root         root       216 feb 22  2013 sestatus.conf
+drwxr-xr-x.  2 root         root      4096 ene 26 15:24 setuptool.d
+drwxr-xr-x.  2 root         root      4096 ene 26 15:28 sfcb
+drwxr-xr-x.  3 root         root      4096 ene 26 15:31 sgml
+----------.  1 root         root      2851 ene 27 16:16 shadow
+----------.  1 root         root      2726 ene 27 15:25 shadow-
+-rw-r--r--.  1 root         root        61 ene 26 15:31 shells
+drwxr-xr-x.  4 root         root      4096 ene 27 16:19 skel
+-rw-r--r--.  1 root         root     12177 dic  7  2011 slp.conf
+-rw-r--r--.  1 root         root      2707 dic  7  2011 slp.spi
+-rw-r--r--.  1 root         root      6717 feb 21  2013 smartd.conf
+drwxr-xr-x.  2 root         root      4096 ene 26 15:21 snmp
+-rw-r--r--.  1 root         root       260 feb 22  2013 sos.conf
+drwxr-xr-x.  3 root         root      4096 ene 26 15:17 sound
+drwxr-xr-x.  2 root         root      4096 ene 27 16:21 ssh
+drwxr-xr-x.  2 root         root      4096 ene 26 15:09 ssl
+drwx------.  2 root         root      4096 feb 22  2013 sssd
+-rw-r--r--.  1 root         root       212 feb 22  2013 statetab
+drwxr-xr-x.  2 root         root      4096 feb 22  2013 statetab.d
+drwxr-xr-x.  2 root         root      4096 jun 22  2012 subversion
+-rw-r-----.  1 root         root      1786 sep 25  2012 sudo.conf
+-r--r-----.  1 root         root      4002 mar  1  2012 sudoers
+drwxr-x---.  2 root         root      4096 feb 22  2013 sudoers.d
+-rw-r-----.  1 root         root      3181 ene 23  2013 sudo-ldap.conf
+drwxr-xr-x.  8 root         root      4096 ene 27 16:21 sysconfig
+-rw-r--r--.  1 root         root      1150 feb 22  2013 sysctl.conf
+lrwxrwxrwx.  1 root         root        14 ene 26 15:20 system-release -> centos-release
+-rw-r--r--.  1 root         root        25 feb 25  2013 system-release-cpe
+drwxr-xr-x.  3 root         root      4096 ene 26 15:25 target
+-rw-r--r--.  1 root         root     89132 ene 26 15:31 termcap
+drwxr-xr-x.  2 root         root      4096 ago 18  2010 terminfo
+drwxr-xr-x.  3 root         root      4096 ene 26 15:19 texmf
+drwxr-xr-x.  2 root         root      4096 ene 26 15:28 tgt
+drwxrwxr-x.  3 root         tomcat    4096 ene 26 15:24 tomcat6
+-rw-r--r--.  1 root         root        45 ago 24  2012 Trolltech.conf
+drwxr-xr-x.  4 root         root      4096 ene 26 15:20 udev
+drwxr-xr-x.  2 root         root      4096 ene 26 15:14 udev.d
+-rw-r--r--.  1 root         root       473 sep 24  2012 updatedb.conf
+-rw-r--r--.  1 root         root      1962 feb 17  2012 vimrc
+-rw-r--r--.  1 root         root      1962 feb 17  2012 virc
+drwxr-xr-x.  2 root         root      4096 ene 26 15:28 vsftpd
+-rw-r--r--.  1 root         root      3008 nov 20  2012 warnquota.conf
+-rw-r--r--.  1 root         root     23735 sep  9  2004 webalizer.conf
+-rw-r--r--.  1 root         root      4479 oct 10  2012 wgetrc
+drwxr-xr-x.  2 root         root      4096 ene 26 15:12 wpa_supplicant
+-rw-r--r--.  1 root         root         0 ene 26 20:44 wvdial.conf
+drwxr-xr-x.  8 root         root      4096 ene 26 15:23 X11
+drwxr-xr-x.  4 root         root      4096 ene 26 15:17 xdg
+-rw-------.  1 root         root      1001 feb 21  2013 xinetd.conf
+drwxr-xr-x.  2 root         root      4096 ene 27 17:30 xinetd.d
+drwxr-xr-x.  2 root         root      4096 ene 26 15:31 xml
+-rw-r--r--.  1 root         root       585 feb 21  2013 yp.conf
+drwxr-xr-x.  5 root         root      4096 ene 26 15:13 yum
+-rw-r--r--.  1 root         root       969 feb 22  2013 yum.conf
+drwxr-xr-x.  2 root         root      4096 ene 26 15:20 yum.repos.d
+[user2@luiscarrera ~]$
+[user2@luiscarrera ~]$ ls /dev/
+autofs   cpu              fd         kmsg   loop7    net                 ptmx   ram15  random  sda2  shm       tty    tty16  tty24  tty32  tty40  tty49  tty57  tty8     usbmon1  vcsa         zero
+block    cpu_dma_latency  full       log    lp0      network_latency     pts    ram2   raw     sda3  snapshot  tty0   tty17  tty25  tty33  tty41  tty5   tty58  tty9     usbmon2  vcsa1
+bsg      crash            fuse       loop0  lp1      network_throughput  ram0   ram3   rfkill  sda4  snd       tty1   tty18  tty26  tty34  tty42  tty50  tty59  ttyS0    vcs      vcsa2
+bus      disk             hidraw0    loop1  lp2      null                ram1   ram4   root    sda5  sr0       tty10  tty19  tty27  tty35  tty43  tty51  tty6   ttyS1    vcs1     vcsa3
+cdrom    dri              hidraw1    loop2  lp3      nvram               ram10  ram5   rtc     sda6  stderr    tty11  tty2   tty28  tty36  tty44  tty52  tty60  ttyS2    vcs2     vcsa4
+cdrw     dvd              hpet       loop3  MAKEDEV  oldmem              ram11  ram6   rtc0    sda7  stdin     tty12  tty20  tty29  tty37  tty45  tty53  tty61  ttyS3    vcs3     vcsa5
+char     dvdrw            hugepages  loop4  mapper   parport0            ram12  ram7   scd0    sda8  stdout    tty13  tty21  tty3   tty38  tty46  tty54  tty62  uinput   vcs4     vcsa6
+console  fb               hvc0       loop5  mcelog   port                ram13  ram8   sda     sg0   systty    tty14  tty22  tty30  tty39  tty47  tty55  tty63  urandom  vcs5     vga_arbiter
+core     fb0              input      loop6  mem      ppp                 ram14  ram9   sda1    sg1   tgt       tty15  tty23  tty31  tty4   tty48  tty56  tty7   usbmon0  vcs6     watchdog
+[user2@luiscarrera ~]$ ls -l /dev/
+total 0
+crw-rw----.  1 root     root     10,  55 ene 27 14:38 autofs
+drwxr-xr-x.  2 root     root         720 ene 27 14:38 block
+drwxr-xr-x.  2 root     root          80 ene 27 14:37 bsg
+drwxr-xr-x.  3 root     root          60 ene 27 14:37 bus
+lrwxrwxrwx.  1 root     root           3 ene 27 14:38 cdrom -> sr0
+lrwxrwxrwx.  1 root     root           3 ene 27 14:38 cdrw -> sr0
+drwxr-xr-x.  2 root     root        3500 ene 27 16:54 char
+crw-------.  1 root     root      5,   1 ene 27 14:38 console
+lrwxrwxrwx.  1 root     root          11 ene 27 14:38 core -> /proc/kcore
+drwxr-xr-x. 10 root     root         220 ene 27 14:38 cpu
+crw-rw----.  1 root     root     10,  61 ene 27 14:38 cpu_dma_latency
+crw-rw----.  1 root     root     10,  62 ene 27 14:38 crash
+drwxr-xr-x.  6 root     root         120 ene 27 14:37 disk
+drwxr-xr-x.  2 root     root          80 ene 27 14:37 dri
+lrwxrwxrwx.  1 root     root           3 ene 27 14:38 dvd -> sr0
+lrwxrwxrwx.  1 root     root           3 ene 27 14:38 dvdrw -> sr0
+lrwxrwxrwx.  1 root     root           3 ene 27 14:37 fb -> fb0
+crw-rw----.  1 root     video    29,   0 ene 27 14:38 fb0
+lrwxrwxrwx.  1 root     root          13 ene 27 14:38 fd -> /proc/self/fd
+crw-rw-rw-.  1 root     root      1,   7 ene 27 14:38 full
+crw-rw-rw-.  1 root     root     10, 229 ene 27 15:06 fuse
+crw-rw----.  1 root     root    249,   0 ene 27 16:54 hidraw0
+crw-rw----.  1 root     root    249,   1 ene 27 14:38 hidraw1
+crw-rw----.  1 root     root     10, 228 ene 27 14:38 hpet
+drwxr-xr-x.  2 root     root          40 ene 27 14:38 hugepages
+crw-------.  1 root     root    229,   0 ene 27 14:37 hvc0
+drwxr-xr-x.  4 root     root         360 ene 27 16:54 input
+crw-rw----.  1 root     root      1,  11 ene 27 14:38 kmsg
+srw-rw-rw-.  1 root     root           0 ene 27 14:38 log
+brw-rw----.  1 root     disk      7,   0 ene 27 14:38 loop0
+brw-rw----.  1 root     disk      7,   1 ene 27 14:38 loop1
+brw-rw----.  1 root     disk      7,   2 ene 27 14:38 loop2
+brw-rw----.  1 root     disk      7,   3 ene 27 14:38 loop3
+brw-rw----.  1 root     disk      7,   4 ene 27 14:38 loop4
+brw-rw----.  1 root     disk      7,   5 ene 27 14:38 loop5
+brw-rw----.  1 root     disk      7,   6 ene 27 14:38 loop6
+brw-rw----.  1 root     disk      7,   7 ene 27 14:38 loop7
+crw-rw----.  1 root     lp        6,   0 ene 27 14:38 lp0
+crw-rw----.  1 root     lp        6,   1 ene 27 14:38 lp1
+crw-rw----.  1 root     lp        6,   2 ene 27 14:38 lp2
+crw-rw----.  1 root     lp        6,   3 ene 27 14:38 lp3
+lrwxrwxrwx.  1 root     root          13 ene 27 14:38 MAKEDEV -> /sbin/MAKEDEV
+drwxr-xr-x.  2 root     root          60 ene 27 14:37 mapper
+crw-rw----.  1 root     root     10, 227 ene 27 14:38 mcelog
+crw-r-----.  1 root     kmem      1,   1 ene 27 14:38 mem
+drwxr-xr-x.  2 root     root          60 ene 27 14:38 net
+crw-rw----.  1 root     root     10,  60 ene 27 14:38 network_latency
+crw-rw----.  1 root     root     10,  59 ene 27 14:38 network_throughput
+crw-rw-rw-.  1 root     root      1,   3 ene 27 14:38 null
+crw-r-----.  1 root     kmem     10, 144 ene 27 14:38 nvram
+crw-rw----.  1 root     root      1,  12 ene 27 14:38 oldmem
+crw-rw----.  1 root     lp       99,   0 ene 27 14:38 parport0
+crw-r-----.  1 root     kmem      1,   4 ene 27 14:38 port
+crw-------.  1 root     root    108,   0 ene 27 14:38 ppp
+crw-rw-rw-.  1 root     tty       5,   2 ene 27 18:16 ptmx
+drwxr-xr-x.  2 root     root           0 ene 27 14:37 pts
+brw-rw----.  1 root     disk      1,   0 ene 27 14:38 ram0
+brw-rw----.  1 root     disk      1,   1 ene 27 14:38 ram1
+brw-rw----.  1 root     disk      1,  10 ene 27 14:38 ram10
+brw-rw----.  1 root     disk      1,  11 ene 27 14:38 ram11
+brw-rw----.  1 root     disk      1,  12 ene 27 14:38 ram12
+brw-rw----.  1 root     disk      1,  13 ene 27 14:38 ram13
+brw-rw----.  1 root     disk      1,  14 ene 27 14:38 ram14
+brw-rw----.  1 root     disk      1,  15 ene 27 14:38 ram15
+brw-rw----.  1 root     disk      1,   2 ene 27 14:38 ram2
+brw-rw----.  1 root     disk      1,   3 ene 27 14:38 ram3
+brw-rw----.  1 root     disk      1,   4 ene 27 14:38 ram4
+brw-rw----.  1 root     disk      1,   5 ene 27 14:38 ram5
+brw-rw----.  1 root     disk      1,   6 ene 27 14:38 ram6
+brw-rw----.  1 root     disk      1,   7 ene 27 14:38 ram7
+brw-rw----.  1 root     disk      1,   8 ene 27 14:38 ram8
+brw-rw----.  1 root     disk      1,   9 ene 27 14:38 ram9
+crw-rw-rw-.  1 root     root      1,   8 ene 27 14:38 random
+drwxr-xr-x.  2 root     root          60 ene 27 14:37 raw
+crw-rw-r--+  1 root     root     10,  57 ene 27 14:38 rfkill
+lrwxrwxrwx.  1 root     root           4 ene 27 14:38 root -> sda4
+lrwxrwxrwx.  1 root     root           4 ene 27 14:38 rtc -> rtc0
+crw-rw----.  1 root     root    254,   0 ene 27 14:38 rtc0
+lrwxrwxrwx.  1 root     root           3 ene 27 14:38 scd0 -> sr0
+brw-rw----.  1 root     disk      8,   0 ene 27 15:06 sda
+brw-rw----.  1 root     disk      8,   1 ene 27 15:06 sda1
+brw-rw----.  1 root     disk      8,   2 ene 27 14:38 sda2
+brw-rw----.  1 root     disk      8,   3 ene 27 14:38 sda3
+brw-rw----.  1 root     disk      8,   4 ene 27 14:38 sda4
+brw-rw----.  1 root     disk      8,   5 ene 27 15:06 sda5
+brw-rw----.  1 root     disk      8,   6 ene 27 15:06 sda6
+brw-rw----.  1 root     disk      8,   7 ene 27 15:06 sda7
+brw-rw----.  1 root     disk      8,   8 ene 27 14:38 sda8
+crw-rw----.  1 root     disk     21,   0 ene 27 14:38 sg0
+crw-rw----.  1 root     cdrom    21,   1 ene 27 14:38 sg1
+drwxrwxrwt.  2 root     root         140 ene 27 17:19 shm
+crw-rw----.  1 root     root     10, 231 ene 27 14:38 snapshot
+drwxr-xr-x.  3 root     root         280 ene 27 14:38 snd
+brw-rw----+  1 root     cdrom    11,   0 ene 27 14:38 sr0
+lrwxrwxrwx.  1 root     root          15 ene 27 14:38 stderr -> /proc/self/fd/2
+lrwxrwxrwx.  1 root     root          15 ene 27 14:38 stdin -> /proc/self/fd/0
+lrwxrwxrwx.  1 root     root          15 ene 27 14:38 stdout -> /proc/self/fd/1
+lrwxrwxrwx.  1 root     root           4 ene 27 14:37 systty -> tty0
+crw-rw----.  1 root     root     10,  56 ene 27 14:38 tgt
+crw-rw-rw-.  1 root     tty       5,   0 ene 27 14:38 tty
+crw--w----.  1 root     tty       4,   0 ene 27 14:38 tty0
+crw--w----.  1 root     tty       4,   1 ene 27 17:39 tty1
+crw--w----.  1 root     tty       4,  10 ene 27 14:38 tty10
+crw--w----.  1 root     tty       4,  11 ene 27 14:38 tty11
+crw--w----.  1 root     tty       4,  12 ene 27 14:38 tty12
+crw--w----.  1 root     tty       4,  13 ene 27 14:38 tty13
+crw--w----.  1 root     tty       4,  14 ene 27 14:38 tty14
+crw--w----.  1 root     tty       4,  15 ene 27 14:38 tty15
+crw--w----.  1 root     tty       4,  16 ene 27 14:38 tty16
+crw--w----.  1 root     tty       4,  17 ene 27 14:38 tty17
+crw--w----.  1 root     tty       4,  18 ene 27 14:38 tty18
+crw--w----.  1 root     tty       4,  19 ene 27 14:38 tty19
+crw--w----.  1 lcarrera tty       4,   2 ene 27 17:39 tty2
+crw--w----.  1 root     tty       4,  20 ene 27 14:38 tty20
+crw--w----.  1 root     tty       4,  21 ene 27 14:38 tty21
+crw--w----.  1 root     tty       4,  22 ene 27 14:38 tty22
+crw--w----.  1 root     tty       4,  23 ene 27 14:38 tty23
+crw--w----.  1 root     tty       4,  24 ene 27 14:38 tty24
+crw--w----.  1 root     tty       4,  25 ene 27 14:38 tty25
+crw--w----.  1 root     tty       4,  26 ene 27 14:38 tty26
+crw--w----.  1 root     tty       4,  27 ene 27 14:38 tty27
+crw--w----.  1 root     tty       4,  28 ene 27 14:38 tty28
+crw--w----.  1 root     tty       4,  29 ene 27 14:38 tty29
+crw-------.  1 root     root      4,   3 ene 27 14:38 tty3
+crw--w----.  1 root     tty       4,  30 ene 27 14:38 tty30
+crw--w----.  1 root     tty       4,  31 ene 27 14:38 tty31
+crw--w----.  1 root     tty       4,  32 ene 27 14:38 tty32
+crw--w----.  1 root     tty       4,  33 ene 27 14:38 tty33
+crw--w----.  1 root     tty       4,  34 ene 27 14:38 tty34
+crw--w----.  1 root     tty       4,  35 ene 27 14:38 tty35
+crw--w----.  1 root     tty       4,  36 ene 27 14:38 tty36
+crw--w----.  1 root     tty       4,  37 ene 27 14:38 tty37
+crw--w----.  1 root     tty       4,  38 ene 27 14:38 tty38
+crw--w----.  1 root     tty       4,  39 ene 27 14:38 tty39
+crw-------.  1 root     root      4,   4 ene 27 14:38 tty4
+crw--w----.  1 root     tty       4,  40 ene 27 14:38 tty40
+crw--w----.  1 root     tty       4,  41 ene 27 14:38 tty41
+crw--w----.  1 root     tty       4,  42 ene 27 14:38 tty42
+crw--w----.  1 root     tty       4,  43 ene 27 14:38 tty43
+crw--w----.  1 root     tty       4,  44 ene 27 14:38 tty44
+crw--w----.  1 root     tty       4,  45 ene 27 14:38 tty45
+crw--w----.  1 root     tty       4,  46 ene 27 14:38 tty46
+crw--w----.  1 root     tty       4,  47 ene 27 14:38 tty47
+crw--w----.  1 root     tty       4,  48 ene 27 14:38 tty48
+crw--w----.  1 root     tty       4,  49 ene 27 14:38 tty49
+crw-------.  1 root     root      4,   5 ene 27 14:38 tty5
+crw--w----.  1 root     tty       4,  50 ene 27 14:38 tty50
+crw--w----.  1 root     tty       4,  51 ene 27 14:38 tty51
+crw--w----.  1 root     tty       4,  52 ene 27 14:38 tty52
+crw--w----.  1 root     tty       4,  53 ene 27 14:38 tty53
+crw--w----.  1 root     tty       4,  54 ene 27 14:38 tty54
+crw--w----.  1 root     tty       4,  55 ene 27 14:38 tty55
+crw--w----.  1 root     tty       4,  56 ene 27 14:38 tty56
+crw--w----.  1 root     tty       4,  57 ene 27 14:38 tty57
+crw--w----.  1 root     tty       4,  58 ene 27 14:38 tty58
+crw--w----.  1 root     tty       4,  59 ene 27 14:38 tty59
+crw-------.  1 root     root      4,   6 ene 27 14:38 tty6
+crw--w----.  1 root     tty       4,  60 ene 27 14:38 tty60
+crw--w----.  1 root     tty       4,  61 ene 27 14:38 tty61
+crw--w----.  1 root     tty       4,  62 ene 27 14:38 tty62
+crw--w----.  1 root     tty       4,  63 ene 27 14:38 tty63
+crw--w----.  1 root     tty       4,   7 ene 27 14:38 tty7
+crw--w----.  1 root     tty       4,   8 ene 27 14:38 tty8
+crw--w----.  1 root     tty       4,   9 ene 27 14:38 tty9
+crw-rw----.  1 root     dialout   4,  64 ene 27 14:38 ttyS0
+crw-rw----.  1 root     dialout   4,  65 ene 27 14:38 ttyS1
+crw-rw----.  1 root     dialout   4,  66 ene 27 14:38 ttyS2
+crw-rw----.  1 root     dialout   4,  67 ene 27 14:38 ttyS3
+crw-r-----.  1 root     root     10, 223 ene 27 14:38 uinput
+crw-rw-rw-.  1 root     root      1,   9 ene 27 14:38 urandom
+crw-rw----.  1 root     root    250,   0 ene 27 14:38 usbmon0
+crw-rw----.  1 root     root    250,   1 ene 27 14:38 usbmon1
+crw-rw----.  1 root     root    250,   2 ene 27 14:38 usbmon2
+crw-rw----.  1 vcsa     tty       7,   0 ene 27 14:38 vcs
+crw-rw----.  1 vcsa     tty       7,   1 ene 27 14:38 vcs1
+crw-rw----.  1 vcsa     tty       7,   2 ene 27 14:38 vcs2
+crw-rw----.  1 vcsa     tty       7,   3 ene 27 14:38 vcs3
+crw-rw----.  1 vcsa     tty       7,   4 ene 27 14:38 vcs4
+crw-rw----.  1 vcsa     tty       7,   5 ene 27 14:38 vcs5
+crw-rw----.  1 vcsa     tty       7,   6 ene 27 14:38 vcs6
+crw-rw----.  1 vcsa     tty       7, 128 ene 27 14:38 vcsa
+crw-rw----.  1 vcsa     tty       7, 129 ene 27 14:38 vcsa1
+crw-rw----.  1 vcsa     tty       7, 130 ene 27 14:38 vcsa2
+crw-rw----.  1 vcsa     tty       7, 131 ene 27 14:38 vcsa3
+crw-rw----.  1 vcsa     tty       7, 132 ene 27 14:38 vcsa4
+crw-rw----.  1 vcsa     tty       7, 133 ene 27 14:38 vcsa5
+crw-rw----.  1 vcsa     tty       7, 134 ene 27 14:38 vcsa6
+crw-rw----.  1 root     root     10,  63 ene 27 14:38 vga_arbiter
+crw-rw----.  1 root     root     10, 130 ene 27 14:38 watchdog
+crw-rw-rw-.  1 root     root      1,   5 ene 27 14:38 zero
+[user2@luiscarrera ~]$ ls -l /dev/tty
+crw-rw-rw-. 1 root tty 5, 0 ene 27 14:38 /dev/tty
+[user2@luiscarrera ~]$ ls -l /dev/tty1
+crw--w----. 1 root tty 4, 1 ene 27 17:39 /dev/tty1
+[user2@luiscarrera ~]$ ls -l /dev/tty[1-5]
+crw--w----. 1 root     tty  4, 1 ene 27 17:39 /dev/tty1
+crw--w----. 1 lcarrera tty  4, 2 ene 27 17:39 /dev/tty2
+crw-------. 1 root     root 4, 3 ene 27 14:38 /dev/tty3
+crw-------. 1 root     root 4, 4 ene 27 14:38 /dev/tty4
+crw-------. 1 root     root 4, 5 ene 27 14:38 /dev/tty5
+[user2@luiscarrera ~]$ ls -l /dev/tty1 /dev/tty2 /dev tty3 /dev/tty4 /dev/tty5
+ls: no se puede acceder a tty3: No existe el fichero o el directorio
+crw--w----.  1 root     tty  4, 1 ene 27 17:39 /dev/tty1
+crw--w----.  1 lcarrera tty  4, 2 ene 27 17:39 /dev/tty2
+crw-------.  1 root     root 4, 4 ene 27 14:38 /dev/tty4
+crw-------.  1 root     root 4, 5 ene 27 14:38 /dev/tty5
+
+/dev:
+total 0
+crw-rw----.  1 root     root     10,  55 ene 27 14:38 autofs
+drwxr-xr-x.  2 root     root         720 ene 27 14:38 block
+drwxr-xr-x.  2 root     root          80 ene 27 14:37 bsg
+drwxr-xr-x.  3 root     root          60 ene 27 14:37 bus
+lrwxrwxrwx.  1 root     root           3 ene 27 14:38 cdrom -> sr0
+lrwxrwxrwx.  1 root     root           3 ene 27 14:38 cdrw -> sr0
+drwxr-xr-x.  2 root     root        3500 ene 27 16:54 char
+crw-------.  1 root     root      5,   1 ene 27 14:38 console
+lrwxrwxrwx.  1 root     root          11 ene 27 14:38 core -> /proc/kcore
+drwxr-xr-x. 10 root     root         220 ene 27 14:38 cpu
+crw-rw----.  1 root     root     10,  61 ene 27 14:38 cpu_dma_latency
+crw-rw----.  1 root     root     10,  62 ene 27 14:38 crash
+drwxr-xr-x.  6 root     root         120 ene 27 14:37 disk
+drwxr-xr-x.  2 root     root          80 ene 27 14:37 dri
+lrwxrwxrwx.  1 root     root           3 ene 27 14:38 dvd -> sr0
+lrwxrwxrwx.  1 root     root           3 ene 27 14:38 dvdrw -> sr0
+lrwxrwxrwx.  1 root     root           3 ene 27 14:37 fb -> fb0
+crw-rw----.  1 root     video    29,   0 ene 27 14:38 fb0
+lrwxrwxrwx.  1 root     root          13 ene 27 14:38 fd -> /proc/self/fd
+crw-rw-rw-.  1 root     root      1,   7 ene 27 14:38 full
+crw-rw-rw-.  1 root     root     10, 229 ene 27 15:06 fuse
+crw-rw----.  1 root     root    249,   0 ene 27 16:54 hidraw0
+crw-rw----.  1 root     root    249,   1 ene 27 14:38 hidraw1
+crw-rw----.  1 root     root     10, 228 ene 27 14:38 hpet
+drwxr-xr-x.  2 root     root          40 ene 27 14:38 hugepages
+crw-------.  1 root     root    229,   0 ene 27 14:37 hvc0
+drwxr-xr-x.  4 root     root         360 ene 27 16:54 input
+crw-rw----.  1 root     root      1,  11 ene 27 14:38 kmsg
+srw-rw-rw-.  1 root     root           0 ene 27 14:38 log
+brw-rw----.  1 root     disk      7,   0 ene 27 14:38 loop0
+brw-rw----.  1 root     disk      7,   1 ene 27 14:38 loop1
+brw-rw----.  1 root     disk      7,   2 ene 27 14:38 loop2
+brw-rw----.  1 root     disk      7,   3 ene 27 14:38 loop3
+brw-rw----.  1 root     disk      7,   4 ene 27 14:38 loop4
+brw-rw----.  1 root     disk      7,   5 ene 27 14:38 loop5
+brw-rw----.  1 root     disk      7,   6 ene 27 14:38 loop6
+brw-rw----.  1 root     disk      7,   7 ene 27 14:38 loop7
+crw-rw----.  1 root     lp        6,   0 ene 27 14:38 lp0
+crw-rw----.  1 root     lp        6,   1 ene 27 14:38 lp1
+crw-rw----.  1 root     lp        6,   2 ene 27 14:38 lp2
+crw-rw----.  1 root     lp        6,   3 ene 27 14:38 lp3
+lrwxrwxrwx.  1 root     root          13 ene 27 14:38 MAKEDEV -> /sbin/MAKEDEV
+drwxr-xr-x.  2 root     root          60 ene 27 14:37 mapper
+crw-rw----.  1 root     root     10, 227 ene 27 14:38 mcelog
+crw-r-----.  1 root     kmem      1,   1 ene 27 14:38 mem
+drwxr-xr-x.  2 root     root          60 ene 27 14:38 net
+crw-rw----.  1 root     root     10,  60 ene 27 14:38 network_latency
+crw-rw----.  1 root     root     10,  59 ene 27 14:38 network_throughput
+crw-rw-rw-.  1 root     root      1,   3 ene 27 14:38 null
+crw-r-----.  1 root     kmem     10, 144 ene 27 14:38 nvram
+crw-rw----.  1 root     root      1,  12 ene 27 14:38 oldmem
+crw-rw----.  1 root     lp       99,   0 ene 27 14:38 parport0
+crw-r-----.  1 root     kmem      1,   4 ene 27 14:38 port
+crw-------.  1 root     root    108,   0 ene 27 14:38 ppp
+crw-rw-rw-.  1 root     tty       5,   2 ene 27 18:19 ptmx
+drwxr-xr-x.  2 root     root           0 ene 27 14:37 pts
+brw-rw----.  1 root     disk      1,   0 ene 27 14:38 ram0
+brw-rw----.  1 root     disk      1,   1 ene 27 14:38 ram1
+brw-rw----.  1 root     disk      1,  10 ene 27 14:38 ram10
+brw-rw----.  1 root     disk      1,  11 ene 27 14:38 ram11
+brw-rw----.  1 root     disk      1,  12 ene 27 14:38 ram12
+brw-rw----.  1 root     disk      1,  13 ene 27 14:38 ram13
+brw-rw----.  1 root     disk      1,  14 ene 27 14:38 ram14
+brw-rw----.  1 root     disk      1,  15 ene 27 14:38 ram15
+brw-rw----.  1 root     disk      1,   2 ene 27 14:38 ram2
+brw-rw----.  1 root     disk      1,   3 ene 27 14:38 ram3
+brw-rw----.  1 root     disk      1,   4 ene 27 14:38 ram4
+brw-rw----.  1 root     disk      1,   5 ene 27 14:38 ram5
+brw-rw----.  1 root     disk      1,   6 ene 27 14:38 ram6
+brw-rw----.  1 root     disk      1,   7 ene 27 14:38 ram7
+brw-rw----.  1 root     disk      1,   8 ene 27 14:38 ram8
+brw-rw----.  1 root     disk      1,   9 ene 27 14:38 ram9
+crw-rw-rw-.  1 root     root      1,   8 ene 27 14:38 random
+drwxr-xr-x.  2 root     root          60 ene 27 14:37 raw
+crw-rw-r--+  1 root     root     10,  57 ene 27 14:38 rfkill
+lrwxrwxrwx.  1 root     root           4 ene 27 14:38 root -> sda4
+lrwxrwxrwx.  1 root     root           4 ene 27 14:38 rtc -> rtc0
+crw-rw----.  1 root     root    254,   0 ene 27 14:38 rtc0
+lrwxrwxrwx.  1 root     root           3 ene 27 14:38 scd0 -> sr0
+brw-rw----.  1 root     disk      8,   0 ene 27 15:06 sda
+brw-rw----.  1 root     disk      8,   1 ene 27 15:06 sda1
+brw-rw----.  1 root     disk      8,   2 ene 27 14:38 sda2
+brw-rw----.  1 root     disk      8,   3 ene 27 14:38 sda3
+brw-rw----.  1 root     disk      8,   4 ene 27 14:38 sda4
+brw-rw----.  1 root     disk      8,   5 ene 27 15:06 sda5
+brw-rw----.  1 root     disk      8,   6 ene 27 15:06 sda6
+brw-rw----.  1 root     disk      8,   7 ene 27 15:06 sda7
+brw-rw----.  1 root     disk      8,   8 ene 27 14:38 sda8
+crw-rw----.  1 root     disk     21,   0 ene 27 14:38 sg0
+crw-rw----.  1 root     cdrom    21,   1 ene 27 14:38 sg1
+drwxrwxrwt.  2 root     root         140 ene 27 17:19 shm
+crw-rw----.  1 root     root     10, 231 ene 27 14:38 snapshot
+drwxr-xr-x.  3 root     root         280 ene 27 14:38 snd
+brw-rw----+  1 root     cdrom    11,   0 ene 27 14:38 sr0
+lrwxrwxrwx.  1 root     root          15 ene 27 14:38 stderr -> /proc/self/fd/2
+lrwxrwxrwx.  1 root     root          15 ene 27 14:38 stdin -> /proc/self/fd/0
+lrwxrwxrwx.  1 root     root          15 ene 27 14:38 stdout -> /proc/self/fd/1
+lrwxrwxrwx.  1 root     root           4 ene 27 14:37 systty -> tty0
+crw-rw----.  1 root     root     10,  56 ene 27 14:38 tgt
+crw-rw-rw-.  1 root     tty       5,   0 ene 27 14:38 tty
+crw--w----.  1 root     tty       4,   0 ene 27 14:38 tty0
+crw--w----.  1 root     tty       4,   1 ene 27 17:39 tty1
+crw--w----.  1 root     tty       4,  10 ene 27 14:38 tty10
+crw--w----.  1 root     tty       4,  11 ene 27 14:38 tty11
+crw--w----.  1 root     tty       4,  12 ene 27 14:38 tty12
+crw--w----.  1 root     tty       4,  13 ene 27 14:38 tty13
+crw--w----.  1 root     tty       4,  14 ene 27 14:38 tty14
+crw--w----.  1 root     tty       4,  15 ene 27 14:38 tty15
+crw--w----.  1 root     tty       4,  16 ene 27 14:38 tty16
+crw--w----.  1 root     tty       4,  17 ene 27 14:38 tty17
+crw--w----.  1 root     tty       4,  18 ene 27 14:38 tty18
+crw--w----.  1 root     tty       4,  19 ene 27 14:38 tty19
+crw--w----.  1 lcarrera tty       4,   2 ene 27 17:39 tty2
+crw--w----.  1 root     tty       4,  20 ene 27 14:38 tty20
+crw--w----.  1 root     tty       4,  21 ene 27 14:38 tty21
+crw--w----.  1 root     tty       4,  22 ene 27 14:38 tty22
+crw--w----.  1 root     tty       4,  23 ene 27 14:38 tty23
+crw--w----.  1 root     tty       4,  24 ene 27 14:38 tty24
+crw--w----.  1 root     tty       4,  25 ene 27 14:38 tty25
+crw--w----.  1 root     tty       4,  26 ene 27 14:38 tty26
+crw--w----.  1 root     tty       4,  27 ene 27 14:38 tty27
+crw--w----.  1 root     tty       4,  28 ene 27 14:38 tty28
+crw--w----.  1 root     tty       4,  29 ene 27 14:38 tty29
+crw-------.  1 root     root      4,   3 ene 27 14:38 tty3
+crw--w----.  1 root     tty       4,  30 ene 27 14:38 tty30
+crw--w----.  1 root     tty       4,  31 ene 27 14:38 tty31
+crw--w----.  1 root     tty       4,  32 ene 27 14:38 tty32
+crw--w----.  1 root     tty       4,  33 ene 27 14:38 tty33
+crw--w----.  1 root     tty       4,  34 ene 27 14:38 tty34
+crw--w----.  1 root     tty       4,  35 ene 27 14:38 tty35
+crw--w----.  1 root     tty       4,  36 ene 27 14:38 tty36
+crw--w----.  1 root     tty       4,  37 ene 27 14:38 tty37
+crw--w----.  1 root     tty       4,  38 ene 27 14:38 tty38
+crw--w----.  1 root     tty       4,  39 ene 27 14:38 tty39
+crw-------.  1 root     root      4,   4 ene 27 14:38 tty4
+crw--w----.  1 root     tty       4,  40 ene 27 14:38 tty40
+crw--w----.  1 root     tty       4,  41 ene 27 14:38 tty41
+crw--w----.  1 root     tty       4,  42 ene 27 14:38 tty42
+crw--w----.  1 root     tty       4,  43 ene 27 14:38 tty43
+crw--w----.  1 root     tty       4,  44 ene 27 14:38 tty44
+crw--w----.  1 root     tty       4,  45 ene 27 14:38 tty45
+crw--w----.  1 root     tty       4,  46 ene 27 14:38 tty46
+crw--w----.  1 root     tty       4,  47 ene 27 14:38 tty47
+crw--w----.  1 root     tty       4,  48 ene 27 14:38 tty48
+crw--w----.  1 root     tty       4,  49 ene 27 14:38 tty49
+crw-------.  1 root     root      4,   5 ene 27 14:38 tty5
+crw--w----.  1 root     tty       4,  50 ene 27 14:38 tty50
+crw--w----.  1 root     tty       4,  51 ene 27 14:38 tty51
+crw--w----.  1 root     tty       4,  52 ene 27 14:38 tty52
+crw--w----.  1 root     tty       4,  53 ene 27 14:38 tty53
+crw--w----.  1 root     tty       4,  54 ene 27 14:38 tty54
+crw--w----.  1 root     tty       4,  55 ene 27 14:38 tty55
+crw--w----.  1 root     tty       4,  56 ene 27 14:38 tty56
+crw--w----.  1 root     tty       4,  57 ene 27 14:38 tty57
+crw--w----.  1 root     tty       4,  58 ene 27 14:38 tty58
+crw--w----.  1 root     tty       4,  59 ene 27 14:38 tty59
+crw-------.  1 root     root      4,   6 ene 27 14:38 tty6
+crw--w----.  1 root     tty       4,  60 ene 27 14:38 tty60
+crw--w----.  1 root     tty       4,  61 ene 27 14:38 tty61
+crw--w----.  1 root     tty       4,  62 ene 27 14:38 tty62
+crw--w----.  1 root     tty       4,  63 ene 27 14:38 tty63
+crw--w----.  1 root     tty       4,   7 ene 27 14:38 tty7
+crw--w----.  1 root     tty       4,   8 ene 27 14:38 tty8
+crw--w----.  1 root     tty       4,   9 ene 27 14:38 tty9
+crw-rw----.  1 root     dialout   4,  64 ene 27 14:38 ttyS0
+crw-rw----.  1 root     dialout   4,  65 ene 27 14:38 ttyS1
+crw-rw----.  1 root     dialout   4,  66 ene 27 14:38 ttyS2
+crw-rw----.  1 root     dialout   4,  67 ene 27 14:38 ttyS3
+crw-r-----.  1 root     root     10, 223 ene 27 14:38 uinput
+crw-rw-rw-.  1 root     root      1,   9 ene 27 14:38 urandom
+crw-rw----.  1 root     root    250,   0 ene 27 14:38 usbmon0
+crw-rw----.  1 root     root    250,   1 ene 27 14:38 usbmon1
+crw-rw----.  1 root     root    250,   2 ene 27 14:38 usbmon2
+crw-rw----.  1 vcsa     tty       7,   0 ene 27 14:38 vcs
+crw-rw----.  1 vcsa     tty       7,   1 ene 27 14:38 vcs1
+crw-rw----.  1 vcsa     tty       7,   2 ene 27 14:38 vcs2
+crw-rw----.  1 vcsa     tty       7,   3 ene 27 14:38 vcs3
+crw-rw----.  1 vcsa     tty       7,   4 ene 27 14:38 vcs4
+crw-rw----.  1 vcsa     tty       7,   5 ene 27 14:38 vcs5
+crw-rw----.  1 vcsa     tty       7,   6 ene 27 14:38 vcs6
+crw-rw----.  1 vcsa     tty       7, 128 ene 27 14:38 vcsa
+crw-rw----.  1 vcsa     tty       7, 129 ene 27 14:38 vcsa1
+crw-rw----.  1 vcsa     tty       7, 130 ene 27 14:38 vcsa2
+crw-rw----.  1 vcsa     tty       7, 131 ene 27 14:38 vcsa3
+crw-rw----.  1 vcsa     tty       7, 132 ene 27 14:38 vcsa4
+crw-rw----.  1 vcsa     tty       7, 133 ene 27 14:38 vcsa5
+crw-rw----.  1 vcsa     tty       7, 134 ene 27 14:38 vcsa6
+crw-rw----.  1 root     root     10,  63 ene 27 14:38 vga_arbiter
+crw-rw----.  1 root     root     10, 130 ene 27 14:38 watchdog
+crw-rw-rw-.  1 root     root      1,   5 ene 27 14:38 zero
+[user2@luiscarrera ~]$
+[user2@luiscarrera ~]$ ls -l /dev/tty1 /dev/tty2 /dev tty3 /dev/tty4 /dev/tty5
+ls: no se puede acceder a tty3: No existe el fichero o el directorio
+crw--w----.  1 root     tty  4, 1 ene 27 17:39 /dev/tty1
+crw--w----.  1 lcarrera tty  4, 2 ene 27 17:39 /dev/tty2
+crw-------.  1 root     root 4, 4 ene 27 14:38 /dev/tty4
+crw-------.  1 root     root 4, 5 ene 27 14:38 /dev/tty5
+
+/dev:
+total 0
+crw-rw----.  1 root     root     10,  55 ene 27 14:38 autofs
+drwxr-xr-x.  2 root     root         720 ene 27 14:38 block
+drwxr-xr-x.  2 root     root          80 ene 27 14:37 bsg
+drwxr-xr-x.  3 root     root          60 ene 27 14:37 bus
+lrwxrwxrwx.  1 root     root           3 ene 27 14:38 cdrom -> sr0
+lrwxrwxrwx.  1 root     root           3 ene 27 14:38 cdrw -> sr0
+drwxr-xr-x.  2 root     root        3500 ene 27 16:54 char
+crw-------.  1 root     root      5,   1 ene 27 14:38 console
+lrwxrwxrwx.  1 root     root          11 ene 27 14:38 core -> /proc/kcore
+drwxr-xr-x. 10 root     root         220 ene 27 14:38 cpu
+crw-rw----.  1 root     root     10,  61 ene 27 14:38 cpu_dma_latency
+crw-rw----.  1 root     root     10,  62 ene 27 14:38 crash
+drwxr-xr-x.  6 root     root         120 ene 27 14:37 disk
+drwxr-xr-x.  2 root     root          80 ene 27 14:37 dri
+lrwxrwxrwx.  1 root     root           3 ene 27 14:38 dvd -> sr0
+lrwxrwxrwx.  1 root     root           3 ene 27 14:38 dvdrw -> sr0
+lrwxrwxrwx.  1 root     root           3 ene 27 14:37 fb -> fb0
+crw-rw----.  1 root     video    29,   0 ene 27 14:38 fb0
+lrwxrwxrwx.  1 root     root          13 ene 27 14:38 fd -> /proc/self/fd
+crw-rw-rw-.  1 root     root      1,   7 ene 27 14:38 full
+crw-rw-rw-.  1 root     root     10, 229 ene 27 15:06 fuse
+crw-rw----.  1 root     root    249,   0 ene 27 16:54 hidraw0
+crw-rw----.  1 root     root    249,   1 ene 27 14:38 hidraw1
+crw-rw----.  1 root     root     10, 228 ene 27 14:38 hpet
+drwxr-xr-x.  2 root     root          40 ene 27 14:38 hugepages
+crw-------.  1 root     root    229,   0 ene 27 14:37 hvc0
+drwxr-xr-x.  4 root     root         360 ene 27 16:54 input
+crw-rw----.  1 root     root      1,  11 ene 27 14:38 kmsg
+srw-rw-rw-.  1 root     root           0 ene 27 14:38 log
+brw-rw----.  1 root     disk      7,   0 ene 27 14:38 loop0
+brw-rw----.  1 root     disk      7,   1 ene 27 14:38 loop1
+brw-rw----.  1 root     disk      7,   2 ene 27 14:38 loop2
+brw-rw----.  1 root     disk      7,   3 ene 27 14:38 loop3
+brw-rw----.  1 root     disk      7,   4 ene 27 14:38 loop4
+brw-rw----.  1 root     disk      7,   5 ene 27 14:38 loop5
+brw-rw----.  1 root     disk      7,   6 ene 27 14:38 loop6
+brw-rw----.  1 root     disk      7,   7 ene 27 14:38 loop7
+crw-rw----.  1 root     lp        6,   0 ene 27 14:38 lp0
+crw-rw----.  1 root     lp        6,   1 ene 27 14:38 lp1
+crw-rw----.  1 root     lp        6,   2 ene 27 14:38 lp2
+crw-rw----.  1 root     lp        6,   3 ene 27 14:38 lp3
+lrwxrwxrwx.  1 root     root          13 ene 27 14:38 MAKEDEV -> /sbin/MAKEDEV
+drwxr-xr-x.  2 root     root          60 ene 27 14:37 mapper
+crw-rw----.  1 root     root     10, 227 ene 27 14:38 mcelog
+crw-r-----.  1 root     kmem      1,   1 ene 27 14:38 mem
+drwxr-xr-x.  2 root     root          60 ene 27 14:38 net
+crw-rw----.  1 root     root     10,  60 ene 27 14:38 network_latency
+crw-rw----.  1 root     root     10,  59 ene 27 14:38 network_throughput
+crw-rw-rw-.  1 root     root      1,   3 ene 27 14:38 null
+crw-r-----.  1 root     kmem     10, 144 ene 27 14:38 nvram
+crw-rw----.  1 root     root      1,  12 ene 27 14:38 oldmem
+crw-rw----.  1 root     lp       99,   0 ene 27 14:38 parport0
+crw-r-----.  1 root     kmem      1,   4 ene 27 14:38 port
+crw-------.  1 root     root    108,   0 ene 27 14:38 ppp
+crw-rw-rw-.  1 root     tty       5,   2 ene 27 18:20 ptmx
+drwxr-xr-x.  2 root     root           0 ene 27 14:37 pts
+brw-rw----.  1 root     disk      1,   0 ene 27 14:38 ram0
+brw-rw----.  1 root     disk      1,   1 ene 27 14:38 ram1
+brw-rw----.  1 root     disk      1,  10 ene 27 14:38 ram10
+brw-rw----.  1 root     disk      1,  11 ene 27 14:38 ram11
+brw-rw----.  1 root     disk      1,  12 ene 27 14:38 ram12
+brw-rw----.  1 root     disk      1,  13 ene 27 14:38 ram13
+brw-rw----.  1 root     disk      1,  14 ene 27 14:38 ram14
+brw-rw----.  1 root     disk      1,  15 ene 27 14:38 ram15
+brw-rw----.  1 root     disk      1,   2 ene 27 14:38 ram2
+brw-rw----.  1 root     disk      1,   3 ene 27 14:38 ram3
+brw-rw----.  1 root     disk      1,   4 ene 27 14:38 ram4
+brw-rw----.  1 root     disk      1,   5 ene 27 14:38 ram5
+brw-rw----.  1 root     disk      1,   6 ene 27 14:38 ram6
+brw-rw----.  1 root     disk      1,   7 ene 27 14:38 ram7
+brw-rw----.  1 root     disk      1,   8 ene 27 14:38 ram8
+brw-rw----.  1 root     disk      1,   9 ene 27 14:38 ram9
+crw-rw-rw-.  1 root     root      1,   8 ene 27 14:38 random
+drwxr-xr-x.  2 root     root          60 ene 27 14:37 raw
+crw-rw-r--+  1 root     root     10,  57 ene 27 14:38 rfkill
+lrwxrwxrwx.  1 root     root           4 ene 27 14:38 root -> sda4
+lrwxrwxrwx.  1 root     root           4 ene 27 14:38 rtc -> rtc0
+crw-rw----.  1 root     root    254,   0 ene 27 14:38 rtc0
+lrwxrwxrwx.  1 root     root           3 ene 27 14:38 scd0 -> sr0
+brw-rw----.  1 root     disk      8,   0 ene 27 15:06 sda
+brw-rw----.  1 root     disk      8,   1 ene 27 15:06 sda1
+brw-rw----.  1 root     disk      8,   2 ene 27 14:38 sda2
+brw-rw----.  1 root     disk      8,   3 ene 27 14:38 sda3
+brw-rw----.  1 root     disk      8,   4 ene 27 14:38 sda4
+brw-rw----.  1 root     disk      8,   5 ene 27 15:06 sda5
+brw-rw----.  1 root     disk      8,   6 ene 27 15:06 sda6
+brw-rw----.  1 root     disk      8,   7 ene 27 15:06 sda7
+brw-rw----.  1 root     disk      8,   8 ene 27 14:38 sda8
+crw-rw----.  1 root     disk     21,   0 ene 27 14:38 sg0
+crw-rw----.  1 root     cdrom    21,   1 ene 27 14:38 sg1
+drwxrwxrwt.  2 root     root         140 ene 27 17:19 shm
+crw-rw----.  1 root     root     10, 231 ene 27 14:38 snapshot
+drwxr-xr-x.  3 root     root         280 ene 27 14:38 snd
+brw-rw----+  1 root     cdrom    11,   0 ene 27 14:38 sr0
+lrwxrwxrwx.  1 root     root          15 ene 27 14:38 stderr -> /proc/self/fd/2
+lrwxrwxrwx.  1 root     root          15 ene 27 14:38 stdin -> /proc/self/fd/0
+lrwxrwxrwx.  1 root     root          15 ene 27 14:38 stdout -> /proc/self/fd/1
+lrwxrwxrwx.  1 root     root           4 ene 27 14:37 systty -> tty0
+crw-rw----.  1 root     root     10,  56 ene 27 14:38 tgt
+crw-rw-rw-.  1 root     tty       5,   0 ene 27 14:38 tty
+crw--w----.  1 root     tty       4,   0 ene 27 14:38 tty0
+crw--w----.  1 root     tty       4,   1 ene 27 17:39 tty1
+crw--w----.  1 root     tty       4,  10 ene 27 14:38 tty10
+crw--w----.  1 root     tty       4,  11 ene 27 14:38 tty11
+crw--w----.  1 root     tty       4,  12 ene 27 14:38 tty12
+crw--w----.  1 root     tty       4,  13 ene 27 14:38 tty13
+crw--w----.  1 root     tty       4,  14 ene 27 14:38 tty14
+crw--w----.  1 root     tty       4,  15 ene 27 14:38 tty15
+crw--w----.  1 root     tty       4,  16 ene 27 14:38 tty16
+crw--w----.  1 root     tty       4,  17 ene 27 14:38 tty17
+crw--w----.  1 root     tty       4,  18 ene 27 14:38 tty18
+crw--w----.  1 root     tty       4,  19 ene 27 14:38 tty19
+crw--w----.  1 lcarrera tty       4,   2 ene 27 17:39 tty2
+crw--w----.  1 root     tty       4,  20 ene 27 14:38 tty20
+crw--w----.  1 root     tty       4,  21 ene 27 14:38 tty21
+crw--w----.  1 root     tty       4,  22 ene 27 14:38 tty22
+crw--w----.  1 root     tty       4,  23 ene 27 14:38 tty23
+crw--w----.  1 root     tty       4,  24 ene 27 14:38 tty24
+crw--w----.  1 root     tty       4,  25 ene 27 14:38 tty25
+crw--w----.  1 root     tty       4,  26 ene 27 14:38 tty26
+crw--w----.  1 root     tty       4,  27 ene 27 14:38 tty27
+crw--w----.  1 root     tty       4,  28 ene 27 14:38 tty28
+crw--w----.  1 root     tty       4,  29 ene 27 14:38 tty29
+crw-------.  1 root     root      4,   3 ene 27 14:38 tty3
+crw--w----.  1 root     tty       4,  30 ene 27 14:38 tty30
+crw--w----.  1 root     tty       4,  31 ene 27 14:38 tty31
+crw--w----.  1 root     tty       4,  32 ene 27 14:38 tty32
+crw--w----.  1 root     tty       4,  33 ene 27 14:38 tty33
+crw--w----.  1 root     tty       4,  34 ene 27 14:38 tty34
+crw--w----.  1 root     tty       4,  35 ene 27 14:38 tty35
+crw--w----.  1 root     tty       4,  36 ene 27 14:38 tty36
+crw--w----.  1 root     tty       4,  37 ene 27 14:38 tty37
+crw--w----.  1 root     tty       4,  38 ene 27 14:38 tty38
+crw--w----.  1 root     tty       4,  39 ene 27 14:38 tty39
+crw-------.  1 root     root      4,   4 ene 27 14:38 tty4
+crw--w----.  1 root     tty       4,  40 ene 27 14:38 tty40
+crw--w----.  1 root     tty       4,  41 ene 27 14:38 tty41
+crw--w----.  1 root     tty       4,  42 ene 27 14:38 tty42
+crw--w----.  1 root     tty       4,  43 ene 27 14:38 tty43
+crw--w----.  1 root     tty       4,  44 ene 27 14:38 tty44
+crw--w----.  1 root     tty       4,  45 ene 27 14:38 tty45
+crw--w----.  1 root     tty       4,  46 ene 27 14:38 tty46
+crw--w----.  1 root     tty       4,  47 ene 27 14:38 tty47
+crw--w----.  1 root     tty       4,  48 ene 27 14:38 tty48
+crw--w----.  1 root     tty       4,  49 ene 27 14:38 tty49
+crw-------.  1 root     root      4,   5 ene 27 14:38 tty5
+crw--w----.  1 root     tty       4,  50 ene 27 14:38 tty50
+crw--w----.  1 root     tty       4,  51 ene 27 14:38 tty51
+crw--w----.  1 root     tty       4,  52 ene 27 14:38 tty52
+crw--w----.  1 root     tty       4,  53 ene 27 14:38 tty53
+crw--w----.  1 root     tty       4,  54 ene 27 14:38 tty54
+crw--w----.  1 root     tty       4,  55 ene 27 14:38 tty55
+crw--w----.  1 root     tty       4,  56 ene 27 14:38 tty56
+crw--w----.  1 root     tty       4,  57 ene 27 14:38 tty57
+crw--w----.  1 root     tty       4,  58 ene 27 14:38 tty58
+crw--w----.  1 root     tty       4,  59 ene 27 14:38 tty59
+crw-------.  1 root     root      4,   6 ene 27 14:38 tty6
+crw--w----.  1 root     tty       4,  60 ene 27 14:38 tty60
+crw--w----.  1 root     tty       4,  61 ene 27 14:38 tty61
+crw--w----.  1 root     tty       4,  62 ene 27 14:38 tty62
+crw--w----.  1 root     tty       4,  63 ene 27 14:38 tty63
+crw--w----.  1 root     tty       4,   7 ene 27 14:38 tty7
+crw--w----.  1 root     tty       4,   8 ene 27 14:38 tty8
+crw--w----.  1 root     tty       4,   9 ene 27 14:38 tty9
+crw-rw----.  1 root     dialout   4,  64 ene 27 14:38 ttyS0
+crw-rw----.  1 root     dialout   4,  65 ene 27 14:38 ttyS1
+crw-rw----.  1 root     dialout   4,  66 ene 27 14:38 ttyS2
+crw-rw----.  1 root     dialout   4,  67 ene 27 14:38 ttyS3
+crw-r-----.  1 root     root     10, 223 ene 27 14:38 uinput
+crw-rw-rw-.  1 root     root      1,   9 ene 27 14:38 urandom
+crw-rw----.  1 root     root    250,   0 ene 27 14:38 usbmon0
+crw-rw----.  1 root     root    250,   1 ene 27 14:38 usbmon1
+crw-rw----.  1 root     root    250,   2 ene 27 14:38 usbmon2
+crw-rw----.  1 vcsa     tty       7,   0 ene 27 14:38 vcs
+crw-rw----.  1 vcsa     tty       7,   1 ene 27 14:38 vcs1
+crw-rw----.  1 vcsa     tty       7,   2 ene 27 14:38 vcs2
+crw-rw----.  1 vcsa     tty       7,   3 ene 27 14:38 vcs3
+crw-rw----.  1 vcsa     tty       7,   4 ene 27 14:38 vcs4
+crw-rw----.  1 vcsa     tty       7,   5 ene 27 14:38 vcs5
+crw-rw----.  1 vcsa     tty       7,   6 ene 27 14:38 vcs6
+crw-rw----.  1 vcsa     tty       7, 128 ene 27 14:38 vcsa
+crw-rw----.  1 vcsa     tty       7, 129 ene 27 14:38 vcsa1
+crw-rw----.  1 vcsa     tty       7, 130 ene 27 14:38 vcsa2
+crw-rw----.  1 vcsa     tty       7, 131 ene 27 14:38 vcsa3
+crw-rw----.  1 vcsa     tty       7, 132 ene 27 14:38 vcsa4
+crw-rw----.  1 vcsa     tty       7, 133 ene 27 14:38 vcsa5
+crw-rw----.  1 vcsa     tty       7, 134 ene 27 14:38 vcsa6
+crw-rw----.  1 root     root     10,  63 ene 27 14:38 vga_arbiter
+crw-rw----.  1 root     root     10, 130 ene 27 14:38 watchdog
+crw-rw-rw-.  1 root     root      1,   5 ene 27 14:38 zero
+[user2@luiscarrera ~]$ ls -l /dev/tty[1-5]
+crw--w----. 1 root     tty  4, 1 ene 27 17:39 /dev/tty1
+crw--w----. 1 lcarrera tty  4, 2 ene 27 17:39 /dev/tty2
+crw-------. 1 root     root 4, 3 ene 27 14:38 /dev/tty3
+crw-------. 1 root     root 4, 4 ene 27 14:38 /dev/tty4
+crw-------. 1 root     root 4, 5 ene 27 14:38 /dev/tty5
+[user2@luiscarrera ~]$ ls -l /dev/tty1 /dev/tty3 /dev/tty3 /dev/tty4 /dev/tty5
+crw--w----. 1 root tty  4, 1 ene 27 17:39 /dev/tty1
+crw-------. 1 root root 4, 3 ene 27 14:38 /dev/tty3
+crw-------. 1 root root 4, 3 ene 27 14:38 /dev/tty3
+crw-------. 1 root root 4, 4 ene 27 14:38 /dev/tty4
+crw-------. 1 root root 4, 5 ene 27 14:38 /dev/tty5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[user2@luiscarrera ~]$ ls -l /dev/tty[^1357]
+crw--w----. 1 root     tty  4, 0 ene 27 14:38 /dev/tty0
+crw--w----. 1 lcarrera tty  4, 2 ene 27 17:39 /dev/tty2
+crw-------. 1 root     root 4, 4 ene 27 14:38 /dev/tty4
+crw-------. 1 root     root 4, 6 ene 27 14:38 /dev/tty6
+crw--w----. 1 root     tty  4, 8 ene 27 14:38 /dev/tty8
+crw--w----. 1 root     tty  4, 9 ene 27 14:38 /dev/tty9
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[user2@luiscarrera ~]$ ls -l /dev/tty[1357][2468]
+crw--w----. 1 root tty 4, 12 ene 27 14:38 /dev/tty12
+crw--w----. 1 root tty 4, 14 ene 27 14:38 /dev/tty14
+crw--w----. 1 root tty 4, 16 ene 27 14:38 /dev/tty16
+crw--w----. 1 root tty 4, 18 ene 27 14:38 /dev/tty18
+crw--w----. 1 root tty 4, 32 ene 27 14:38 /dev/tty32
+crw--w----. 1 root tty 4, 34 ene 27 14:38 /dev/tty34
+crw--w----. 1 root tty 4, 36 ene 27 14:38 /dev/tty36
+crw--w----. 1 root tty 4, 38 ene 27 14:38 /dev/tty38
+crw--w----. 1 root tty 4, 52 ene 27 14:38 /dev/tty52
+crw--w----. 1 root tty 4, 54 ene 27 14:38 /dev/tty54
+crw--w----. 1 root tty 4, 56 ene 27 14:38 /dev/tty56
+crw--w----. 1 root tty 4, 58 ene 27 14:38 /dev/tty58
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[user2@luiscarrera ~]$ ls -l /dev/tty? #imprime un caracter
+crw--w----. 1 root     tty  4, 0 ene 27 14:38 /dev/tty0
+crw--w----. 1 root     tty  4, 1 ene 27 17:39 /dev/tty1
+crw--w----. 1 lcarrera tty  4, 2 ene 27 17:39 /dev/tty2
+crw-------. 1 root     root 4, 3 ene 27 14:38 /dev/tty3
+crw-------. 1 root     root 4, 4 ene 27 14:38 /dev/tty4
+crw-------. 1 root     root 4, 5 ene 27 14:38 /dev/tty5
+crw-------. 1 root     root 4, 6 ene 27 14:38 /dev/tty6
+crw--w----. 1 root     tty  4, 7 ene 27 14:38 /dev/tty7
+crw--w----. 1 root     tty  4, 8 ene 27 14:38 /dev/tty8
+crw--w----. 1 root     tty  4, 9 ene 27 14:38 /dev/tty9
+[user2@luiscarrera ~]$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[user2@luiscarrera ~]$ ls -l /dev/tty*
+crw-rw-rw-. 1 root     tty     5,  0 ene 27 14:38 /dev/tty
+crw--w----. 1 root     tty     4,  0 ene 27 14:38 /dev/tty0
+crw--w----. 1 root     tty     4,  1 ene 27 17:39 /dev/tty1
+crw--w----. 1 root     tty     4, 10 ene 27 14:38 /dev/tty10
+crw--w----. 1 root     tty     4, 11 ene 27 14:38 /dev/tty11
+crw--w----. 1 root     tty     4, 12 ene 27 14:38 /dev/tty12
+crw--w----. 1 root     tty     4, 13 ene 27 14:38 /dev/tty13
+crw--w----. 1 root     tty     4, 14 ene 27 14:38 /dev/tty14
+crw--w----. 1 root     tty     4, 15 ene 27 14:38 /dev/tty15
+crw--w----. 1 root     tty     4, 16 ene 27 14:38 /dev/tty16
+crw--w----. 1 root     tty     4, 17 ene 27 14:38 /dev/tty17
+crw--w----. 1 root     tty     4, 18 ene 27 14:38 /dev/tty18
+crw--w----. 1 root     tty     4, 19 ene 27 14:38 /dev/tty19
+crw--w----. 1 lcarrera tty     4,  2 ene 27 17:39 /dev/tty2
+crw--w----. 1 root     tty     4, 20 ene 27 14:38 /dev/tty20
+crw--w----. 1 root     tty     4, 21 ene 27 14:38 /dev/tty21
+crw--w----. 1 root     tty     4, 22 ene 27 14:38 /dev/tty22
+crw--w----. 1 root     tty     4, 23 ene 27 14:38 /dev/tty23
+crw--w----. 1 root     tty     4, 24 ene 27 14:38 /dev/tty24
+crw--w----. 1 root     tty     4, 25 ene 27 14:38 /dev/tty25
+crw--w----. 1 root     tty     4, 26 ene 27 14:38 /dev/tty26
+crw--w----. 1 root     tty     4, 27 ene 27 14:38 /dev/tty27
+crw--w----. 1 root     tty     4, 28 ene 27 14:38 /dev/tty28
+crw--w----. 1 root     tty     4, 29 ene 27 14:38 /dev/tty29
+crw-------. 1 root     root    4,  3 ene 27 14:38 /dev/tty3
+crw--w----. 1 root     tty     4, 30 ene 27 14:38 /dev/tty30
+crw--w----. 1 root     tty     4, 31 ene 27 14:38 /dev/tty31
+crw--w----. 1 root     tty     4, 32 ene 27 14:38 /dev/tty32
+crw--w----. 1 root     tty     4, 33 ene 27 14:38 /dev/tty33
+crw--w----. 1 root     tty     4, 34 ene 27 14:38 /dev/tty34
+crw--w----. 1 root     tty     4, 35 ene 27 14:38 /dev/tty35
+crw--w----. 1 root     tty     4, 36 ene 27 14:38 /dev/tty36
+crw--w----. 1 root     tty     4, 37 ene 27 14:38 /dev/tty37
+crw--w----. 1 root     tty     4, 38 ene 27 14:38 /dev/tty38
+crw--w----. 1 root     tty     4, 39 ene 27 14:38 /dev/tty39
+crw-------. 1 root     root    4,  4 ene 27 14:38 /dev/tty4
+crw--w----. 1 root     tty     4, 40 ene 27 14:38 /dev/tty40
+crw--w----. 1 root     tty     4, 41 ene 27 14:38 /dev/tty41
+crw--w----. 1 root     tty     4, 42 ene 27 14:38 /dev/tty42
+crw--w----. 1 root     tty     4, 43 ene 27 14:38 /dev/tty43
+crw--w----. 1 root     tty     4, 44 ene 27 14:38 /dev/tty44
+crw--w----. 1 root     tty     4, 45 ene 27 14:38 /dev/tty45
+crw--w----. 1 root     tty     4, 46 ene 27 14:38 /dev/tty46
+crw--w----. 1 root     tty     4, 47 ene 27 14:38 /dev/tty47
+crw--w----. 1 root     tty     4, 48 ene 27 14:38 /dev/tty48
+crw--w----. 1 root     tty     4, 49 ene 27 14:38 /dev/tty49
+crw-------. 1 root     root    4,  5 ene 27 14:38 /dev/tty5
+crw--w----. 1 root     tty     4, 50 ene 27 14:38 /dev/tty50
+crw--w----. 1 root     tty     4, 51 ene 27 14:38 /dev/tty51
+crw--w----. 1 root     tty     4, 52 ene 27 14:38 /dev/tty52
+crw--w----. 1 root     tty     4, 53 ene 27 14:38 /dev/tty53
+crw--w----. 1 root     tty     4, 54 ene 27 14:38 /dev/tty54
+crw--w----. 1 root     tty     4, 55 ene 27 14:38 /dev/tty55
+crw--w----. 1 root     tty     4, 56 ene 27 14:38 /dev/tty56
+crw--w----. 1 root     tty     4, 57 ene 27 14:38 /dev/tty57
+crw--w----. 1 root     tty     4, 58 ene 27 14:38 /dev/tty58
+crw--w----. 1 root     tty     4, 59 ene 27 14:38 /dev/tty59
+crw-------. 1 root     root    4,  6 ene 27 14:38 /dev/tty6
+crw--w----. 1 root     tty     4, 60 ene 27 14:38 /dev/tty60
+crw--w----. 1 root     tty     4, 61 ene 27 14:38 /dev/tty61
+crw--w----. 1 root     tty     4, 62 ene 27 14:38 /dev/tty62
+crw--w----. 1 root     tty     4, 63 ene 27 14:38 /dev/tty63
+crw--w----. 1 root     tty     4,  7 ene 27 14:38 /dev/tty7
+crw--w----. 1 root     tty     4,  8 ene 27 14:38 /dev/tty8
+crw--w----. 1 root     tty     4,  9 ene 27 14:38 /dev/tty9
+crw-rw----. 1 root     dialout 4, 64 ene 27 14:38 /dev/ttyS0
+crw-rw----. 1 root     dialout 4, 65 ene 27 14:38 /dev/ttyS1
+crw-rw----. 1 root     dialout 4, 66 ene 27 14:38 /dev/ttyS2
+crw-rw----. 1 root     dialout 4, 67 ene 27 14:38 /dev/ttyS3
+[user2@luiscarrera ~]$ ls /dev/tty*
+/dev/tty    /dev/tty12  /dev/tty17  /dev/tty21  /dev/tty26  /dev/tty30  /dev/tty35  /dev/tty4   /dev/tty44  /dev/tty49  /dev/tty53  /dev/tty58  /dev/tty62  /dev/ttyS0
+/dev/tty0   /dev/tty13  /dev/tty18  /dev/tty22  /dev/tty27  /dev/tty31  /dev/tty36  /dev/tty40  /dev/tty45  /dev/tty5   /dev/tty54  /dev/tty59  /dev/tty63  /dev/ttyS1
+/dev/tty1   /dev/tty14  /dev/tty19  /dev/tty23  /dev/tty28  /dev/tty32  /dev/tty37  /dev/tty41  /dev/tty46  /dev/tty50  /dev/tty55  /dev/tty6   /dev/tty7   /dev/ttyS2
+/dev/tty10  /dev/tty15  /dev/tty2   /dev/tty24  /dev/tty29  /dev/tty33  /dev/tty38  /dev/tty42  /dev/tty47  /dev/tty51  /dev/tty56  /dev/tty60  /dev/tty8   /dev/ttyS3
+/dev/tty11  /dev/tty16  /dev/tty20  /dev/tty25  /dev/tty3   /dev/tty34  /dev/tty39  /dev/tty43  /dev/tty48  /dev/tty52  /dev/tty57  /dev/tty61  /dev/tty9
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sustitución por archivos, el ls no se entera de  [], *, ?, random.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Substitución de nombres de archivows
+Permite manipular varios archivos codificando sus nombres con expresiones regulares simples.
+
+Para este propósito el shell utiliza estos caracteres:
+
+* cualquier cadena de caracteres
+? un caracter
+[a-z] un caracter del rango
+[^a-z] un caracter excepto los del rango
+[adhjf] un caracter de los especificados
+[^dhjf] un caracter except los especificados
+
+- Redirección de entrada y salida.
+
+Premisa de diseño:
+Todo y absolutamente todo es un archivo.
+
+El sistema operativo considera que los elementos de hardware son archivos y por lo tanto estarán representados como archivos en el directorio dev
+
+Al iniciar un proceso
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
