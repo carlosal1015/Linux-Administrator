@@ -2,5 +2,5 @@ https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 https://www.youtube.com/watch?v=1qGAupjVbUA
 https://www.atlassian.com/git/tutorials/setting-up-a-repository
 https://askubuntu.com/questions/410244/a-command-to-list-all-users-and-how-to-add-delete-modify-users
-
+https://www.realvnc.com/es/
 https://unix.stackexchange.com/questions/62454/help-understanding-cut-command-in-script/62459
