@@ -2395,9 +2395,21 @@ Dirección de salida:
 
 Dirección de entrada:
 
-						comando archivo
-						comando ETIQUETA
+						comando < archivo
+						comando << ETIQUETA
 
+La etiqueta indica el fin de la entrada de datos (EOF)
+
+Dirección entre comandos
+
+	comando1 | comando2 | comando3 | .................. | comandoN
+	La salida del comando1 se toma como entrada para el comando2
+	la salida del comando2 se toma como entrada para el comando3
+	..........
+
+	comando2 `comando1`
+
+	la salida del comando1 se toma como parámetro del comando2
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 [user2@luiscarrera ~]$ cal >> enero
@@ -2526,3 +2538,380 @@ ls: no se puede acceder a febrero: No existe el fichero o el directorio
 Held 13 messages in /var/spool/mail/user2
 [user2@luiscarrera ~]$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[user2@luiscarrera ~]$ ^C
+Tiene correo nuevo en /var/spool/mail/user2
+[user2@luiscarrera ~]$
+Mensaje de user1@luiscarrera.pe el pts/10 a las 19:16 ...
+Este mensaje
+es una prueba
+desde la redirecci\303\263n de
+entrada con etiqueta
+EOF
+
+Mensaje de user3@luiscarrera.pe el pts/6 a las 19:21 ...
+ls: no se puede acceder a -: No existe el fichero o el directorio
+ls: no se puede acceder a l: No existe el fichero o el directorio
+ls: no se puede acceder a febrero: No existe el fichero o el directorio
+EOF
+^C
+Tiene correo nuevo en /var/spool/mail/user2
+[user2@luiscarrera ~]$
+[user2@luiscarrera ~]$ write user2 < /home/user2/enero
+
+Mensaje de user2@luiscarrera.pe el pts/9 a las 19:22 ...
+    enero de 2018
+lu ma mi ju vi s\303\241 do
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+15 16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30 31
+
+EOF
+[user2@luiscarrera ~]$
+Mensaje de user3@luiscarrera.pe el pts/6 a las 19:22 ...
+    enero de 2018
+lu ma mi ju vi s\303\241 do
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+15 16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30 31
+
+EOF
+mail -s enero user3 < /home/user2/enero
+[user2@luiscarrera ~]$ writ
+Mensaje de user3@luiscarrera.pe el pts/6 a las 19:23 ...
+Hola
+esto es una
+prueba
+EOF                                                                                                                                                                                                           a^C
+
+[user2@luiscarrera ~]$ Mensaje de user1@luiscarrera.pe el pts/10 a las 19:23 ...
+    enero de 2018
+lu ma mi ju vi s\303\241 do
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+15 16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30 31
+
+EOF
+mail -s enero user3 < /home/user2/enero
+[user2@luiscarrera ~]$ write user1 << FIN
+> Este mensaje
+> es una prueba
+> entrada con etiqueta
+> FIN
+[user2@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/user2": 15 messages 2 new 5 unread
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 user3@luiscarrera.pe  Sat Jan 27 17:01  19/584   "examen final 2"
+    4 Mail Delivery System  Sat Jan 27 17:07  74/2246  "Undelivered Mail Returned to Sender"
+    5 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    6 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    7 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+    8 Mail Delivery System  Sat Jan 27 17:41  74/2241  "Undelivered Mail Returned to Sender"
+ U  9 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U 10 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U 11 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+   12 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   13 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+>N 14 user3@luiscarrera.pe  Sat Jan 27 18:59  20/754   "enero"
+ N 15 user3@luiscarrera.pe  Sat Jan 27 19:21  20/754   "enero"
+& 14
+Message 14:
+From user3@luiscarrera.pe  Sat Jan 27 18:59:27 2018
+Return-Path: <user3@luiscarrera.pe>
+X-Original-To: user2
+Delivered-To: user2@luiscarrera.pe
+Date: Sat, 27 Jan 2018 18:59:27 -0500
+To: user2@luiscarrera.pe
+Subject: enero
+User-Agent: Heirloom mailx 12.4 7/29/08
+Content-Type: text/plain; charset=us-ascii
+From: user3@luiscarrera.pe
+Status: R
+
+ls: no se puede acceder a -: No existe el fichero o el directorio
+ls: no se puede acceder a l: No existe el fichero o el directorio
+ls: no se puede acceder a febrero: No existe el fichero o el directorio
+
+& q
+Held 15 messages in /var/spool/mail/user2
+[user2@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/user2": 15 messages 4 unread
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 user3@luiscarrera.pe  Sat Jan 27 17:01  19/584   "examen final 2"
+    4 Mail Delivery System  Sat Jan 27 17:07  74/2246  "Undelivered Mail Returned to Sender"
+    5 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    6 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    7 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+    8 Mail Delivery System  Sat Jan 27 17:41  74/2241  "Undelivered Mail Returned to Sender"
+>U  9 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U 10 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U 11 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+   12 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   13 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   14 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+ U 15 user3@luiscarrera.pe  Sat Jan 27 19:21  21/764   "enero"
+& 15
+Message 15:
+From user3@luiscarrera.pe  Sat Jan 27 19:21:15 2018
+Return-Path: <user3@luiscarrera.pe>
+X-Original-To: user2
+Delivered-To: user2@luiscarrera.pe
+Date: Sat, 27 Jan 2018 19:21:15 -0500
+To: user2@luiscarrera.pe
+Subject: enero
+User-Agent: Heirloom mailx 12.4 7/29/08
+Content-Type: text/plain; charset=us-ascii
+From: user3@luiscarrera.pe
+Status: RO
+
+ls: no se puede acceder a -: No existe el fichero o el directorio
+ls: no se puede acceder a l: No existe el fichero o el directorio
+ls: no se puede acceder a febrero: No existe el fichero o el directorio
+
+& q
+Held 15 messages in /var/spool/mail/user2
+[user2@luiscarrera ~]$ cal | write user3
+[user2@luiscarrera ~]$ who | mail -s salida user3
+[user2@luiscarrera ~]$ who | mail -s salida lcarrera user1 user2 user3 user4 user5 user6 user7 user8 user9 user10 user11
+Tiene correo nuevo en /var/spool/mail/user2
+[user2@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/user2": 17 messages 2 new 5 unread
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 user3@luiscarrera.pe  Sat Jan 27 17:01  19/584   "examen final 2"
+    4 Mail Delivery System  Sat Jan 27 17:07  74/2246  "Undelivered Mail Returned to Sender"
+    5 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    6 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    7 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+    8 Mail Delivery System  Sat Jan 27 17:41  74/2241  "Undelivered Mail Returned to Sender"
+ U  9 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U 10 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U 11 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+   12 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   13 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   14 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+   15 user3@luiscarrera.pe  Sat Jan 27 19:21  21/765   "enero"
+>N 16 root                  Sat Jan 27 19:25  35/1545  "salida"
+ N 17 user2@luiscarrera.pe  Sat Jan 27 19:25  36/1569  "salida"
+& 16
+Message 16:
+From root@luiscarrera.pe  Sat Jan 27 19:25:27 2018
+Return-Path: <root@luiscarrera.pe>
+X-Original-To: user2
+Delivered-To: user2@luiscarrera.pe
+Date: Sat, 27 Jan 2018 19:25:27 -0500
+To: user11@luiscarrera.pe, user10@luiscarrera.pe,
+        user9@luiscarrera.pe, user8@luiscarrera.pe, user7@luiscarrera.pe,
+        user6@luiscarrera.pe, user5@luiscarrera.pe, user4@luiscarrera.pe,
+        user3@luiscarrera.pe, user2@luiscarrera.pe, user1@luiscarrera.pe
+Subject: salida
+User-Agent: Heirloom mailx 12.4 7/29/08
+Content-Type: text/plain; charset=us-ascii
+From: root@luiscarrera.pe (root)
+Status: R
+
+lcarrera tty2         2018-01-27 16:39
+root     tty1         2018-01-27 15:06 (:0)
+root     pts/0        2018-01-27 15:07 (:0.0)
+root     pts/1        2018-01-27 15:53 (:0.0)
+user5    pts/2        2018-01-27 19:00 (172.17.3.223)
+user4    pts/3        2018-01-27 18:14 (172.17.3.252)
+user9    pts/4        2018-01-27 16:51 (172.17.2.232)
+user7    pts/5        2018-01-27 16:50 (172.17.2.231)
+user3    pts/6        2018-01-27 18:57 (172.17.3.220)
+user11   pts/7        2018-01-27 18:54 (172.17.2.226)
+user6    pts/8        2018-01-27 16:50 (172.17.0.225)
+user2    pts/9        2018-01-27 18:57 (172.17.2.219)
+user1    pts/10       2018-01-27 19:15 (172.17.2.217)
+user10   pts/11       2018-01-27 19:21 (172.17.2.233)
+user8    pts/13       2018-01-27 18:35 (172.17.0.2)
+
+& q
+New mail has arrived.
+Held 17 messages in /var/spool/mail/user2
+[user2@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/user2": 18 messages 1 new 5 unread
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 user3@luiscarrera.pe  Sat Jan 27 17:01  19/584   "examen final 2"
+    4 Mail Delivery System  Sat Jan 27 17:07  74/2246  "Undelivered Mail Returned to Sender"
+    5 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    6 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    7 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+    8 Mail Delivery System  Sat Jan 27 17:41  74/2241  "Undelivered Mail Returned to Sender"
+ U  9 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U 10 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U 11 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+   12 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   13 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   14 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+   15 user3@luiscarrera.pe  Sat Jan 27 19:21  21/765   "enero"
+   16 root                  Sat Jan 27 19:25  36/1556  "salida"
+ U 17 user2@luiscarrera.pe  Sat Jan 27 19:25  37/1579  "salida"
+>N 18 user3@luiscarrera.pe  Sat Jan 27 19:26  32/1318  "salida"
+& 18
+Message 18:
+From user3@luiscarrera.pe  Sat Jan 27 19:26:06 2018
+Return-Path: <user3@luiscarrera.pe>
+X-Original-To: user2
+Delivered-To: user2@luiscarrera.pe
+Date: Sat, 27 Jan 2018 19:26:06 -0500
+To: user2@luiscarrera.pe
+Subject: salida
+User-Agent: Heirloom mailx 12.4 7/29/08
+Content-Type: text/plain; charset=us-ascii
+From: user3@luiscarrera.pe
+Status: R
+
+lcarrera tty2         2018-01-27 16:39
+root     tty1         2018-01-27 15:06 (:0)
+root     pts/0        2018-01-27 15:07 (:0.0)
+root     pts/1        2018-01-27 15:53 (:0.0)
+user5    pts/2        2018-01-27 19:00 (172.17.3.223)
+user4    pts/3        2018-01-27 18:14 (172.17.3.252)
+user9    pts/4        2018-01-27 16:51 (172.17.2.232)
+user7    pts/5        2018-01-27 16:50 (172.17.2.231)
+user3    pts/6        2018-01-27 18:57 (172.17.3.220)
+user11   pts/7        2018-01-27 18:54 (172.17.2.226)
+user6    pts/8        2018-01-27 16:50 (172.17.0.225)
+user2    pts/9        2018-01-27 18:57 (172.17.2.219)
+user1    pts/10       2018-01-27 19:15 (172.17.2.217)
+user10   pts/11       2018-01-27 19:21 (172.17.2.233)
+user8    pts/13       2018-01-27 18:35 (172.17.0.2)
+
+& q
+Held 18 messages in /var/spool/mail/user2
+[user2@luiscarrera ~]$ which cal
+/usr/bin/cal
+Tiene correo nuevo en /var/spool/mail/user2
+[user2@luiscarrera ~]$ ls -l /usr/bin/cal
+-rwxr-xr-x. 1 root root 21600 feb 22  2013 /usr/bin/cal
+[user2@luiscarrera ~]$ ls -l `which cal`
+-rwxr-xr-x. 1 root root 21600 feb 22  2013 /usr/bin/cal
+Tiene correo nuevo en /var/spool/mail/user2
+[user2@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/user2": 20 messages 2 new 6 unread
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 user3@luiscarrera.pe  Sat Jan 27 17:01  19/584   "examen final 2"
+    4 Mail Delivery System  Sat Jan 27 17:07  74/2246  "Undelivered Mail Returned to Sender"
+    5 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    6 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    7 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+    8 Mail Delivery System  Sat Jan 27 17:41  74/2241  "Undelivered Mail Returned to Sender"
+ U  9 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U 10 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U 11 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+   12 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   13 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   14 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+   15 user3@luiscarrera.pe  Sat Jan 27 19:21  21/765   "enero"
+   16 root                  Sat Jan 27 19:25  36/1556  "salida"
+ U 17 user2@luiscarrera.pe  Sat Jan 27 19:25  37/1579  "salida"
+   18 user3@luiscarrera.pe  Sat Jan 27 19:26  33/1329  "salida"
+>N 19 user5@luiscarrera.pe  Sat Jan 27 19:27  48/1525  "Re: salida"
+ N 20 user3@luiscarrera.pe  Sat Jan 27 19:28  32/1318  "salida"
+& 19
+Message 19:
+From user5@luiscarrera.pe  Sat Jan 27 19:27:11 2018
+Return-Path: <user5@luiscarrera.pe>
+X-Original-To: user2@luiscarrera.pe
+Delivered-To: user2@luiscarrera.pe
+Date: Sat, 27 Jan 2018 19:27:11 -0500
+To: user2@luiscarrera.pe
+Subject: Re: salida
+User-Agent: Heirloom mailx 12.4 7/29/08
+Content-Type: text/plain; charset=us-ascii
+From: user5@luiscarrera.pe
+Status: R
+
+user2@luiscarrera.pe wrote:
+
+> lcarrera tty2         2018-01-27 16:39
+> root     tty1         2018-01-27 15:06 (:0)
+> root     pts/0        2018-01-27 15:07 (:0.0)
+> root     pts/1        2018-01-27 15:53 (:0.0)
+> user5    pts/2        2018-01-27 19:00 (172.17.3.223)
+> user4    pts/3        2018-01-27 18:14 (172.17.3.252)
+> user9    pts/4        2018-01-27 16:51 (172.17.2.232)
+> user7    pts/5        2018-01-27 16:50 (172.17.2.231)
+> user3    pts/6        2018-01-27 18:57 (172.17.3.220)
+> user11   pts/7        2018-01-27 18:54 (172.17.2.226)
+> user6    pts/8        2018-01-27 16:50 (172.17.0.225)
+> user2    pts/9        2018-01-27 18:57 (172.17.2.219)
+> user1    pts/10       2018-01-27 19:15 (172.17.2.217)
+> user10   pts/11       2018-01-27 19:21 (172.17.2.233)
+> user8    pts/13       2018-01-27 18:35 (172.17.0.2)
+
+
+
+
+
+
+
+
+
+
+OK
+SI
+
+& R
+To: user5@luiscarrera.pe
+Subject: Re: salida
+
+user5@luiscarrera.pe wrote:
+
+> user2@luiscarrera.pe wrote:
+>
+> > lcarrera tty2         2018-01-27 16:39
+> > root     tty1         2018-01-27 15:06 (:0)
+> > root     pts/0        2018-01-27 15:07 (:0.0)
+> > root     pts/1        2018-01-27 15:53 (:0.0)
+> > user5    pts/2        2018-01-27 19:00 (172.17.3.223)
+> > user4    pts/3        2018-01-27 18:14 (172.17.3.252)
+> > user9    pts/4        2018-01-27 16:51 (172.17.2.232)
+> > user7    pts/5        2018-01-27 16:50 (172.17.2.231)
+> > user3    pts/6        2018-01-27 18:57 (172.17.3.220)
+> > user11   pts/7        2018-01-27 18:54 (172.17.2.226)
+> > user6    pts/8        2018-01-27 16:50 (172.17.0.225)
+> > user2    pts/9        2018-01-27 18:57 (172.17.2.219)
+> > user1    pts/10       2018-01-27 19:15 (172.17.2.217)
+> > user10   pts/11       2018-01-27 19:21 (172.17.2.233)
+> > user8    pts/13       2018-01-27 18:35 (172.17.0.2)
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+> OK
+> SI
+200
+q
+.
+EOT
+& q
+Held 20 messages in /var/spool/mail/user2
+[user2@luiscarrera ~]$
+[user2@luiscarrera ~]$ grep sh /etc/passwd | cut -c1-5 | wc-l
+-bash: wc-l: no se encontró la orden
+Tiene correo en /var/spool/mail/user2
+[user2@luiscarrera ~]$ grep sh /etc/passwd |cut -c1-5 |wc -l
+20
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
