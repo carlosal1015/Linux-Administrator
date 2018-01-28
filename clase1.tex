@@ -2339,7 +2339,190 @@ Para este propósito el shell utiliza estos caracteres:
 Premisa de diseño:
 Todo y absolutamente todo es un archivo.
 
-El sistema operativo considera que los elementos de hardware son archivos y por lo tanto estarán representados como archivos en el directorio dev
+El sistema operativo considera que los elementos de hardware son archivos y por lo tanto estarán representados como archivos en el directorio dev.
 
-Al iniciar un proceso
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Al lanzar un comando y este obtiene memoria y tiempo de ejecución decimos que hemos creado un proceso.
+
+Al ser creado un proceso, este recibe tres archivos: archivo de entrada de datos (stdin), archivo de salida de datos (stdout) y archivo de salida de error (stderr) identificados por los descriptores de archivo 0, 1 y 2 respectivamente.
+
+	(0)>----------proceso----------->(1)
+   stdin			|	  		    stdout
+					|
+					|
+					|
+				   (2)
+				  stderr
+
+El shell inicialmente enlaza estos tres descriptores al terminal del usuario de manera que si el proceso requiere datos, los toma del terminal, si genera algún resultado, lo guarda en el terminal y si genera algún mensaje de error lo guarda en el terminal.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Los errores se muestran en el terminal
+
+La redirección de entrada y salida es la forma mediante la cual el shell permite que los archivos antes mencionados sean direccionados a otros archivos.
+
+[user2@luiscarrera ~]$ pwd
+/home/user2
+[user2@luiscarrera ~]$ ls
+dead.letter  github
+[user2@luiscarrera ~]$ cal
+    enero de 2018
+lu ma mi ju vi sá do
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+15 16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30 31
+
+[user2@luiscarrera ~]$ ls cal > enero
+ls: no se puede acceder a cal: No existe el fichero o el directorio
+[user2@luiscarrera ~]$ cal > enero
+[user2@luiscarrera ~]$ ls
+dead.letter  enero  github
+[user2@luiscarrera ~]$ cat enero
+    enero de 2018
+lu ma mi ju vi sá do
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+15 16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30 31
+
+[user2@luiscarrera ~]$
+
+
+Dirección de salida:
+
+						comando > asignar
+						comando >> almacenar
+
+Dirección de entrada:
+
+						comando archivo
+						comando ETIQUETA
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[user2@luiscarrera ~]$ cal >> enero
+[user2@luiscarrera ~]$ cat enero
+sáb ene 27 18:44:25 PET 2018
+    enero de 2018
+lu ma mi ju vi sá do
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+15 16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30 31
+
+    enero de 2018
+lu ma mi ju vi sá do
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+15 16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30 31
+
+[user2@luiscarrera ~]$ cal > enero
+[user2@luiscarrera ~]$ cat enero
+    enero de 2018
+lu ma mi ju vi sá do
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+15 16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30 31
+
+[user2@luiscarrera ~]$ ls -l enero
+-rw-rw-r--. 1 user2 user2 137 ene 27 18:49 enero
+[user2@luiscarrera ~]$ ls -l enero febrero
+ls: no se puede acceder a febrero: No existe el fichero o el directorio
+-rw-rw-r--. 1 user2 user2 137 ene 27 18:49 enero
+[user2@luiscarrera ~]$ ls -l enero febrero 2> errores
+-rw-rw-r--. 1 user2 user2 137 ene 27 18:49 enero
+[user2@luiscarrera ~]$ ñs
+-bash: ñs: no se encontró la orden
+[user2@luiscarrera ~]$ ls
+dead.letter  enero  errores  github
+[user2@luiscarrera ~]$ cat errores
+ls: no se puede acceder a febrero: No existe el fichero o el directorio
+[user2@luiscarrera ~]$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+login as: user2
+user2@172.17.2.229's password:
+Last login: Sat Jan 27 16:52:42 2018 from 172.17.2.219
+[user2@luiscarrera ~]$ ls
+dead.letter  enero  errores  github
+[user2@luiscarrera ~]$ write user3 < errores
+[user2@luiscarrera ~]$ write user3 < /home/user2/errores
+Tiene correo nuevo en /var/spool/mail/user2
+[user2@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/user2": 13 messages 2 new 5 unread
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 user3@luiscarrera.pe  Sat Jan 27 17:01  19/584   "examen final 2"
+    4 Mail Delivery System  Sat Jan 27 17:07  74/2246  "Undelivered Mail Retu"
+    5 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Retu"
+    6 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    7 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+    8 Mail Delivery System  Sat Jan 27 17:41  74/2241  "Undelivered Mail Retu"
+ U  9 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Retu"
+ U 10 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U 11 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+>N 12 user9@luiscarrera.pe  Sat Jan 27 17:44  18/568   "quien es?"
+ N 13 user3@luiscarrera.pe  Sat Jan 27 18:57  20/754   "enero"
+& 12
+Message 12:
+From user9@luiscarrera.pe  Sat Jan 27 17:44:40 2018
+Return-Path: <user9@luiscarrera.pe>
+X-Original-To: user2
+Delivered-To: user2@luiscarrera.pe
+Date: Sat, 27 Jan 2018 17:44:40 -0500
+To: user2@luiscarrera.pe
+Subject: quien es?
+User-Agent: Heirloom mailx 12.4 7/29/08
+Content-Type: text/plain; charset=us-ascii
+From: user9@luiscarrera.pe
+Status: R
+
+
+& q
+Held 13 messages in /var/spool/mail/user2
+[user2@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/user2": 13 messages 4 unread
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 user3@luiscarrera.pe  Sat Jan 27 17:01  19/584   "examen final 2"
+    4 Mail Delivery System  Sat Jan 27 17:07  74/2246  "Undelivered Mail Retu"
+    5 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Retu"
+    6 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    7 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+    8 Mail Delivery System  Sat Jan 27 17:41  74/2241  "Undelivered Mail Retu"
+>U  9 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Retu"
+ U 10 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U 11 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+   12 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+ U 13 user3@luiscarrera.pe  Sat Jan 27 18:57  21/764   "enero"
+& 13
+Message 13:
+From user3@luiscarrera.pe  Sat Jan 27 18:57:31 2018
+Return-Path: <user3@luiscarrera.pe>
+X-Original-To: user2
+Delivered-To: user2@luiscarrera.pe
+Date: Sat, 27 Jan 2018 18:57:31 -0500
+To: user2@luiscarrera.pe
+Subject: enero
+User-Agent: Heirloom mailx 12.4 7/29/08
+Content-Type: text/plain; charset=us-ascii
+From: user3@luiscarrera.pe
+Status: RO
+
+ls: no se puede acceder a -: No existe el fichero o el directorio
+ls: no se puede acceder a l: No existe el fichero o el directorio
+ls: no se puede acceder a febrero: No existe el fichero o el directorio
+
+& q
+Held 13 messages in /var/spool/mail/user2
+[user2@luiscarrera ~]$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
