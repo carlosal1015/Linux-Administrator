@@ -1,0 +1,1 @@
+ cat /etc/passwd -n | head -n 20 | tail -n 11

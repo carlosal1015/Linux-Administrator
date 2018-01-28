@@ -1,0 +1,3 @@
+[user2@luiscarrera /]$ who --count
+lcarrera root root root user5 user4 user9 user7 user3 user11 user6 user2 user1 user10 user9 user8
+# users=16
