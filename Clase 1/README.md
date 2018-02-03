@@ -1,6 +1,9 @@
-## LINUX ##
-[![N|Solid](http://apprize.info/linux/pic.jpg)](https://nodesource.com/products/nsolid)
+# LINUX ADMINISTRACIÓN I (ADMINISTRACIÓN BÁSICA) #
 
+<p align="center">
+  <href="https://www.linux.com/">
+  <img src="http://apprize.info/linux/pic.jpg"  width="600"/>
+</p>
 
 Sistema operativo que replica las caracteristicas del sistema operativo UNIX
 Sistema operativo
