@@ -1,11 +1,11 @@
-# LINUX ADMINISTRACIÓN I (ADMINISTRACIÓN BÁSICA) #
+# LINUX ADMINISTRACIÓN I (ADMINISTRACIÓN BÁSICA)
 
 <p align="center">
   <href="https://www.linux.com/">
   <img src="http://apprize.info/linux/pic.jpg"  width="600"/>
 </p>
 
-Descripción del curso:
+## Descripción del curso:
 
 El curso de Linux Adm. le permitirá aprender a manejar el intérprete de comandos bash, con el n
 de dominar los diferentes comandos y así realizar conguraciones avanzadas. comprendiendo
@@ -16,29 +16,31 @@ expresiones regulares.
 
 Es el sistema operativo que replica las caracteristicas del sistema operativo UNIX.
 
-Sistema operativo
+### Sistema operativo
         Programa que se encarga de administrar los recursos de un sistema de computo, tales como: cpu, ram, disco duros etc...
 
-Caracteristicas
-        -Multitarea
-          Capacidad de realizar multiples procesos simultanemamente.
-        -Multiusuario
-          Capacidad de ejecutar los procesos de multiples usuarios
-          simultaneamente
-        -Mutiplataforma
-          Capacidad de ejecutar el sistema operativo en diferentes
-         plataformas de hardware (intel,risc,sparc)
+### Características
+
+- Multitarea
+Capacidad de realizar multiples procesos simultanemamente.
+- Multiusuario
+- Capacidad de ejecutar los procesos de multiples usuarios simultáneamente.
+- Mutiplataforma
+Capacidad de ejecutar el sistema operativo en diferentes plataformas de hardware (intel,risc,sparc).
 
 
-Linux consiste, solamente en el nucleo del sistema operativo, si a este nucleo le añadimos un conjunto de aplicaciones, creamos una distribuciòn tal como redhat, fedora, centos, debian, ubuntu, slackware, mandriva etc...
+Linux consiste, solamente en el núcleo del sistema operativo, si a este nucleo le añadimos un conjunto de aplicaciones, creamos una distribuciòn tal como redhat, fedora, centos, debian, ubuntu, slackware, mandriva etc...
 
-Sistema de computo.
+### Sistema de computo.
+
 Sistema que permite realizar tareas de procesamiento de datos, consisten basicamente en cpU (Unidad central de proceso), RAM (memoria de acceso aleatorio) y disco duro (sistema de archivos).
 EL acceso a un sistema de computo, requiere que se tenga asignado un usuario y una contraseña de acceso.
 EL acceso pueder ser:
-        Local
-          EL usuario se encuentra frente al teclado y monitor conectado directamente al sistema.
-Remoto
+
+1. Local
+EL usuario se encuentra frente al teclado y monitor conectado directamente al sistema.
+2. Remoto
+
 EL usuario accede a travez de un terminal fisico o un emulador de terminal.
 Los terminales fisicos se conecta al puerto de comunicaciones del sistema de computo su extension (cuan separado esta el terminal del sistema de computo) es limitado generalmente una decena de metros y obliga el uso de repetidores.
 Los emuladores de terminal son programas que se ejecutan en cualquier sistema operativo, el unico requisito es que el sistema tenga conigurado el lenguaje de comunicaciòn de red tcp/ip, el emulador se conectara al sistema de computo usando los protocolos telnet (en desuso) o ssh para iniciar una sesion remota, a partir de aqui el comportamiento es igual como si estuviera conectado directamente al sistema de computo.
