@@ -1,4 +1,6 @@
 ## LINUX ##
+[![N|Solid](http://apprize.info/linux/pic.jpg)](https://nodesource.com/products/nsolid)
+
 
 Sistema operativo que replica las caracteristicas del sistema operativo UNIX
 Sistema operativo
