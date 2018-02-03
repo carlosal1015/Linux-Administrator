@@ -17,7 +17,8 @@ expresiones regulares.
 Es el sistema operativo que replica las caracteristicas del sistema operativo UNIX.
 
 ### Sistema operativo
-        Programa que se encarga de administrar los recursos de un sistema de computo, tales como: cpu, ram, disco duros etc...
+
+Programa que se encarga de administrar los recursos de un sistema de computo, tales como: cpu, ram, disco duros etc...
 
 ### Características
 
