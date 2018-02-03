@@ -5,7 +5,17 @@
   <img src="http://apprize.info/linux/pic.jpg"  width="600"/>
 </p>
 
-Sistema operativo que replica las caracteristicas del sistema operativo UNIX
+Descripción del curso:
+
+El curso de Linux Adm. le permitirá aprender a manejar el intérprete de comandos bash, con el n
+de dominar los diferentes comandos y así realizar conguraciones avanzadas. comprendiendo
+los conceptos fundamentales de la administración de sistema de archivos), el uso de ltros y
+expresiones regulares.
+
+## ¿Qué es Linux?
+
+Es el sistema operativo que replica las caracteristicas del sistema operativo UNIX.
+
 Sistema operativo
         Programa que se encarga de administrar los recursos de un sistema de computo, tales como: cpu, ram, disco duros etc...
 
