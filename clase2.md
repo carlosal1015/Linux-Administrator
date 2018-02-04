@@ -2290,3 +2290,755 @@ Si no se indica el mensaje se ejecutará sobre el correo activo (el que tiene el
 
 Si se indica un número, el comando se ejecutará sobre el correo que esté identificando con ese número.
 
+Modo escritura
+
+Inicia con el comando mail y las direcciones de correo a las cuales se quiere enviar un mensaje
+Debe incluirse el subject o tema del correo
+y a continuación se ingresa el contenido del mensaje
+para terminar la escritura del mensaje se debe incluir un punto al inicio de una línea en blanco
+
+Archivo de configuración
+
+El archivo de configuración se encuentra en el directorio hogar del usuario y se llama .mailrc dentro podremos crear nuestras listas de correo:
+
+alias alumnos user1 user2 user3 user4 user5 user6 user7 user8 user9 user10 user11
+
+
+mail alumnos
+Subject: lista
+~r ! who
+~r ! cal
+.
+EOT
+
+
+Repasar el editor de texto, vi a full y modificar archivos de sistema.
+
+lcarrera@uni.edu.pe
+
+Preguntar y mandar pantallazos. Esto se aprende practicando.
+
+
+[user2@luiscarrera ~]$ man mail
+[user2@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/user2": 22 messages 2 new 7 unread
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 user3@luiscarrera.pe  Sat Jan 27 17:01  19/584   "examen final 2"
+    4 Mail Delivery System  Sat Jan 27 17:07  74/2246  "Undelivered Mail Returned to Sender"
+    5 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    6 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    7 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+    8 Mail Delivery System  Sat Jan 27 17:41  74/2241  "Undelivered Mail Returned to Sender"
+ U  9 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U 10 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U 11 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+   12 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   13 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   14 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+   15 user3@luiscarrera.pe  Sat Jan 27 19:21  21/765   "enero"
+   16 root                  Sat Jan 27 19:25  36/1556  "salida"
+ U 17 user2@luiscarrera.pe  Sat Jan 27 19:25  37/1579  "salida"
+   18 user3@luiscarrera.pe  Sat Jan 27 19:26  33/1329  "salida"
+   19 user5@luiscarrera.pe  Sat Jan 27 19:27  49/1536  "Re: salida"
+ U 20 user3@luiscarrera.pe  Sat Jan 27 19:28  33/1328  "salida"
+>N 21 Mail Delivery System  Sat Feb  3 09:39  73/2395  "Undelivered Mail Returned to Sender"
+ N 22 user2@luiscarrera.pe  Sat Feb  3 15:36  22/816   "salida"
+& d
+& h
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 user3@luiscarrera.pe  Sat Jan 27 17:01  19/584   "examen final 2"
+    4 Mail Delivery System  Sat Jan 27 17:07  74/2246  "Undelivered Mail Returned to Sender"
+    5 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    6 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    7 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+    8 Mail Delivery System  Sat Jan 27 17:41  74/2241  "Undelivered Mail Returned to Sender"
+ U  9 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U 10 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U 11 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+   12 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   13 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   14 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+   15 user3@luiscarrera.pe  Sat Jan 27 19:21  21/765   "enero"
+   16 root                  Sat Jan 27 19:25  36/1556  "salida"
+ U 17 user2@luiscarrera.pe  Sat Jan 27 19:25  37/1579  "salida"
+   18 user3@luiscarrera.pe  Sat Jan 27 19:26  33/1329  "salida"
+   19 user5@luiscarrera.pe  Sat Jan 27 19:27  49/1536  "Re: salida"
+ U 20 user3@luiscarrera.pe  Sat Jan 27 19:28  33/1328  "salida"
+>N 22 user2@luiscarrera.pe  Sat Feb  3 15:36  22/816   "salida"
+& d 8
+& h
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 user3@luiscarrera.pe  Sat Jan 27 17:01  19/584   "examen final 2"
+    4 Mail Delivery System  Sat Jan 27 17:07  74/2246  "Undelivered Mail Returned to Sender"
+    5 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    6 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    7 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+>U  9 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U 10 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U 11 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+   12 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   13 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   14 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+   15 user3@luiscarrera.pe  Sat Jan 27 19:21  21/765   "enero"
+   16 root                  Sat Jan 27 19:25  36/1556  "salida"
+ U 17 user2@luiscarrera.pe  Sat Jan 27 19:25  37/1579  "salida"
+   18 user3@luiscarrera.pe  Sat Jan 27 19:26  33/1329  "salida"
+   19 user5@luiscarrera.pe  Sat Jan 27 19:27  49/1536  "Re: salida"
+ U 20 user3@luiscarrera.pe  Sat Jan 27 19:28  33/1328  "salida"
+ N 22 user2@luiscarrera.pe  Sat Feb  3 15:36  22/816   "salida"
+& r 1
+To: user2@luiscarrera.pe user3@luiscarrera.pe
+Subject: Re: examen
+
+user3@luiscarrera.pe wrote:
+
+> el examen es mañana!!!!
+?
+saludos!!
+.
+EOT
+&
+Message  2:
+From user3@luiscarrera.pe  Sat Jan 27 16:59:41 2018
+Return-Path: <user3@luiscarrera.pe>
+X-Original-To: user2
+Delivered-To: user2@luiscarrera.pe
+Date: Sat, 27 Jan 2018 16:59:41 -0500
+To: user2@luiscarrera.pe
+Subject: aaaa
+User-Agent: Heirloom mailx 12.4 7/29/08
+Content-Type: text/plain; charset=us-ascii
+From: user3@luiscarrera.pe
+Status: RO
+
+
+New mail has arrived.
+Loaded 1 new message
+ N 23 user2@luiscarrera.pe  Sat Feb  3 15:38  24/774   "Re: examen"
+& q
+Held 21 messages in /var/spool/mail/user2
+Tiene correo en /var/spool/mail/user2
+[user2@luiscarrera ~]$ vi .mailrc
+Tiene correo nuevo en /var/spool/mail/user2
+[user2@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/user2": 22 messages 1 new 8 unread
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 user3@luiscarrera.pe  Sat Jan 27 17:01  19/584   "examen final 2"
+    4 Mail Delivery System  Sat Jan 27 17:07  74/2246  "Undelivered Mail Returned to Sender"
+    5 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    6 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    7 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+ U  8 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U  9 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U 10 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+   11 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   12 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   13 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+   14 user3@luiscarrera.pe  Sat Jan 27 19:21  21/765   "enero"
+   15 root                  Sat Jan 27 19:25  36/1556  "salida"
+ U 16 user2@luiscarrera.pe  Sat Jan 27 19:25  37/1579  "salida"
+   17 user3@luiscarrera.pe  Sat Jan 27 19:26  33/1329  "salida"
+   18 user5@luiscarrera.pe  Sat Jan 27 19:27  49/1536  "Re: salida"
+ U 19 user3@luiscarrera.pe  Sat Jan 27 19:28  33/1328  "salida"
+ U 20 user2@luiscarrera.pe  Sat Feb  3 15:36  23/826   "salida"
+ U 21 user2@luiscarrera.pe  Sat Feb  3 15:38  25/784   "Re: examen"
+>N 22 lcarrera@luiscarrera  Sat Feb  3 15:40  21/812   "examen"
+& r 22
+To: lcarrera@luiscarrera.pe user10@luiscarrera.pe user11@luiscarrera.pe
+ user1@luiscarrera.pe user2@luiscarrera.pe user3@luiscarrera.pe
+ user4@luiscarrera.pe user5@luiscarrera.pe user6@luiscarrera.pe
+ user7@luiscarrera.pe user8@luiscarrera.pe user9@luiscarrera.pe
+Subject: Re: examen
+
+lcarrera@luiscarrera.pe wrote:
+
+> El examen es la sgte clase
+.
+EOT
+& ^CInterrupt
+New mail has arrived.
+Loaded 1 new message
+ N 23 user2@luiscarrera.pe  Sat Feb  3 15:41  25/994   "Re: examen"
+& q
+Held 23 messages in /var/spool/mail/user2
+Tiene correo en /var/spool/mail/user2
+[user2@luiscarrera ~]$
+[user2@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/user2": 24 messages 1 new 9 unread
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 user3@luiscarrera.pe  Sat Jan 27 17:01  19/584   "examen final 2"
+    4 Mail Delivery System  Sat Jan 27 17:07  74/2246  "Undelivered Mail Returned to Sender"
+    5 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    6 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    7 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+ U  8 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U  9 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U 10 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+   11 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   12 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   13 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+   14 user3@luiscarrera.pe  Sat Jan 27 19:21  21/765   "enero"
+   15 root                  Sat Jan 27 19:25  36/1556  "salida"
+ U 16 user2@luiscarrera.pe  Sat Jan 27 19:25  37/1579  "salida"
+   17 user3@luiscarrera.pe  Sat Jan 27 19:26  33/1329  "salida"
+   18 user5@luiscarrera.pe  Sat Jan 27 19:27  49/1536  "Re: salida"
+ U 19 user3@luiscarrera.pe  Sat Jan 27 19:28  33/1328  "salida"
+ U 20 user2@luiscarrera.pe  Sat Feb  3 15:36  23/826   "salida"
+ U 21 user2@luiscarrera.pe  Sat Feb  3 15:38  25/784   "Re: examen"
+   22 lcarrera@luiscarrera  Sat Feb  3 15:40  22/823   "examen"
+ U 23 user2@luiscarrera.pe  Sat Feb  3 15:41  26/1004  "Re: examen"
+>N 24 lcarrera@luiscarrera  Sat Feb  3 15:41  21/797   "test"
+& r 24
+To: lcarrera@luiscarrera.pe user10@luiscarrera.pe user11@luiscarrera.pe
+ user1@luiscarrera.pe user2@luiscarrera.pe user3@luiscarrera.pe
+ user4@luiscarrera.pe user5@luiscarrera.pe user6@luiscarrera.pe
+ user7@luiscarrera.pe user8@luiscarrera.pe user9@luiscarrera.pe
+Subject: Re: test
+
+lcarrera@luiscarrera.pe wrote:
+
+.
+EOT
+& q
+New mail has arrived.
+Held 24 messages in /var/spool/mail/user2
+[user2@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/user2": 25 messages 1 new 9 unread
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 user3@luiscarrera.pe  Sat Jan 27 17:01  19/584   "examen final 2"
+    4 Mail Delivery System  Sat Jan 27 17:07  74/2246  "Undelivered Mail Returned to Sender"
+    5 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    6 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    7 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+ U  8 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U  9 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U 10 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+   11 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   12 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   13 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+   14 user3@luiscarrera.pe  Sat Jan 27 19:21  21/765   "enero"
+   15 root                  Sat Jan 27 19:25  36/1556  "salida"
+ U 16 user2@luiscarrera.pe  Sat Jan 27 19:25  37/1579  "salida"
+   17 user3@luiscarrera.pe  Sat Jan 27 19:26  33/1329  "salida"
+   18 user5@luiscarrera.pe  Sat Jan 27 19:27  49/1536  "Re: salida"
+ U 19 user3@luiscarrera.pe  Sat Jan 27 19:28  33/1328  "salida"
+ U 20 user2@luiscarrera.pe  Sat Feb  3 15:36  23/826   "salida"
+ U 21 user2@luiscarrera.pe  Sat Feb  3 15:38  25/784   "Re: examen"
+   22 lcarrera@luiscarrera  Sat Feb  3 15:40  22/823   "examen"
+ U 23 user2@luiscarrera.pe  Sat Feb  3 15:41  26/1004  "Re: examen"
+   24 lcarrera@luiscarrera  Sat Feb  3 15:41  22/808   "test"
+>N 25 user2@luiscarrera.pe  Sat Feb  3 15:42  24/963   "Re: test"
+&
+Message 25:
+From user2@luiscarrera.pe  Sat Feb  3 15:42:17 2018
+Return-Path: <user2@luiscarrera.pe>
+X-Original-To: user2@luiscarrera.pe
+Delivered-To: user2@luiscarrera.pe
+Date: Sat, 03 Feb 2018 15:42:17 -0500
+To: user9@luiscarrera.pe, user8@luiscarrera.pe, user7@luiscarrera.pe,
+ user6@luiscarrera.pe, user5@luiscarrera.pe, user4@luiscarrera.pe,
+ user3@luiscarrera.pe, user2@luiscarrera.pe, user1@luiscarrera.pe,
+ user11@luiscarrera.pe, user10@luiscarrera.pe, lcarrera@luiscarrera.pe
+Subject: Re: test
+User-Agent: Heirloom mailx 12.4 7/29/08
+Content-Type: text/plain; charset=us-ascii
+From: user2@luiscarrera.pe
+Status: R
+
+lcarrera@luiscarrera.pe wrote:
+
+
+& q
+Held 25 messages in /var/spool/mail/user2
+[user2@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/user2": 25 messages 8 unread
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 user3@luiscarrera.pe  Sat Jan 27 17:01  19/584   "examen final 2"
+    4 Mail Delivery System  Sat Jan 27 17:07  74/2246  "Undelivered Mail Returned to Sender"
+    5 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    6 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    7 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+>U  8 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U  9 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U 10 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+   11 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   12 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   13 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+   14 user3@luiscarrera.pe  Sat Jan 27 19:21  21/765   "enero"
+   15 root                  Sat Jan 27 19:25  36/1556  "salida"
+ U 16 user2@luiscarrera.pe  Sat Jan 27 19:25  37/1579  "salida"
+   17 user3@luiscarrera.pe  Sat Jan 27 19:26  33/1329  "salida"
+   18 user5@luiscarrera.pe  Sat Jan 27 19:27  49/1536  "Re: salida"
+ U 19 user3@luiscarrera.pe  Sat Jan 27 19:28  33/1328  "salida"
+ U 20 user2@luiscarrera.pe  Sat Feb  3 15:36  23/826   "salida"
+ U 21 user2@luiscarrera.pe  Sat Feb  3 15:38  25/784   "Re: examen"
+   22 lcarrera@luiscarrera  Sat Feb  3 15:40  22/823   "examen"
+ U 23 user2@luiscarrera.pe  Sat Feb  3 15:41  26/1004  "Re: examen"
+   24 lcarrera@luiscarrera  Sat Feb  3 15:41  22/808   "test"
+   25 user2@luiscarrera.pe  Sat Feb  3 15:42  25/974   "Re: test"
+& d 3,4
+Cannot determine parent Message-ID of the current message
+& d 3
+& d 4
+& h
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+>   5 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    6 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    7 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+ U  8 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U  9 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U 10 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+   11 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   12 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   13 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+   14 user3@luiscarrera.pe  Sat Jan 27 19:21  21/765   "enero"
+   15 root                  Sat Jan 27 19:25  36/1556  "salida"
+ U 16 user2@luiscarrera.pe  Sat Jan 27 19:25  37/1579  "salida"
+   17 user3@luiscarrera.pe  Sat Jan 27 19:26  33/1329  "salida"
+   18 user5@luiscarrera.pe  Sat Jan 27 19:27  49/1536  "Re: salida"
+ U 19 user3@luiscarrera.pe  Sat Jan 27 19:28  33/1328  "salida"
+ U 20 user2@luiscarrera.pe  Sat Feb  3 15:36  23/826   "salida"
+ U 21 user2@luiscarrera.pe  Sat Feb  3 15:38  25/784   "Re: examen"
+   22 lcarrera@luiscarrera  Sat Feb  3 15:40  22/823   "examen"
+ U 23 user2@luiscarrera.pe  Sat Feb  3 15:41  26/1004  "Re: examen"
+   24 lcarrera@luiscarrera  Sat Feb  3 15:41  22/808   "test"
+   25 user2@luiscarrera.pe  Sat Feb  3 15:42  25/974   "Re: test"
+& h
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+>   5 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    6 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    7 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+ U  8 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U  9 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U 10 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+   11 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   12 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   13 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+   14 user3@luiscarrera.pe  Sat Jan 27 19:21  21/765   "enero"
+   15 root                  Sat Jan 27 19:25  36/1556  "salida"
+ U 16 user2@luiscarrera.pe  Sat Jan 27 19:25  37/1579  "salida"
+   17 user3@luiscarrera.pe  Sat Jan 27 19:26  33/1329  "salida"
+   18 user5@luiscarrera.pe  Sat Jan 27 19:27  49/1536  "Re: salida"
+ U 19 user3@luiscarrera.pe  Sat Jan 27 19:28  33/1328  "salida"
+ U 20 user2@luiscarrera.pe  Sat Feb  3 15:36  23/826   "salida"
+ U 21 user2@luiscarrera.pe  Sat Feb  3 15:38  25/784   "Re: examen"
+   22 lcarrera@luiscarrera  Sat Feb  3 15:40  22/823   "examen"
+ U 23 user2@luiscarrera.pe  Sat Feb  3 15:41  26/1004  "Re: examen"
+   24 lcarrera@luiscarrera  Sat Feb  3 15:41  22/808   "test"
+   25 user2@luiscarrera.pe  Sat Feb  3 15:42  25/974   "Re: test"
+New mail has arrived.
+Loaded 1 new message
+ N 26 lcarrera@luiscarrera  Sat Feb  3 15:43  38/1990  "test2"
+&
+Message  5:
+From MAILER-DAEMON  Sat Jan 27 17:07:58 2018
+Return-Path: <>
+X-Original-To: user2@luiscarrera.pe
+Delivered-To: user2@luiscarrera.pe
+Date: Sat, 27 Jan 2018 17:07:58 -0500 (PET)
+From: MAILER-DAEMON@luiscarrera.pe (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: user2@luiscarrera.pe
+Auto-Submitted: auto-replied
+Content-Type: multipart/report; report-type=delivery-status;
+        boundary="557351C1F1D.1517090878/luiscarrera.pe"
+Status: RO
+
+Part 1:
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host luiscarrera.pe.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<who@luiscarrera.pe> (expanded from <who>): unknown user: "who"
+
+Part 2:
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+
+Part 3:
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+From user2@luiscarrera.pe Sat Jan 27 17:07:58 2018
+Return-Path: <user2@luiscarrera.pe>
+Date: Sat, 27 Jan 2018 17:07:58 -0500
+To: who@luiscarrera.pe
+User-Agent: Heirloom mailx 12.4 7/29/08
+Content-Type: text/plain; charset=us-ascii
+From: user2@luiscarrera.pe
+
+& q
+Held 24 messages in /var/spool/mail/user2
+Tiene correo en /var/spool/mail/user2
+[user2@luiscarrera ~]$ mail alumnos
+Subject: lista
+~r ! who
+▒! who: No existe el fichero o el directorio
+q
+q
+^C
+(Interrupt -- one more to kill letter)
+^C"/home/user2/dead.letter" 2/4
+[user2@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/user2": 26 messages 2 new 11 unread
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    4 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    5 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+ U  6 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U  7 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U  8 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+    9 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   10 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   11 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+   12 user3@luiscarrera.pe  Sat Jan 27 19:21  21/765   "enero"
+   13 root                  Sat Jan 27 19:25  36/1556  "salida"
+ U 14 user2@luiscarrera.pe  Sat Jan 27 19:25  37/1579  "salida"
+   15 user3@luiscarrera.pe  Sat Jan 27 19:26  33/1329  "salida"
+   16 user5@luiscarrera.pe  Sat Jan 27 19:27  49/1536  "Re: salida"
+ U 17 user3@luiscarrera.pe  Sat Jan 27 19:28  33/1328  "salida"
+ U 18 user2@luiscarrera.pe  Sat Feb  3 15:36  23/826   "salida"
+ U 19 user2@luiscarrera.pe  Sat Feb  3 15:38  25/784   "Re: examen"
+   20 lcarrera@luiscarrera  Sat Feb  3 15:40  22/823   "examen"
+ U 21 user2@luiscarrera.pe  Sat Feb  3 15:41  26/1004  "Re: examen"
+   22 lcarrera@luiscarrera  Sat Feb  3 15:41  22/808   "test"
+   23 user2@luiscarrera.pe  Sat Feb  3 15:42  25/974   "Re: test"
+ U 24 lcarrera@luiscarrera  Sat Feb  3 15:43  39/2000  "test2"
+>N 25 lcarrera@luiscarrera  Sat Feb  3 15:44  43/1706  "lista"
+ N 26 user4@luiscarrera.pe  Sat Feb  3 15:44  44/2209  "Re: test2"
+& r 25
+To: lcarrera@luiscarrera.pe user10@luiscarrera.pe user11@luiscarrera.pe
+ user1@luiscarrera.pe user2@luiscarrera.pe user3@luiscarrera.pe
+ user4@luiscarrera.pe user5@luiscarrera.pe user6@luiscarrera.pe
+ user7@luiscarrera.pe user8@luiscarrera.pe user9@luiscarrera.pe
+Subject: Re: lista
+
+lcarrera@luiscarrera.pe wrote:
+
+> root     tty1         2018-02-03 09:41 (:0)
+> root     pts/0        2018-02-03 09:41 (:0.0)
+> root     pts/1        2018-02-03 09:49 (:0.0)
+> user4    pts/3        2018-02-03 10:04 (172.17.3.252)
+> user2    pts/4        2018-02-03 10:14 (172.17.2.219)
+> user8    pts/5        2018-02-03 15:38 (172.17.2.227)
+> user11   pts/6        2018-02-03 13:49 (172.17.2.216)
+> user3    pts/7        2018-02-03 10:29 (172.17.3.220)
+> user7    pts/8        2018-02-03 15:27 (172.17.2.231)
+> user8    pts/9        2018-02-03 10:57 (172.17.2.227)
+> user2    pts/10       2018-02-03 13:51 (172.17.2.219)
+> user9    pts/11       2018-02-03 11:02 (172.17.2.226)
+> user11   pts/12       2018-02-03 15:37 (172.17.2.216)
+> user10   pts/13       2018-02-03 12:43 (172.17.2.233)
+> user1    pts/2        2018-02-03 15:15 (172.17.2.217)
+>    febrero de 2018
+> lu ma mi ju vi sá do
+>           1  2  3  4
+>  5  6  7  8  9 10 11
+> 12 13 14 15 16 17 18
+> 19 20 21 22 23 24 25
+> 26 27 28
+>
+h
+q
+^C
+(Interrupt -- one more to kill letter)
+^C"/home/user2/dead.letter" 27/1002
+& q
+Held 26 messages in /var/spool/mail/user2
+Tiene correo en /var/spool/mail/user2
+[user2@luiscarrera ~]$
+[user2@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/user2": 26 messages 10 unread
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    4 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    5 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+>U  6 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U  7 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U  8 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+    9 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   10 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   11 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+   12 user3@luiscarrera.pe  Sat Jan 27 19:21  21/765   "enero"
+   13 root                  Sat Jan 27 19:25  36/1556  "salida"
+ U 14 user2@luiscarrera.pe  Sat Jan 27 19:25  37/1579  "salida"
+   15 user3@luiscarrera.pe  Sat Jan 27 19:26  33/1329  "salida"
+   16 user5@luiscarrera.pe  Sat Jan 27 19:27  49/1536  "Re: salida"
+ U 17 user3@luiscarrera.pe  Sat Jan 27 19:28  33/1328  "salida"
+ U 18 user2@luiscarrera.pe  Sat Feb  3 15:36  23/826   "salida"
+ U 19 user2@luiscarrera.pe  Sat Feb  3 15:38  25/784   "Re: examen"
+   20 lcarrera@luiscarrera  Sat Feb  3 15:40  22/823   "examen"
+ U 21 user2@luiscarrera.pe  Sat Feb  3 15:41  26/1004  "Re: examen"
+   22 lcarrera@luiscarrera  Sat Feb  3 15:41  22/808   "test"
+   23 user2@luiscarrera.pe  Sat Feb  3 15:42  25/974   "Re: test"
+ U 24 lcarrera@luiscarrera  Sat Feb  3 15:43  39/2000  "test2"
+   25 lcarrera@luiscarrera  Sat Feb  3 15:44  44/1717  "lista"
+ U 26 user4@luiscarrera.pe  Sat Feb  3 15:44  45/2219  "Re: test2"
+& r 26
+To: lcarrera@luiscarrera.pe user10@luiscarrera.pe user11@luiscarrera.pe
+ user1@luiscarrera.pe user2@luiscarrera.pe user3@luiscarrera.pe
+ user4@luiscarrera.pe user5@luiscarrera.pe user6@luiscarrera.pe
+ user7@luiscarrera.pe user8@luiscarrera.pe user9@luiscarrera.pe
+Subject: Re: test2
+
+user4@luiscarrera.pe wrote:
+
+> lcarrera@luiscarrera.pe wrote:
+>
+> >  15:43:05 up  6:04, 15 users,  load average: 0,19, 0,18, 0,22
+> > USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT
+> > root     tty1     :0               09:41    6:04m  4:25   4:25  /usr/bin/Xorg :
+> > root     pts/0    :0.0             09:41    3:35m  0.02s  0.02s bash
+> > root     pts/1    :0.0             09:49    0.00s  0.19s  0.00s mail alumnos
+> > user4    pts/3    172.17.3.252     10:04    2:08   0.96s  0.00s mail
+> > user2    pts/4    172.17.2.219     10:14    1:56m  0.59s  0.59s -bash
+> > user8    pts/5    172.17.2.227     15:38    5.00s  0.03s  0.03s -bash
+> > user11   pts/6    172.17.2.216     13:49   25:51   0.64s  0.29s -bash
+> > user3    pts/7    172.17.3.220     10:29   28:56   0.91s  0.91s -bash
+> > user7    pts/8    172.17.2.231     15:27   10.00s  0.04s  0.00s mail
+> > user8    pts/9    172.17.2.227     10:57   35:13   0.31s  0.02s vim messages
+> > user2    pts/10   172.17.2.219     13:51    6.00s  0.67s  0.00s mail
+> > user9    pts/11   172.17.2.226     11:02    3.00s  1.69s  0.03s vim .mailrc
+> > user11   pts/12   172.17.2.216     15:37   15.00s  0.08s  0.00s mail
+> > user10   pts/13   172.17.2.233     12:43   45.00s  0.92s  0.00s mail
+> > user1    pts/2    172.17.2.217     15:15    1:03   0.03s  0.00s mail
+> > q
+>
+> q
+mail
+^C
+(Interrupt -- one more to kill letter)
+^C"/home/user2/dead.letter" 25/1353
+& q
+Held 26 messages in /var/spool/mail/user2
+[user2@luiscarrera ~]$
+[user2@luiscarrera ~]$ mail alumnos
+Subject: Lista
+~r ! who
+~e ! cal
+838
+.
+user9    pts/2        2018-02-03 15:44 (172.17.2.226)
+.
+user9    pts/2        2018-02-03 15:44 (172.17.2.226)
+q
+(continue)
+q
+.
+EOT
+Tiene correo en /var/spool/mail/user2
+[user2@luiscarrera ~]$ h
+-bash: h: no se encontró la orden
+[user2@luiscarrera ~]$ maiñ
+-bash: maiñ: no se encontró la orden
+[user2@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/user2": 26 messages 9 unread
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    4 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    5 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+>U  6 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U  7 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U  8 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+    9 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   10 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   11 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+   12 user3@luiscarrera.pe  Sat Jan 27 19:21  21/765   "enero"
+   13 root                  Sat Jan 27 19:25  36/1556  "salida"
+ U 14 user2@luiscarrera.pe  Sat Jan 27 19:25  37/1579  "salida"
+   15 user3@luiscarrera.pe  Sat Jan 27 19:26  33/1329  "salida"
+   16 user5@luiscarrera.pe  Sat Jan 27 19:27  49/1536  "Re: salida"
+ U 17 user3@luiscarrera.pe  Sat Jan 27 19:28  33/1328  "salida"
+ U 18 user2@luiscarrera.pe  Sat Feb  3 15:36  23/826   "salida"
+ U 19 user2@luiscarrera.pe  Sat Feb  3 15:38  25/784   "Re: examen"
+   20 lcarrera@luiscarrera  Sat Feb  3 15:40  22/823   "examen"
+ U 21 user2@luiscarrera.pe  Sat Feb  3 15:41  26/1004  "Re: examen"
+   22 lcarrera@luiscarrera  Sat Feb  3 15:41  22/808   "test"
+   23 user2@luiscarrera.pe  Sat Feb  3 15:42  25/974   "Re: test"
+ U 24 lcarrera@luiscarrera  Sat Feb  3 15:43  39/2000  "test2"
+   25 lcarrera@luiscarrera  Sat Feb  3 15:44  44/1717  "lista"
+   26 user4@luiscarrera.pe  Sat Feb  3 15:44  45/2220  "Re: test2"
+& r 25
+To: lcarrera@luiscarrera.pe user10@luiscarrera.pe user11@luiscarrera.pe
+ user1@luiscarrera.pe user2@luiscarrera.pe user3@luiscarrera.pe
+ user4@luiscarrera.pe user5@luiscarrera.pe user6@luiscarrera.pe
+ user7@luiscarrera.pe user8@luiscarrera.pe user9@luiscarrera.pe
+Subject: Re: lista
+
+lcarrera@luiscarrera.pe wrote:
+
+> root     tty1         2018-02-03 09:41 (:0)
+> root     pts/0        2018-02-03 09:41 (:0.0)
+> root     pts/1        2018-02-03 09:49 (:0.0)
+> user4    pts/3        2018-02-03 10:04 (172.17.3.252)
+> user2    pts/4        2018-02-03 10:14 (172.17.2.219)
+> user8    pts/5        2018-02-03 15:38 (172.17.2.227)
+> user11   pts/6        2018-02-03 13:49 (172.17.2.216)
+> user3    pts/7        2018-02-03 10:29 (172.17.3.220)
+> user7    pts/8        2018-02-03 15:27 (172.17.2.231)
+> user8    pts/9        2018-02-03 10:57 (172.17.2.227)
+> user2    pts/10       2018-02-03 13:51 (172.17.2.219)
+> user9    pts/11       2018-02-03 11:02 (172.17.2.226)
+> user11   pts/12       2018-02-03 15:37 (172.17.2.216)
+> user10   pts/13       2018-02-03 12:43 (172.17.2.233)
+> user1    pts/2        2018-02-03 15:15 (172.17.2.217)
+>    febrero de 2018
+> lu ma mi ju vi sá do
+>           1  2  3  4
+>  5  6  7  8  9 10 11
+> 12 13 14 15 16 17 18
+> 19 20 21 22 23 24 25
+> 26 27 28
+>
+q
+
+
+
+
+
+
+
+q
+.
+EOT
+& q
+New mail has arrived.
+Held 26 messages in /var/spool/mail/user2
+[user2@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/user2": 27 messages 1 new 10 unread
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    4 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    5 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+ U  6 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U  7 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U  8 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+    9 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   10 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   11 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+   12 user3@luiscarrera.pe  Sat Jan 27 19:21  21/765   "enero"
+   13 root                  Sat Jan 27 19:25  36/1556  "salida"
+ U 14 user2@luiscarrera.pe  Sat Jan 27 19:25  37/1579  "salida"
+   15 user3@luiscarrera.pe  Sat Jan 27 19:26  33/1329  "salida"
+   16 user5@luiscarrera.pe  Sat Jan 27 19:27  49/1536  "Re: salida"
+ U 17 user3@luiscarrera.pe  Sat Jan 27 19:28  33/1328  "salida"
+ U 18 user2@luiscarrera.pe  Sat Feb  3 15:36  23/826   "salida"
+ U 19 user2@luiscarrera.pe  Sat Feb  3 15:38  25/784   "Re: examen"
+   20 lcarrera@luiscarrera  Sat Feb  3 15:40  22/823   "examen"
+ U 21 user2@luiscarrera.pe  Sat Feb  3 15:41  26/1004  "Re: examen"
+   22 lcarrera@luiscarrera  Sat Feb  3 15:41  22/808   "test"
+   23 user2@luiscarrera.pe  Sat Feb  3 15:42  25/974   "Re: test"
+ U 24 lcarrera@luiscarrera  Sat Feb  3 15:43  39/2000  "test2"
+   25 lcarrera@luiscarrera  Sat Feb  3 15:44  44/1717  "lista"
+   26 user4@luiscarrera.pe  Sat Feb  3 15:44  45/2220  "Re: test2"
+>N 27 user2@luiscarrera.pe  Sat Feb  3 15:47  56/1942  "Re: lista"
+& r 27
+To: lcarrera@luiscarrera.pe user10@luiscarrera.pe user11@luiscarrera.pe
+ user1@luiscarrera.pe user2@luiscarrera.pe user3@luiscarrera.pe
+ user4@luiscarrera.pe user5@luiscarrera.pe user6@luiscarrera.pe
+ user7@luiscarrera.pe user8@luiscarrera.pe user9@luiscarrera.pe
+Subject: Re: lista
+
+user2@luiscarrera.pe wrote:
+
+> lcarrera@luiscarrera.pe wrote:
+>
+> > root     tty1         2018-02-03 09:41 (:0)
+> > root     pts/0        2018-02-03 09:41 (:0.0)
+> > root     pts/1        2018-02-03 09:49 (:0.0)
+> > user4    pts/3        2018-02-03 10:04 (172.17.3.252)
+> > user2    pts/4        2018-02-03 10:14 (172.17.2.219)
+> > user8    pts/5        2018-02-03 15:38 (172.17.2.227)
+> > user11   pts/6        2018-02-03 13:49 (172.17.2.216)
+> > user3    pts/7        2018-02-03 10:29 (172.17.3.220)
+> > user7    pts/8        2018-02-03 15:27 (172.17.2.231)
+> > user8    pts/9        2018-02-03 10:57 (172.17.2.227)
+> > user2    pts/10       2018-02-03 13:51 (172.17.2.219)
+> > user9    pts/11       2018-02-03 11:02 (172.17.2.226)
+> > user11   pts/12       2018-02-03 15:37 (172.17.2.216)
+> > user10   pts/13       2018-02-03 12:43 (172.17.2.233)
+> > user1    pts/2        2018-02-03 15:15 (172.17.2.217)
+> >    febrero de 2018
+> > lu ma mi ju vi sá do
+> >           1  2  3  4
+> >  5  6  7  8  9 10 11
+> > 12 13 14 15 16 17 18
+> > 19 20 21 22 23 24 25
+> > 26 27 28
+> >
+> q
+>
+>
+>
+>
+>
+>
+>
+> q
+.
+EOT
+& h
+    1 user3@luiscarrera.pe  Sat Jan 27 16:59  19/588   "examen"
+    2 user3@luiscarrera.pe  Sat Jan 27 16:59  19/574   "aaaa"
+    3 Mail Delivery System  Sat Jan 27 17:07  72/2254  "Undelivered Mail Returned to Sender"
+    4 lcarrera@luiscarrera  Sat Jan 27 17:36  25/796   "Re: Las fijas"
+    5 user3@luiscarrera.pe  Sat Jan 27 17:40  29/847   "Re: aaaa"
+ U  6 Mail Delivery System  Sat Jan 27 17:41  75/2242  "Undelivered Mail Returned to Sender"
+ U  7 user1@luiscarrera.pe  Sat Jan 27 17:42  24/760   "Re: examen"
+ U  8 user3@luiscarrera.pe  Sat Jan 27 17:43  28/846   "Re: aaaa"
+    9 user9@luiscarrera.pe  Sat Jan 27 17:44  19/579   "quien es?"
+   10 user3@luiscarrera.pe  Sat Jan 27 18:57  21/765   "enero"
+   11 user3@luiscarrera.pe  Sat Jan 27 18:59  21/765   "enero"
+   12 user3@luiscarrera.pe  Sat Jan 27 19:21  21/765   "enero"
+   13 root                  Sat Jan 27 19:25  36/1556  "salida"
+ U 14 user2@luiscarrera.pe  Sat Jan 27 19:25  37/1579  "salida"
+   15 user3@luiscarrera.pe  Sat Jan 27 19:26  33/1329  "salida"
+   16 user5@luiscarrera.pe  Sat Jan 27 19:27  49/1536  "Re: salida"
+ U 17 user3@luiscarrera.pe  Sat Jan 27 19:28  33/1328  "salida"
+ U 18 user2@luiscarrera.pe  Sat Feb  3 15:36  23/826   "salida"
+ U 19 user2@luiscarrera.pe  Sat Feb  3 15:38  25/784   "Re: examen"
+   20 lcarrera@luiscarrera  Sat Feb  3 15:40  22/823   "examen"
+ U 21 user2@luiscarrera.pe  Sat Feb  3 15:41  26/1004  "Re: examen"
+   22 lcarrera@luiscarrera  Sat Feb  3 15:41  22/808   "test"
+   23 user2@luiscarrera.pe  Sat Feb  3 15:42  25/974   "Re: test"
+ U 24 lcarrera@luiscarrera  Sat Feb  3 15:43  39/2000  "test2"
+   25 lcarrera@luiscarrera  Sat Feb  3 15:44  44/1717  "lista"
+   26 user4@luiscarrera.pe  Sat Feb  3 15:44  45/2220  "Re: test2"
+>  27 user2@luiscarrera.pe  Sat Feb  3 15:47  56/1942  "Re: lista"
+New mail has arrived.
+Loaded 1 new message
+ N 28 user2@luiscarrera.pe  Sat Feb
