@@ -1,0 +1,6 @@
+who | cut -c1-8, 33-39 ingreso.txt
+cut -d: -f1,6 /etc/passwd > usuarui_directiri,txt
+
+head -20 /etc/passwd | tail -11 /etc/passwd
+
+who |wc -l >conectados.txt

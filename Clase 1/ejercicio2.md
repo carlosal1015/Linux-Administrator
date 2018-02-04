@@ -1,0 +1,60 @@
+EJERCICIOS
+
+1.- Crear ls sgte estructura de directorios:
+
+    academia
+        cursos
+              linux
+                   clase1
+                   clase2
+                   clase3
+                   clase4
+              php
+                   clase1
+                   clase2
+                   clase3
+                   clase4
+              mysql
+                   clase1
+                   clase2
+                   clase3
+                   clase4
+              html
+                   clase1
+                   clase2
+                   clase3
+                   clase4
+              css
+                   clase1
+                   clase2
+                   clase3
+                   clase4
+              javascript
+                   clase1
+                   clase2
+                   clase3
+                   clase4
+2.- Agregar a cada clase el directorio ejercicios
+3.- Agregar a cada curso el directorio examen
+4.- asignar la sgte cadena de permisos a todos los directorios de clase: 700
+
+for i in {1..4}; do
+  mkdir clase"$i"
+done
+
+mkdir -p academia/cursos/
+no mezclar mayúscula con minúscula
+cd academia/cursos
+mkdir -p 
+ps
+mkdir -p {linux,php,mysql,html,css,javascript}/{clase1,clase2,clase3,clase4,examen}/{ejercicio}
+tree
+rm -rf academia/cursos/
+cd academia/
+ls
+mkdir cursos
+mkdir -p {linux,php,mysql,html,css,javascript}/{clase1,clase2,clase3,clase4,examen}/ejercicio
+umask 0077
+expresa los permisos que no se deben asignar
+
+todo para el dueño, ninguno para el grupo y ninguno para el otro.
