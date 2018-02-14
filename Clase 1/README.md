@@ -1,4 +1,4 @@
-# LINUX ADMINISTRACIÓN I (ADMINISTRACIÓN BÁSICA)
+# Linux administración I (Administración Básica)
 
 <p align="center">
   <href="https://www.linux.com/">
@@ -7,114 +7,109 @@
 
 ## Descripción del curso:
 
-El curso de Linux Adm. le permitirá aprender a manejar el intérprete de comandos bash, con el n
-de dominar los diferentes comandos y así realizar conguraciones avanzadas. comprendiendo
-los conceptos fundamentales de la administración de sistema de archivos), el uso de ltros y
-expresiones regulares.
+El curso de Administrador en Linux le permitirá aprender a manejar el intérprete de comandos bash, con el n de dominar los diferentes comandos y así realizar conguraciones avanzadas. comprendiendo los conceptos fundamentales de la administración de sistema de archivos), el uso de ltros y expresiones regulares.
 
 ## ¿Qué es Linux?
 
-Es el sistema operativo que replica las caracteristicas del sistema operativo UNIX.
+Es el sistema operativo que replica las características del sistema operativo UNIX.
 
 ### Sistema operativo
 
-Programa que se encarga de administrar los recursos de un sistema de computo, tales como: cpu, ram, disco duros etc...
+Programa que se encarga de administrar los recursos de un sistema de computo, tales como: CPU, RAM, disco duros, etc.
 
 ### Características
 
-- Multitarea
-Capacidad de realizar multiples procesos simultanemamente.
-- Multiusuario
-- Capacidad de ejecutar los procesos de multiples usuarios simultáneamente.
-- Mutiplataforma
-Capacidad de ejecutar el sistema operativo en diferentes plataformas de hardware (intel,risc,sparc).
+- Multitarea: Capacidad de realizar multiples procesos simultanemamente.
+- Multiusuario: Capacidad de ejecutar los procesos de multiples usuarios simultáneamente.
+- Mutiplataforma: Capacidad de ejecutar el sistema operativo en diferentes plataformas de hardware (Intel,risc,sparc).
 
+Linux consiste, solamente en el núcleo del sistema operativo, si a este núcleo le añadimos un conjunto de aplicaciones, creamos una distribución tal como RedHat, Fedora, CentOS, Debian, Ubuntu, Slackware, Mandriva, etc ...
 
-Linux consiste, solamente en el núcleo del sistema operativo, si a este nucleo le añadimos un conjunto de aplicaciones, creamos una distribuciòn tal como redhat, fedora, centos, debian, ubuntu, slackware, mandriva etc...
+### Sistema de cómputo
 
-### Sistema de computo.
-
-Sistema que permite realizar tareas de procesamiento de datos, consisten basicamente en cpU (Unidad central de proceso), RAM (memoria de acceso aleatorio) y disco duro (sistema de archivos).
-EL acceso a un sistema de computo, requiere que se tenga asignado un usuario y una contraseña de acceso.
+Sistema que permite realizar tareas de procesamiento de datos, consisten básicamente en CPU (Unidad central de proceso), RAM (memoria de acceso aleatorio) y disco duro (sistema de archivos).
+EL acceso a un sistema de cómputo, requiere que se tenga asignado un usuario y una contraseña de acceso.
 EL acceso pueder ser:
 
-1. Local
-EL usuario se encuentra frente al teclado y monitor conectado directamente al sistema.
-2. Remoto
+1. Local: EL usuario se encuentra frente al teclado y monitor conectado directamente al sistema.
+2. Remoto: EL usuario accede a travez de un terminal fisico o un emulador de terminal.
 
-EL usuario accede a travez de un terminal fisico o un emulador de terminal.
-Los terminales fisicos se conecta al puerto de comunicaciones del sistema de computo su extension (cuan separado esta el terminal del sistema de computo) es limitado generalmente una decena de metros y obliga el uso de repetidores.
-Los emuladores de terminal son programas que se ejecutan en cualquier sistema operativo, el unico requisito es que el sistema tenga conigurado el lenguaje de comunicaciòn de red tcp/ip, el emulador se conectara al sistema de computo usando los protocolos telnet (en desuso) o ssh para iniciar una sesion remota, a partir de aqui el comportamiento es igual como si estuviera conectado directamente al sistema de computo.
+Los terminales fisicos se conecta al puerto de comunicaciones del sistema de cómputo su extensión (cuán separado está el terminal del sistema de cómputo) es limitado generalmente una decena de metros y obliga el uso de repetidores.
+
+Los emuladores de terminal son programas que se ejecutan en cualquier sistema operativo, el único requisito es que el sistema tenga conigurado el lenguaje de comunicación de red tcp/ip, el emulador se conectará al sistema de cómputo usando los protocolos telnet (en desuso) o ssh para iniciar una sesión remota, a partir de aqui el comportamiento es igual como si estuviera conectado directamente al sistema de cómputo.
 
 tcp/ip
-Servicio  Puerto de acceso
-http            80
-https           443
-ssh             22
-telnet          23
 
-/etc/services
+|Servicio   |Puerto de acceso|
+|:---------:|:--------------:|
+|http       |              80|
+|https      |             443|
+|ssh        |              22|
+|telnet     |              23|
+
+`/etc/services`
 
 
 Acceso al servidor
 
 IP : 172.17.2.229
+
 usuario : userx
+
 clave : userx
 
 
-Comandos bàsicos
-id
-  Identificacion del usuario
-date
-  Fecha y hora del sistema
-cal
-  calendario del mes en curso
-who
-  Muestra la lista de usuarios
-w
-  Muestra la lista de usuarios
-cat
-  Muestra el contenido del archivo
-head
-  Muestra las 10 primeras lineas del archivo
-tail
-  Muestra las 10 ultimas lineas del archivo
-grep
-  Extrae lineas de un archivo que contengan una cadena especifica o expresio regular
-cut
-  Extrae columnas de un archivo o campos de un archivo de texto delimitado,el delimitador se indica con la opcion d
-wc (word count)
-  Cuenta el numero de linea, palabras, caracteres de un archivo de texto
-write
-   Envia un mensaje al terminal del usuario
-talk
-   Inicia un chat entre dos usuarios activos
+### Comandos básicos
 
-   Procedemiento:
-   1.- El usuario A inicia una conversacion con el usuario B
+id: Identificación del usuario.
+
+date: Fecha y hora del sistema.
+
+cal: Calendario del mes en curso.
+
+who: Muestra la lista de usuarios.
+
+w:  Muestra la lista de usuarios.
+
+cat: Muestra el contenido del archivo.
+
+head: Muestra las 10 primeras líneas del archivo.
+
+tail: Muestra las 10 últimas líneas del archivo.
+
+grep: Extrae líneas de un archivo que contengan una cadena específica o expresión regular.
+
+cut: Extrae columnas de un archivo o campos de un archivo de texto delimitado,el delimitador se indica con la opción `d`.
+
+wc (word count): Cuenta el número de línea, palabras, caracteres de un archivo de texto.
+
+write: Envia un mensaje al terminal del usuario.
+
+talk: Inicia un chat entre dos usuarios activos.
+
+#### Procedemiento:
+1. El usuario A inicia una conversación con el usuario B.
 
        talk B
 
-    2.-El usuario B recibe una invitacion para el chat, entonces debe responder con:
+2. El usuario B recibe una invitación para el chat, entonces debe responder con:
 
         talk A
 
-    3.- Se inicia la conversaciòn-
+3. Se inicia la conversación.
 
-mail
-  Envia mensajes entre usuarios del sistema que no esten en linea. los mensajes son almacenados en el mailbox del usuario, los cuales podran ser leidos con el mismo comando mail.
+mail: Envía mensajes entre usuarios del sistema que no esten en línea. Los mensajes son almacenados en el mailbox del usuario, los cuales podrán ser leídos con el mismo comando `mail`.
 
         mail nombreUsuario
         subject: mensaje
         mensaje de prueba
         .
 
-Para terminar la edicion del mensaje y enviarlo, debemos incluir un punto al inicio de una linea en blanco.
+Para terminar la edición del mensaje y enviarlo, debemos incluir un punto al inicio de una linea en blanco.
 
 Para lee el correo se utiliza el comando mail:
 
-
+```sh
 [lcarrera@luiscarrera ~]$ mail
 Heirloom Mail version 12.4 7/29/08.  Type ? for help.
 "/var/spool/mail/lcarrera": 3 messages
@@ -122,26 +117,27 @@ Heirloom Mail version 12.4 7/29/08.  Type ? for help.
     2 user2@luiscarrera.pe  Sat Jan 27 17:03  19/599   "Las fijas"
     3 user3@luiscarrera.pe  Sat Jan 27 17:04  19/590   "linux"
 &
+```
 
-El simbolo > indica el correo "activo"
-Los comandos se escriben luego del simbolo &.
-Si se presiona la tencla enter se ve el contenenido del mensaje activo
-Si se presiona un numero, se vera el contenido del mensaje identificado con ese numero.
+El simbolo `>` indica el correo "activo".
+Los comandos se escriben luego del simbolo `&`.
+Si se presiona la tecla enter se ve el contenenido del mensaje activo.
+Si se presiona un número, se verá el contenido del mensaje identificado con ese número.
 Para responder se utiliza la tecka R y el numero del mensaje
 
-
-Archivo /etc/passwd
+Archivo `/etc/passwd`
 Este archivo contiene la informacion de los usuarios que pueden acceder al sistema, es un archivo de texto delimitado, donde el delimitador es el caracter :
 
 Formato
 
-      dovenull:x:495:491:Dovecot's unauthorized user:/usr/libexec/dovecot:/sbin/nologin
-         |     |  |   |                 |                      |                |
-         |     | uid gid                |                      |                |
-         |     |                        |            Directorio Hogar   Programa de inicio
-         |   clave        Comentario o campo GECOS
-         |
-nombre del usuario
+          dovenull:x:495:491:Dovecot's unauthorized user:/usr/libexec/dovecot:/sbin/nologin
+             |     |  |   |                 |                      |                |
+             |     | uid gid                |                      |                |
+             |     |                        |            Directorio Hogar   Programa de inicio
+             |   clave        Comentario o campo GECOS
+             |
+    nombre del usuario
+
 
 SHELL
 Programa que permite la interacciòn del usuario con el sistema operativo para ejecutar las tareas de: ejecutar comandos.
