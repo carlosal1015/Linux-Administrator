@@ -1,0 +1,1875 @@
+Feb  3 10:33:03 luiscarrera rsyslogd: [origin software="rsyslogd" swVersion="5.8.10" x-pid="1998" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Feb  3 10:54:28 luiscarrera yum[3490]: Updated: libgcc-4.4.7-18.el6.x86_64
+Feb  3 10:54:29 luiscarrera yum[3490]: Updated: xorg-x11-proto-devel-7.7-14.el6.noarch
+Feb  3 10:54:30 luiscarrera yum[3490]: Updated: setup-2.8.14-23.el6.noarch
+Feb  3 10:54:30 luiscarrera yum[3490]: Updated: jakarta-commons-collections-3.2.1-3.5.el6_7.noarch
+Feb  3 10:54:31 luiscarrera yum[3490]: Updated: dejavu-fonts-common-2.33-1.el6.noarch
+Feb  3 10:54:33 luiscarrera yum[3490]: Updated: kernel-headers-2.6.32-696.20.1.el6.x86_64
+Feb  3 10:54:34 luiscarrera yum[3490]: Updated: xkeyboard-config-2.16-1.el6.noarch
+Feb  3 10:54:35 luiscarrera yum[3490]: Updated: tzdata-java-2018c-1.el6.noarch
+Feb  3 10:54:38 luiscarrera yum[3490]: Updated: tzdata-2018c-1.el6.noarch
+Feb  3 10:54:38 luiscarrera yum[3490]: Updated: foomatic-db-filesystem-4.0-8.20091126.el6.noarch
+Feb  3 10:54:39 luiscarrera yum[3490]: Updated: libX11-common-1.6.4-3.el6.noarch
+Feb  3 10:54:40 luiscarrera yum[3490]: Updated: centos-release-6-9.el6.12.3.x86_64
+Feb  3 10:54:40 luiscarrera yum[3490]: Installed: 2:vim-filesystem-7.4.629-5.el6_8.1.x86_64
+Feb  3 10:54:41 luiscarrera yum[3490]: Updated: ncurses-base-5.7-4.20090207.el6.x86_64
+Feb  3 10:54:48 luiscarrera yum[3490]: Updated: glibc-common-2.12-1.209.el6_9.2.x86_64
+Feb  3 10:54:54 luiscarrera yum[3490]: Updated: glibc-2.12-1.209.el6_9.2.x86_64
+Feb  3 10:54:55 luiscarrera yum[3490]: Updated: ncurses-libs-5.7-4.20090207.el6.x86_64
+Feb  3 10:54:56 luiscarrera yum[3490]: Updated: bash-4.1.2-48.el6.x86_64
+Feb  3 10:54:56 luiscarrera yum[3490]: Updated: libstdc++-4.4.7-18.el6.x86_64
+Feb  3 10:54:57 luiscarrera yum[3490]: Updated: 1:dbus-libs-1.2.24-8.el6_6.x86_64
+Feb  3 10:54:58 luiscarrera yum[3490]: Updated: libselinux-2.0.94-7.el6.x86_64
+Feb  3 10:54:59 luiscarrera yum[3490]: Updated: chkconfig-1.3.49.5-1.el6.x86_64
+Feb  3 10:54:59 luiscarrera yum[3490]: Updated: libcom_err-1.41.12-23.el6.x86_64
+Feb  3 10:55:00 luiscarrera yum[3490]: Updated: libxml2-2.7.6-21.el6_8.1.x86_64
+Feb  3 10:55:01 luiscarrera yum[3490]: Updated: expat-2.0.1-13.el6_8.x86_64
+Feb  3 10:55:01 luiscarrera yum[3490]: Updated: libtalloc-2.1.5-1.el6_7.x86_64
+Feb  3 10:55:02 luiscarrera yum[3490]: Updated: db4-4.7.25-22.el6.x86_64
+Feb  3 10:55:03 luiscarrera yum[3490]: Updated: audit-libs-2.4.5-6.el6.x86_64
+Feb  3 10:55:03 luiscarrera yum[3490]: Updated: libacl-2.2.49-7.el6_9.1.x86_64
+Feb  3 10:55:04 luiscarrera yum[3490]: Updated: tcp_wrappers-libs-7.6-58.el6.x86_64
+Feb  3 10:55:05 luiscarrera yum[3490]: Updated: libjpeg-turbo-1.2.1-3.el6_5.x86_64
+Feb  3 10:55:06 luiscarrera yum[3490]: Updated: libtdb-1.3.8-3.el6_8.2.x86_64
+Feb  3 10:55:06 luiscarrera yum[3490]: Updated: libtevent-0.9.26-2.el6_7.x86_64
+Feb  3 10:55:07 luiscarrera yum[3490]: Updated: pcre-7.8-7.el6.x86_64
+Feb  3 10:55:08 luiscarrera yum[3490]: Updated: grep-2.20-6.el6.x86_64
+Feb  3 10:55:09 luiscarrera yum[3490]: Updated: libudev-147-2.73.el6_8.2.x86_64
+Feb  3 10:55:10 luiscarrera yum[3490]: Updated: cyrus-sasl-lib-2.1.23-15.el6_6.2.x86_64
+Feb  3 10:55:10 luiscarrera yum[3490]: Updated: dbus-glib-0.86-6.el6.x86_64
+Feb  3 10:55:11 luiscarrera yum[3490]: Updated: 2:libpng-1.2.49-2.el6_7.x86_64
+Feb  3 10:55:12 luiscarrera yum[3490]: Updated: freetype-2.3.11-17.el6.x86_64
+Feb  3 10:55:13 luiscarrera yum[3490]: Updated: gawk-3.1.7-10.el6_7.3.x86_64
+Feb  3 10:55:14 luiscarrera yum[3490]: Updated: keyutils-libs-1.4-5.el6.x86_64
+Feb  3 10:55:15 luiscarrera yum[3490]: Updated: krb5-libs-1.10.3-65.el6.x86_64
+Feb  3 10:55:15 luiscarrera yum[3490]: Updated: avahi-libs-0.6.25-17.el6.x86_64
+Feb  3 10:55:16 luiscarrera yum[3490]: Updated: sqlite-3.6.20-1.el6_7.2.x86_64
+Feb  3 10:55:16 luiscarrera yum[3490]: Updated: libuuid-2.17.2-12.28.el6_9.2.x86_64
+Feb  3 10:55:17 luiscarrera yum[3490]: Updated: libldb-1.1.25-2.el6_7.x86_64
+Feb  3 10:55:18 luiscarrera yum[3490]: Updated: libnl-1.1.4-2.el6.x86_64
+Feb  3 10:55:19 luiscarrera yum[3490]: Updated: 1:findutils-4.4.2-9.el6.x86_64
+Feb  3 10:55:20 luiscarrera yum[3490]: Updated: libref_array-0.1.4-11.el6_8.1.x86_64
+Feb  3 10:55:21 luiscarrera yum[3490]: Updated: xz-libs-4.999.9-0.5.beta.20091007git.el6.x86_64
+Feb  3 10:55:21 luiscarrera yum[3490]: Updated: libcollection-0.6.2-11.el6_8.1.x86_64
+Feb  3 10:55:22 luiscarrera yum[3490]: Updated: libxcb-1.12-4.el6.x86_64
+Feb  3 10:55:23 luiscarrera yum[3490]: Updated: libX11-1.6.4-3.el6.x86_64
+Feb  3 10:55:24 luiscarrera yum[3490]: Updated: libXext-1.3.3-1.el6.x86_64
+Feb  3 10:55:24 luiscarrera yum[3490]: Updated: libXrender-0.9.10-1.el6.x86_64
+Feb  3 10:55:25 luiscarrera yum[3490]: Updated: libXi-1.7.8-1.el6.x86_64
+Feb  3 10:55:26 luiscarrera yum[3490]: Updated: libXtst-1.2.3-1.el6.x86_64
+Feb  3 10:55:27 luiscarrera yum[3490]: Updated: pulseaudio-libs-0.9.21-26.el6.x86_64
+Feb  3 10:55:28 luiscarrera yum[3490]: Updated: libXt-1.1.4-6.1.el6.x86_64
+Feb  3 10:55:29 luiscarrera yum[3490]: Updated: libXrandr-1.5.1-1.el6.x86_64
+Feb  3 10:55:29 luiscarrera yum[3490]: Updated: libXfixes-5.0.3-1.el6.x86_64
+Feb  3 10:55:30 luiscarrera yum[3490]: Updated: libgcrypt-1.4.5-12.el6_8.x86_64
+Feb  3 10:55:31 luiscarrera yum[3490]: Updated: libdhash-0.4.3-11.el6_8.1.x86_64
+Feb  3 10:55:31 luiscarrera yum[3490]: Installed: libbasicobjects-0.1.1-11.el6_8.1.x86_64
+Feb  3 10:55:32 luiscarrera yum[3490]: Updated: libXinerama-1.1.3-2.1.el6.x86_64
+Feb  3 10:55:33 luiscarrera yum[3490]: Updated: libblkid-2.17.2-12.28.el6_9.2.x86_64
+Feb  3 10:55:34 luiscarrera yum[3490]: Updated: procps-3.2.8-45.el6_9.1.x86_64
+Feb  3 10:55:35 luiscarrera yum[3490]: Updated: gmp-4.3.1-12.el6.x86_64
+Feb  3 10:55:35 luiscarrera yum[3490]: Updated: pciutils-libs-3.1.10-4.el6.x86_64
+Feb  3 10:55:36 luiscarrera yum[3490]: Updated: numactl-2.0.9-2.el6.x86_64
+Feb  3 10:55:37 luiscarrera yum[3490]: Updated: libXcursor-1.1.14-2.1.el6.x86_64
+Feb  3 10:55:37 luiscarrera yum[3490]: Updated: libsemanage-2.0.43-5.1.el6.x86_64
+Feb  3 10:55:39 luiscarrera yum[3490]: Updated: binutils-2.20.51.0.2-5.47.el6_9.1.x86_64
+Feb  3 10:55:40 luiscarrera yum[3490]: Updated: libtasn1-2.3-6.el6_5.x86_64
+Feb  3 10:55:41 luiscarrera yum[3490]: Updated: gnutls-2.12.23-21.el6.x86_64
+Feb  3 10:55:42 luiscarrera yum[3490]: Updated: file-libs-5.04-30.el6.x86_64
+Feb  3 10:55:42 luiscarrera yum[3490]: Updated: libXxf86vm-1.1.3-2.1.el6.x86_64
+Feb  3 10:55:43 luiscarrera yum[3490]: Updated: apr-1.3.9-5.el6_9.1.x86_64
+Feb  3 10:55:44 luiscarrera yum[3490]: Updated: libgudev1-147-2.73.el6_8.2.x86_64
+Feb  3 10:55:44 luiscarrera yum[3490]: Updated: psmisc-22.6-24.el6.x86_64
+Feb  3 10:55:46 luiscarrera yum[3490]: Updated: mysql-libs-5.1.73-8.el6_8.x86_64
+Feb  3 10:55:46 luiscarrera yum[3490]: Updated: libsss_idmap-1.13.3-57.el6_9.x86_64
+Feb  3 10:55:47 luiscarrera yum[3490]: Updated: libgfortran-4.4.7-18.el6.x86_64
+Feb  3 10:55:48 luiscarrera yum[3490]: Updated: libibumad-1.3.9-1.el6.x86_64
+Feb  3 10:55:49 luiscarrera yum[3490]: Updated: pixman-0.32.8-1.el6.x86_64
+Feb  3 10:55:49 luiscarrera yum[3490]: Updated: pcsc-lite-libs-1.5.2-16.el6.x86_64
+Feb  3 10:55:50 luiscarrera yum[3490]: Updated: libXv-1.0.11-1.el6.x86_64
+Feb  3 10:55:51 luiscarrera yum[3490]: Updated: xz-4.999.9-0.5.beta.20091007git.el6.x86_64
+Feb  3 10:55:51 luiscarrera yum[3490]: Updated: cyrus-sasl-gssapi-2.1.23-15.el6_6.2.x86_64
+Feb  3 10:55:53 luiscarrera yum[3490]: Updated: freetype-devel-2.3.11-17.el6.x86_64
+Feb  3 10:55:54 luiscarrera yum[3490]: Updated: libgphoto2-2.4.7-5.el6.x86_64
+Feb  3 10:55:55 luiscarrera yum[3490]: Updated: libtiff-3.9.4-21.el6_8.x86_64
+Feb  3 10:55:56 luiscarrera yum[3490]: Updated: 1:cups-libs-1.4.2-78.el6_9.x86_64
+Feb  3 10:55:57 luiscarrera kernel: CE: hpet increasing min_delta_ns to 40226 nsec
+Feb  3 10:55:58 luiscarrera yum[3490]: Updated: xerces-j2-2.7.1-12.7.el6_5.x86_64
+Feb  3 10:55:59 luiscarrera yum[3490]: Updated: portreserve-0.0.4-11.el6.x86_64
+Feb  3 10:55:59 luiscarrera yum[3490]: Updated: boost-system-1.41.0-28.el6.x86_64
+Feb  3 10:56:00 luiscarrera yum[3490]: Updated: libgomp-4.4.7-18.el6.x86_64
+Feb  3 10:56:01 luiscarrera yum[3490]: Updated: cpio-2.10-13.el6.x86_64
+Feb  3 10:56:06 luiscarrera yum[3490]: Updated: texlive-texmf-2007-39.el6_7.noarch
+Feb  3 10:56:07 luiscarrera yum[3490]: Updated: newt-0.52.11-4.el6.x86_64
+Feb  3 10:56:08 luiscarrera yum[3490]: Updated: libusb1-1.0.9-0.7.rc1.el6.x86_64
+Feb  3 10:56:09 luiscarrera yum[3490]: Updated: gdbm-1.8.0-39.el6.x86_64
+Feb  3 10:56:09 luiscarrera yum[3490]: Updated: 1:perl-Pod-Escapes-1.04-144.el6.x86_64
+Feb  3 10:56:10 luiscarrera yum[3490]: Updated: 1:perl-Module-Pluggable-3.90-144.el6.x86_64
+Feb  3 10:56:10 luiscarrera yum[3490]: Updated: 3:perl-version-0.77-144.el6.x86_64
+Feb  3 10:56:11 luiscarrera yum[3490]: Updated: 4:perl-libs-5.10.1-144.el6.x86_64
+Feb  3 10:56:12 luiscarrera yum[3490]: Updated: 1:perl-Pod-Simple-3.13-144.el6.x86_64
+Feb  3 10:56:16 luiscarrera yum[3490]: Updated: 4:perl-5.10.1-144.el6.x86_64
+Feb  3 10:56:17 luiscarrera yum[3490]: Updated: 1:perl-Locale-Maketext-Simple-0.18-144.el6.x86_64
+Feb  3 10:56:18 luiscarrera yum[3490]: Updated: 1:perl-Params-Check-0.26-144.el6.x86_64
+Feb  3 10:56:18 luiscarrera yum[3490]: Updated: 1:perl-Module-Load-0.16-144.el6.x86_64
+Feb  3 10:56:19 luiscarrera yum[3490]: Updated: perl-Module-Load-Conditional-0.30-144.el6.x86_64
+Feb  3 10:56:19 luiscarrera yum[3490]: Updated: 1:perl-Log-Message-0.02-144.el6.x86_64
+Feb  3 10:56:20 luiscarrera yum[3490]: Updated: perl-IO-Compress-Base-2.021-144.el6.x86_64
+Feb  3 10:56:20 luiscarrera yum[3490]: Updated: 1:perl-Package-Constants-0.02-144.el6.x86_64
+Feb  3 10:56:21 luiscarrera yum[3490]: Updated: 1:perl-Compress-Raw-Zlib-2.021-144.el6.x86_64
+Feb  3 10:56:22 luiscarrera yum[3490]: Updated: boost-filesystem-1.41.0-28.el6.x86_64
+Feb  3 10:56:22 luiscarrera yum[3490]: Updated: xalan-j2-2.7.0-9.9.el6_5.noarch
+Feb  3 10:56:23 luiscarrera yum[3490]: Updated: file-5.04-30.el6.x86_64
+Feb  3 10:56:24 luiscarrera yum[3490]: Updated: libXp-1.0.2-2.1.el6.x86_64
+Feb  3 10:56:24 luiscarrera yum[3490]: Updated: avahi-glib-0.6.25-17.el6.x86_64
+Feb  3 10:56:25 luiscarrera yum[3490]: Installed: libkadm5-1.10.3-65.el6.x86_64
+Feb  3 10:56:26 luiscarrera yum[3490]: Updated: keyutils-1.4-5.el6.x86_64
+Feb  3 10:56:27 luiscarrera yum[3490]: Updated: 2:libpng-devel-1.2.49-2.el6_7.x86_64
+Feb  3 10:56:27 luiscarrera yum[3490]: Updated: less-436-13.el6.x86_64
+Feb  3 10:56:28 luiscarrera yum[3490]: Updated: jasper-libs-1.900.1-21.el6_9.x86_64
+Feb  3 10:56:29 luiscarrera yum[3490]: Updated: acl-2.2.49-7.el6_9.1.x86_64
+Feb  3 10:56:30 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:56:30 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:56:30 luiscarrera yum[3490]: Updated: upstart-0.6.5-16.el6.x86_64
+Feb  3 10:56:31 luiscarrera yum[3490]: Updated: xmlrpc-c-1.16.24-1210.1840.el6.x86_64
+Feb  3 10:56:32 luiscarrera yum[3490]: Updated: e2fsprogs-libs-1.41.12-23.el6.x86_64
+Feb  3 10:56:33 luiscarrera yum[3490]: Updated: libss-1.41.12-23.el6.x86_64
+Feb  3 10:56:34 luiscarrera yum[3490]: Updated: e2fsprogs-1.41.12-23.el6.x86_64
+Feb  3 10:56:35 luiscarrera yum[3490]: Updated: boost-thread-1.41.0-28.el6.x86_64
+Feb  3 10:56:36 luiscarrera yum[3490]: Updated: libicu-4.2.1-14.el6.x86_64
+Feb  3 10:56:37 luiscarrera yum[3490]: Updated: boost-regex-1.41.0-28.el6.x86_64
+Feb  3 10:56:39 luiscarrera yum[3490]: Updated: boost-date-time-1.41.0-28.el6.x86_64
+Feb  3 10:56:40 luiscarrera yum[3490]: Updated: boost-program-options-1.41.0-28.el6.x86_64
+Feb  3 10:56:40 luiscarrera yum[3490]: Updated: kpathsea-2007-60.el6_7.x86_64
+Feb  3 10:56:41 luiscarrera yum[3490]: Updated: libtirpc-0.2.1-13.el6_9.x86_64
+Feb  3 10:56:42 luiscarrera yum[3490]: Updated: 14:libpcap-1.4.0-4.20130826git2dbcaa1.el6.x86_64
+Feb  3 10:56:43 luiscarrera yum[3490]: Updated: zip-3.0-1.el6_7.1.x86_64
+Feb  3 10:56:43 luiscarrera yum[3490]: Updated: sg3_utils-libs-1.28-12.el6.x86_64
+Feb  3 10:56:44 luiscarrera yum[3490]: Updated: bluez-libs-4.66-2.el6_9.x86_64
+Feb  3 10:56:45 luiscarrera yum[3490]: Updated: boost-wave-1.41.0-28.el6.x86_64
+Feb  3 10:56:46 luiscarrera yum[3490]: Updated: boost-graph-1.41.0-28.el6.x86_64
+Feb  3 10:56:47 luiscarrera yum[3490]: Updated: perl-IO-Compress-Zlib-2.021-144.el6.x86_64
+Feb  3 10:56:47 luiscarrera yum[3490]: Updated: perl-Compress-Zlib-2.021-144.el6.x86_64
+Feb  3 10:56:48 luiscarrera yum[3490]: Updated: perl-libwww-perl-5.833-5.el6.noarch
+Feb  3 10:56:49 luiscarrera yum[3490]: Updated: 1:perl-IO-Zlib-1.09-144.el6.x86_64
+Feb  3 10:56:50 luiscarrera yum[3490]: Updated: perl-Archive-Tar-1.58-144.el6.x86_64
+Feb  3 10:56:50 luiscarrera yum[3490]: Updated: perl-Log-Message-Simple-0.04-144.el6.x86_64
+Feb  3 10:56:51 luiscarrera yum[3490]: Updated: perl-Term-UI-0.20-144.el6.x86_64
+Feb  3 10:56:51 luiscarrera yum[3490]: Updated: 1:perl-Object-Accessor-0.34-144.el6.x86_64
+Feb  3 10:56:52 luiscarrera yum[3490]: Updated: 1:perl-Module-Loaded-0.02-144.el6.x86_64
+Feb  3 10:56:53 luiscarrera yum[3490]: Updated: 4:perl-Time-HiRes-1.9721-144.el6.x86_64
+Feb  3 10:56:53 luiscarrera yum[3490]: Updated: 1:perl-Digest-SHA-5.47-144.el6.x86_64
+Feb  3 10:56:54 luiscarrera yum[3490]: Updated: perl-Module-CoreList-2.18-144.el6.x86_64
+Feb  3 10:56:55 luiscarrera yum[3490]: Updated: perl-Compress-Raw-Bzip2-2.021-144.el6.x86_64
+Feb  3 10:56:57 luiscarrera yum[3490]: Updated: texlive-texmf-dvips-2007-39.el6_7.noarch
+Feb  3 10:56:57 luiscarrera yum[3490]: Updated: xz-lzma-compat-4.999.9-0.5.beta.20091007git.el6.x86_64
+Feb  3 10:56:58 luiscarrera yum[3490]: Updated: libXvMC-1.0.10-1.el6.x86_64
+Feb  3 10:56:59 luiscarrera yum[3490]: Updated: opensm-libs-3.3.17-1.el6.x86_64
+Feb  3 10:57:00 luiscarrera yum[3490]: Updated: xorg-x11-server-utils-7.7-14.el6.x86_64
+Feb  3 10:57:01 luiscarrera yum[3490]: Installed: p11-kit-0.18.5-2.el6_5.2.x86_64
+Feb  3 10:57:04 luiscarrera yum[3490]: Updated: libxcb-devel-1.12-4.el6.x86_64
+Feb  3 10:57:07 luiscarrera yum[3490]: Updated: libX11-devel-1.6.4-3.el6.x86_64
+Feb  3 10:57:08 luiscarrera yum[3490]: Updated: libXext-devel-1.3.3-1.el6.x86_64
+Feb  3 10:57:08 luiscarrera yum[3490]: Updated: libXrender-devel-0.9.10-1.el6.x86_64
+Feb  3 10:57:09 luiscarrera yum[3490]: Updated: libXfixes-devel-5.0.3-1.el6.x86_64
+Feb  3 10:57:10 luiscarrera yum[3490]: Updated: libXi-devel-1.7.8-1.el6.x86_64
+Feb  3 10:57:11 luiscarrera yum[3490]: Updated: libXt-devel-1.1.4-6.1.el6.x86_64
+Feb  3 10:57:12 luiscarrera yum[3490]: Updated: infinipath-psm-3.3-19_g67c0807_open.el6.x86_64
+Feb  3 10:57:13 luiscarrera yum[3490]: Updated: mailx-12.4-8.el6_6.x86_64
+Feb  3 10:57:14 luiscarrera yum[3490]: Updated: cyrus-sasl-md5-2.1.23-15.el6_6.2.x86_64
+Feb  3 10:57:15 luiscarrera yum[3490]: Updated: libjpeg-turbo-devel-1.2.1-3.el6_5.x86_64
+Feb  3 10:57:16 luiscarrera yum[3490]: Updated: 2:vim-minimal-7.4.629-5.el6_8.1.x86_64
+Feb  3 10:57:17 luiscarrera yum[3490]: Updated: 2:tar-1.23-15.el6_8.x86_64
+Feb  3 10:57:18 luiscarrera yum[3490]: Updated: db4-utils-4.7.25-22.el6.x86_64
+Feb  3 10:57:19 luiscarrera yum[3490]: Updated: shared-mime-info-0.70-6.el6.x86_64
+Feb  3 10:57:20 luiscarrera yum[3490]: Updated: tomcat6-servlet-2.5-api-6.0.24-111.el6_9.noarch
+Feb  3 10:57:20 luiscarrera yum[3490]: Updated: jakarta-commons-dbcp-1.2.1-13.9.el6.noarch
+Feb  3 10:57:21 luiscarrera yum[3490]: Updated: net-tools-1.60-114.el6.x86_64
+Feb  3 10:57:22 luiscarrera yum[3490]: Updated: libselinux-utils-2.0.94-7.el6.x86_64
+Feb  3 10:57:23 luiscarrera yum[3490]: Installed: snappy-1.1.0-1.el6.x86_64
+Feb  3 10:57:24 luiscarrera yum[3490]: Updated: boost-test-1.41.0-28.el6.x86_64
+Feb  3 10:57:25 luiscarrera yum[3490]: Updated: boost-signals-1.41.0-28.el6.x86_64
+Feb  3 10:57:25 luiscarrera yum[3490]: Updated: boost-serialization-1.41.0-28.el6.x86_64
+Feb  3 10:57:27 luiscarrera yum[3490]: Installed: mesa-private-llvm-3.6.2-1.el6.x86_64
+Feb  3 10:57:28 luiscarrera yum[3490]: Updated: boost-iostreams-1.41.0-28.el6.x86_64
+Feb  3 10:57:29 luiscarrera yum[3490]: Updated: 1:jakarta-commons-httpclient-3.1-0.9.el6_5.x86_64
+Feb  3 10:57:30 luiscarrera yum[3490]: Updated: 1:make-3.81-23.el6.x86_64
+Feb  3 10:57:38 luiscarrera yum[3490]: Updated: gnome-icon-theme-2.28.0-8.el6.noarch
+Feb  3 10:57:38 luiscarrera yum[3490]: Updated: unzip-6.0-5.el6.x86_64
+Feb  3 10:57:40 luiscarrera yum[3490]: Updated: 1:ecj-4.5.2-3.el6.x86_64
+Feb  3 10:57:41 luiscarrera yum[3490]: Updated: ncurses-5.7-4.20090207.el6.x86_64
+Feb  3 10:57:42 luiscarrera yum[3490]: Updated: coreutils-libs-8.4-46.el6.x86_64
+Feb  3 10:57:44 luiscarrera yum[3490]: Updated: coreutils-8.4-46.el6.x86_64
+Feb  3 10:57:46 luiscarrera yum[3490]: Updated: pam-1.1.1-24.el6.x86_64
+Feb  3 10:57:47 luiscarrera yum[3490]: Updated: 2:shadow-utils-4.1.5.1-5.el6.x86_64
+Feb  3 10:57:48 luiscarrera yum[3490]: Updated: python-2.6.6-66.el6_8.x86_64
+Feb  3 10:57:53 luiscarrera yum[3490]: Updated: python-libs-2.6.6-66.el6_8.x86_64
+Feb  3 10:57:55 luiscarrera yum[3490]: Updated: 1:dbus-1.2.24-8.el6_6.x86_64
+Feb  3 10:58:01 luiscarrera yum[3490]: Updated: fontconfig-2.8.0-5.el6.x86_64
+Feb  3 10:58:02 luiscarrera yum[3490]: Updated: jpackage-utils-1.7.5-3.16.el6.noarch
+Feb  3 10:58:03 luiscarrera yum[3490]: Updated: libXft-2.3.2-1.el6.x86_64
+Feb  3 10:58:04 luiscarrera yum[3490]: Updated: module-init-tools-3.9-26.el6.x86_64
+Feb  3 10:58:04 luiscarrera yum[3490]: Updated: hwdata-0.233-18.1.el6.noarch
+Feb  3 10:58:06 luiscarrera yum[3490]: Updated: alsa-lib-1.1.0-4.el6.x86_64
+Feb  3 10:58:07 luiscarrera yum[3490]: Updated: hal-libs-0.5.14-14.el6.x86_64
+Feb  3 10:58:07 luiscarrera yum[3490]: Updated: libpciaccess-0.13.4-1.el6.x86_64
+Feb  3 10:58:08 luiscarrera yum[3490]: Updated: cairo-1.8.8-6.el6_6.x86_64
+Feb  3 10:58:10 luiscarrera yum[3490]: Updated: pango-1.28.1-11.el6.x86_64
+Feb  3 10:58:10 luiscarrera yum[3490]: Updated: 1:dbus-devel-1.2.24-8.el6_6.x86_64
+Feb  3 10:58:11 luiscarrera yum[3490]: Updated: environment-modules-3.2.10-3.el6.x86_64
+Feb  3 10:58:12 luiscarrera yum[3490]: Updated: newt-python-0.52.11-4.el6.x86_64
+Feb  3 10:58:13 luiscarrera yum[3490]: Updated: gzip-1.3.12-24.el6.x86_64
+Feb  3 10:58:14 luiscarrera yum[3490]: Updated: logrotate-3.7.8-28.el6.x86_64
+Feb  3 10:58:15 luiscarrera yum[3490]: Updated: authconfig-6.1.12-23.el6.x86_64
+Feb  3 10:58:16 luiscarrera yum[3490]: Updated: fontconfig-devel-2.8.0-5.el6.x86_64
+Feb  3 10:58:17 luiscarrera yum[3490]: Updated: libXft-devel-2.3.2-1.el6.x86_64
+Feb  3 10:58:18 luiscarrera yum[3490]: Updated: 1:dbus-x11-1.2.24-8.el6_6.x86_64
+Feb  3 10:58:18 luiscarrera yum[3490]: Updated: ConsoleKit-libs-0.4.1-6.el6.x86_64
+Feb  3 10:58:18 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:58:18 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:58:18 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:58:18 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:58:19 luiscarrera yum[3490]: Updated: polkit-0.96-11.el6.x86_64
+Feb  3 10:58:20 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:58:20 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:58:20 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:58:20 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:58:20 luiscarrera yum[3490]: Updated: ConsoleKit-0.4.1-6.el6.x86_64
+Feb  3 10:58:21 luiscarrera yum[3490]: Updated: python-ethtool-0.6-6.el6.x86_64
+Feb  3 10:58:22 luiscarrera yum[3490]: Updated: libxml2-python-2.7.6-21.el6_8.1.x86_64
+Feb  3 10:58:23 luiscarrera yum[3490]: Updated: pciutils-3.1.10-4.el6.x86_64
+Feb  3 10:58:24 luiscarrera yum[3490]: Updated: boost-python-1.41.0-28.el6.x86_64
+Feb  3 10:58:27 luiscarrera yum[3490]: Updated: libxml2-devel-2.7.6-21.el6_8.1.x86_64
+Feb  3 10:58:27 luiscarrera yum[3490]: Updated: libselinux-python-2.0.94-7.el6.x86_64
+Feb  3 10:58:28 luiscarrera yum[3490]: Updated: rpcbind-0.2.0-13.el6_9.1.x86_64
+Feb  3 10:58:29 luiscarrera yum[3490]: Updated: mysql-5.1.73-8.el6_8.x86_64
+Feb  3 10:58:30 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 10:58:30 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 10:58:30 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 10:58:30 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 10:58:30 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 10:58:30 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 10:58:30 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 10:58:30 luiscarrera yum[3490]: Installed: lzo-2.03-3.1.el6_5.1.x86_64
+Feb  3 10:58:31 luiscarrera yum[3490]: Updated: sysvinit-tools-2.87-6.dsf.el6.x86_64
+Feb  3 10:58:31 luiscarrera yum[3490]: Updated: libipa_hbac-1.13.3-57.el6_9.x86_64
+Feb  3 10:58:32 luiscarrera yum[3490]: Updated: libssh2-1.4.2-2.el6_7.1.x86_64
+Feb  3 10:58:33 luiscarrera yum[3490]: Updated: libcurl-7.19.7-53.el6_9.x86_64
+Feb  3 10:58:34 luiscarrera yum[3490]: Updated: curl-7.19.7-53.el6_9.x86_64
+Feb  3 10:58:35 luiscarrera yum[3490]: Updated: rpm-libs-4.8.0-55.el6.x86_64
+Feb  3 10:58:36 luiscarrera yum[3490]: Updated: rpm-4.8.0-55.el6.x86_64
+Feb  3 10:58:37 luiscarrera yum[3490]: Updated: openldap-2.4.40-16.el6.x86_64
+Feb  3 10:58:39 luiscarrera yum[3490]: Updated: 1:net-snmp-libs-5.5-60.el6.x86_64
+Feb  3 10:58:40 luiscarrera yum[3490]: Updated: php-common-5.3.3-49.el6.x86_64
+Feb  3 10:58:40 luiscarrera yum[3490]: Updated: openldap-clients-2.4.40-16.el6.x86_64
+Feb  3 10:58:41 luiscarrera yum[3490]: Updated: rpm-python-4.8.0-55.el6.x86_64
+Feb  3 10:58:42 luiscarrera yum[3490]: Updated: postgresql-libs-8.4.20-8.el6_9.x86_64
+Feb  3 10:58:43 luiscarrera yum[3490]: Updated: php-cli-5.3.3-49.el6.x86_64
+Feb  3 10:58:45 luiscarrera yum[3490]: Updated: gnupg2-2.0.14-8.el6.x86_64
+Feb  3 10:58:46 luiscarrera yum[3490]: Updated: libuser-0.56.13-8.el6_7.x86_64
+Feb  3 10:58:47 luiscarrera yum[3490]: Updated: libuser-python-0.56.13-8.el6_7.x86_64
+Feb  3 10:58:47 luiscarrera yum[3490]: Updated: xmlrpc-c-client-1.16.24-1210.1840.el6.x86_64
+Feb  3 10:58:48 luiscarrera yum[3490]: Updated: libhbaapi-2.2.9-2.el6.x86_64
+Feb  3 10:58:49 luiscarrera yum[3490]: Installed: libevdev-1.4.5-2.el6.x86_64
+Feb  3 10:58:50 luiscarrera yum[3490]: Installed: papi-5.1.1-12.el6.x86_64
+Feb  3 10:58:51 luiscarrera yum[3490]: Updated: 1:dmidecode-2.12-7.el6.x86_64
+Feb  3 10:58:52 luiscarrera yum[3490]: Installed: libesmtp-1.0.4-15.el6.x86_64
+Feb  3 10:58:53 luiscarrera yum[3490]: Updated: 1:openslp-2.0.0-2.el6.x86_64
+Feb  3 10:58:54 luiscarrera yum[3490]: Updated: ORBit2-2.14.17-6.el6_8.x86_64
+Feb  3 10:58:54 luiscarrera yum[3490]: Updated: mtdev-1.1.5-1.el6.x86_64
+Feb  3 10:58:55 luiscarrera yum[3490]: Updated: libfontenc-1.1.2-3.el6.x86_64
+Feb  3 10:58:56 luiscarrera yum[3490]: Updated: libXfont-1.5.1-2.el6.x86_64
+Feb  3 10:58:57 luiscarrera yum[3490]: Updated: xorg-x11-apps-7.7-6.el6.x86_64
+Feb  3 10:58:59 luiscarrera yum[3490]: Updated: ORBit2-devel-2.14.17-6.el6_8.x86_64
+Feb  3 10:59:01 luiscarrera yum[3490]: Updated: 2:tog-pegasus-libs-2.12.0-6.el6.x86_64
+Feb  3 10:59:02 luiscarrera yum[3490]: Updated: libhbalinux-1.0.17-2.el6.x86_64
+Feb  3 10:59:03 luiscarrera yum[3490]: Updated: pki-native-tools-9.0.3-53.el6.x86_64
+Feb  3 10:59:03 luiscarrera yum[3490]: Updated: 389-ds-base-libs-1.2.11.15-91.el6_9.x86_64
+Feb  3 10:59:05 luiscarrera yum[3490]: Updated: man-1.6f-39.el6.x86_64
+Feb  3 10:59:06 luiscarrera yum[3490]: Updated: libwsman1-2.2.3-11.el6.x86_64
+Feb  3 10:59:07 luiscarrera yum[3490]: Updated: python-pycurl-7.19.0-9.el6.x86_64
+Feb  3 10:59:07 luiscarrera yum[3490]: Updated: python-urlgrabber-3.9.1-11.el6.noarch
+Feb  3 10:59:08 luiscarrera yum[3490]: Updated: yum-plugin-fastestmirror-1.1.30-40.el6.noarch
+Feb  3 10:59:09 luiscarrera yum[3490]: Updated: yum-3.2.29-81.el6.centos.noarch
+Feb  3 10:59:10 luiscarrera yum[3490]: Installed: python-libipa_hbac-1.13.3-57.el6_9.x86_64
+Feb  3 10:59:11 luiscarrera yum[3490]: Updated: crash-7.1.0-6.el6.x86_64
+Feb  3 10:59:11 luiscarrera yum[3490]: Updated: boost-1.41.0-28.el6.x86_64
+Feb  3 10:59:12 luiscarrera yum[3490]: Updated: python-rtslib-2.1.fb21-4.el6.noarch
+Feb  3 10:59:13 luiscarrera yum[3490]: Updated: ConsoleKit-x11-0.4.1-6.el6.x86_64
+Feb  3 10:59:13 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:59:13 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:59:13 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:59:13 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:59:14 luiscarrera yum[3490]: Updated: rtkit-0.5-2.el6_4.x86_64
+Feb  3 10:59:14 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:59:15 luiscarrera yum[3490]: Updated: polkit-docs-0.96-11.el6.x86_64
+Feb  3 10:59:15 luiscarrera yum[3490]: Updated: polkit-devel-0.96-11.el6.x86_64
+Feb  3 10:59:16 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:59:16 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:59:16 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:59:16 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 10:59:16 luiscarrera yum[3490]: Updated: fprintd-0.1-22.git04fd09cfa.el6.x86_64
+Feb  3 10:59:17 luiscarrera yum[3490]: Updated: authconfig-gtk-6.1.12-23.el6.x86_64
+Feb  3 10:59:18 luiscarrera yum[3490]: Updated: dbus-glib-devel-0.86-6.el6.x86_64
+Feb  3 10:59:19 luiscarrera yum[3490]: Updated: alsa-utils-1.1.0-10.el6.x86_64
+Feb  3 10:59:21 luiscarrera yum[3490]: Updated: openmotif-2.3.3-9.el6.x86_64
+Feb  3 10:59:21 luiscarrera yum[3490]: Updated: rhino-1.7R4-4.el6.noarch
+Feb  3 10:59:24 luiscarrera yum[3490]: Updated: xorg-x11-fonts-Type1-7.2-11.el6.noarch
+Feb  3 10:59:27 luiscarrera yum[3490]: Updated: ghostscript-fonts-5.50-23.2.el6.noarch
+Feb  3 10:59:30 luiscarrera yum[3490]: Updated: urw-fonts-2.4-11.el6.noarch
+Feb  3 10:59:33 luiscarrera yum[3490]: Updated: ghostscript-8.70-23.el6_9.2.x86_64
+Feb  3 10:59:34 luiscarrera yum[3490]: Updated: python-nss-0.16.0-1.el6.x86_64
+Feb  3 10:59:35 luiscarrera yum[3490]: Updated: python-magic-5.04-30.el6.x86_64
+Feb  3 10:59:37 luiscarrera yum[3490]: Updated: pyOpenSSL-0.13.1-2.el6.x86_64
+Feb  3 10:59:37 luiscarrera yum[3490]: Updated: libsemanage-python-2.0.43-5.1.el6.x86_64
+Feb  3 10:59:38 luiscarrera yum[3490]: Updated: python-kerberos-1.1-7.el6.x86_64
+Feb  3 10:59:39 luiscarrera yum[3490]: Updated: gdb-7.2-92.el6.x86_64
+Feb  3 10:59:40 luiscarrera yum[3490]: Installed: python-sss-murmur-1.13.3-57.el6_9.x86_64
+Feb  3 10:59:41 luiscarrera yum[3490]: Installed: pytalloc-2.1.5-1.el6_7.x86_64
+Feb  3 10:59:42 luiscarrera yum[3490]: Updated: samba4-libs-4.2.10-12.el6_9.x86_64
+Feb  3 10:59:43 luiscarrera yum[3490]: Updated: audit-libs-python-2.4.5-6.el6.x86_64
+Feb  3 10:59:44 luiscarrera yum[3490]: Installed: python-six-1.9.0-2.el6.noarch
+Feb  3 10:59:44 luiscarrera yum[3490]: Updated: libproxy-bin-0.3.0-10.el6.x86_64
+Feb  3 10:59:45 luiscarrera yum[3490]: Updated: libproxy-0.3.0-10.el6.x86_64
+Feb  3 10:59:46 luiscarrera yum[3490]: Updated: libproxy-python-0.3.0-10.el6.x86_64
+Feb  3 10:59:47 luiscarrera yum[3490]: Updated: python-setuptools-0.6.10-4el6_9.noarch
+Feb  3 10:59:48 luiscarrera yum[3490]: Updated: python-pygments-1.1.1-2.el6.noarch
+Feb  3 10:59:48 luiscarrera yum[3490]: Installed: python-sssdconfig-1.13.3-57.el6_9.noarch
+Feb  3 10:59:49 luiscarrera yum[3490]: Updated: system-config-keyboard-base-1.3.1-6.el6.x86_64
+Feb  3 10:59:53 luiscarrera yum[3490]: Updated: system-config-keyboard-1.3.1-6.el6.x86_64
+Feb  3 10:59:54 luiscarrera yum[3490]: Updated: systemtap-runtime-2.9-7.el6.x86_64
+Feb  3 10:59:55 luiscarrera yum[3490]: Updated: krb5-workstation-1.10.3-65.el6.x86_64
+Feb  3 10:59:56 luiscarrera yum[3490]: Updated: cvs-1.11.23-16.el6.x86_64
+Feb  3 10:59:58 luiscarrera yum[3490]: Updated: gettext-0.17-18.el6.x86_64
+Feb  3 10:59:59 luiscarrera yum[3490]: Updated: sssd-client-1.13.3-57.el6_9.x86_64
+Feb  3 11:00:00 luiscarrera yum[3490]: Updated: sgml-common-0.6.3-33.el6.noarch
+Feb  3 11:00:00 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:00:00 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:00:00 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:00:02 luiscarrera yum[3490]: Updated: GConf2-2.28.0-7.el6.x86_64
+Feb  3 11:00:05 luiscarrera yum[3490]: Updated: gnome-vfs2-2.24.2-8.el6.x86_64
+Feb  3 11:00:09 luiscarrera yum[3490]: Updated: yelp-2.28.1-17.el6_3.x86_64
+Feb  3 11:00:11 luiscarrera yum[3490]: Updated: system-config-users-docs-1.0.8-2.el6.noarch
+Feb  3 11:00:13 luiscarrera yum[3490]: Updated: system-config-users-1.2.106-9.el6.noarch
+Feb  3 11:00:14 luiscarrera yum[3490]: Updated: GConf2-devel-2.28.0-7.el6.x86_64
+Feb  3 11:00:15 luiscarrera yum[3490]: Updated: kde-settings-kdm-4.3.1-2.el6.centos.noarch
+Feb  3 11:00:15 luiscarrera yum[3490]: Updated: redhat-rpm-config-9.0.3-51.el6.centos.noarch
+Feb  3 11:00:16 luiscarrera yum[3490]: Updated: plymouth-scripts-0.8.3-29.el6.centos.x86_64
+Feb  3 11:00:32 luiscarrera yum[3490]: Updated: texlive-texmf-fonts-2007-39.el6_7.noarch
+Feb  3 11:00:40 luiscarrera yum[3490]: Updated: texlive-2007-60.el6_7.x86_64
+Feb  3 11:00:41 luiscarrera yum[3490]: Updated: texlive-dvips-2007-60.el6_7.x86_64
+Feb  3 11:00:42 luiscarrera yum[3490]: Updated: texlive-utils-2007-60.el6_7.x86_64
+Feb  3 11:00:43 luiscarrera yum[3490]: Updated: tomcat6-jsp-2.1-api-6.0.24-111.el6_9.noarch
+Feb  3 11:00:43 luiscarrera yum[3490]: Updated: libXcursor-devel-1.1.14-2.1.el6.x86_64
+Feb  3 11:00:44 luiscarrera yum[3490]: Updated: libXrandr-devel-1.5.1-1.el6.x86_64
+Feb  3 11:00:45 luiscarrera yum[3490]: Updated: libXp-devel-1.0.2-2.1.el6.x86_64
+Feb  3 11:00:45 luiscarrera yum[3490]: Updated: libXinerama-devel-1.1.3-2.1.el6.x86_64
+Feb  3 11:00:46 luiscarrera yum[3490]: Updated: libXxf86vm-devel-1.1.3-2.1.el6.x86_64
+Feb  3 11:00:48 luiscarrera yum[3490]: Installed: p11-kit-trust-0.18.5-2.el6_5.2.x86_64
+Feb  3 11:00:50 luiscarrera yum[3490]: Updated: ca-certificates-2017.2.14-65.0.1.el6_9.noarch
+Feb  3 11:00:57 luiscarrera yum[3490]: Updated: 1:java-1.6.0-openjdk-1.6.0.41-1.13.13.1.el6_8.x86_64
+Feb  3 11:00:59 luiscarrera yum[3490]: Updated: 1:qt-4.6.2-28.el6_5.x86_64
+Feb  3 11:01:00 luiscarrera yum[3490]: Updated: jss-4.2.6-35.el6.x86_64
+Feb  3 11:01:01 luiscarrera yum[3490]: Updated: ldapjdk-4.18-8.el6.x86_64
+Feb  3 11:01:04 luiscarrera yum[3490]: Updated: 1:java-1.6.0-openjdk-devel-1.6.0.41-1.13.13.1.el6_8.x86_64
+Feb  3 11:01:05 luiscarrera yum[3490]: Updated: ant-1.7.1-15.el6.x86_64
+Feb  3 11:01:06 luiscarrera yum[3490]: Updated: ant-nodeps-1.7.1-15.el6.x86_64
+Feb  3 11:01:07 luiscarrera yum[3490]: Updated: neon-0.29.3-3.el6_4.x86_64
+Feb  3 11:01:08 luiscarrera yum[3490]: Updated: 1:qt-sqlite-4.6.2-28.el6_5.x86_64
+Feb  3 11:01:09 luiscarrera yum[3490]: Updated: 1:qt-mysql-4.6.2-28.el6_5.x86_64
+Feb  3 11:01:10 luiscarrera yum[3490]: Updated: batik-1.7-10.el6.x86_64
+Feb  3 11:01:11 luiscarrera yum[3490]: Updated: hamcrest-1.1-9.5.el6.x86_64
+Feb  3 11:01:12 luiscarrera yum[3490]: Installed: glib-networking-2.28.6.1-2.4.el6.x86_64
+Feb  3 11:01:13 luiscarrera yum[3490]: Updated: libsoup-2.34.3-5.el6.x86_64
+Feb  3 11:01:15 luiscarrera yum[3490]: Updated: gvfs-1.4.3-27.el6.x86_64
+Feb  3 11:01:17 luiscarrera yum[3490]: Installed: ldns-1.6.16-7.el6.2.x86_64
+Feb  3 11:01:35 luiscarrera yum[3490]: Installed: unbound-libs-1.4.20-23.el6_9.4.x86_64
+Feb  3 11:01:36 luiscarrera yum[3490]: Updated: perl-Crypt-SSLeay-0.57-17.el6.x86_64
+Feb  3 11:01:38 luiscarrera yum[3490]: Updated: ibutils-libs-1.5.7-10.el6.x86_64
+Feb  3 11:01:38 luiscarrera yum[3490]: Updated: perl-IO-Compress-Bzip2-2.021-144.el6.x86_64
+Feb  3 11:01:39 luiscarrera yum[3490]: Updated: sg3_utils-1.28-12.el6.x86_64
+Feb  3 11:01:40 luiscarrera yum[3490]: Updated: 1:perl-parent-0.221-144.el6.x86_64
+Feb  3 11:01:41 luiscarrera yum[3490]: Updated: perl-Net-SSLeay-1.35-10.el6_8.1.x86_64
+Feb  3 11:01:42 luiscarrera yum[3490]: Updated: perl-IO-Socket-SSL-1.31-3.el6_8.2.noarch
+Feb  3 11:01:43 luiscarrera yum[3490]: Updated: perl-Config-General-2.52-1.el6.noarch
+Feb  3 11:01:43 luiscarrera yum[3490]: Updated: perl-Socket6-0.23-4.el6.x86_64
+Feb  3 11:01:44 luiscarrera yum[3490]: Updated: 1:perl-Parse-CPAN-Meta-1.40-144.el6.x86_64
+Feb  3 11:01:51 luiscarrera yum[3490]: Updated: texlive-texmf-latex-2007-39.el6_7.noarch
+Feb  3 11:01:52 luiscarrera yum[3490]: Updated: perl-CGI-3.51-144.el6.x86_64
+Feb  3 11:01:53 luiscarrera yum[3490]: Updated: perl-Time-Piece-1.15-144.el6.x86_64
+Feb  3 11:01:54 luiscarrera yum[3490]: Updated: 6:kdelibs-common-4.3.4-28.el6.x86_64
+Feb  3 11:01:55 luiscarrera yum[3490]: Updated: perl-Net-DNS-0.65-5.el6.x86_64
+Feb  3 11:01:57 luiscarrera yum[3490]: Updated: ruby-libs-1.8.7.374-5.el6.x86_64
+Feb  3 11:01:58 luiscarrera yum[3490]: Installed: gdbm-devel-1.8.0-39.el6.x86_64
+Feb  3 11:01:59 luiscarrera yum[3490]: Updated: setuptool-1.19.9-4.el6.x86_64
+Feb  3 11:02:00 luiscarrera yum[3490]: Updated: pixman-devel-0.32.8-1.el6.x86_64
+Feb  3 11:02:01 luiscarrera yum[3490]: Updated: cairo-devel-1.8.8-6.el6_6.x86_64
+Feb  3 11:02:02 luiscarrera yum[3490]: Updated: tmpwatch-2.9.16-6.el6.x86_64
+Feb  3 11:02:02 luiscarrera yum[3490]: Updated: httpd-tools-2.2.15-60.el6.centos.6.x86_64
+Feb  3 11:02:03 luiscarrera yum[3490]: Updated: gnutls-utils-2.12.23-21.el6.x86_64
+Feb  3 11:02:04 luiscarrera yum[3490]: Updated: libtasn1-devel-2.3-6.el6_5.x86_64
+Feb  3 11:02:05 luiscarrera yum[3490]: Updated: cpp-4.4.7-18.el6.x86_64
+Feb  3 11:02:06 luiscarrera yum[3490]: Updated: grubby-7.0.15-7.el6.x86_64
+Feb  3 11:02:07 luiscarrera yum[3490]: Updated: libgcrypt-devel-1.4.5-12.el6_8.x86_64
+Feb  3 11:02:09 luiscarrera yum[3490]: Updated: gnutls-devel-2.12.23-21.el6.x86_64
+Feb  3 11:02:10 luiscarrera yum[3490]: Updated: pulseaudio-utils-0.9.21-26.el6.x86_64
+Feb  3 11:02:11 luiscarrera yum[3490]: Updated: pulseaudio-libs-zeroconf-0.9.21-26.el6.x86_64
+Feb  3 11:02:11 luiscarrera yum[3490]: Updated: pulseaudio-libs-glib2-0.9.21-26.el6.x86_64
+Feb  3 11:02:12 luiscarrera yum[3490]: Updated: 1:xorg-x11-xauth-1.0.9-1.el6.x86_64
+Feb  3 11:02:13 luiscarrera yum[3490]: Updated: libXxf86dga-1.1.4-2.1.el6.x86_64
+Feb  3 11:02:14 luiscarrera yum[3490]: Updated: libdmx-1.1.3-3.el6.x86_64
+Feb  3 11:02:15 luiscarrera yum[3490]: Updated: xorg-x11-utils-7.5-14.el6.x86_64
+Feb  3 11:02:16 luiscarrera yum[3490]: Updated: xorg-x11-xkb-utils-7.7-12.el6.x86_64
+Feb  3 11:02:16 luiscarrera yum[3490]: Updated: xorg-x11-server-common-1.17.4-16.el6.centos.1.x86_64
+Feb  3 11:02:17 luiscarrera yum[3490]: Updated: xcb-util-0.4.0-2.2.el6.x86_64
+Feb  3 11:02:18 luiscarrera yum[3490]: Updated: libarchive-2.8.3-7.el6_8.x86_64
+Feb  3 11:02:28 luiscarrera yum[3490]: Installed: kernel-devel-2.6.32-696.20.1.el6.x86_64
+Feb  3 11:02:29 luiscarrera yum[3490]: Updated: iw-4.1-1.el6.x86_64
+Feb  3 11:02:30 luiscarrera yum[3490]: Updated: 32:bind-libs-9.8.2-0.62.rc1.el6_9.5.x86_64
+Feb  3 11:02:30 luiscarrera yum[3490]: Updated: 32:bind-utils-9.8.2-0.62.rc1.el6_9.5.x86_64
+Feb  3 11:02:31 luiscarrera yum[3490]: Updated: keyutils-libs-devel-1.4-5.el6.x86_64
+Feb  3 11:02:32 luiscarrera yum[3490]: Updated: tcp_wrappers-7.6-58.el6.x86_64
+Feb  3 11:02:33 luiscarrera yum[3490]: Updated: rsync-3.0.6-12.el6.x86_64
+Feb  3 11:02:33 luiscarrera yum[3490]: Updated: perl-Git-1.7.1-9.el6_9.noarch
+Feb  3 11:02:37 luiscarrera yum[3490]: Updated: git-1.7.1-9.el6_9.x86_64
+Feb  3 11:02:38 luiscarrera yum[3490]: Updated: device-mapper-persistent-data-0.6.2-0.1.rc7.el6.x86_64
+Feb  3 11:02:38 luiscarrera yum[3490]: Updated: libcom_err-devel-1.41.12-23.el6.x86_64
+Feb  3 11:02:39 luiscarrera yum[3490]: Updated: tomcat6-el-2.1-api-6.0.24-111.el6_9.noarch
+Feb  3 11:02:40 luiscarrera yum[3490]: Updated: tomcat6-lib-6.0.24-111.el6_9.noarch
+Feb  3 11:02:41 luiscarrera yum[3490]: Updated: tomcat6-6.0.24-111.el6_9.noarch
+Feb  3 11:02:42 luiscarrera yum[3490]: Updated: tomcatjss-2.1.0-4.el6.noarch
+Feb  3 11:02:42 luiscarrera yum[3490]: Updated: lsof-4.82-5.el6.x86_64
+Feb  3 11:02:44 luiscarrera yum[3490]: Updated: libselinux-devel-2.0.94-7.el6.x86_64
+Feb  3 11:02:45 luiscarrera yum[3490]: Installed: boost-math-1.41.0-28.el6.x86_64
+Feb  3 11:02:46 luiscarrera yum[3490]: Updated: compat-db42-4.2.52-17.el6.x86_64
+Feb  3 11:02:48 luiscarrera yum[3490]: Updated: libstdc++-devel-4.4.7-18.el6.x86_64
+Feb  3 11:02:49 luiscarrera yum[3490]: Updated: db4-cxx-4.7.25-22.el6.x86_64
+Feb  3 11:02:53 luiscarrera yum[3490]: Updated: db4-devel-4.7.25-22.el6.x86_64
+Feb  3 11:02:54 luiscarrera yum[3490]: Updated: 1:enchant-1.5.0-5.el6.x86_64
+Feb  3 11:02:55 luiscarrera yum[3490]: Updated: gettext-libs-0.17-18.el6.x86_64
+Feb  3 11:02:56 luiscarrera yum[3490]: Updated: compat-db43-4.3.29-17.el6.x86_64
+Feb  3 11:02:57 luiscarrera yum[3490]: Updated: nc-1.84-24.el6.x86_64
+Feb  3 11:02:58 luiscarrera yum[3490]: Installed: lksctp-tools-1.0.10-7.el6.x86_64
+Feb  3 11:03:05 luiscarrera yum[3490]: Updated: 1:java-1.7.0-openjdk-1.7.0.161-2.6.12.0.el6_9.x86_64
+Feb  3 11:03:06 luiscarrera yum[3490]: Updated: pki-symkey-9.0.3-53.el6.x86_64
+Feb  3 11:03:06 luiscarrera yum[3490]: Updated: pki-util-9.0.3-53.el6.noarch
+Feb  3 11:03:07 luiscarrera yum[3490]: Updated: pki-java-tools-9.0.3-53.el6.noarch
+Feb  3 11:03:08 luiscarrera yum[3490]: Updated: libhugetlbfs-2.16-2.el6.x86_64
+Feb  3 11:03:11 luiscarrera yum[3490]: Updated: glibc-headers-2.12-1.209.el6_9.2.x86_64
+Feb  3 11:03:11 luiscarrera yum[3490]: Updated: glibc-devel-2.12-1.209.el6_9.2.x86_64
+Feb  3 11:03:12 luiscarrera yum[3490]: Updated: 1:perl-ExtUtils-ParseXS-2.2003.0-144.el6.x86_64
+Feb  3 11:03:13 luiscarrera yum[3490]: Updated: 4:perl-devel-5.10.1-144.el6.x86_64
+Feb  3 11:03:14 luiscarrera yum[3490]: Updated: perl-Test-Harness-3.17-144.el6.x86_64
+Feb  3 11:03:16 luiscarrera yum[3490]: Updated: perl-ExtUtils-MakeMaker-6.55-144.el6.x86_64
+Feb  3 11:03:16 luiscarrera yum[3490]: Updated: 1:perl-IPC-Cmd-0.56-144.el6.x86_64
+Feb  3 11:03:18 luiscarrera yum[3490]: Updated: gcc-4.4.7-18.el6.x86_64
+Feb  3 11:03:20 luiscarrera yum[3490]: Updated: systemtap-devel-2.9-7.el6.x86_64
+Feb  3 11:03:21 luiscarrera yum[3490]: Updated: perl-File-Fetch-0.26-144.el6.x86_64
+Feb  3 11:03:21 luiscarrera yum[3490]: Updated: 1:perl-Archive-Extract-0.38-144.el6.x86_64
+Feb  3 11:03:22 luiscarrera yum[3490]: Updated: 1:perl-ExtUtils-CBuilder-0.27-144.el6.x86_64
+Feb  3 11:03:23 luiscarrera yum[3490]: Updated: 1:perl-Module-Build-0.3500-144.el6.x86_64
+Feb  3 11:03:25 luiscarrera yum[3490]: Updated: perl-CPANPLUS-0.88-144.el6.x86_64
+Feb  3 11:03:28 luiscarrera yum[3490]: Updated: systemtap-client-2.9-7.el6.x86_64
+Feb  3 11:03:30 luiscarrera yum[3490]: Updated: perl-CPAN-1.9402-144.el6.x86_64
+Feb  3 11:03:31 luiscarrera yum[3490]: Updated: perl-Test-Simple-0.92-144.el6.x86_64
+Feb  3 11:03:31 luiscarrera yum[3490]: Updated: perl-ExtUtils-Embed-1.28-144.el6.x86_64
+Feb  3 11:03:35 luiscarrera yum[3490]: Updated: 2:vim-common-7.4.629-5.el6_8.1.x86_64
+Feb  3 11:03:36 luiscarrera yum[3490]: Updated: ibus-table-1.2.0.20100111-5.el6.noarch
+Feb  3 11:03:37 luiscarrera yum[3490]: Updated: procmail-3.22-25.1.el6_5.1.x86_64
+Feb  3 11:03:38 luiscarrera yum[3490]: Updated: wget-1.12-10.el6.x86_64
+Feb  3 11:03:39 luiscarrera yum[3490]: Updated: hdparm-9.43-4.el6.x86_64
+Feb  3 11:03:40 luiscarrera yum[3490]: Installed: libxshmfence-1.2-1.el6.x86_64
+Feb  3 11:03:41 luiscarrera yum[3490]: Updated: x3270-3.3.15-2.el6.x86_64
+Feb  3 11:03:41 luiscarrera yum[3490]: Updated: c-ares-1.10.0-3.el6.x86_64
+Feb  3 11:03:42 luiscarrera yum[3490]: Installed: libevent2-2.0.21-2.el6.x86_64
+Feb  3 11:03:43 luiscarrera yum[3490]: Updated: libpath_utils-0.2.1-11.el6_8.1.x86_64
+Feb  3 11:03:44 luiscarrera yum[3490]: Updated: libini_config-1.1.0-11.el6_8.1.x86_64
+Feb  3 11:03:45 luiscarrera yum[3490]: Updated: SDL-1.2.14-7.el6_7.1.x86_64
+Feb  3 11:03:46 luiscarrera yum[3490]: Updated: nss_compat_ossl-0.9.6-2.el6_7.x86_64
+Feb  3 11:03:47 luiscarrera yum[3490]: Updated: fuse-libs-2.8.3-5.el6.x86_64
+Feb  3 11:03:48 luiscarrera yum[3490]: Updated: ksysguardd-4.3.4-37.el6.x86_64
+Feb  3 11:03:49 luiscarrera yum[3490]: Installed: libepoxy-1.2-3.el6.x86_64
+Feb  3 11:03:49 luiscarrera yum[3490]: Updated: lldpad-libs-0.9.46-10.el6_8.x86_64
+Feb  3 11:03:50 luiscarrera yum[3490]: Updated: paps-libs-0.6.8-13.el6.3.x86_64
+Feb  3 11:03:51 luiscarrera yum[3490]: Updated: 2:ethtool-3.5-6.el6.x86_64
+Feb  3 11:03:52 luiscarrera yum[3490]: Updated: iptables-1.4.7-16.el6.x86_64
+Feb  3 11:03:54 luiscarrera yum[3490]: Updated: iproute-2.6.32-54.el6.x86_64
+Feb  3 11:03:55 luiscarrera yum[3490]: Updated: iputils-20071127-24.el6.x86_64
+Feb  3 11:03:56 luiscarrera yum[3490]: Updated: util-linux-ng-2.17.2-12.28.el6_9.2.x86_64
+Feb  3 11:03:58 luiscarrera NetworkManager[2276]:    ifcfg-rh: parsing /etc/sysconfig/network-scripts/ifcfg-lo;5a75db30 ... 
+Feb  3 11:03:58 luiscarrera NetworkManager[2276]:    ifcfg-rh:     error: Couldn't parse file '/etc/sysconfig/network-scripts/ifcfg-lo;5a75db30'
+Feb  3 11:03:58 luiscarrera NetworkManager[2276]:    ifcfg-rh: parsing /etc/sysconfig/network-scripts/ifcfg-lo;5a75db30 ... 
+Feb  3 11:03:58 luiscarrera NetworkManager[2276]:    ifcfg-rh:     error: Couldn't parse file '/etc/sysconfig/network-scripts/ifcfg-lo;5a75db30'
+Feb  3 11:03:58 luiscarrera NetworkManager[2276]:    ifcfg-rh: removed /etc/sysconfig/network-scripts/ifcfg-lo;5a75db30.
+Feb  3 11:03:58 luiscarrera NetworkManager[2276]:    ifcfg-rh: parsing /etc/sysconfig/network-scripts/ifcfg-lo ... 
+Feb  3 11:03:58 luiscarrera yum[3490]: Updated: initscripts-9.03.58-1.el6.centos.2.x86_64
+Feb  3 11:04:00 luiscarrera NetworkManager[2276]: <info> kernel firmware directory '/lib/firmware' changed
+Feb  3 11:04:00 luiscarrera kernel: udev: starting version 147
+Feb  3 11:04:00 luiscarrera yum[3490]: Updated: udev-147-2.73.el6_8.2.x86_64
+Feb  3 11:04:02 luiscarrera yum[3490]: Updated: policycoreutils-2.0.83-30.1.el6_8.x86_64
+Feb  3 11:04:03 luiscarrera yum[3490]: Updated: libdrm-2.4.65-2.el6.x86_64
+Feb  3 11:04:05 luiscarrera yum[3490]: Installed: sssd-common-1.13.3-57.el6_9.x86_64
+Feb  3 11:04:07 luiscarrera yum[3490]: Updated: httpd-2.2.15-60.el6.centos.6.x86_64
+Feb  3 11:04:08 luiscarrera yum[3490]: Installed: sssd-krb5-common-1.13.3-57.el6_9.x86_64
+Feb  3 11:04:09 luiscarrera yum[3490]: Installed: sssd-common-pac-1.13.3-57.el6_9.x86_64
+Feb  3 11:04:10 luiscarrera yum[3490]: Updated: dracut-004-409.el6_8.2.noarch
+Feb  3 11:04:11 luiscarrera yum[3490]: Updated: rdma-6.9_4.1-3.el6.noarch
+Feb  3 11:04:12 luiscarrera yum[3490]: Updated: libibverbs-1.1.8-4.el6.x86_64
+Feb  3 11:04:13 luiscarrera yum[3490]: Updated: librdmacm-1.0.21-0.el6.x86_64
+Feb  3 11:04:14 luiscarrera yum[3490]: Updated: device-mapper-libs-1.02.117-12.el6_9.1.x86_64
+Feb  3 11:04:15 luiscarrera yum[3490]: Updated: device-mapper-1.02.117-12.el6_9.1.x86_64
+Feb  3 11:04:15 luiscarrera yum[3490]: Updated: device-mapper-event-libs-1.02.117-12.el6_9.1.x86_64
+Feb  3 11:04:16 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:04:16 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:04:19 luiscarrera yum[3490]: Updated: 1:cups-1.4.2-78.el6_9.x86_64
+Feb  3 11:04:20 luiscarrera yum[3490]: Updated: libcgroup-0.40.rc1-24.el6_9.x86_64
+Feb  3 11:04:22 luiscarrera yum[3490]: Updated: cyrus-sasl-2.1.23-15.el6_6.2.x86_64
+Feb  3 11:04:25 luiscarrera yum[3490]: Updated: samba-common-3.6.23-46el6_9.x86_64
+Feb  3 11:04:26 luiscarrera yum[3490]: Updated: samba-winbind-clients-3.6.23-46el6_9.x86_64
+Feb  3 11:04:28 luiscarrera yum[3490]: Updated: samba-winbind-3.6.23-46el6_9.x86_64
+Feb  3 11:04:29 luiscarrera yum[3490]: Updated: libsmbclient-3.6.23-46el6_9.x86_64
+Feb  3 11:04:32 luiscarrera yum[3490]: Updated: postgresql-8.4.20-8.el6_9.x86_64
+Feb  3 11:04:33 luiscarrera yum[3490]: Updated: ipa-python-3.0.0-51.el6.centos.x86_64
+Feb  3 11:04:34 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:04:34 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:04:35 luiscarrera yum[3490]: Updated: system-config-printer-libs-1.1.16-26.el6.x86_64
+Feb  3 11:04:35 luiscarrera yum[3490]: Updated: kpartx-0.4.9-100.el6_9.1.x86_64
+Feb  3 11:04:36 luiscarrera yum[3490]: Updated: mod_nss-1.0.10-9.el6.x86_64
+Feb  3 11:04:37 luiscarrera yum[3490]: Installed: mesa-libgbm-11.0.7-4.el6.x86_64
+Feb  3 11:04:38 luiscarrera yum[3490]: Updated: pki-setup-9.0.3-53.el6.noarch
+Feb  3 11:04:39 luiscarrera yum[3490]: Updated: pki-common-9.0.3-53.el6.noarch
+Feb  3 11:05:00 luiscarrera yum[3490]: Updated: selinux-policy-3.7.19-307el6_9.3.noarch
+Feb  3 11:05:43 luiscarrera kernel: SELinux:  Context unconfined_u:unconfined_r:auditctl_t:s0-s0:c0.c1023 became invalid (unmapped).
+Feb  3 11:05:44 luiscarrera kernel: SELinux:  Context system_u:unconfined_r:auditctl_t:s0-s0:c0.c1023 became invalid (unmapped).
+Feb  3 11:05:44 luiscarrera kernel: type=1403 audit(1517673944.340:46865): policy loaded auid=0 ses=2
+Feb  3 11:05:44 luiscarrera dbus: avc:  received policyload notice (seqno=2)
+Feb  3 11:05:44 luiscarrera dbus: avc:  received policyload notice (seqno=2)
+Feb  3 11:05:44 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:05:54 luiscarrera yum[3490]: Updated: selinux-policy-targeted-3.7.19-307el6_9.3.noarch
+Feb  3 11:05:55 luiscarrera yum[3490]: Updated: sane-backends-libs-1.0.21-5.el6.x86_64
+Feb  3 11:05:57 luiscarrera yum[3490]: Updated: sane-backends-1.0.21-5.el6.x86_64
+Feb  3 11:05:58 luiscarrera yum[3490]: Updated: mdadm-3.3.4-8.el6.x86_64
+Feb  3 11:05:58 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:05:58 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:06:00 luiscarrera yum[3490]: Updated: certmonger-0.77.5-4.el6.x86_64
+Feb  3 11:06:01 luiscarrera yum[3490]: Updated: nfs-utils-lib-1.1.5-13.el6.x86_64
+Feb  3 11:06:02 luiscarrera yum[3490]: Updated: 1:nfs-utils-1.2.3-75.el6_9.x86_64
+Feb  3 11:06:03 luiscarrera yum[3490]: Updated: kde-settings-4.3.1-2.el6.centos.noarch
+Feb  3 11:06:26 luiscarrera kernel: type=1403 audit(1517673986.865:46866): policy loaded auid=0 ses=2
+Feb  3 11:06:26 luiscarrera dbus: avc:  received policyload notice (seqno=3)
+Feb  3 11:06:26 luiscarrera dbus: avc:  received policyload notice (seqno=3)
+Feb  3 11:06:26 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:06:27 luiscarrera yum[3490]: Updated: pki-selinux-9.0.3-53.el6.noarch
+Feb  3 11:06:28 luiscarrera yum[3490]: Updated: pki-ca-9.0.3-53.el6.noarch
+Feb  3 11:06:29 luiscarrera yum[3490]: Updated: pki-silent-9.0.3-53.el6.noarch
+Feb  3 11:06:30 luiscarrera yum[3490]: Installed: mesa-libEGL-11.0.7-4.el6.x86_64
+Feb  3 11:06:31 luiscarrera yum[3490]: Updated: cyrus-sasl-devel-2.1.23-15.el6_6.2.x86_64
+Feb  3 11:06:34 luiscarrera yum[3490]: Updated: 2:postfix-2.6.6-8.el6.x86_64
+Feb  3 11:07:16 luiscarrera yum[3490]: Updated: policycoreutils-python-2.0.83-30.1.el6_8.x86_64
+Feb  3 11:07:18 luiscarrera yum[3490]: Updated: 389-ds-base-1.2.11.15-91.el6_9.x86_64
+Feb  3 11:07:19 luiscarrera yum[3490]: Updated: slapi-nis-0.40-7.el6.x86_64
+Feb  3 11:07:24 luiscarrera yum[3490]: Updated: foomatic-db-ppds-4.0-8.20091126.el6.noarch
+Feb  3 11:07:29 luiscarrera yum[3490]: Updated: foomatic-db-4.0-8.20091126.el6.noarch
+Feb  3 11:07:29 luiscarrera yum[3490]: Updated: device-mapper-event-1.02.117-12.el6_9.1.x86_64
+Feb  3 11:07:30 luiscarrera yum[3490]: Updated: lvm2-libs-2.02.143-12.el6_9.1.x86_64
+Feb  3 11:07:32 luiscarrera yum[3490]: Updated: parted-2.1-29.el6.x86_64
+Feb  3 11:07:33 luiscarrera yum[3490]: Updated: device-mapper-multipath-libs-0.4.9-100.el6_9.1.x86_64
+Feb  3 11:07:34 luiscarrera yum[3490]: Updated: device-mapper-multipath-0.4.9-100.el6_9.1.x86_64
+Feb  3 11:07:34 luiscarrera yum[3490]: Updated: cryptsetup-luks-libs-1.2.0-11.el6.x86_64
+Feb  3 11:07:35 luiscarrera yum[3490]: Updated: cryptsetup-luks-1.2.0-11.el6.x86_64
+Feb  3 11:07:36 luiscarrera yum[3490]: Updated: hal-info-20090716-5.el6.noarch
+Feb  3 11:07:37 luiscarrera yum[3490]: Updated: pm-utils-1.2.5-11.el6.x86_64
+Feb  3 11:07:37 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:07:37 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:07:38 luiscarrera yum[3490]: Updated: hal-0.5.14-14.el6.x86_64
+Feb  3 11:07:39 luiscarrera yum[3490]: Updated: pcsc-lite-1.5.2-16.el6.x86_64
+Feb  3 11:07:41 luiscarrera yum[3490]: Updated: ccid-1.3.9-11.el6.x86_64
+Feb  3 11:07:42 luiscarrera yum[3490]: Updated: coolkey-1.1.0-39.el6.x86_64
+Feb  3 11:07:43 luiscarrera yum[3490]: Updated: hal-devel-0.5.14-14.el6.x86_64
+Feb  3 11:07:45 luiscarrera yum[3490]: Updated: libvirt-client-0.10.2-62.el6_9.1.x86_64
+Feb  3 11:07:47 luiscarrera yum[3490]: Installed: openmpi-1.5.3-1.5.3-5.el6.x86_64
+Feb  3 11:07:49 luiscarrera yum[3490]: Installed: openmpi-1.4-1.4.3-5.el6.x86_64
+Feb  3 11:07:49 luiscarrera yum[3490]: Updated: libmlx4-1.0.6-7.el6.x86_64
+Feb  3 11:07:50 luiscarrera yum[3490]: Updated: dracut-kernel-004-409.el6_8.2.noarch
+Feb  3 11:07:51 luiscarrera yum[3490]: Installed: sssd-ad-1.13.3-57.el6_9.x86_64
+Feb  3 11:07:53 luiscarrera yum[3490]: Installed: sssd-ipa-1.13.3-57.el6_9.x86_64
+Feb  3 11:07:53 luiscarrera yum[3490]: Installed: sssd-ldap-1.13.3-57.el6_9.x86_64
+Feb  3 11:07:54 luiscarrera yum[3490]: Installed: sssd-krb5-1.13.3-57.el6_9.x86_64
+Feb  3 11:07:55 luiscarrera yum[3490]: Updated: mod_wsgi-3.2-7.el6.x86_64
+Feb  3 11:07:56 luiscarrera yum[3490]: Updated: mod_auth_kerb-5.4-14.el6.x86_64
+Feb  3 11:07:56 luiscarrera yum[3490]: Installed: sssd-proxy-1.13.3-57.el6_9.x86_64
+Feb  3 11:07:57 luiscarrera yum[3490]: Updated: sssd-1.13.3-57.el6_9.x86_64
+Feb  3 11:07:58 luiscarrera yum[3490]: Installed: mesa-libxatracker-11.0.7-4.el6.x86_64
+Feb  3 11:07:59 luiscarrera yum[3490]: Updated: libdrm-devel-2.4.65-2.el6.x86_64
+Feb  3 11:08:00 luiscarrera yum[3490]: Updated: hplip-common-3.14.6-4.el6.1.x86_64
+Feb  3 11:08:00 luiscarrera yum[3490]: Updated: hplip-libs-3.14.6-4.el6.1.x86_64
+Feb  3 11:08:01 luiscarrera yum[3490]: Updated: crda-3.13_2015.10.22-3.el6.x86_64
+Feb  3 11:08:01 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:08:01 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:08:02 luiscarrera yum[3490]: Updated: bluez-4.66-2.el6_9.x86_64
+Feb  3 11:08:04 luiscarrera yum[3490]: Updated: krb5-server-1.10.3-65.el6.x86_64
+Feb  3 11:08:05 luiscarrera yum[3490]: Updated: 2:xinetd-2.3.14-40.el6.x86_64
+Feb  3 11:08:07 luiscarrera yum[3490]: Updated: amanda-2.6.1p2-9.el6_6.x86_64
+Feb  3 11:08:07 luiscarrera xinetd[2545]: Starting reconfiguration
+Feb  3 11:08:07 luiscarrera xinetd[2545]: Swapping defaults
+Feb  3 11:08:07 luiscarrera xinetd[2545]: readjusting service talk
+Feb  3 11:08:07 luiscarrera xinetd[2545]: Reconfigured: new=0 old=1 dropped=0 (services)
+Feb  3 11:08:08 luiscarrera yum[3490]: Updated: amanda-client-2.6.1p2-9.el6_6.x86_64
+Feb  3 11:08:10 luiscarrera yum[3490]: Updated: subversion-1.6.11-15.el6_7.x86_64
+Feb  3 11:08:11 luiscarrera yum[3490]: Updated: ntpdate-4.2.6p5-12.el6.centos.2.x86_64
+Feb  3 11:08:12 luiscarrera yum[3490]: Updated: ntp-4.2.6p5-12.el6.centos.2.x86_64
+Feb  3 11:08:14 luiscarrera yum[3490]: Updated: system-config-date-1.9.60-3.el6.centos.noarch
+Feb  3 11:08:14 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:08:14 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:08:15 luiscarrera yum[3490]: Updated: oddjob-0.30-6.el6.x86_64
+Feb  3 11:08:15 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:08:15 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:08:16 luiscarrera yum[3490]: Updated: oddjob-mkhomedir-0.30-6.el6.x86_64
+Feb  3 11:08:18 luiscarrera yum[3490]: Updated: mysql-server-5.1.73-8.el6_8.x86_64
+Feb  3 11:08:20 luiscarrera yum[3490]: Updated: rsyslog-5.8.10-10.el6_6.x86_64
+Feb  3 11:08:21 luiscarrera yum[3490]: Updated: cronie-anacron-1.4.4-16.el6_8.2.x86_64
+Feb  3 11:08:22 luiscarrera yum[3490]: Updated: cronie-1.4.4-16.el6_8.2.x86_64
+Feb  3 11:08:24 luiscarrera yum[3490]: Updated: memcached-1.4.4-5.el6.x86_64
+Feb  3 11:08:25 luiscarrera yum[3490]: Updated: 1:net-snmp-5.5-60.el6.x86_64
+Feb  3 11:08:26 luiscarrera yum[3490]: Updated: iptables-ipv6-1.4.7-16.el6.x86_64
+Feb  3 11:08:28 luiscarrera yum[3490]: Updated: system-config-firewall-base-1.2.27-7.2.el6_6.noarch
+Feb  3 11:08:28 luiscarrera yum[3490]: Updated: system-config-firewall-tui-1.2.27-7.2.el6_6.noarch
+Feb  3 11:08:29 luiscarrera yum[3490]: Updated: mesa-dri-filesystem-11.0.7-4.el6.x86_64
+Feb  3 11:08:30 luiscarrera yum[3490]: Updated: mesa-dri-drivers-11.0.7-4.el6.x86_64
+Feb  3 11:08:31 luiscarrera yum[3490]: Updated: mesa-libGL-11.0.7-4.el6.x86_64
+Feb  3 11:08:32 luiscarrera yum[3490]: Updated: xorg-x11-drv-vesa-2.3.4-1.el6.x86_64
+Feb  3 11:08:32 luiscarrera yum[3490]: Updated: xorg-x11-drv-void-1.4.1-1.el6.x86_64
+Feb  3 11:08:33 luiscarrera yum[3490]: Updated: xorg-x11-drv-evdev-2.9.2-1.el6.x86_64
+Feb  3 11:08:35 luiscarrera yum[3490]: Installed: xorg-x11-server-Xorg-1.17.4-16.el6.centos.1.x86_64
+Feb  3 11:08:35 luiscarrera yum[3490]: Updated: mesa-libGLU-11.0.7-4.el6.x86_64
+Feb  3 11:08:37 luiscarrera yum[3490]: Updated: mesa-libGL-devel-11.0.7-4.el6.x86_64
+Feb  3 11:08:38 luiscarrera yum[3490]: Updated: mesa-libGLU-devel-11.0.7-4.el6.x86_64
+Feb  3 11:08:39 luiscarrera yum[3490]: Updated: 1:phonon-backend-gstreamer-4.6.2-28.el6_5.x86_64
+Feb  3 11:08:42 luiscarrera yum[3490]: Updated: 1:qt-x11-4.6.2-28.el6_5.x86_64
+Feb  3 11:08:48 luiscarrera yum[3490]: Updated: 6:kdelibs-4.3.4-28.el6.x86_64
+Feb  3 11:08:49 luiscarrera yum[3490]: Updated: 6:kdebase-libs-4.3.4-10.el6.x86_64
+Feb  3 11:08:51 luiscarrera yum[3490]: Updated: kdebase-workspace-wallpapers-4.3.4-37.el6.noarch
+Feb  3 11:08:54 luiscarrera yum[3490]: Updated: cim-schema-2.33.0-1.el6.noarch
+Feb  3 11:08:55 luiscarrera yum[3490]: Updated: cjkuni-fonts-common-0.2.20080216.1-36.el6.noarch
+Feb  3 11:08:55 luiscarrera yum[3490]: Updated: 1:busybox-1.15.1-21.el6_6.x86_64
+Feb  3 11:08:57 luiscarrera yum[3490]: Updated: kexec-tools-2.0.0-307.el6_9.1.x86_64
+Feb  3 11:08:58 luiscarrera NetworkManager[2276]: <info> kernel firmware directory '/lib/firmware' changed
+Feb  3 11:09:01 luiscarrera yum[3490]: Updated: kernel-firmware-2.6.32-696.20.1.el6.noarch
+Feb  3 11:09:08 luiscarrera yum[3490]: Installed: kernel-2.6.32-696.20.1.el6.x86_64
+Feb  3 11:09:08 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:09:08 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:09:10 luiscarrera yum[3490]: Updated: pulseaudio-0.9.21-26.el6.x86_64
+Feb  3 11:09:10 luiscarrera yum[3490]: Updated: alsa-plugins-pulseaudio-1.1.0-1.el6.x86_64
+Feb  3 11:09:11 luiscarrera yum[3490]: Updated: pulseaudio-module-x11-0.9.21-26.el6.x86_64
+Feb  3 11:09:12 luiscarrera yum[3490]: Updated: fuse-2.8.3-5.el6.x86_64
+Feb  3 11:09:13 luiscarrera yum[3490]: Updated: lldpad-0.9.46-10.el6_8.x86_64
+Feb  3 11:09:14 luiscarrera yum[3490]: Updated: fcoe-utils-1.0.28-6.el6.x86_64
+Feb  3 11:09:15 luiscarrera yum[3490]: Updated: 1:autofs-5.0.5-133.el6_9.x86_64
+Feb  3 11:09:16 luiscarrera yum[3490]: Updated: ipa-client-3.0.0-51.el6.centos.x86_64
+Feb  3 11:09:17 luiscarrera yum[3490]: Updated: ipa-admintools-3.0.0-51.el6.centos.x86_64
+Feb  3 11:09:20 luiscarrera yum[3490]: Updated: ipa-server-3.0.0-51.el6.centos.x86_64
+Feb  3 11:09:43 luiscarrera kernel: type=1403 audit(1517674183.641:46867): policy loaded auid=0 ses=2
+Feb  3 11:09:43 luiscarrera dbus: avc:  received policyload notice (seqno=4)
+Feb  3 11:09:43 luiscarrera dbus: avc:  received policyload notice (seqno=4)
+Feb  3 11:09:43 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:09:44 luiscarrera yum[3490]: Updated: ipa-server-selinux-3.0.0-51.el6.centos.x86_64
+Feb  3 11:09:45 luiscarrera yum[3490]: Updated: libwacom-data-0.16-2.el6.noarch
+Feb  3 11:09:45 luiscarrera yum[3490]: Updated: 12:dhcp-common-4.1.1-53.P1.el6.centos.1.x86_64
+Feb  3 11:09:47 luiscarrera yum[3490]: Updated: oxygen-cursor-themes-4.3.4-37.el6.noarch
+Feb  3 11:09:51 luiscarrera yum[3490]: Updated: kdebase-workspace-4.3.4-37.el6.x86_64
+Feb  3 11:09:52 luiscarrera yum[3490]: Updated: kdebase-workspace-libs-4.3.4-37.el6.x86_64
+Feb  3 11:09:53 luiscarrera yum[3490]: Updated: xmlgraphics-commons-1.3.1-1.2.el6.noarch
+Feb  3 11:09:53 luiscarrera yum[3490]: Updated: fop-0.95-4.4.el6.x86_64
+Feb  3 11:09:57 luiscarrera yum[3490]: Updated: 6:kdebase-4.3.4-10.el6.x86_64
+Feb  3 11:09:58 luiscarrera yum[3490]: Updated: kdm-4.3.4-37.el6.x86_64
+Feb  3 11:09:59 luiscarrera yum[3490]: Updated: 12:dhclient-4.1.1-53.P1.el6.centos.1.x86_64
+Feb  3 11:10:00 luiscarrera yum[3490]: Updated: libwacom-0.16-2.el6.x86_64
+Feb  3 11:10:01 luiscarrera yum[3490]: Updated: fcoe-target-utils-2.0rc1.fb16-6.el6.noarch
+Feb  3 11:10:01 luiscarrera yum[3490]: Updated: gvfs-fuse-1.4.3-27.el6.x86_64
+Feb  3 11:10:02 luiscarrera yum[3490]: Updated: kde-settings-pulseaudio-4.3.1-2.el6.centos.noarch
+Feb  3 11:10:02 luiscarrera yum[3490]: Updated: pulseaudio-module-gconf-0.9.21-26.el6.x86_64
+Feb  3 11:10:03 luiscarrera yum[3490]: Updated: pulseaudio-module-bluetooth-0.9.21-26.el6.x86_64
+Feb  3 11:10:04 luiscarrera yum[3490]: Updated: xorg-x11-drv-ati-7.6.1-3.el6_9.x86_64
+Feb  3 11:10:05 luiscarrera yum[3490]: Updated: 2:irqbalance-1.0.7-8.el6.x86_64
+Feb  3 11:10:05 luiscarrera yum[3490]: Updated: 1:xorg-x11-drv-nouveau-1.0.12-1.el6.x86_64
+Feb  3 11:10:06 luiscarrera yum[3490]: Updated: xorg-x11-drv-intel-2.99.917-0.4.20151111.el6.x86_64
+Feb  3 11:10:06 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:10:06 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:10:06 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:10:06 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:10:08 luiscarrera yum[3490]: Updated: system-config-kdump-2.0.5-19.el6.noarch
+Feb  3 11:10:11 luiscarrera yum[3490]: Updated: cjkuni-uming-fonts-0.2.20080216.1-36.el6.noarch
+Feb  3 11:10:13 luiscarrera sfcbinst2mof: --- Using /etc/sfcb/sfcb.cfg
+Feb  3 11:10:13 luiscarrera sfcbinst2mof: --- Using /etc/sfcb/sfcb.cfg
+Feb  3 11:10:13 luiscarrera yum[3490]: Updated: sblim-sfcb-1.3.11-5.el6.x86_64
+Feb  3 11:10:19 luiscarrera yum[3490]: Updated: 1:qt-devel-4.6.2-28.el6_5.x86_64
+Feb  3 11:10:19 luiscarrera yum[3490]: Updated: glx-utils-11.0.7-4.el6.x86_64
+Feb  3 11:10:20 luiscarrera yum[3490]: Updated: xorg-x11-drv-mutouch-1.3.0-6.el6.x86_64
+Feb  3 11:10:21 luiscarrera yum[3490]: Updated: xorg-x11-drv-apm-1.2.5-11.el6.x86_64
+Feb  3 11:10:21 luiscarrera yum[3490]: Updated: xorg-x11-drv-penmount-1.5.0-6.el6.x86_64
+Feb  3 11:10:22 luiscarrera yum[3490]: Updated: xorg-x11-drv-sis-0.10.8-1.el6.x86_64
+Feb  3 11:10:23 luiscarrera yum[3490]: Updated: xorg-x11-drv-r128-6.10.0-1.el6.x86_64
+Feb  3 11:10:23 luiscarrera yum[3490]: Updated: xorg-x11-drv-aiptek-1.4.1-6.el6.x86_64
+Feb  3 11:10:24 luiscarrera yum[3490]: Updated: xorg-x11-drv-glint-1.2.8-11.el6.x86_64
+Feb  3 11:10:25 luiscarrera yum[3490]: Updated: xorg-x11-drv-rendition-4.2.6-1.el6.x86_64
+Feb  3 11:10:25 luiscarrera yum[3490]: Updated: xorg-x11-drv-trident-1.3.6-11.el6.x86_64
+Feb  3 11:10:26 luiscarrera yum[3490]: Updated: xorg-x11-drv-elographics-1.4.1-4.el6.x86_64
+Feb  3 11:10:27 luiscarrera yum[3490]: Updated: xorg-x11-drv-ast-1.1.5-1.el6.x86_64
+Feb  3 11:10:28 luiscarrera yum[3490]: Updated: xorg-x11-drv-synaptics-1.8.3-1.el6.x86_64
+Feb  3 11:10:28 luiscarrera yum[3490]: Updated: xorg-x11-drv-mach64-6.9.5-1.el6.x86_64
+Feb  3 11:10:29 luiscarrera yum[3490]: Updated: xorg-x11-drv-tdfx-1.4.6-1.el6.x86_64
+Feb  3 11:10:30 luiscarrera yum[3490]: Updated: xorg-x11-drv-openchrome-0.3.3-7.el6.x86_64
+Feb  3 11:10:31 luiscarrera yum[3490]: Updated: xorg-x11-drv-cirrus-1.5.3-1.el6.x86_64
+Feb  3 11:10:31 luiscarrera yum[3490]: Updated: xorg-x11-drv-siliconmotion-1.7.8-1.el6.x86_64
+Feb  3 11:10:32 luiscarrera yum[3490]: Updated: xorg-x11-drv-dummy-0.3.6-16.el6.x86_64
+Feb  3 11:10:33 luiscarrera yum[3490]: Updated: xorg-x11-drv-mouse-1.9.1-1.el6.x86_64
+Feb  3 11:10:34 luiscarrera yum[3490]: Updated: xorg-x11-drv-nv-2.1.20-6.el6.x86_64
+Feb  3 11:10:34 luiscarrera yum[3490]: Updated: xorg-x11-drv-keyboard-1.8.1-1.el6.x86_64
+Feb  3 11:10:35 luiscarrera yum[3490]: Updated: xorg-x11-drv-i128-1.3.6-11.el6.x86_64
+Feb  3 11:10:36 luiscarrera yum[3490]: Updated: xorg-x11-drv-wacom-0.32.0-1.el6.x86_64
+Feb  3 11:10:36 luiscarrera yum[3490]: Updated: xorg-x11-drv-fbdev-0.4.3-17.el6.x86_64
+Feb  3 11:10:37 luiscarrera yum[3490]: Updated: xorg-x11-drv-hyperpen-1.4.1-6.el6.x86_64
+Feb  3 11:10:38 luiscarrera yum[3490]: Updated: xorg-x11-drv-fpit-1.4.0-7.el6.x86_64
+Feb  3 11:10:38 luiscarrera yum[3490]: Updated: xorg-x11-drv-qxl-0.1.1-19.el6.x86_64
+Feb  3 11:10:39 luiscarrera yum[3490]: Updated: xorg-x11-drv-v4l-0.2.0-37.el6.x86_64
+Feb  3 11:10:40 luiscarrera yum[3490]: Updated: xorg-x11-drv-mga-1.6.3-11.el6.x86_64
+Feb  3 11:10:40 luiscarrera yum[3490]: Updated: xorg-x11-drv-voodoo-1.2.5-11.el6.x86_64
+Feb  3 11:10:41 luiscarrera yum[3490]: Updated: xorg-x11-drv-vmware-13.1.0-2.el6.x86_64
+Feb  3 11:10:42 luiscarrera yum[3490]: Updated: xorg-x11-drv-acecad-1.5.0-8.el6.x86_64
+Feb  3 11:10:43 luiscarrera yum[3490]: Updated: xorg-x11-drv-xgi-1.6.1-1.el6.x86_64
+Feb  3 11:10:43 luiscarrera yum[3490]: Updated: xorg-x11-drv-s3virge-1.10.7-1.el6.x86_64
+Feb  3 11:10:44 luiscarrera yum[3490]: Updated: xorg-x11-drv-sisusb-0.9.6-11.el6.x86_64
+Feb  3 11:10:45 luiscarrera yum[3490]: Updated: xorg-x11-drv-i740-1.3.4-12.el6.x86_64
+Feb  3 11:10:45 luiscarrera yum[3490]: Updated: xorg-x11-drv-savage-2.3.7-3.el6.x86_64
+Feb  3 11:10:47 luiscarrera yum[3490]: Updated: xorg-x11-drv-vmmouse-13.1.0-1.el6.x86_64
+Feb  3 11:10:47 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:10:47 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:10:47 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:10:48 luiscarrera yum[3490]: Updated: system-config-firewall-1.2.27-7.2.el6_6.noarch
+Feb  3 11:10:55 luiscarrera yum[3490]: Updated: 2:tog-pegasus-2.12.0-6.el6.x86_64
+Feb  3 11:10:56 luiscarrera yum[3490]: Updated: sysstat-9.0.4-33el6_9.1.x86_64
+Feb  3 11:10:57 luiscarrera yum[3490]: Updated: akonadi-1.2.1-3.el6.x86_64
+Feb  3 11:10:59 luiscarrera yum[3490]: Updated: firstboot-1.110.15-4.el6.x86_64
+Feb  3 11:11:00 luiscarrera yum[3490]: Updated: subversion-javahl-1.6.11-15.el6_7.x86_64
+Feb  3 11:11:01 luiscarrera yum[3490]: Updated: amanda-server-2.6.1p2-9.el6_6.x86_64
+Feb  3 11:11:02 luiscarrera yum[3490]: Updated: 1:wireless-tools-29-6.el6.x86_64
+Feb  3 11:11:05 luiscarrera yum[3490]: Updated: 1:hpijs-3.14.6-4.el6.1.x86_64
+Feb  3 11:11:05 luiscarrera yum[3490]: Updated: libsane-hpaio-3.14.6-4.el6.1.x86_64
+Feb  3 11:11:06 luiscarrera yum[3490]: Updated: libibverbs-utils-1.1.8-4.el6.x86_64
+Feb  3 11:11:08 luiscarrera yum[3490]: Installed: openmpi-1.4-psm-1.4.3-5.el6.x86_64
+Feb  3 11:11:10 luiscarrera yum[3490]: Installed: openmpi-1.5.3-psm-1.5.3-5.el6.x86_64
+Feb  3 11:11:11 luiscarrera yum[3490]: Updated: libvirt-devel-0.10.2-62.el6_9.1.x86_64
+Feb  3 11:11:13 luiscarrera yum[3490]: Updated: gnome-vfs2-devel-2.24.2-8.el6.x86_64
+Feb  3 11:11:14 luiscarrera yum[3490]: Updated: esc-1.1.0-28.el6.centos.x86_64
+Feb  3 11:11:15 luiscarrera yum[3490]: Updated: rdesktop-1.7.1-1.el6.x86_64
+Feb  3 11:11:16 luiscarrera yum[3490]: Updated: hal-storage-addon-0.5.14-14.el6.x86_64
+Feb  3 11:11:16 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:11:16 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:11:16 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:11:16 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:11:18 luiscarrera yum[3490]: Updated: udisks-1.0.1-11.el6.x86_64
+Feb  3 11:11:20 luiscarrera yum[3490]: Updated: lvm2-2.02.143-12.el6_9.1.x86_64
+Feb  3 11:11:21 luiscarrera yum[3490]: Updated: foomatic-4.0.4-5.el6_7.x86_64
+Feb  3 11:11:23 luiscarrera yum[3490]: Updated: openldap-devel-2.4.40-16.el6.x86_64
+Feb  3 11:11:24 luiscarrera yum[3490]: Updated: libacl-devel-2.2.49-7.el6_9.1.x86_64
+Feb  3 11:11:24 luiscarrera yum[3490]: Updated: sane-backends-libs-gphoto2-1.0.21-5.el6.x86_64
+Feb  3 11:11:25 luiscarrera yum[3490]: Updated: mod_revocator-1.0.3-11.el6.x86_64
+Feb  3 11:11:26 luiscarrera yum[3490]: Updated: system-config-printer-udev-1.1.16-26.el6.x86_64
+Feb  3 11:11:27 luiscarrera yum[3490]: Updated: system-config-printer-1.1.16-26.el6.x86_64
+Feb  3 11:11:29 luiscarrera yum[3490]: Updated: postgresql-docs-8.4.20-8.el6_9.x86_64
+Feb  3 11:11:31 luiscarrera yum[3490]: Updated: postgresql-server-8.4.20-8.el6_9.x86_64
+Feb  3 11:11:33 luiscarrera yum[3490]: Updated: postgresql-devel-8.4.20-8.el6_9.x86_64
+Feb  3 11:11:34 luiscarrera yum[3490]: Updated: gnome-vfs2-smb-2.24.2-8.el6.x86_64
+Feb  3 11:11:35 luiscarrera yum[3490]: Updated: gvfs-smb-1.4.3-27.el6.x86_64
+Feb  3 11:11:37 luiscarrera yum[3490]: Updated: samba-3.6.23-46el6_9.x86_64
+Feb  3 11:11:38 luiscarrera yum[3490]: Updated: cifs-utils-4.8.1-20.el6.x86_64
+Feb  3 11:11:41 luiscarrera yum[3490]: Updated: samba-client-3.6.23-46el6_9.x86_64
+Feb  3 11:11:41 luiscarrera yum[3490]: Updated: numad-0.5-12.20150602git.el6.x86_64
+Feb  3 11:11:42 luiscarrera yum[3490]: Updated: libcgroup-devel-0.40.rc1-24.el6_9.x86_64
+Feb  3 11:11:43 luiscarrera yum[3490]: Updated: scsi-target-utils-1.0.24-18.el6.x86_64
+Feb  3 11:11:44 luiscarrera yum[3490]: Updated: dapl-2.0.34-2.el6.x86_64
+Feb  3 11:11:45 luiscarrera yum[3490]: Updated: librdmacm-utils-1.0.21-0.el6.x86_64
+Feb  3 11:11:46 luiscarrera yum[3490]: Updated: libipathverbs-1.3-3.el6.x86_64
+Feb  3 11:11:47 luiscarrera yum[3490]: Updated: libcxgb3-1.3.1-3.el6.x86_64
+Feb  3 11:11:48 luiscarrera yum[3490]: Updated: libnes-1.1.4-2.el6.x86_64
+Feb  3 11:11:48 luiscarrera yum[3490]: Updated: ibacm-1.0.9-1.el6.x86_64
+Feb  3 11:11:49 luiscarrera yum[3490]: Updated: libmthca-1.0.6-4.el6.x86_64
+Feb  3 11:11:52 luiscarrera yum[3490]: Updated: mod_perl-2.0.4-11.el6_5.x86_64
+Feb  3 11:11:54 luiscarrera yum[3490]: Updated: php-5.3.3-49.el6.x86_64
+Feb  3 11:11:55 luiscarrera yum[3490]: Updated: httpd-manual-2.2.15-60.el6.centos.6.noarch
+Feb  3 11:11:56 luiscarrera yum[3490]: Updated: 1:mod_ssl-2.2.15-60.el6.centos.6.x86_64
+Feb  3 11:11:57 luiscarrera yum[3490]: Updated: biosdevname-0.7.2-1.el6.x86_64
+Feb  3 11:11:58 luiscarrera NetworkManager[2276]: <info> kernel firmware directory '/lib/firmware' changed
+Feb  3 11:11:58 luiscarrera yum[3490]: Updated: bfa-firmware-3.2.23.0-2.el6.noarch
+Feb  3 11:11:59 luiscarrera yum[3490]: Updated: b43-openfwwf-5.2-10.el6.noarch
+Feb  3 11:11:59 luiscarrera yum[3490]: Updated: spice-vdagent-0.14.0-13.el6.x86_64
+Feb  3 11:12:00 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:12:00 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:12:00 luiscarrera yum[3490]: Updated: dnsmasq-2.48-18.el6_9.x86_64
+Feb  3 11:12:01 luiscarrera yum[3490]: Updated: 1:cpuspeed-1.5-22.el6.x86_64
+Feb  3 11:12:03 luiscarrera yum[3490]: Updated: vsftpd-2.2.2-24.el6.x86_64
+Feb  3 11:12:03 luiscarrera yum[3490]: Updated: 1:readahead-1.5.6-2.el6.x86_64
+Feb  3 11:12:04 luiscarrera DISCLAIMER: This update supersedes microcode provided  by Red Hat with the CVE-2017-5715 (“Spectre”)
+Feb  3 11:12:04 luiscarrera DISCLAIMER: CPU branch injection vulnerability mitigation.  (HIstorically, Red Hat has provided updated
+Feb  3 11:12:04 luiscarrera DISCLAIMER: microcode, developed by our microprocessor partners, as a customer convenience.)  Further
+Feb  3 11:12:04 luiscarrera DISCLAIMER: testing has uncovered problems with the microcode provided along with the “Spectre” mitigation
+Feb  3 11:12:04 luiscarrera DISCLAIMER: that could lead to system instabilities.  As a result, Red Hat is providing an microcode update
+Feb  3 11:12:04 luiscarrera DISCLAIMER: that reverts to the last known good microcode version dated before 03 January 2018.
+Feb  3 11:12:04 luiscarrera DISCLAIMER: Red Hat strongly recommends that customers contact their hardware provider for the latest microcode updates.
+Feb  3 11:12:04 luiscarrera DISCLAIMER: 
+Feb  3 11:12:04 luiscarrera DISCLAIMER: IMPORTANT: Customers using Intel Skylake-, Broadwell-, and Haswell-based platforms must obtain and
+Feb  3 11:12:04 luiscarrera DISCLAIMER: install updated microcode from their hardware vendor immediately. The "Spectre" mitigation requires
+Feb  3 11:12:04 luiscarrera DISCLAIMER: both an updated kernel from Red Hat and updated microcode from your hardware vendor.
+Feb  3 11:12:04 luiscarrera kernel: This update supersedes microcode provided  by Red Hat with the CVE-2017-5715 (“Spectre”)
+Feb  3 11:12:04 luiscarrera kernel: CPU branch injection vulnerability mitigation.  (HIstorically, Red Hat has provided updated
+Feb  3 11:12:04 luiscarrera kernel: microcode, developed by our microprocessor partners, as a customer convenience.)  Further
+Feb  3 11:12:04 luiscarrera kernel: testing has uncovered problems with the microcode provided along with the “Spectre” mitigation
+Feb  3 11:12:04 luiscarrera kernel: that could lead to system instabilities.  As a result, Red Hat is providing an microcode update
+Feb  3 11:12:04 luiscarrera kernel: that reverts to the last known good microcode version dated before 03 January 2018.
+Feb  3 11:12:04 luiscarrera kernel: Red Hat strongly recommends that customers contact their hardware provider for the latest microcode updates.
+Feb  3 11:12:04 luiscarrera kernel: 
+Feb  3 11:12:04 luiscarrera kernel: IMPORTANT: Customers using Intel Skylake-, Broadwell-, and Haswell-based platforms must obtain and
+Feb  3 11:12:04 luiscarrera kernel: install updated microcode from their hardware vendor immediately. The "Spectre" mitigation requires
+Feb  3 11:12:04 luiscarrera kernel: both an updated kernel from Red Hat and updated microcode from your hardware vendor.
+Feb  3 11:12:04 luiscarrera yum[3490]: Updated: 1:microcode_ctl-1.17-25.4.el6_9.x86_64
+Feb  3 11:12:05 luiscarrera NetworkManager[2276]: <info> kernel firmware directory '/lib/firmware' changed
+Feb  3 11:12:05 luiscarrera yum[3490]: Updated: 3:ypbind-1.20.4-33.el6.x86_64
+Feb  3 11:12:06 luiscarrera yum[3490]: Updated: 1:smartmontools-5.43-3.el6.x86_64
+Feb  3 11:12:07 luiscarrera yum[3490]: Updated: rng-tools-5-2.el6_7.x86_64
+Feb  3 11:12:08 luiscarrera yum[3490]: Updated: iscsi-initiator-utils-6.2.0.873-27.el6_9.x86_64
+Feb  3 11:12:10 luiscarrera yum[3490]: Installed: libreswan-3.15-7.5.el6_9.x86_64
+Feb  3 11:12:12 luiscarrera yum[3490]: Updated: spamassassin-3.3.1-3.el6.x86_64
+Feb  3 11:12:14 luiscarrera yum[3490]: Updated: system-config-network-tui-1.6.0.el6.3-4.el6.noarch
+Feb  3 11:12:15 luiscarrera yum[3490]: Updated: 1:quota-3.17-23.el6.x86_64
+Feb  3 11:12:16 luiscarrera yum[3490]: Updated: at-3.1.10-49.el6.x86_64
+Feb  3 11:12:19 luiscarrera yum[3490]: Updated: 1:dovecot-2.0.9-22.el6.x86_64
+Feb  3 11:12:19 luiscarrera yum[3490]: Updated: acpid-1.0.10-3.el6.x86_64
+Feb  3 11:12:20 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:12:20 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:12:20 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:12:20 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:12:21 luiscarrera yum[3490]: Updated: 1:wpa_supplicant-0.7.3-9.el6_9.2.x86_64
+Feb  3 11:12:22 luiscarrera yum[3490]: Updated: prelink-0.4.6-3.1.el6_4.x86_64
+Feb  3 11:12:22 luiscarrera yum[3490]: Updated: virt-what-1.11-1.3.el6.x86_64
+Feb  3 11:12:23 luiscarrera yum[3490]: Updated: paps-0.6.8-13.el6.3.x86_64
+Feb  3 11:12:25 luiscarrera yum[3490]: Updated: elinks-0.12-0.21.pre5.el6_3.x86_64
+Feb  3 11:12:26 luiscarrera yum[3490]: Updated: ptlib-2.6.5-5.el6.x86_64
+Feb  3 11:12:27 luiscarrera yum[3490]: Updated: x3270-x11-3.3.15-2.el6.x86_64
+Feb  3 11:12:29 luiscarrera yum[3490]: Updated: ibus-table-additional-1.2.0.20100111-5.el6.noarch
+Feb  3 11:12:30 luiscarrera yum[3490]: Updated: 2:vim-enhanced-7.4.629-5.el6_8.1.x86_64
+Feb  3 11:12:30 luiscarrera yum[3490]: Updated: perl-core-5.10.1-144.el6.x86_64
+Feb  3 11:12:31 luiscarrera yum[3490]: Updated: systemtap-2.9-7.el6.x86_64
+Feb  3 11:12:33 luiscarrera yum[3490]: Updated: gcc-gfortran-4.4.7-18.el6.x86_64
+Feb  3 11:12:34 luiscarrera yum[3490]: Updated: gcc-c++-4.4.7-18.el6.x86_64
+Feb  3 11:12:35 luiscarrera yum[3490]: Updated: libhugetlbfs-utils-2.16-2.el6.x86_64
+Feb  3 11:12:38 luiscarrera yum[3490]: Updated: 1:java-1.7.0-openjdk-devel-1.7.0.161-2.6.12.0.el6_9.x86_64
+Feb  3 11:12:38 luiscarrera yum[3490]: Updated: compat-db-4.6.21-17.el6.x86_64
+Feb  3 11:12:40 luiscarrera yum[3490]: Updated: gettext-devel-0.17-18.el6.x86_64
+Feb  3 11:12:48 luiscarrera yum[3490]: Updated: boost-devel-1.41.0-28.el6.x86_64
+Feb  3 11:12:50 luiscarrera yum[3490]: Updated: krb5-devel-1.10.3-65.el6.x86_64
+Feb  3 11:12:51 luiscarrera yum[3490]: Updated: gvfs-archive-1.4.3-27.el6.x86_64
+Feb  3 11:12:52 luiscarrera yum[3490]: Updated: xorg-x11-xinit-1.0.9-14.el6.x86_64
+Feb  3 11:12:53 luiscarrera yum[3490]: Updated: pulseaudio-libs-devel-0.9.21-26.el6.x86_64
+Feb  3 11:12:55 luiscarrera yum[3490]: Updated: libsoup-devel-2.34.3-5.el6.x86_64
+Feb  3 11:12:56 luiscarrera yum[3490]: Updated: pango-devel-1.28.1-11.el6.x86_64
+Feb  3 11:12:57 luiscarrera yum[3490]: Updated: ruby-1.8.7.374-5.el6.x86_64
+Feb  3 11:13:08 luiscarrera yum[3490]: Updated: texlive-latex-2007-60.el6_7.x86_64
+Feb  3 11:13:10 luiscarrera yum[3490]: Updated: ibutils-1.5.7-10.el6.x86_64
+Feb  3 11:13:11 luiscarrera yum[3490]: Updated: gvfs-gphoto2-1.4.3-27.el6.x86_64
+Feb  3 11:13:11 luiscarrera yum[3490]: Updated: gvfs-devel-1.4.3-27.el6.x86_64
+Feb  3 11:13:12 luiscarrera yum[3490]: Updated: gvfs-afc-1.4.3-27.el6.x86_64
+Feb  3 11:13:13 luiscarrera yum[3490]: Updated: gvfs-obexftp-1.4.3-27.el6.x86_64
+Feb  3 11:13:14 luiscarrera yum[3490]: Updated: junit4-4.5-5.4.el6.noarch
+Feb  3 11:13:15 luiscarrera yum[3490]: Updated: ant-commons-logging-1.7.1-15.el6.x86_64
+Feb  3 11:13:16 luiscarrera yum[3490]: Updated: ant-trax-1.7.1-15.el6.x86_64
+Feb  3 11:13:17 luiscarrera yum[3490]: Updated: ant-apache-resolver-1.7.1-15.el6.x86_64
+Feb  3 11:13:18 luiscarrera yum[3490]: Updated: ant-apache-bcel-1.7.1-15.el6.x86_64
+Feb  3 11:13:19 luiscarrera yum[3490]: Updated: ant-apache-regexp-1.7.1-15.el6.x86_64
+Feb  3 11:13:20 luiscarrera yum[3490]: Updated: ant-javamail-1.7.1-15.el6.x86_64
+Feb  3 11:13:21 luiscarrera yum[3490]: Updated: ant-apache-bsf-1.7.1-15.el6.x86_64
+Feb  3 11:13:22 luiscarrera yum[3490]: Updated: ant-apache-log4j-1.7.1-15.el6.x86_64
+Feb  3 11:13:23 luiscarrera yum[3490]: Updated: ant-apache-oro-1.7.1-15.el6.x86_64
+Feb  3 11:13:25 luiscarrera yum[3490]: Updated: ant-antlr-1.7.1-15.el6.x86_64
+Feb  3 11:13:26 luiscarrera yum[3490]: Updated: ant-commons-net-1.7.1-15.el6.x86_64
+Feb  3 11:13:27 luiscarrera yum[3490]: Updated: ant-jsch-1.7.1-15.el6.x86_64
+Feb  3 11:13:28 luiscarrera yum[3490]: Updated: ant-jdepend-1.7.1-15.el6.x86_64
+Feb  3 11:13:29 luiscarrera yum[3490]: Updated: ant-junit-1.7.1-15.el6.x86_64
+Feb  3 11:13:30 luiscarrera yum[3490]: Updated: ant-swing-1.7.1-15.el6.x86_64
+Feb  3 11:13:31 luiscarrera yum[3490]: Updated: apache-jasper-5.5.28-5.el6.noarch
+Feb  3 11:13:32 luiscarrera yum[3490]: Updated: 1:hsqldb-1.8.0.10-12.el6.noarch
+Feb  3 11:13:33 luiscarrera yum[3490]: Updated: axis-1.2.1-7.5.el6_5.noarch
+Feb  3 11:13:34 luiscarrera yum[3490]: Updated: openssl098e-0.9.8e-20.el6.centos.1.x86_64
+Feb  3 11:13:37 luiscarrera yum[3490]: Updated: openmotif-devel-2.3.3-9.el6.x86_64
+Feb  3 11:13:38 luiscarrera yum[3490]: Updated: rpm-build-4.8.0-55.el6.x86_64
+Feb  3 11:13:39 luiscarrera yum[3490]: Updated: GConf2-gtk-2.28.0-7.el6.x86_64
+Feb  3 11:13:40 luiscarrera yum[3490]: Updated: python-weberror-0.10.2-2.el6.noarch
+Feb  3 11:13:41 luiscarrera yum[3490]: Updated: python-dateutil-1.4.1-7.el6.noarch
+Feb  3 11:13:42 luiscarrera yum[3490]: Updated: openchange-1.0-7.0.1.el6.centos.x86_64
+Feb  3 11:13:43 luiscarrera yum[3490]: Updated: rpmlint-0.94-3.1.el6.noarch
+Feb  3 11:13:44 luiscarrera yum[3490]: Updated: libspectre-0.2.4-2.el6.x86_64
+Feb  3 11:13:45 luiscarrera yum[3490]: Updated: fprintd-pam-0.1-22.git04fd09cfa.el6.x86_64
+Feb  3 11:13:46 luiscarrera yum[3490]: Updated: crash-gcore-command-1.0-5.el6.x86_64
+Feb  3 11:13:46 luiscarrera yum[3490]: Updated: yum-plugin-security-1.1.30-40.el6.noarch
+Feb  3 11:13:47 luiscarrera yum[3490]: Updated: yum-utils-1.1.30-40.el6.noarch
+Feb  3 11:13:48 luiscarrera yum[3490]: Updated: openwsman-client-2.2.3-11.el6.x86_64
+Feb  3 11:13:51 luiscarrera yum[3490]: Updated: man-pages-overrides-6.9.1-1.el6.noarch
+Feb  3 11:13:52 luiscarrera yum[3490]: Updated: passwd-0.77-7.el6.x86_64
+Feb  3 11:13:54 luiscarrera yum[3490]: Updated: 1:php-pear-1.9.4-5.el6.noarch
+Feb  3 11:13:55 luiscarrera yum[3490]: Updated: php-pdo-5.3.3-49.el6.x86_64
+Feb  3 11:13:56 luiscarrera yum[3490]: Updated: php-xml-5.3.3-49.el6.x86_64
+Feb  3 11:13:57 luiscarrera yum[3490]: Updated: php-gd-5.3.3-49.el6.x86_64
+Feb  3 11:13:58 luiscarrera yum[3490]: Updated: 1:net-snmp-utils-5.5-60.el6.x86_64
+Feb  3 11:13:59 luiscarrera yum[3490]: Updated: sudo-1.8.6p3-29.el6_9.x86_64
+Feb  3 11:14:00 luiscarrera yum[3490]: Updated: pam_pkcs11-0.6.2-15.el6.x86_64
+Feb  3 11:14:01 luiscarrera yum[3490]: Updated: sblim-wbemcli-1.6.1-3.el6.x86_64
+Feb  3 11:14:02 luiscarrera yum[3490]: Updated: libcurl-devel-7.19.7-53.el6_9.x86_64
+Feb  3 11:14:03 luiscarrera yum[3490]: Updated: mysql-devel-5.1.73-8.el6_8.x86_64
+Feb  3 11:14:05 luiscarrera yum[3490]: Updated: sos-3.2-54.el6.centos.1.noarch
+Feb  3 11:14:05 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:14:05 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:14:05 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:14:06 luiscarrera yum[3490]: Updated: cups-pk-helper-0.0.4-13.el6.x86_64
+Feb  3 11:14:07 luiscarrera yum[3490]: Updated: hwloc-1.5-3.el6_5.x86_64
+Feb  3 11:14:10 luiscarrera yum[3490]: Updated: alsa-lib-devel-1.1.0-4.el6.x86_64
+Feb  3 11:14:11 luiscarrera yum[3490]: Updated: usbutils-003-6.el6.x86_64
+Feb  3 11:14:15 luiscarrera yum[3490]: Updated: xorg-x11-fonts-misc-7.2-11.el6.noarch
+Feb  3 11:14:17 luiscarrera yum[3490]: Updated: python-urwid-1.1.1-1.el6.x86_64
+Feb  3 11:14:18 luiscarrera yum[3490]: Updated: perf-2.6.32-696.20.1.el6.x86_64
+Feb  3 11:14:19 luiscarrera yum[3490]: Updated: python-devel-2.6.6-66.el6_8.x86_64
+Feb  3 11:14:20 luiscarrera yum[3490]: Updated: blktrace-1.0.1-7.el6.x86_64
+Feb  3 11:14:21 luiscarrera yum[3490]: Updated: python-prioritized-methods-0.2.1-5.2.el6.noarch
+Feb  3 11:14:22 luiscarrera yum[3490]: Updated: dstat-0.7.0-3.el6_9.1.noarch
+Feb  3 11:14:23 luiscarrera yum[3490]: Updated: 1:grub-0.97-99.el6.x86_64
+Feb  3 11:14:25 luiscarrera yum[3490]: Updated: python-markdown-2.0.1-4.el6.noarch
+Feb  3 11:14:26 luiscarrera yum[3490]: Updated: python-beaker-1.3.1-7.el6.noarch
+Feb  3 11:14:27 luiscarrera yum[3490]: Updated: iotop-0.3.2-9.el6.noarch
+Feb  3 11:14:27 luiscarrera yum[3490]: Updated: polkit-desktop-policy-0.96-11.el6.noarch
+Feb  3 11:14:29 luiscarrera yum[3490]: Updated: oprofile-0.9.9-21.el6.x86_64
+Feb  3 11:14:30 luiscarrera yum[3490]: Updated: mlocate-0.22.2-6.el6.x86_64
+Feb  3 11:14:31 luiscarrera yum[3490]: Updated: 14:tcpdump-4.0.0-11.20090921gitdf3cb4.2.el6.x86_64
+Feb  3 11:14:32 luiscarrera yum[3490]: Updated: avahi-autoipd-0.6.25-17.el6.x86_64
+Feb  3 11:14:32 luiscarrera yum[3490]: Updated: pam_passwdqc-1.0.5-8.el6.x86_64
+Feb  3 11:14:34 luiscarrera yum[3490]: Updated: ppp-2.4.5-10.el6.x86_64
+Feb  3 11:14:35 luiscarrera yum[3490]: Updated: pam-devel-1.1.1-24.el6.x86_64
+Feb  3 11:14:36 luiscarrera yum[3490]: Updated: abrt-tui-2.0.8-43.el6.centos.x86_64
+Feb  3 11:14:37 luiscarrera yum[3490]: Updated: powertop-2.3-4.el6.x86_64
+Feb  3 11:14:38 luiscarrera yum[3490]: Updated: tcsh-6.17-38.el6.x86_64
+Feb  3 11:14:39 luiscarrera yum[3490]: Updated: audit-2.4.5-6.el6.x86_64
+Feb  3 11:14:40 luiscarrera yum[3490]: Updated: psacct-6.3.2-70.el6.x86_64
+Feb  3 11:14:53 luiscarrera yum[3490]: Updated: gnome-themes-2.28.1-7.el6.noarch
+Feb  3 11:14:53 luiscarrera yum[3490]: Updated: libXtst-devel-1.2.3-1.el6.x86_64
+Feb  3 11:14:54 luiscarrera yum[3490]: Updated: ledmon-0.79-1.el6.x86_64
+Feb  3 11:14:55 luiscarrera yum[3490]: Updated: jasper-1.900.1-21.el6_9.x86_64
+Feb  3 11:15:02 luiscarrera yum[3490]: Updated: 1:valgrind-3.8.1-9.el6.x86_64
+Feb  3 11:15:03 luiscarrera yum[3490]: Updated: perl-XML-Dumper-0.81-8.el6.noarch
+Feb  3 11:15:04 luiscarrera yum[3490]: Updated: crypto-utils-2.4.1-24.3.el6.x86_64
+Feb  3 11:15:05 luiscarrera yum[3490]: Updated: 1:perl-TimeDate-1.16-13.el6.noarch
+Feb  3 11:15:06 luiscarrera yum[3490]: Updated: ntsysv-1.3.49.5-1.el6.x86_64
+Feb  3 11:15:07 luiscarrera yum[3490]: Updated: libibmad-1.3.11-1.el6.x86_64
+Feb  3 11:15:07 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:15:07 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:15:07 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:15:07 luiscarrera dbus: [system] Reloaded configuration
+Feb  3 11:15:08 luiscarrera yum[3490]: Updated: ModemManager-0.4.0-5.git20100628.el6.x86_64
+Feb  3 11:15:09 luiscarrera yum[3490]: Updated: efibootmgr-0.5.4-15.el6.x86_64
+Feb  3 11:15:10 luiscarrera yum[3490]: Updated: libXres-1.0.7-2.1.el6.x86_64
+Feb  3 11:15:11 luiscarrera yum[3490]: Installed: compat-xcb-util-0.4.0-2.2.el6.x86_64
+Feb  3 11:15:11 luiscarrera yum[3490]: Updated: sqlite-devel-3.6.20-1.el6_7.2.x86_64
+Feb  3 11:15:12 luiscarrera yum[3490]: Updated: cyrus-sasl-plain-2.1.23-15.el6_6.2.x86_64
+Feb  3 11:15:13 luiscarrera yum[3490]: Updated: libvncserver-0.9.7-7.el6_6.1.x86_64
+Feb  3 11:15:14 luiscarrera yum[3490]: Updated: audit-libs-devel-2.4.5-6.el6.x86_64
+Feb  3 11:15:32 luiscarrera yum[3490]: Updated: 1:java-1.6.0-openjdk-javadoc-1.6.0.41-1.13.13.1.el6_8.x86_64
+Feb  3 11:15:33 luiscarrera yum[3490]: Updated: ibus-hangul-1.3.0.20100329-6.el6.x86_64
+Feb  3 11:15:34 luiscarrera yum[3490]: Updated: flac-1.2.1-7.el6_6.x86_64
+Feb  3 11:15:35 luiscarrera yum[3490]: Updated: dvd+rw-tools-7.1-7.el6.x86_64
+Feb  3 11:15:38 luiscarrera yum[3490]: Updated: dejavu-sans-mono-fonts-2.33-1.el6.noarch
+Feb  3 11:15:39 luiscarrera yum[3490]: Updated: 2:mcelog-128-1.c83713fd.el6.x86_64
+Feb  3 11:15:40 luiscarrera yum[3490]: Updated: libitm-7.1.1-2.3.1.el6_9.x86_64
+Feb  3 11:15:41 luiscarrera yum[3490]: Updated: cscope-15.6-7.el6.x86_64
+Feb  3 11:15:42 luiscarrera yum[3490]: Updated: binutils-devel-2.20.51.0.2-5.47.el6_9.1.x86_64
+Feb  3 11:15:44 luiscarrera yum[3490]: Updated: ncurses-devel-5.7-4.20090207.el6.x86_64
+Feb  3 11:15:45 luiscarrera yum[3490]: Updated: flex-2.5.35-9.el6.x86_64
+Feb  3 11:15:45 luiscarrera yum[3490]: Updated: scl-utils-20120927-29.el6_9.x86_64
+Feb  3 11:15:47 luiscarrera yum[3490]: Updated: xorg-x11-fonts-ISO8859-1-100dpi-7.2-11.el6.noarch
+Feb  3 11:15:50 luiscarrera yum[3490]: Updated: dejavu-sans-fonts-2.33-1.el6.noarch
+Feb  3 11:15:51 luiscarrera yum[3490]: Updated: time-1.7-38.el6.x86_64
+Feb  3 11:15:54 luiscarrera yum[3490]: Updated: dejavu-serif-fonts-2.33-1.el6.noarch
+Feb  3 11:15:58 luiscarrera yum[3490]: Updated: xorg-x11-fonts-100dpi-7.2-11.el6.noarch
+Feb  3 11:15:59 luiscarrera yum[3490]: Updated: minicom-2.3-8.el6.x86_64
+Feb  3 11:16:00 luiscarrera yum[3490]: Updated: strace-4.8-11.el6.x86_64
+Feb  3 11:16:02 luiscarrera yum[3490]: Updated: dialog-1.1-10.20080819.el6.x86_64
+Feb  3 11:16:03 luiscarrera yum[3490]: Updated: trace-cmd-2.2.4-4.el6.x86_64
+Feb  3 11:16:04 luiscarrera yum[3490]: Updated: rds-tools-2.0.6-4.el6.x86_64
+Feb  3 11:16:05 luiscarrera yum[3490]: Updated: libtar-1.2.11-17.el6_4.1.x86_64
+Feb  3 11:16:07 luiscarrera yum[3490]: Updated: libgtop2-2.28.0-7.el6.x86_64
+Feb  3 11:16:07 luiscarrera yum[3490]: Updated: ltrace-0.5-28.45svn.el6.x86_64
+Feb  3 11:16:08 luiscarrera yum[3490]: Updated: libvisual-0.4.0-10.el6.x86_64
+Feb  3 11:16:09 luiscarrera yum[3490]: Updated: nfs4-acl-tools-0.3.3-8.el6.x86_64
+Feb  3 11:16:11 luiscarrera yum[3490]: Updated: unixODBC-2.2.14-14.el6.x86_64
+Feb  3 11:16:11 luiscarrera yum[3490]: Updated: openjpeg-libs-1.3-16.el6_8.x86_64
+Feb  3 11:16:12 luiscarrera yum[3490]: Updated: btparser-0.17-2.el6.x86_64
+Feb  3 11:16:13 luiscarrera yum[3490]: Updated: hmaccalc-0.9.12-2.el6.x86_64
+Feb  3 11:16:14 luiscarrera yum[3490]: Updated: crash-trace-command-1.0-5.el6.x86_64
+Feb  3 11:16:15 luiscarrera yum[3490]: Updated: 1:autocorr-es-4.3.7.2-2.el6_9.1.noarch
+Feb  3 11:16:15 luiscarrera yum[3490]: Updated: ql2400-firmware-7.03.00-1.el6_5.noarch
+Feb  3 11:16:16 luiscarrera yum[3490]: Updated: ql2500-firmware-7.03.00-1.el6_5.noarch
+Feb  3 11:16:16 luiscarrera NetworkManager[2276]: <info> kernel firmware directory '/lib/firmware' changed
+Feb  3 11:16:16 luiscarrera yum[3490]: Updated: mobile-broadband-provider-info-1.20100122-4.el6.noarch
+Feb  3 11:16:17 luiscarrera yum[3490]: Updated: 1:autocorr-en-4.3.7.2-2.el6_9.1.noarch
+Feb  3 11:16:18 luiscarrera yum[3490]: Updated: centos-indexhtml-6-2.el6.centos.noarch
+Feb  3 11:16:19 luiscarrera yum[3490]: Updated: xorg-x11-drv-ati-firmware-7.6.1-3.el6_9.noarch
+Feb  3 11:16:20 luiscarrera yum[3490]: Updated: evolution-data-server-doc-2.32.3-25.el6.noarch
+Feb  3 11:16:21 luiscarrera yum[3490]: Updated: pulseaudio-gdm-hooks-0.9.21-26.el6.x86_64
+Feb  3 11:16:22 luiscarrera yum[3490]: Updated: xml-common-0.6.3-33.el6.noarch
+Feb  3 11:16:24 luiscarrera yum[3490]: Updated: glibc-2.12-1.209.el6_9.2.i686
+Feb  3 11:16:25 luiscarrera yum[3490]: Updated: libgcc-4.4.7-18.el6.i686
+Feb  3 11:18:21 luiscarrera automount[20349]: problem reading master map, maximum wait exceeded
+Feb  3 11:18:21 luiscarrera automount[20349]: automount: warning: could not read at least one map source after waiting, continuing ...
+Feb  3 11:18:32 luiscarrera xinetd[2545]: Starting reconfiguration
+Feb  3 11:18:32 luiscarrera xinetd[2545]: Swapping defaults
+Feb  3 11:18:32 luiscarrera xinetd[2545]: readjusting service talk
+Feb  3 11:18:32 luiscarrera xinetd[2545]: Reconfigured: new=0 old=1 dropped=0 (services)
+Feb  3 11:18:33 luiscarrera yum[3490]: Erased: openswan
+Feb  3 11:18:39 luiscarrera yum[3490]: Erased: compat-openmpi-psm
+Feb  3 11:18:55 luiscarrera yum[3490]: Erased: compat-openmpi
+Feb  3 11:19:20 luiscarrera xinetd[2545]: Exiting...
+Feb  3 11:19:20 luiscarrera xinetd[20774]: xinetd Version 2.3.14 started with libwrap loadavg labeled-networking options compiled in.
+Feb  3 11:19:20 luiscarrera xinetd[20774]: Started working: 1 available service
+Feb  3 11:19:31 luiscarrera kernel: Kernel logging (proc) stopped.
+Feb  3 11:19:31 luiscarrera rsyslogd: [origin software="rsyslogd" swVersion="5.8.10" x-pid="1998" x-info="http://www.rsyslog.com"] exiting on signal 15.
+Feb  3 11:19:31 luiscarrera kernel: imklog 5.8.10, log source = /proc/kmsg started.
+Feb  3 11:19:31 luiscarrera rsyslogd: [origin software="rsyslogd" swVersion="5.8.10" x-pid="20944" x-info="http://www.rsyslog.com"] start
+Feb  3 11:19:36 luiscarrera kdump: kexec: unloaded kdump kernel
+Feb  3 11:19:36 luiscarrera kdump: stopped
+Feb  3 11:20:39 luiscarrera kdump: kexec: loaded kdump kernel
+Feb  3 11:20:39 luiscarrera kdump: started up
+Feb  3 11:20:49 luiscarrera lldpad: bound ctrl iface to /com/intel/lldpad
+Feb  3 11:20:54 luiscarrera fcoemon: error 111 Connection refused
+Feb  3 11:20:54 luiscarrera fcoemon: Failed write req P len 1
+Feb  3 11:21:17 luiscarrera yum[3490]: Erased: libipa_hbac-python
+Feb  3 11:22:00 luiscarrera pcscd: pcscdaemon.c:581:signal_trap() Preparing for suicide
+Feb  3 11:22:01 luiscarrera pcscd: readerfactory.c:1267:RFCleanupReaders() entering cleaning function
+Feb  3 11:22:01 luiscarrera pcscd: pcscdaemon.c:531:at_exit() cleaning /var/run
+Feb  3 11:22:01 luiscarrera pcscd: pcscdaemon.c:506:main() pcsc-lite 1.5.2 daemon ready.
+Feb  3 11:22:35 luiscarrera rpc.statd[2303]: Caught signal 15, un-registering and exiting
+Feb  3 11:22:35 luiscarrera rpc.statd[32083]: Version 1.2.3 starting
+Feb  3 11:22:35 luiscarrera sm-notify[32084]: Version 1.2.3 starting
+Feb  3 11:22:37 luiscarrera rpcbind: rpcbind terminating on signal. Restart with "rpcbind -w"
+Feb  3 11:22:54 luiscarrera yum[3490]: Erased: xorg-x11-drv-modesetting
+Feb  3 11:23:23 luiscarrera acpid: exiting
+Feb  3 11:23:23 luiscarrera acpid: starting up
+Feb  3 11:23:23 luiscarrera acpid: 1 rule loaded
+Feb  3 11:23:23 luiscarrera acpid: waiting for events: event logging is off
+Feb  3 11:23:28 luiscarrera acpid: client connected from 2464[68:68]
+Feb  3 11:23:28 luiscarrera acpid: 1 client rule loaded
+Feb  3 11:27:54 luiscarrera yum[3490]: Erased: libsss_autofs
+Feb  3 11:28:28 luiscarrera rpc.statd[32083]: Caught signal 15, un-registering and exiting
+Feb  3 11:28:28 luiscarrera rpc.statd[667]: Version 1.2.3 starting
+Feb  3 11:28:28 luiscarrera sm-notify[668]: Version 1.2.3 starting
+Feb  3 11:28:35 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:28:35 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:28:35 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:28:35 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:28:35 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:28:35 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:28:35 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:28:35 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:28:35 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:28:35 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:28:35 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:28:35 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:28:35 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:28:35 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:32:04 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:32:04 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:32:04 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:32:04 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:32:04 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:32:04 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:32:04 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:32:04 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:32:08 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:32:08 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:32:08 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:32:08 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:32:08 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:32:08 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:32:08 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:32:08 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:32:11 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:32:11 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:32:11 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:32:11 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:32:11 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:32:11 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:32:11 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:32:11 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:32:12 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:32:12 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:32:12 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:32:12 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:32:12 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:32:12 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:32:12 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:32:12 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:29 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:29 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:29 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:29 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:29 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:29 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:29 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:29 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:30 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:30 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:30 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:30 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:30 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:30 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:30 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:30 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:36 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:36 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:36 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:36 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:36 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:36 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:36 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:36 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:39 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:39 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:39 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:39 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:39 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:39 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:39 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:39 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:40 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:40 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:40 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:40 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:40 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:40 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:34:40 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:34:40 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:37:31 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:37:31 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:37:31 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:37:31 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:37:31 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:37:31 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:37:31 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:37:31 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:37:31 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:37:31 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:37:31 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:37:31 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:37:31 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:37:31 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:37:31 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:37:31 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:39:24 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:39:24 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:39:24 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:39:24 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:39:24 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:39:24 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:39:24 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:39:24 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:39:24 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:39:24 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:39:24 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:39:24 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:39:24 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:39:24 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:39:24 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:39:24 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:39:25 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:39:25 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:39:25 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:39:25 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:39:25 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:39:25 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:39:25 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:39:25 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:39:26 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:39:26 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:39:26 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:39:26 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:39:26 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:39:26 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:39:26 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:39:26 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:15 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:15 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:15 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:15 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:15 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:15 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:15 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:15 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:44 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:44 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:44 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:44 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:44 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:44 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:44 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:44 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:55 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:55 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:55 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:55 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:55 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:55 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:55 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:55 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:55 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:55 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:55 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:55 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:55 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:55 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:41:55 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:41:55 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:42:06 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:42:06 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:42:06 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:42:06 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:42:06 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:42:06 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:42:06 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:42:06 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:42:07 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:42:07 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:42:07 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:42:07 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:42:07 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:42:07 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:42:07 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:42:07 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:42:32 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:42:32 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:42:32 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:42:32 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:42:32 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:42:32 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:42:32 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:42:32 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:06 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:06 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:06 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:06 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:06 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:06 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:06 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:06 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:07 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:07 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:07 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:07 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:07 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:07 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:07 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:07 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:26 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:26 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:26 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:26 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:27 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:27 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:27 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:27 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:34 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:34 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:34 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:34 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:34 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:34 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:34 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:34 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 11:44:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 11:44:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:57 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:57 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:57 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:57 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:57 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:57 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:57 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:57 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:58 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:58 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:58 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:58 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:58 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:58 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:58 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:58 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:03:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:03:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:01 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:01 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:02 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:02 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:02 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:02 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:02 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:02 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:09 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:09 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:09 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:09 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:09 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:09 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:09 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:09 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:25 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:25 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:25 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:25 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:25 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:25 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:25 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:25 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:43 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:43 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:43 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:43 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:43 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:43 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:04:43 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:04:43 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:05:04 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:05:04 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:05:04 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:05:04 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:05:04 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:05:04 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:05:04 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:05:04 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:07:00 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:07:14 luiscarrera yum[13234]: Installed: tree-1.5.3-3.el6.x86_64
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:08:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:08:06 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:08:06 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:08:06 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:08:06 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:12 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:12 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:12 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:12 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:12 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:12 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:12 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:12 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:17 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:17 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:17 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:17 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:17 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:17 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:17 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:17 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:18 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:18 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:18 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:18 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:18 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:18 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:18 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:18 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:18 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:18 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:18 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:18 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:18 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:18 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:18 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:18 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:21 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:21 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:21 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:21 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:21 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:21 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:21 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:21 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:23 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:23 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:23 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:23 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:23 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:23 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:23 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:23 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:23 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:23 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:23 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:23 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:23 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:23 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:23 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:23 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:43 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:43 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:43 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:43 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:43 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:43 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:43 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:43 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:56 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:56 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:56 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:56 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:56 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:56 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:56 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:56 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:58 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:58 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:58 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:58 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:58 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:58 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:58 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:58 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:10:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:10:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:11:01 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:11:01 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:11:01 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:11:01 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:11:01 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:11:01 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:11:01 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:11:01 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:11:03 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:11:03 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:11:03 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:11:03 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:11:03 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:11:03 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:11:03 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:11:03 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:11:08 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:11:08 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:11:08 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:11:08 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:11:08 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:11:08 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:11:08 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:11:08 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:12:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:12:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:12:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:12:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:12:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:12:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:12:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:12:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:13:39 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:13:39 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:13:39 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:13:39 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:13:39 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:13:39 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:13:39 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:13:39 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:13:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:13:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:13:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:13:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:13:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:13:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:13:41 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:13:41 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:15:25 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:15:25 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:15:25 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:15:25 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:15:25 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:15:25 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:15:25 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:15:25 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:16:01 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:16:01 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:16:01 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:16:01 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:16:01 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:16:01 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:16:01 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:16:01 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:16:12 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:16:12 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:16:12 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:16:12 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:16:12 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:16:12 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:16:12 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:16:12 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:16:14 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:16:14 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:16:14 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:16:14 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:16:14 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:16:14 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:16:14 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:16:14 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:33:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:33:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:33:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:33:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:33:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:33:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:33:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:33:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:34:00 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:34:00 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:34:00 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:34:00 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:34:00 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:34:00 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:34:00 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:34:00 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:34:15 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:34:15 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:34:15 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:34:15 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:34:15 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:34:15 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:34:15 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:34:15 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:38:28 luiscarrera yum[13734]: Installed: 2:ntfs-3g-2017.3.23-1.el6.x86_64
+Feb  3 12:38:44 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:38:44 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:38:44 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:38:44 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:38:44 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:38:44 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:38:44 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 12:38:44 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 12:38:50 luiscarrera ntfs-3g[13772]: Version 2017.3.23 integrated FUSE 28
+Feb  3 12:38:50 luiscarrera ntfs-3g[13772]: Mounted /dev/sda5 (Read-Write, label "Programas", NTFS 3.1)
+Feb  3 12:38:50 luiscarrera ntfs-3g[13772]: Cmdline options: rw
+Feb  3 12:38:50 luiscarrera ntfs-3g[13772]: Mount options: rw,allow_other,nonempty,relatime,fsname=/dev/sda5,blkdev,blksize=4096
+Feb  3 12:38:50 luiscarrera ntfs-3g[13772]: Ownership and permissions disabled, configuration type 7
+Feb  3 13:12:45 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:12:45 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:12:45 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:12:45 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:12:45 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:12:45 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:12:45 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:12:45 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:32:54 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:32:54 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:32:54 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:32:54 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:32:54 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:32:54 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:32:54 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:32:54 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:32:57 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:32:57 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:32:57 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:32:57 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:32:57 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:32:57 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:32:57 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:32:57 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:34:21 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:35:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:35:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:35:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:35:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:35:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:35:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:35:59 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:35:59 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:40:49 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:40:49 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:40:49 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:40:49 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:40:49 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:40:49 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:40:49 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:40:49 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 13:40:51 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:06:01 luiscarrera kernel: [drm:radeon_vga_detect] *ERROR* VGA-1: probed a monitor but no|invalid EDID
+Feb  3 14:29:28 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:29:28 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:29:28 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:29:28 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:29:28 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:29:28 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:29:28 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:29:28 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:30:52 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:30:52 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:30:52 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:30:52 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:30:52 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:30:52 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:30:52 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:30:52 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:31:01 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:31:01 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:31:01 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:31:01 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:31:01 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:31:01 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:31:01 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:31:01 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:32:55 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:32:55 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:32:55 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:32:55 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:32:55 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:32:55 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:32:55 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:32:55 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:33:04 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:33:04 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:33:04 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:33:04 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:33:04 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:33:04 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:33:04 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:33:04 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:33:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:33:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:33:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:33:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:33:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:33:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:33:05 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:33:05 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:42:17 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:42:17 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:42:17 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:42:17 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:42:17 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:42:17 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:42:17 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:42:17 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:42:17 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:42:17 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:42:17 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:42:17 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:42:17 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:42:17 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:42:17 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:42:17 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:42:21 luiscarrera ntfs-3g[13772]: Unmounting /dev/sda5 (Programas)
+Feb  3 14:57:37 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:57:37 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:57:37 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:57:37 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:57:37 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:57:37 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:57:37 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:57:37 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:57:38 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:57:38 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:57:38 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:57:38 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:57:38 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:57:38 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:57:38 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:57:38 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:57:39 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:57:39 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:57:39 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:57:39 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:57:39 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:57:39 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:57:39 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:57:39 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:57:40 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:57:40 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:57:40 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:57:40 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:57:40 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:57:40 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.
+Feb  3 14:57:40 luiscarrera pulseaudio[3241]: alsa-sink.c: Error opening PCM device front:0: Argumento inválido
+Feb  3 14:57:40 luiscarrera pulseaudio[3241]: sink-input.c: Failed to create sink input: sink is suspended.

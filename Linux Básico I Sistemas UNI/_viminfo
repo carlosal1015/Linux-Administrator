@@ -1,0 +1,207 @@
+# Vim 7.4 generó este archivo "viminfo".
+# Puede editarlo, ¡sólo si tiene cuidado!
+
+# Valor de 'encoding' cuando se escribió este archivo
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~H
+# Último Patrón de búsqueda:
+~MSle0~/win
+
+# Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
+:q
+:AQ
+:wq
+:w
+:q!
+:w registro
+
+# Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
+?/win
+
+# Historia de Expresión (de lo más nuevo a lo más antiguo):
+
+# Historia de Línea de entrada (de lo más nuevo a lo más antiguo):
+
+# Historia de Línea de entrada (de lo más nuevo a lo más antiguo):
+
+# Registros:
+"1	LINE	0
+	Feb  3 10:54:41 luiscarrera yum[3490]: Updated: ncurses-base-5.7-4.20090207.el6.x86_64
+"2	LINE	0
+	Feb  3 10:54:29 luiscarrera yum[3490]: Updated: xorg-x11-proto-devel-7.7-14.el6.noarch
+"3	LINE	0
+	Feb  3 10:54:28 luiscarrera yum[3490]: Updated: libgcc-4.4.7-18.el6.x86_64
+""-	CHAR	0
+	carrera 
+
+# Marcas en el archivo:
+'0  1  0  ~/.mailrc
+'1  7  9  ~/cuenta.cc
+'2  6  3  ~/cuenta.sh
+'3  4  0  ~/mensajes.txt
+'4  4  101  ~/registro
+'5  4  0  ~/messages
+'6  3  15  ~/messages
+
+# Lista de saltos (el más reciente va primero):
+-'  1  0  ~/.mailrc
+-'  7  9  ~/cuenta.cc
+-'  1  0  ~/cuenta.cc
+-'  6  3  ~/cuenta.sh
+-'  1  0  ~/cuenta.sh
+-'  4  0  ~/mensajes.txt
+-'  1  0  ~/mensajes.txt
+-'  4  101  ~/registro
+-'  1  0  ~/registro
+-'  4  0  ~/messages
+-'  3  0  ~/messages
+-'  897  53  ~/messages
+-'  529  54  ~/messages
+-'  528  54  ~/messages
+-'  1  18  ~/messages
+-'  1875  0  ~/messages
+-'  1821  60  ~/messages
+-'  233  64  ~/messages
+-'  4  0  ~/messages
+-'  3  0  ~/messages
+-'  897  53  ~/messages
+-'  529  54  ~/messages
+-'  528  54  ~/messages
+-'  1  18  ~/messages
+-'  1875  0  ~/messages
+-'  1821  60  ~/messages
+-'  233  64  ~/messages
+-'  4  101  ~/registro
+-'  1  0  ~/registro
+-'  4  0  ~/messages
+-'  3  0  ~/messages
+-'  897  53  ~/messages
+-'  529  54  ~/messages
+-'  528  54  ~/messages
+-'  1  18  ~/messages
+-'  1875  0  ~/messages
+-'  1821  60  ~/messages
+-'  233  64  ~/messages
+-'  4  0  ~/messages
+-'  3  0  ~/messages
+-'  897  53  ~/messages
+-'  529  54  ~/messages
+-'  528  54  ~/messages
+-'  1  18  ~/messages
+-'  1875  0  ~/messages
+-'  1821  60  ~/messages
+-'  233  64  ~/messages
+-'  4  0  ~/mensajes.txt
+-'  1  0  ~/mensajes.txt
+-'  4  101  ~/registro
+-'  1  0  ~/registro
+-'  4  0  ~/messages
+-'  3  0  ~/messages
+-'  897  53  ~/messages
+-'  529  54  ~/messages
+-'  528  54  ~/messages
+-'  1  18  ~/messages
+-'  1875  0  ~/messages
+-'  1821  60  ~/messages
+-'  233  64  ~/messages
+-'  4  0  ~/messages
+-'  3  0  ~/messages
+-'  897  53  ~/messages
+-'  529  54  ~/messages
+-'  528  54  ~/messages
+-'  1  18  ~/messages
+-'  1875  0  ~/messages
+-'  1821  60  ~/messages
+-'  233  64  ~/messages
+-'  4  101  ~/registro
+-'  1  0  ~/registro
+-'  4  0  ~/messages
+-'  3  0  ~/messages
+-'  897  53  ~/messages
+-'  529  54  ~/messages
+-'  528  54  ~/messages
+-'  1  18  ~/messages
+-'  1875  0  ~/messages
+-'  1821  60  ~/messages
+-'  233  64  ~/messages
+-'  4  0  ~/messages
+-'  3  0  ~/messages
+-'  897  53  ~/messages
+-'  529  54  ~/messages
+-'  528  54  ~/messages
+-'  1  18  ~/messages
+-'  1875  0  ~/messages
+-'  1821  60  ~/messages
+-'  233  64  ~/messages
+-'  6  3  ~/cuenta.sh
+-'  1  0  ~/cuenta.sh
+-'  4  0  ~/mensajes.txt
+-'  1  0  ~/mensajes.txt
+-'  4  101  ~/registro
+-'  1  0  ~/registro
+-'  4  0  ~/messages
+-'  3  0  ~/messages
+
+# Historia de las marcas en los archivos (de la más reciente a la más antigua):
+
+> ~/.mailrc
+	"	1	0
+	^	1	81
+	.	1	74
+	+	1	74
+
+> ~/cuenta.cc
+	"	7	9
+	^	7	10
+	.	7	9
+	+	8	0
+	+	7	9
+
+> ~/cuenta.sh
+	"	6	3
+	^	6	4
+	.	6	3
+	+	5	11
+	+	6	3
+
+> ~/mensajes.txt
+	"	4	0
+	^	4	0
+	.	3	22
+	+	3	22
+
+> ~/registro
+	"	4	101
+	^	4	102
+	.	4	101
+	+	6	0
+	+	10	19
+	+	2	26
+	+	4	101
+
+> ~/messages
+	"	4	0
+	^	5	0
+	.	4	25
+	+	2	27
+	+	6	26
+	+	7	25
+	+	8	24
+	+	9	23
+	+	10	22
+	+	11	21
+	+	12	6
+	+	13	16
+	+	14	16
+	+	15	16
+	+	16	20
+	+	17	20
+	+	18	20
+	+	19	20
+	+	20	20
+	+	21	20
+	+	22	20
+	+	4	25

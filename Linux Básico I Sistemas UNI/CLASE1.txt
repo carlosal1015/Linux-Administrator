@@ -1,0 +1,867 @@
+LINUX
+
+Sistema operativo que replica las caracteristicas del sistema operativo UNIX
+Sistema operativo
+	Programa que se encarga de administrar los recursos de un sistema de computo, tales como: cpu, ram, disco duros etc...
+
+Caracteristicas
+	-Multitarea
+	  Capacidad de realizar multiples procesos simultanemamente.
+	-Multiusuario
+	  Capacidad de ejecutar los procesos de multiples usuarios
+	  simultaneamente
+	-Mutiplataforma
+	  Capacidad de ejecutar el sistema operativo en diferentes 
+         plataformas de hardware (intel,risc,sparc)
+
+
+Linux consiste, solamente en el nucleo del sistema operativo, si a este nucleo le añadimos un conjunto de aplicaciones, creamos una distribuciòn tal como redhat, fedora, centos, debian, ubuntu, slackware, mandriva etc...
+
+Sistema de computo.
+Sistema que permite realizar tareas de procesamiento de datos, consisten basicamente en cpU (Unidad central de proceso), RAM (memoria de acceso aleatorio) y disco duro (sistema de archivos).
+EL acceso a un sistema de computo, requiere que se tenga asignado un usuario y una contraseña de acceso.
+EL acceso pueder ser:
+	Local
+	  EL usuario se encuentra frente al teclado y monitor conectado directamente al sistema.
+Remoto
+EL usuario accede a travez de un terminal fisico o un emulador de terminal.
+Los terminales fisicos se conecta al puerto de comunicaciones del sistema de computo su extension (cuan separado esta el terminal del sistema de computo) es limitado generalmente una decena de metros y obliga el uso de repetidores.
+Los emuladores de terminal son programas que se ejecutan en cualquier sistema operativo, el unico requisito es que el sistema tenga conigurado el lenguaje de comunicaciòn de red tcp/ip, el emulador se conectara al sistema de computo usando los protocolos telnet (en desuso) o ssh para iniciar una sesion remota, a partir de aqui el comportamiento es igual como si estuviera conectado directamente al sistema de computo.
+
+tcp/ip
+Servicio  Puerto de acceso
+http		80
+https		443
+ssh		22
+telnet 	        23
+
+/etc/services
+
+
+Acceso al servidor
+
+IP : 172.17.2.229
+usuario : userx
+clave : userx
+
+
+Comandos bàsicos
+id
+  Identificacion del usuario
+date
+  Fecha y hora del sistema
+cal
+  calendario del mes en curso
+who
+  Muestra la lista de usuarios
+w
+  Muestra la lista de usuarios
+cat
+  Muestra el contenido del archivo
+head
+  Muestra las 10 primeras lineas del archivo
+tail
+  Muestra las 10 ultimas lineas del archivo
+grep
+  Extrae lineas de un archivo que contengan una cadena especifica o expresio regular
+cut
+  Extrae columnas de un archivo o campos de un archivo de texto delimitado,el delimitador se indica con la opcion d
+wc (word count)
+  Cuenta el numero de linea, palabras, caracteres de un archivo de texto
+write
+   Envia un mensaje al terminal del usuario
+talk
+   Inicia un chat entre dos usuarios activos
+
+   Procedemiento:
+   1.- El usuario A inicia una conversacion con el usuario B
+       
+       talk B
+   
+    2.-El usuario B recibe una invitacion para el chat, entonces debe responder con:
+       
+	talk A
+    
+    3.- Se inicia la conversaciòn-
+
+mail
+  Envia mensajes entre usuarios del sistema que no esten en linea. los mensajes son almacenados en el mailbox del usuario, los cuales podran ser leidos con el mismo comando mail.
+
+	mail nombreUsuario
+        subject: mensaje
+	mensaje de prueba
+	.
+
+Para terminar la edicion del mensaje y enviarlo, debemos incluir un punto al inicio de una linea en blanco.
+
+Para lee el correo se utiliza el comando mail:
+
+
+[lcarrera@luiscarrera ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/lcarrera": 3 messages
+>   1 user7@luiscarrera.pe  Sat Jan 27 17:00  19/586   "Mensaje"
+    2 user2@luiscarrera.pe  Sat Jan 27 17:03  19/599   "Las fijas"
+    3 user3@luiscarrera.pe  Sat Jan 27 17:04  19/590   "linux"
+&
+
+El simbolo > indica el correo "activo"
+Los comandos se escriben luego del simbolo &.
+Si se presiona la tencla enter se ve el contenenido del mensaje activo
+Si se presiona un numero, se vera el contenido del mensaje identificado con ese numero.
+Para responder se utiliza la tecka R y el numero del mensaje
+
+
+Archivo /etc/passwd
+Este archivo contiene la informacion de los usuarios que pueden acceder al sistema, es un archivo de texto delimitado, donde el delimitador es el caracter :
+
+Formato
+
+      dovenull:x:495:491:Dovecot's unauthorized user:/usr/libexec/dovecot:/sbin/nologin
+         |     |  |   |                 |                      |		|
+         |     | uid gid                |                      |		|
+	 |     |                        |            Directorio Hogar   Programa de inicio
+         |   clave        Comentario o campo GECOS
+         |
+nombre del usuario
+
+SHELL
+Programa que permite la interacciòn del usuario con el sistema operativo para ejecutar las tareas de: ejecutar comandos.
+Los comandos son archivos almancenados en el sistema de archivos, generalmamente en las carpetas /bin,/usr/bin,/usr/local/bin, /usr/bin.
+
+Para que un programa sea considerado como un shell, debe tener las sgtes caracteristicas:
+1.- Debe proporcionar una linea de comandos, y realizar su analisis.
+2.- Debe realizar la expansion de variables.
+3.- Debe proporcinar substitucion de nombres de archivo.
+4.- Debe implementar la redirecciòn de entrada y salida.
+5.- Debe proporcionar un lenguaje de programacion interpretado.
+
+Ejemplos: sh, bash, csh, zsh, csh.....
+
+1.- Linea de comandos
+    La linea de comandos està compuesta por:
+ 
+    prompt comando opciones enter
+ 
+    Donde:
+	prompt
+	   Cadena de de texto que le indica al usuario que el shell està esperando por sus ordenes.
+	   Por regla general si el prompt acaba en $ el usuario es un usuario normal.
+	   Si el prompt acaba en # el usuario es un superusuario (root)
+           Existen tambien prompts secundarios, que indican que el shell esta esperando que se digite
+	   la linea completa del comando.
+        comando
+           Nombre del comando que se quiere ejecutar
+        opciones
+	   Caracteres precedidos de guion que afecta el comportamiento del comando.
+        enter
+	   Digitalizacion de la tecla enter que le indica al shell que se termino de scribir el comando.
+
+    AL finalizar de escribir el comando el shell pasa a analizar la linea de comando en busca de caracteres especiales 
+    para realizar las tareas indicadas respectivamente.
+
+2.- Expansion de variables
+    Tarea de reemplazar el nombre de una variable por su contenido.
+    Variables predefinidas
+    USER (nombre de usuario)
+    PWD  (Directorio de trabajo)
+    PS1='[\u@\h \W]\$ '  (prompt principal.
+
+3.- Substituciòn de nombres de archivo
+    permite manipular varios archivos codificando sus nombres con expresiones regulares simples.
+    
+    Para este proposito el shell utiliza estos caracteres:
+
+	*	cualquier cadena de caracteres
+	?	un caracter
+	[a-z]   un caracter del rango
+	[^a-z]  un caracter excepto los del rango
+	[adhjf] un caracter de los especificados
+	[^dhjf] un caracter excepto los especificados.
+
+4.- Redireccion de entrada y salida.
+    Premisa de diseño:
+			Todo y absolutamente todo es una archivo.
+
+    EL sistema operativo considera que los elementos de hardware son archivos y por lo tanto estaran representados como 
+    archivos en el directorio dev
+
+    Al lanzar un comando y este obtiene memoria y tiempo de ejecucion decimos que hemos creado un proceso.
+
+    AL ser creado un proceso este recibe tres archivos: archivo de entrada de datos (stdin), archivo de salida de datos
+    (stdout) y archivo de salida de error (stderr) identificados por los descriptores de archivo 0, 1, y 2 respectivamente.
+
+
+
+
+			      (0)>--------proceso-------->(1)
+			stdin                |          stdout
+					     |
+					     |
+					     |
+					    (2)
+				           stderr
+
+
+     EL shell inicialmente enlaza estos tres descriptores al terminal del usuario de manera que si el proceso requiere datos, los toma del terminal, si genera algun resultado, lo guarda en el terminal y si genera algùn mensaje de erros lo guarda en el terminal.
+
+LA redireccion de entrada y salida es la forma mediante la cual el shell permite que los archivos antes mencionados sean redireccionados a otros archivos.
+
+REDIRECCION DE SALIDA 
+				comando > archivo
+				comando >> archivo
+
+REDIRECCION DE ENTRADA
+				comando < archivo
+				comando <<ETIQUETA
+				
+				LA etiqueta indica el fin de la entrada de datos (EOF)
+
+REDIRECCION ENTRE COMANDOS.
+
+				comando1 | comando2 | comando3 |..........|comandoN
+
+				La salida del comando1 se toma como entrada para el comando2
+				la salida del comando2 se toma como entrada para el comando3
+				.....
+
+
+				comando2 `comando1` 
+
+				la salida del comando1 se toma como parametro del comando2
+
+
+SISTEMA DE ARCHIVOS
+
+Es la parte del sistema operativo encargada del almacenamiento y recuperaciòn de los datos de un medio fisico (cintas, discos duros, discos portatiles, cds etc)
+
+Archivo
+	Secuencia de bits.
+
+La definiciòn de archivo en unix no contempla analisis ni reconocimiento del contenido, es por eso, que en UNIX no existe el concepto de extension en el nombre de archivo
+
+Nomnbre de archivo
+	Secuencia de caracteres alfanumericos que sirve como identificador del archivo para el usuario.
+
+i-nodo
+	Estructura de datos que almacena las propiedades del archivo, esta estructura se identifica con un # proporcionado por el sistema y es la unica forma como el SA reconoce a un archivo.
+
+Propiedades almacenadas en el i-nodo:
+	tipo de archivo
+	permisos del archivo
+	# de enlaces
+	uid del dueño del archivo
+	gid del grupo principal del dueño
+	tamaño en bytes
+	fecha y hora de ultima actualizacion
+	Fecha y hora de ultima modificacion
+	Fecha y hora de creacion
+	lista de blocks
+
+Enlace 
+	Relacion entre el i-nodo y el nombre del archivo.
+
+Tipos de archivos
+Archivo regular (-)
+	Archivo que contiene cualquier flujo de bits
+Directorio (d)
+	Archivo que contiene enlaces, al crea un directorio, este ya tiene dos enlaces almacenados, 
+	el enlace . y el enlace .. que identifican los i-nodos del directorio actual y el directorio 
+	padre respectivamente.
+	EL comando que crea directorios es el comando mkdir (make directory)
+Enlace simbolico (l)
+	Enlace simbolico, es un tipo de archivo que almacena un "puntero" hacia otro archivo, es util para poder
+	crear referencias a directorios y a archivos que se encuentran en otra partición.
+	El comando que crea enlaces simbolicos es el comando ln.
+Archivos de dispositivos
+Dispositivo de bloques (b)
+	Utiliza un area de memoria intermedia (buffer) para comunicarse con el SO, la comunicación se realiza en 
+	unidades de buffer
+Dispositivo de caracteres
+	Se comunica con el SO enviando serie de caracteres (caracter por caracter).
+Archivos de comunicación entre procesos
+Tuberia con nombre (p)
+	Permite la comunicación entre procesos de manera asincrona, El primer proceso almacena información en la 
+	tuberia, esta información se mantiene en la tuberia hasta que el segundo proceso la extrae, quedando entoces
+	la tuberia vacia.
+Sockets (s)
+	Permite la comunicación entre procesos de manera sincrona, los sockets se crean utilizando librerias de
+	programación.
+
+
+ENLACES
+
+		nombreAarchivo-------------->#i-nodo
+						 ^
+		nombreArchivo2-------------------|
+
+SAlida del comando ls
+
+	-rw-rw-r--. 2 lcarrera lcarrera 1153 feb  3 10:59 enero
+	|    |      |   |          |      |       |	    |	
+    tipo de  |	    | dueño	grupo	  |   ´ultima       ----------nombre
+     archivo |      #			  |    modificacion
+	     |  enlaces                   |
+             |			   tamaño en bytes
+	cadena de
+	permisos
+
+Comandos del sistema de archivos
+
+ls (list)
+	Lista el contenido del directorio
+	Opciones
+	-l 	lista propiedades
+	-i 	lista i-nodos
+	-a	muestra los archivos oculto (su nombre inicia con .)
+	-R	Inicia un listado recursivo
+
+mkdir (make directory)
+	Crea un directorio
+	Opciones
+	-p 	crea los subdirectorios faltantes
+
+rmdir (remove directory)
+	Elimina un directorio, siempre y cuando este vacio
+	Opciones
+	-r 	Elimina el directorio y los susbdirectorios,aun si no estan vacios.
+
+rm (remove)
+	ELimina un archivo
+	Opciones
+	-r	Ejecuta un borrado recursivo (si dentro de la lista de archivos a borrar hay un directorio
+		ingresa al directorio y borra los archivos)
+
+cp (copy)
+	Sintaxis:
+		cp origen destino
+	Copia el archivo origen como el archivo destino.
+	Opciones
+	-r	Inicia una copia recursiva
+
+mv (move)
+	Sintaxis;
+		mv origen destino
+
+	Mueve un archivo de una ubicación a otra
+
+pwd (program work directory)
+	Indica la ruta actual
+
+cd  (change directory)
+	Cambia de direcorio
+
+
+
+
+Arbol de directorios
+	EL sistema de archivo está organizado en una estructura de árbol invertido, siendo la raiz el directorio padre 
+	identificado por el simbolo / debajo del cual existe un conjunto de directorios con un uso especifico:
+
+
+							   / raiz (root)
+							   |
+							   |  
+	---------------------------------------------------------------------------------------------------------------
+	|	|	|	|	|	|	|	|	|	|	|
+	|	|	|	|	|	|	|	|	|	|	|
+	|	|	|	|	|	|	|	|	|	|	|
+	/boot	/etc	/dev	/bin	/sbin	/home	/tmp	/usr	/var	/proc	/opt
+
+
+Usos
+	boot
+	     Contiene los archivos necesarios para iniciar el SO
+	etc
+	     Contiene los archivos de configuracion del sistema y los servicios
+	dev
+	     Contiene la representación como archivo de los dispositivos.
+	bin
+	     Contienen los ejecutables basicos del usuario
+	sbin
+	     Contiene los ejecutables basicos de administracion
+	home
+	     Contiene los directorios hogar de los usuarios
+	tmp
+	     Contiene los archivos temporales del sistema
+	usr
+	     Contiene la estructura de archivos para las aplicaciones y servicios del sistema
+	var
+	     Contiene los archivos de registro y de ejecucion de los servicios.
+	proc
+	     Imagen del contenido de la memoria
+	opt
+	     Parecido a usr muy comun en distribuciones como SuSE
+
+RUTA O PATH
+	Es la secuencia de directorios que se deben recorrer desde la raiz hasta llegar al archivo.
+
+	Ruta absoluta
+	  PArte desde la raiz
+
+		/directorio1/directorio2/directorio3/..........
+
+	 Ruta relativa
+	  PArte del pwd
+		Abreviaturas
+				.		Directorio actual
+				.. 		Directorio padre
+SISTENA DE ARCHIVOS 2
+
+Los dispositivos de almacenamiento se nombran de la sgte forma:
+
+IDE
+	hda	Primer dispositivo, primer bus
+	hdb	Segundo dispositivo, segundo bus
+	hdc	Primer dispositivo, segundo bus
+	hdd	Segundo dispositivo, segundo bus
+
+Seriales scsci, sata
+	sda	primer dispositivo
+	sdb	segundo dispositivo
+	sdc	tercer dispositivo
+	sdd	cuarto dispositivo
+	sde	quinto dispositivo
+	sdf	sexto dipositivo
+
+Las particiones se nombran enumerandolas desde 1 en adelante, generalmente de 1 a 4 son particiones principales, de alli en adelante son particiones secundarias
+
+Para poder almacenar el arbol de directorios en las particiones se realiza el proceso de "montaje", en el cual un directorio del arbol es montado en una particion del disco duro. EL directorio se conoce como punto de montaje.
+
+Comandos relacionados:
+
+mount
+	Visualiza los montajes realizados 
+	Realiza nuevos montajes
+umount
+	Desmonta los directorios de la particion
+fdisk	
+	Pemite ver las particiones del disco duro
+df	disk free
+	Muestro los puntos de montajes, la particion y el uso de espacio
+
+CADENA DE PERMISOS (Sistema de seguridad del sistema de archivos)
+La seguridad del sistema de archivos identifica tres usuarios:
+	Owner	Dueño	Usuario que creo el archivo
+	Group	Grupo	Usuario que pertenece al grupo del archivo
+	Other	Otro	Usuario que no es el dueño y no pertenece al grupo del archivo.
+
+Cada archivo estable tres permisos por cada tipo de usuario:
+	read		lectura r
+	write		escritura w
+	Execution	Ejecucion x
+
+Se define entonces la cadena de permisos como la secuencia de caracteres que expresa los permisos de cada usuario soblre el archivo de la sgte forma:
+
+			rwxrwxrwx
+                         |  |  |
+			 |  |  |	
+		Dueño----|  |  |-----Otros
+			    |
+		          Grupo
+
+
+LA aparicion de la letra que identifica el permiso en la cadena de permisos indica que el usuario tiene el permiso indicado si aparece un guion, el usuario no tiene dicho permiso.
+
+			rwxr-xr-x
+
+Cada vez que un usuario intenta accedera un archivo se realiza la sgte comprobacion:
+
+1.- El usuario que accede tiene el uid=0?
+    Si->Obtiene todos los permisos
+    No->
+2.- EL uid del archivo es igual al uid del usuario?
+    Si->obtiene los permisos del dueño
+3.- El gid del archivo es igual al unos de los gid del usuario?
+    Si->Obtiene los permisos del grupo
+4.- Obtiene los permisos de otros
+
+AL obtener una equivalencia se detienen las comprobaciones
+
+Equivalente numerico de la cadena de permisos
+
+
+					  r  w  x  #
+					  0  0  0  0  
+					  0  0  1  1
+					  0  1  0  2
+					  0  1  1  3
+					  1  0  0  4 
+					  1  0  1  5
+					  1  1  0  6
+					  1  1  1  7
+
+Umask (Mascara del usuario)
+
+La mascara del usuario es el mecanismo mediante el cual se asignan los permisos a los elementos del sistema de archivos recien creados.
+
+todos los permisos			r w x r w x r w x						7 7 7
+Mascara del usuarios			- - - r w x r w x						0 7 7	
+-------------------------------------------------------------						------
+					r w x - - - - - -   Permisos de Directorios 			7 0 0
+					- - x ------------  Se elimina el permiso de ejecucion          1 0 0
+--------------------------------------------------------------						------
+					r w - - - - - - - - PErmisos de Archivos			6 0 0
+
+Comandos relacionados:
+chmod (change mode)
+	Cambia la cadena de permisos
+chgrp (change group)
+	Cambia el grupo del archivo
+chown (change owner)
+	Cambia el dueño del archivo
+umask (user mask)
+	Establece los permisos de los archivos nuevos.
+
+chmod 
+	Numerico
+		chmod permisos archivo
+	
+	Simbolico
+		chmod usuariooperacionpermiso   archivos
+
+
+	Usuarios	Operacion	PErmisos
+	u   dueño	= Asignar	r lectura
+	g   grupo	+ agregar	w escritura
+	o   otro	- quitar	x ejecucion
+	a   todos
+
+
+	Ejemplos:
+			chmod u+x  errores
+			chmod u+rw errores
+			chmod ugo=r errores
+			chmod u=rwx,g+w,o-wx errores
+			
+		
+UTILITARIOS
+
+find
+    Encuentra archivos que cumplen con alguna caracteristica
+
+	find inicio caracteristica
+
+        iname
+	  nombre del archivo si considerar mayusculas y minusculas
+	name
+          nombre del archivo 
+	type
+	  tipo del archivo
+		f	archivo regular
+		d	directorio
+		s	socket
+		l	enlace simbolico
+
+vi
+   Editor de texto instalado de manera predeterminada en todas las distribuciones linux y en la mayoria de versiones de UNIX
+
+   Es un editor de 2 estados (comando,edicion), siendo el estado predeterminado el estado comando.
+
+   Estado comando
+	En este estado el editor interpreta la dicgitacion de celdas como ordenes que debe ejecutar.
+	ordenes comunes:
+
+	De edicion	
+	x	eliminar un caracter
+	dd	eliminar una linea
+	D	eliminar desde la posicion actual del curso hasta el fin de la linea
+	cw	modificar el contenido hasta la sgte palabra
+	dw	eliminar desde la posicion actual hasta la sgt palabra
+
+	De desplazamiento
+	h	un caracter a la izq
+	j	una linea abajo
+	k	una linea arriba	
+	l	un caracter a la derecha
+	G	ir a la ultima linea
+	#G	ir a la linea N
+	
+	De búsqueda
+	/cadena buscar cadena hacia el final del archivo
+	?cadena buscar cadena hacia el inicio del archivo
+	n	REpetir la busqueda en la direccion Inicial
+	N	Repetir la busqueda en la direccion contraria a la inicial
+
+	Para ingresar al modo edicion
+	a	Agregar contenido a la derecha del cursor
+	A	Agregar contenido al final de la linea
+	i	Agregar contenido a la izq del cursor
+	I	Agregar contenido al inicio de la linea
+	o	Agregar contenido una linea abajo
+	O	Agregar contenido una linea arriba
+
+	Regresar al modo comando
+	ESC
+
+	Comandos 2 puntos (se requiere presionar : antes del comando)
+	w	grabar (ya debe tener nombre)
+	wnombre	grabar como (nombre)
+	q	salir del editor
+	wq	grabar y salir
+	!q	Salir desechando los cambios
+	
+
+LA edicion de un archivo nuevo inicia ejecutando el comando vi
+La edicion de un archivo ya creado inicia ejecutando el comando vi usando como parametro el nombre del archivo.
+
+El comando file  devuelve el tipo de contenido del archivo
+
+El comando mail
+Permite leer los correos almacenados en la casilla de correo asi como enviar correos a los demas usuarios del sistema o remotos
+
+Modo lectura
+	mail 
+luego de ejecutar el comando, se presentara la lista de correos disponibles para lectura EL correo activo está marcado por el caracter >  es el correo sobre el cual se ejecutaran los comandos.
+Comando básicos
+r
+  Responder a todos los destinatarios
+R
+  Responder al remitente
+d 
+  Borrar el mensaje
+
+Si no se indica el mensaje se ejecutara soble el correo activo (el que tiene el simbolo >) 
+Si se indica un numero, el comando se ejecutara sobre el correo que este identificado con ese numero.
+
+Modo escritura
+Inicia con el comando mail y las direccciones de correo a las cuales se quiere enviar un mensaje
+Debera incluirse el subject o tema del correo
+y acontinuacion se ingresa el contenido del mensaje
+poara terminar la escritura del mensaje se debe incluir un punto al inicio de una linea en blanco
+
+Archivo de configuracion
+EL archivo de configuración se encuentra en el directorio hogar del usuario y se llama .mailrc dentro podremos crear nuestras listas de correo:
+
+alias alumnos user1 user2 user3 user4 user5 user6 user7 user8 user9 user10 user11
+
+	lcarrera@uni.edu.pe
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
