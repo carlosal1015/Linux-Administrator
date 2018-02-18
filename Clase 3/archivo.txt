@@ -1,0 +1,151 @@
+    1  cd /etc/selinux/
+    2  ls
+    3  vi config 
+    4  cat config 
+    5  df -h
+    6  reboot
+    7  ifconfig eno16777736 172.17.0.219 netmask 255.255.252.0
+    8  route add default gw 172.17.3.254
+    9  ping 8.8.8.8
+   10  history
+   11  ifconfig 
+   12  ls
+   13  ifconfig 
+   14  ping 8.8.8.8
+   15  ping www.google.com
+   16  vi /etc/resolv.conf 
+   17  ping www.google.com
+   18  vi /etc/resolv.conf 
+   19  cd /etc/sysconfig/network-scripts/
+   20  ls
+   21  vi ifcfg-eno16777736 
+   22  ls
+   23  vi ifcfg-eno16777736 
+   24  vi network
+   25  ls -l /etc/init.d/
+   26  pwd
+   27  ls
+   28  vi ifcfg-eno16777736 
+   29  vi /etc/sysconfig/network
+   30  /etc/init.d/network restart 
+   31  route -n
+   32  vi /etc/sysconfig/network
+   33  vi ifcfg-eno16777736 
+   34  ifconfig 
+   35  ping 172.17.0.229
+   36  reboot
+   37  nmtui
+   38  ping 8.8.8.
+   39  ping 8.8.8.8
+   40  cd /etc/sysconfig/network-scripts/
+   41  vi ifcfg-eno16777736 
+   42  route
+   43  nmtui
+   44  ls -l /etc/init.d/
+   45  nmtui
+   46  NetworkManager status
+   47  nmtui
+   48  ps -fea
+   49  man NetworkManager
+   50  NetworkManager --no-daemon
+   51  ps -fea
+   52  NetworkManager 
+   53  ps -fea
+   54  nmtui
+   55  ifconfig 
+   56  route -n
+   57  ping 8.8.8.8
+   58  ping www.yhoo.com
+   59  ifconfig 
+   60  ifconfig eno16777736
+   61  ifconfig eno16777736:1 192.168.0.219
+   62  ifconfig 
+   63  systemctl restart network.service
+   64  cd /etc/sysconfig/network-scripts/
+   65  ls
+   66  vi ifcfg-eno16777736 
+   67  nmtui
+   68  vi /etc/sysconfig/network
+   69  vi ifcfg-eno16777736 
+   70  vi /etc/sysconfig/network
+   71  cd /etc/sysconfig/network-scripts/
+   72  ping 172.17.0.229
+   73  ping 172.17.0.219
+   74  ping 172.17.0.220
+   75  ping 8.8.8.8
+   76  route -n
+   77  yum update
+   78  cd
+   79  yum update
+   80  cd /etc/sysconfig/network-scripts/
+   81  vi /etc/sysconfig/network
+   82  vi ifcfg-eno16777736 
+   83  yum update 
+   84  cd /etc/sysconfig/network-scripts/
+   85  vi ifcfg-eno16777736 
+   86  yum update
+   87  ps -fea
+   88  kill -9
+   89  kill -9 3499
+   90  yum update
+   91  reboot 
+   92  nmtui
+   93  ps -fea |grep Network
+   94  kill -9 833
+   95  ps -fea |grep Network
+   96  kill -9 13695
+   97  ps -fea |grep Network
+   98  cd /etc/sysconfig/network-scripts/
+   99  ls
+  100  cp ifcfg-eno16777736 ifcfg-eno16777736:1
+  101  ls
+  102  cd
+  103  pwd
+  104  cat /etc/re
+  105  rpm -ql
+  106  rpm -l
+  107  rpm -lq
+  108  rpm -ql apache
+  109  rpm -qa |more
+  110  rpm -qa |grep ssd
+  111  rpm -ql ssd-ldap
+  112  rpm -ql sssd-ldap
+  113  rpm -q ant
+  114  exit
+  115  ls
+  116  /home/carlosal1015/Descargas/
+  117  cd /home/carlosal1015/Descargas/
+  118  ls
+  119  rpm -qpi ant-javadoc-1.9.2-9.el7.noarch.rpm 
+  120  rpm -qpi poppler
+  121  man rpm
+  122  rpm -ivh ant-javadoc-1.9.2-9.el7.noarch.rpm 
+  123  rpm -ivh tree-1.6.0-10.el7.x86_64.rpm
+  124  tree
+  125  rpm --import https://packages.microsoft.com/keys/microsoft.asc
+  126  sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+  127  yum check-update
+  128  ls
+  129  tree
+  130  rpm -ivh --nodeps code-1.20.1-1518536126.el7.x86_64.rpm 
+  131  yum search libXss
+  132  yum install libXScrnSaver.x86_64 
+  133  yum install httpd.x86_64
+  134  systemctl start httpd.service
+  135  rpm -i epel-release
+  136  yum -y install epel-release
+  137  php -v
+  138  yum search php
+  139  yum search php |grep php.x
+  140  yum update
+  141  histoy < archivo.txt
+  142  history < archivo.txt
+  143  history > archivo.txt
+  144  cat archivo.txt 
+  145  yum install php.x86_64
+  146  yum install post
+  147  yum install postfix
+  148  systemctl status httpd.service
+  149  systemctl status postfix.service
+  150  yum install samba
+  151  history > archivo.txt

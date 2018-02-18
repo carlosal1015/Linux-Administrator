@@ -1,0 +1,28 @@
+    1  pwd
+    2  ls
+    3  pwd
+    4  df
+    5  free
+    6  w
+    7  su -
+    8  ifconfig 
+    9  su -
+   10  history
+   11  nmtui
+   12  su -
+   13  ifconfig 
+   14  su -
+   15  conda --v
+   16  conda -v
+   17  anaconda --v
+   18  anaconda -v
+   19  anaconda -V
+   20  cd
+   21  code
+   22  yum search apache
+   23  yum search apache |grep http
+   24  yum install httpd.x86_64 
+   25  cd /home/carlosal1015/Escritorio/
+   26  history > historialterceraclase.txt
+   27  cat historialterceraclase.txt 
+   28  history > historialterceraclase.txt
