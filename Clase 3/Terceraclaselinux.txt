@@ -1,0 +1,105 @@
+La partición SWAP no es memoria extendidad
+Primero se instala Windows y después Linux.
+carlosal1015
+oromion
+Procesodres risk
+procesadores intel, intel.
+El caballito de batalla de unix es la multitarea.
+Solari
+Spak
+Ahora hay solari para pc
+Unix real para pc con Solari
+
+CONFIGURACIÓN DE LA RED
+
+La configuración de la red puede realizarse de dos maneras:
+
+1. En caliente
+A través de comandos realizamos la configuración, la cual permanecerá activa hasta que se reconfigure o reinicie el sistema.
+2. Permanente
+Se modifican los archivos correspondientes de configuración la cual estará activa al iniciar el servicio.
+
+Datos de la red:
+
+#IP: 172.17.0.219
+MASK: 255.255.252.0
+GW: 172.17.3.254
+DNS: 8.8.8.8
+         8.8.4.4
+1.- Configuración en caliente
+
+Nombre del dispositivo de red: eno16777736
+Comandos:
+	ifconfig
+	route
+	Se modifica con vi el archivo /etc/resolv.conf
+	agregando las líneas
+	nameserver 8.8.8.8
+	nameserver 8.8.4.4
+
+
+
+
+
+
+	NRTWORKING=yes
+
+
+DNS se encarga de identificar, como m{aximo se aceptan 4 archivos.
+Esos DNS son p{ublicos.
+2.- Configuración permanente
+
+Se modifican los archivos de configuración de la interface correspondiente en el directorio.
+
+/etc/sysconfig/network-scripts
+
+los archivos tienen como nombre: ifcfg-interface, donde interface
+
+
+eno16777736 es el nombre de mi interface
+
+
+ONBOOT yes inicial al arrance
+BOOTPROTO static o chp
+IPADDR y MASK van obligatorio en static
+
+Crear otra ip
+Puerta de enlace
+
+
+https://www.hostinet.com/formacion/hosting-alojamiento/hosting-linux-hosting-windows/
+https://blogthinkbig.com/hdd-versus-ssd
+https://www.ubuntu.com/download/server
+https://askubuntu.com/questions/907667/german-language-websites-for-ubuntu
+https://www.oracle.com/solaris/solaris11/index.html
+https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x
+https://www.microsoft.com/es-es/sql-server/sql-server-2017
+clasificacion de redes clase broadcast
+http://www.cadilinea.com/blog/wp-content/uploads/2015/03/Redes-IPv4-CLASIFICACION.pdf
+https://www.wisecleaner.com/wise-disk-cleaner.html
+
+Con sudo puedo ejecturar un solo comando de superusuario-
+
+
+ps -fea
+nmtui
+vi /etc/resolv.conf #para configurar la dns
+
+Administración de paquetes
+
+Comando rpm
+
+Opciones
+	-q (query) para realizar consultas.
+		-i información
+		-l listado de archivos
+		-p paquetes no instalado (necesitamos el nombre del archivo completo)
+
+	-i install
+		Instala un paquete
+	-e desintalar un paquete
+	-a (todos los paquetes)
+
+YUM
+	Administrador de paquetes on acceso a repositorios remotos de software
+
