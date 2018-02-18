@@ -103,3 +103,6 @@ Opciones
 YUM
 	Administrador de paquetes on acceso a repositorios remotos de software
 
+Apache es un servidor web modular.
+
+-y acepta todos los usuaios, para agregar un repositorio.
