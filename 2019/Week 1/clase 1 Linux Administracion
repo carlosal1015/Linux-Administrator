@@ -1,0 +1,399 @@
+TIPOS DE PROMPT:  Al momento de conectarse nos presenta 
+---------------   varios tipos de prompt.
+
+ #  PROMPT DEL SUPERUSUARIO o ROOT
+ $  PROMPT DEL CUALQUIER USUARIO COMUN 
+ :  PROMPT DEL EDITOR VI
+ &  PROMPT DEL CORREO ELECTRONICO
+ ftp> PROMPT DEL USUARIO FTP
+
+ROLES o FUNCIONES:
+*****************
+- Servidor Archivos (Centraliza la Informacion)
+- Servidor Proxy (Filtro de Pag Web)
+- Servidor DHCP (Asigna Ips a cada PC)
+- Servidor Web (Almacena la Pag Web, Intranet, extranet)
+- Servidor ASTERISK (Telefonia IP)
+- Servidor Mysql o Postgres, FireBird. (Servidor Bdatos)
+- Servidor Nagios (Monitoreo de Servidores Equipos)
+- Servidor de Correos (Zimbra, Squirrelmail)
+- Servidor DNS
+ etc..
+
+COMANDOS BASICOS:
+*****************
+Luego de ingresar con el usuario root y usuario simple
+los comandos basicos son:
+
+ LOGIN: root
+ Password: ******
+
+ # who am i  <-- QUIEN SOY YO
+ 
+ # who <-- QUIENES ESTAN CONECTADOS EN MI SERVIDOR
+
+ # w  
+
+ # hostname <--- Como se llama mi servidor. .
+
+ piratas.pe <--QUE ROL O FUNCION CUMPLE EN TU RED
+ 
+ # clear   <-Limpia la pantalla
+ 
+ # pwd     <- Donde estoy, en que directorio me encuentro
+ 
+ # date   <- Fecha y hora del sistema
+
+ # cal    <- Calendario del mes
+
+ # ifconfig <- muestra la interface de red, el IP. Mascara,  
+               Broadcast
+
+   eno2440 <--1era Tarjeta de Red
+ 
+   eth1 <--2da  Tarjeta de Red
+ 
+
+# free <-- Muestra la memoria y sus caracteristicas
+
+# fdisk -l <-- Muestra las particiones y sus Sistemas de
+                Archivos
+
+# df  <- Muestra las particiones Linux 
+
+# top <- Muestra los procesos del sistema en tiempo real (SIMILAR:ADM TAREAS)
+
+ # cd /proc  <--IR AL DIRECTORIO PROC
+ # pwd 
+    /proc 
+ # ls  (ver el listado de los archivos y directorios)
+ 
+    cpuinfo   meminfo version partitions <--ubicar estos
+                                          archivos
+
+ # more  cpuinfo  <Ver el contenido del archivo>
+ # more meminfo   <Ver el contenido del archivo
+ # more version   <Ver el contenido del archivo
+ # more partitions
+
+ CREACION DE DIRECTORIOS
+ ************************
+ PARA CREAR UN DIRECTORIO primero vamos al directorio del 
+ root:
+
+   # cd /root  <--IR AL DIRECTORIO DEL ROOT
+   # pwd     <-- DONDE ME ENCUENTRO
+     /root
+
+1.- # mkdir  lsp <--CREA EL DIRECTORIO CON TU APELLIDO
+             ---
+          Nombre del Directorio
+    # ls  <-- Listado simple
+
+         lsp 
+
+    # cd lsp <---INGRESA AL DIRECTORIO CREADO
+    # pwd
+     /root/lsp
+    # ls  <--Listado simple.. No hay nada, esta vacio..
+
+  (PARA CREAR 4 DIRECTORIOS CON UNA SOLA VEZ)
+
+
+2.- # mkdir compras ventas  mermas inventarios 
+           ------- ------   ------ -----------
+            DIR1     DIR2    DIR3     DIR 4
+
+    # ls  (listado simple)
+
+     compras  inventarios mermas  ventas (COLOR AZUL)
+
+   # ls -l (listado con propiedades)
+     u   g  o    Propietario        Fecha y hora       
+    drwxrwxrwx  2 root root 4096    Jul 27 5:10    compras
+               cant.   Grupo tama�o                Nombre
+    u->Usuario                en bytes               Directorio
+    g->Grupo
+    o-> Otros
+
+(CREA DIRECTORIOS COMPUESTOS)
+
+3.- # mkdir "archivos de Programas" "Mis Documentos" 
+            -----------------------  --------------
+               DIR 5                    DIR 6 
+    # ls 
+
+    NOTA: LOS DIRECTORIO ESTAN DE COLOR AZUL
+
+    # ls -l   (LISTADO CON PROPIEDADES)
+
+CREANDO DIRECTORIOS OCULTOS
+
+4.- # mkdir .presupuestos   .planilla
+             ------------    --------
+            DIRECT.OCULTO    DIRECT.OCULTO 
+                DIR 7          DIR 8
+
+5.- # ls -la  <--VER TODOS INCLUYENDO LOS 
+                 OCULTOS.
+
+6.- Salir de un directorio
+    # cd  ..       <---Sube un nivel de directorio
+ 
+    # cd  ../..    <---Sube dos nivel de nivel de directorio
+  
+    # cd  ../../.. <---Sube tres niveles de nivel de directorio
+
+    # cd  /root <--Ir directamente al root
+    
+    # ls   <-- Listado de los directorios creados
+          jrt   jrm   lps  drf 
+
+    # cd jrt  <--Ingresa al directorio jrt 
+
+ CREACION DE ARCHIVOS
+ ********************
+Para crear archivos simples, o cortos utilize
+el comando:
+
+  # cat > file.txt  <--NOMBRE DEL ARCHIVO,
+                        si deseas coloque                        						una extension.
+    Este es un archivo
+    de texto..
+    Haber que sale ..
+
+   Pulse <CTRL> <D> Para Grabar y Salir al
+                    prompt.
+
+  # ls 
+    file.txt 
+ 
+  # more  file.txt  <--VER EL CONTENIDO DEL
+                        ARCHIVO file.txt
+
+   Para continuar escribiendo:
+ 
+   # cat >> file.txt    <-- A�adir texto al archivo file.txt
+     Ahora a�ado mas texto
+     haber si resulta... 
+   Pulse <CTRL> <D>
+
+   # more file.txt 
+
+ CAMBIAR EL NOMBRE A UN ARCHIVO O DIRECTORIO
+
+  # mv file.txt   file.doc    <---RENOMBRA
+       --------   ---------
+       Nombre       Nuevo
+       actual       nombre
+  # ls 
+     file.doc
+
+
+ COPIAR UN ARCHIVO
+
+  # cp file.doc  file.bk   <--sacar una copia o respaldo
+       --------  -------
+       Nombre    Copia
+       actual
+
+NOTA: si desea corregir el archivo debera usar
+un editor de programas se recomienda el editor vi.  
+
+ELIMINAR ARCHIVOS O DIRECTORIOS
+*******************************
+
+  # rm -rf  ventas    <--Elimina sin confirmacion
+            ---------
+            Archivo o Directorio
+
+ # rmdir  nomina   <--Elimina directorio vacios
+          -------
+         Directorio Vacio
+
+# rm -rf *  <--ELIMINA TODO, CUIDADO ..!
+
+NOTA:
+*****
+NO EXISTE, UNDELETE, PAPELERA DE RECICLAJE, 
+DR.NORTON, CTRL Z. 
+
+SI YA BORRASTE NO HAY FORMA DE RECUPERAR... !
+
+EL EDITOR VI
+-------------
+
+EL EDITOR VI. No es un procesador de Textos
+El editor vi es un Editor de Programas en UNIX
+No acepta caracteres especiales, ni vocales acentuadas.
+El editor vi, esta presente en todos los UNIX y todas
+las distribuciones LINUX.
+En la version de CentOS 7 se denomina Vim (Vi mejorado)
+
+Modo de Ingreso al Editor.
+-------------------------
+Desde el prompt, ingrese:
+
+ # vi file <--Ingresa y el cursor se ubica en la 1� Fila
+      -----
+     Nombre 
+     del Archivo
+
+ # vi +6 file <--Ingresa y el cursor se ubica en la Fila 6
+
+ # vi + file <--Ingresa y el cursor se ubica en la ultima
+                Fila.
+
+EMNUMERAR LINEAS
+-----------------
+ Esc Shift : set nu   <--Activa la Numeracion de Filas
+ Esc Shift : set nonu <--Quitar la Numeracion de Filas  
+
+Salir del Editor:
+
+ Esc Shift : w  <--GRABAR SIN SALIR
+ Esc Shift : q! <--Salir sin guardar  importante ..!
+ Esc Shift : wq! <--Salir guardando
+ Esc Shift : w  file.bak  <--Guardar Como
+                --------
+                Nuevo Nombre
+ 
+MODO DESPLAZAMIENTO
+-------------------
+ Esc 1 G  <-- Ir a la Fila 1
+ Esc 5 G  <-- Ir a la Fila 5
+ Esc 10 G <-- Ir a la Fila 10
+ Esc  j   <-- Baja una fila
+ Esc  k   <-- Sube una fila
+ Esc  h   <-- Desplaza a la Izq
+ Esc  l   <-- Desplaza a la Derecha
+ Ctrl F   <-- Avanza una pantalla
+ Ctrl B   <-- Retrocede una pantalla
+
+MODO INSERCION
+--------------
+ Esc i  <- INSERTA TEXTO
+ Esc a  <- INSERTA TEXTO
+ Insert <- INSERTA TEXTO
+ Esc o  <- INSERTA 1 FILA BAJO EL CURSOR
+     --
+   Minuscula
+ Esc O  <- INSERTA 1 FILA SOBRE EL CURSOR
+     --
+   Mayuscula
+
+MODO DE ELIMINACION
+-------------------
+  Esc x   <-- ELIMINA UN CARACTER
+  Esc 5x  <-- ELIMINA 5 CARACTERES
+  Esc dd  <-- ELIMINA UNA FILA
+  Esc 4dd <-- ELIMINA 4 Filas
+  Esc dw  <-- ELIMINA 1 palabra
+  Esc 3dw <-- ELIMINA 3 palabras
+  Esc d$  <-- ELIMINA DESDE LA POSICION INICIAL 
+              HASTA FIN DE FILA.
+
+DESHACER LOS CAMBIOS
+--------------------
+ Esc u <- DESHACER 
+
+BUSCAR UN CARACTER
+------------------
+1.- Ir a la Fila 1 
+      ESC 1 G
+
+2.- BUSCAR EL TEXTO LIMA
+    Esc /Lima 
+
+3.- El cursor se ubica en el texto
+    Buscado. para seguir buscando
+    Pulse n (next) para buscar abajo
+    Pulse N (NEXT) para buscar arriba
+
+BUSCAR Y REEMPLAZAR
+-------------------
+
+1.- Ir a la Fila 1 
+     Esc 1 G
+2.- Buscar el texto Lima
+     Esc /Lima   <--El cursor se ubica aqui.
+
+3.- Reemplazar Lima por Arequipa una sola vez.
+     Esc Shift :s/Lima/Arequipa
+                 ----- --------
+                 Texto   Nuevo
+                 Actual  Texto
+4.- Si deseo reemplazar en todo el archivo
+     Esc Shift :%s/Lima/Arequipa
+                  ----- --------
+                 Texto   Nuevo
+                 Actual  Texto
+
+Copiar y Pegar Texto
+--------------------
+1.- Ir a la Fila 1
+     Esc 1 G 
+2.- Copiar las primeras 4 filas
+     Esc 4 Y (YANK)
+3.- Ir al final del archivo, 
+    Para pegar, pulse:
+    p <---Pega bajo el cursor.
+   ---
+    Minuscula
+    P <---- Pega sobre el cursor.
+   ---
+    Mayuscula
+
+PAGINAS MAN (AYUDA DE COMANDOS)
+*******************************
+
+Si desea ver la ayuda de un comando. coloque lo sgte:
+
+ # man ls 
+
+ # man pwd
+  
+ # man vi 
+
+ # man clear
+
+ # man cal 
+
+Redirecionamiento de Salida.
+****************************
+Si deseas almacenar el resultado de un comando, puede redireccionarlo hacia a un archivo.
+
+Ejemplo:
+
+ # who > asistencia <--CAPTURA PANTALLA
+         ----------
+         crea unu archivo destino
+ # ls 
+     asistencia
+
+ # more asistencia   <-- VER EL CONTENIDO
+                         CON LA ASISTENCIA
+
+Ejercicio:
+**********
+ # man vi > practica1  <--GENERA UN ARCHIVO  
+                        CON EL CONTENIDO DE LA  
+                        AYUDA DEL VI
+
+ # ls 
+     practica1
+
+ # more practica1  <--MUESTRA EL CONTENIDO 
+
+EJERCICIO
+ 1.- Desde el prompt, ingrese al archivo  
+     practica1 ubicandose en la fila 100
+ 2.- Activar la numeracion de filas
+ 3.- Eliminar 3 palabras
+ 4.- Ir a la fila 25 y elimine 2 filas
+ 5.- Buscar el texto editor y cuantas veces se repite 
+ 6.- Reemplazar editor por procesador
+ 7.- Guardar sin salir
+ 8.- Copiar las primeras 7 filas y pegar al final
+ 9.- Guardar como  practica.bk.
+ 10.-Salir del editor.

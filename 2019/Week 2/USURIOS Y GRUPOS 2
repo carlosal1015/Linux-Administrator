@@ -1,0 +1,157 @@
+EJERCICIOS:
+
+1.-CREAR LOS STGES USUARIOS Y GRUPOS, COMPROBAR QUE INGRESE 
+    C/U DE LOS USUARIOS.
+  GRUPO      |   USUARIOS
+-------------------------------
+logistica    |  jgarcia, itapia, mrengifo
+sistemas     |  lneyra,  htaboada, lquiroz
+gerencia     |  jbuendia, pserna, btoledo
+almacen      |  framirez, jpaz, ilozano
+finanzas     |  randrade, kduarte, ssolano
+
+2.- El usuario ssolano, sale de vacaciones, deshabilitar su   cuenta
+3.- El usuario lquiroz tendra los privilegios de root
+4.- El usuario jpaz cambiara de grupo al grupo logistica
+
+
+
+
+
+
+EL ARCHIVO /etc/passwd
+----------------------
+Es un base de datos, donde se registran a los usuarios creados por el sistema:
+(root, apache, mysql postgres amanda etc ...)
+y los usuarios creados por el root
+con el comando adduser.. se ubican al final..
+
+# vi /etc/passwd    <--INGRESAMOS CON EL VI ..
+
+
+  SINTAXIS:
+
+usuario id                            Directorio
+creado  usuario    Comentario         Particular
+ ---    -----    -------------------- ---------                  
+ssolano:x:500:500:Usuario de finanzas:/home/ssolano:/bin/bash
+      ---    ---                                 ------------
+  Pasword    id                                   Shell
+ encritpado  grupo                                Conexion
+
+
+
+
+
+RESP 3.- PROMOVIENDO A UN USUARIO A QUE SEA ROOT
+--------------------------------------
+
+Cambie el Id del usuario que quiere promover .. y coloque el id del root (0)
+         ---
+lquiroz:x:0:500:Usuario de logistica:/home/ldiaz:/bin/bash
+         ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RESP 4.- CAMBIANDO A UN USUARIO DE GRUPO
+         -------------------------------
+
+ # usermod -g logistica jpaz 
+              --------- --------
+              Nuevo     usuario
+              grupo 
+
+
+
+
+
+COMPROBANDO:
+
+Ingrese con el usuario jpaz, en el putty, crear los  diretorios mermas, existencias, registro
+
+y listarlo con  ls -la,  que observas .. ???. 
+
+
+
+
+EL ARCHIVO /etc/group
+---------------------
+Es un archivo donde se registra a los grupos del sistema y a los grupos creados por el root.. 
+
+# more /etc/group
+
+Sintaxis:
+
+          Pasword
+ Grupo    Encriptado
+ -------- ---
+ logistica:*:500
+             ----
+             Id Grupo
+
+
+
+
+EL ARCHIVO /etc/shadow
+-----------------------
+Es un archivo donde se guardan las contraseñas
+encriptadas de los usuarios. el encriptamiento es
+md5 password. completa las contraseñas a 256 caracteres.
+y las encripta, para que no sean leidos.
+
+NOTE: este archivo no se debe editar. solo se puede mostrar
+
+# more /etc/shadow <---QUE OBSERVAS ??
+
+
+
+
+
+
+# man adduser 
+TAREA PARA hora mismo.
+CREAR EL GRUPO AUDITORIA, con los usuarios: lfelipa. pedro arteaga en el entorno grafico
+con directivas del sistema... 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

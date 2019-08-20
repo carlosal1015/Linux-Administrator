@@ -1,0 +1,327 @@
+
+
+
+
+
+
+
+
+ CREACION DE USUARIOS Y GRUPOS
+ -----------------------------
+ Una cuenta de usuario. permite tener acceso a los recursos         
+ del sistema. Estos recursos son: (Archivos, Directorios,
+ servicios etc).
+
+
+
+
+
+
+
+
+
+Para crear un usuario en el servidor, debera estar con cuenta del root (administrador)o equivalente.
+
+Para eso ingrese el sgte comando:
+
+# adduser blopez (BERNABE LOPEZ)<--CREA UN USUARIO  
+          -------                  SIMPLE
+       Nom usuario
+
+
+
+
+
+
+
+
+
+Luego de crear el usuario, le colocamos un password
+o contraseña.
+
+ # passwd  blopez <-- TU USUARIO CREADO
+           ------
+           Nom Usuario. 
+
+  NEW UNIX PASSWORD:  *******
+  RETYPE NEW UNIX PASSWORD: ****
+
+
+
+
+
+ VERIFICAMOS LA CREACION DE SU DIRECTORIO EN /home : 
+
+ 
+ # cd /home <--ir directorio de los usuarios..
+ 
+ # ls -l (ver los directorios de los usuarios)
+
+
+ drwx------ 4 blopez blopez 4096 08 mar 20:00  blopez
+ **********   ******* ****** ***               ********
+  permisos   usuario grupo  tamaño            directorio
+
+
+
+
+
+
+
+
+
+
+ COMPROBANDO: 
+
+ Abrir una consola o un shell (con Putty) con la direccion
+ ip usuario y password.
+
+ Login:  blopez
+ Password: ****
+  $                <--Prompt del usuario simple
+  
+  $ who am i       
+
+  $ pwd
+   /home/blopez
+
+  $ tty
+
+   /dev/tty3
+
+  $ cd /root   (voy al directorio del root)
+   permiso denegado
+
+  $ cd /var   (voy al directorio /var)
+  
+  $ mkdir compras (Creo el directorio compras)
+
+    permiso denegado
+  $ cd /    <--ir a la raiz
+
+  $ mkdir nomina   (creamos el directorio nomina)
+    permiso denegado
+
+  $ vi file  <--Vamos a crear un archivo 
+   este es un archivo 
+   de texto haber si graba..!
+   <Esc> <Shift>  : wq!
+--------------------------------------------------
+  $ cd /home/blopez <--Ir al directorio Particular
+                       
+  $ pwd  <--Ver la ruta actual
+    /home/blopez 
+   
+   Creando Directorios:
+   -------------------  
+  $ mkdir  nomina  compras  mermas 
+  $ ls -l
+    drwxrwxr-x 2 blopez blopez 4096 25 mayo  nomina
+    drwxrwxr-x 2 blopez blopez 4096 25 mayo  compras
+    drwxrwxr-x 2 blopez blopez 4096 25 mayo  mermas 
+
+
+
+
+
+ELIMINAR A UN USUARIO
+---------------------
+Para eliminar a un usuario, tiene q estar seguro 
+de hacerlo..!
+No existe recuperacion de esa cuenta del usuario,
+Se sugiere deshabilitar al usuario, por un tiempo.
+Si aun asi esta seguro de hacerlo, ingrese el comando
+pero debes estar como root
+
+ # userdel -rf  blopez <--USUARIO A ELIMINAR
+                -----
+                usuario 
+
+Elimina con todo sus archivos, directorios, complementos etc.
+
+
+
+
+
+ # userdel  ldiaz  <--ELIMINA SOLO EL USUARIO MAS
+                     NO SUS ARCHIVOS NI DIRECTORIOS.
+
+
+
+
+
+
+
+
+
+
+
+CREACION DE GRUPOS:
+------------------
+Un grupo es un conjunto de usuarios que tiene 
+caracteristicas comunes. ejem: tienen acceso a los mismos archivos, directorios,recursos, contraseñas etc.
+
+Pertenecen a un area especifica de la empresa.
+
+
+
+
+
+
+
+
+
+Para crear un grupo tiene que estar con el usuario root y 
+escriba la orden:
+ 
+ # groupadd  almacen  <--Nombre de Grupo
+             -------- 
+               Grupo 
+
+
+
+
+
+
+
+
+LUEGO CREAMOS EL USUARIO ADHERIDO AL GRUPO
+------------------------------------------
+
+#adduser jmendez -g almacen -c "Usuario de almacen"
+           -----    -------     ------------------
+         usuario    grupo      Descripcion del usuario
+
+#passwd jmendez  <--Nombre del usuario
+          -------
+         usuario 
+
+
+
+
+ EL ARCHIVO /etc/passwd
+ ----------------------
+
+Es una base de datos de usuarios,
+Usuario creados por el sistema operativo al momento de instalar Linux, y los usuarios creados por el root.
+
+Editamos el archivo
+
+
+ # more /etc/passwd  <--Tenga Cuidado cualquier modificacion  
+                       puede dañar el sistema operativo..!
+
+
+
+
+
+
+
+
+
+
+
+
+
+ SINTAXIS:
+ *********
+         Id                           Directorio
+Usuario  Usuario                      Particular
+ ------  ---                          ------------
+ ldiaz:x:500:500:Usuario de Logistica:/home/ldiaz/:/bin/bash
+      --     ---  -------------------              ---------
+Password     Id       Comentario                    Shell
+Encriptado   Grupo                                  del usuario  
+
+
+
+
+
+
+
+
+
+
+DESHABILITAR A UN USUARIO:
+**************************
+
+Si un usuario sale de vacaciones o se va de la empresa
+se deshabilitara por un tiempo prolongado.
+
+Si desea Deshabilitar a un usuario, debera cambiar su Shell
+/bin/bash por /sbin/nologin.
+
+Ejemplo:
+-------
+# vi /etc/passwd 
+
+ldiaz:x:500:500:Usuario Logistica:/home/ldiaz/:/sbin/nologin
+                                                -------------
+                                              se cambiara a:
+
+
+
+
+
+
+
+
+
+PROMOVER A UN USUARIO QUE SEA ROOT O EQUIVALENTE
+************************************************
+Si desea que un usuario sea equivalente a root.
+debera cambiar su ID de usuario a O (cero)..
+
+Ejemplo:
+-------
+# vi /etc/passwd 
+
+ldiaz:x:0:500:Usuario Logistica:/home/ldiaz/:/bin/bash
+        --
+      Cambia a 0                                        
+
+
+
+
+
+
+
+
+
+EL ARCHIVO /etc/group
+---------------------
+Es un archivo donde se almacenan los grupos,
+grupos por default  (grupos creados al instalar LINUX)
+y lo grupos creados por el root.
+ SINTAXIS:
+ *********
+          Password 
+          ---
+ logistica:*:500 
+ ---------   ----
+ Grupo      ID Grupo
+      
+
+# more /etc/group   <--VER EL CONTENIDO DEL ARCHIVO ..!
+
+
+
+
+ EL archivo /etc/shadow
+ -----------------------
+ Es un archivo donde se guardan las contraseñas encriptadas
+ de los usuarios.
+
+ Este archivo no debe editar, solo se puede mostrar
+ Por seguridad.
+
+ # more /etc/shadow 
+
+ Podra apreciar que las contraseÃ±as de su usuario los ha
+ ocultado y completado hasta 256 caracteres.
+ tiene una encriptacion MD5.
+
+
+
+
+
