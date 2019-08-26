@@ -1,0 +1,481 @@
+PROCESOS DEL SISTEMA
+----------------------
+
+Son tareas que vienen llevandose a cabo en el servidor. dichas tareas consumen recursos del Sistema (Archivos, Directorios
+memoria, disco, servicios etc).
+
+Para ver los procesos de mi usuario ingrese
+la orden:
+
+ # ps 
+
+ PID   TTY      TIME CMD
+ 8314 pts/10   00:00:00 bash
+ 8327 pts/10   00:00:00 ps
+ 
+
+
+
+
+ Donde:
+
+  PID  <-- ID de proceso (Identificador de proceso)
+  TTY  <-- Terminal que ejecuta el proceso
+  TIME <-- Tiempo que lleva a cabo
+  CMD  <-- Nombre del proceso
+
+
+
+
+
+
+
+
+
+
+
+VER LOS PROCESOS DE UN USUARIO
+*******************************
+ Si desea saber que procesos esta usando un    
+ usuario, en particular  ingrese la orden:
+
+ # ps -u  mdiaz    <--QUE ESTA HACIENDO EL USUARIO MARTIN DIAZ
+         --------                   
+          usuario
+ 
+PID   TTY       TIME   CMD
+8314 pts/10   00:00:00 bash <-- PROCESO LOGIN INICIO DE                                    
+8327 pts/10   00:00:00 vim <----Esta ejecutando el EDITOR VI
+
+
+
+
+
+
+
+VER TODOS LOS PROCESOS DEL SISTEMA
+**********************************
+
+# ps -ef        <--VER TODOS LOS PROCESOS DEL SISTEMA 
+# ps -ef |more  <--VER TODOS LOS PROCESOS DEL SISTEMA 
+                                            CON PAUSA
+
+
+
+
+
+
+
+
+
+
+FILTRAR PROCESOS
+****************
+
+Si desea buscar un proceso en particular ingrese la sgte
+orden:
+ 
+# ps -ef| grep vi    <--Quienes estan ejecutando el VI
+
+   3891 pts/4    00:00:00 vim
+   
+
+
+
+
+
+
+
+ MATAR UN PROCESO    (Comando Kill)
+ ----------------
+
+Para "terminar" un proceso en ejecucion (MATAR)    
+utilize el comando kill, con esto solo  terminara  la ejecucion del programa a menos que saque al usuario de su login, para eso tendra que hacer, kill al proceso -bash.
+
+ # kill -9  8327 <--ID PROCESO DEL VI.
+ 
+NOTA: PARA MATAR EL PROCESO POR LO GENERAL DEBE ESTAR CON EL    
+      USUARIO ROOT O EQUIVALENTE.
+
+
+
+
+
+
+
+
+EJERCICIO: INGRESE CON UN USUARIO .ejemplo : 
+
+Login : mdiaz 
+Pasword: *****
+$ vi file     <--- EDITE UN ARCHIVO ejemplo: 
+
+ ...dejarlo ahi... no grabar ni salir ..
+********************************************************
+Luego en otra consola con el usuario root. .
+
+ # ps -u mdiaz
+
+
+ # kill -9 ID_PROCESO
+
+ - MATAR EL PROCESO DEL VI
+ - MATAR EL PROCESO BASH..<---
+
+Ver los procesos en tiempo real
+
+ # top  
+
+ # 
+
+
+
+
+
+
+
+
+
+ REPARAR SECTORES DAÑADOS DEL DISCO DURO DEL SERVIDOR LINUX.
+ -----------------------------------------------------------
+ 1.- Ejecutar el modo a Prueba de Fallos
+      # init 1   <---- MODO MANTENIMIENTO : Solo permite entrar  
+                       al servidor de manera local, la red se  
+                       desconecta ..y el usuario root puede  
+                       trabajar de manera comoda.
+
+      YOU HAVE MAIL ..!!
+
+ bash # <--QUEDA ASI CON ESE PROMPT ..DONDE INDICA QUE ESTA     
+                EN MODO MANTENIMIENTO
+
+ 2.- EL SISTEMA TE DEBE AVISAR SI LA TIENES QUE PASAR FSCK -- 
+     WARNING ..!! SECTORES DAÑADOS EJECUTE FSCK ..!
+
+   FSCK : es una herramienta de linux que permite corregir errores en el disco  sectores daÃ±ados, perdidad de archivos etc.
+para  eso debes ver que particiones le vas a pasar 
+ #  fdisk -l  <--MUSTRA LAS PARTICIONES DEL DISCO LINUX 
+  
+ #  df  <---MUESTRA LAS PARTICIONES DEL DISCO LINUX 
+
+    # fsck /dev/sda2  <--PARTICIO A REPARAR ---SOLO SI E MUESTRA  
+                       EL ERROR .. TOMA SU TIEMPO EN REPARAR EN   
+                       ALGUNOS CASOS PIDE CONFIRMACION..  y/n: 
+   
+ 3.- LUEGO DE PASAR EL FSCK, debera reiniciar el equipo.. 
+
+ 4.- # init 6 <-- REINICIAR EL EQUIPO ..
+
+ 5.- LA VERDADERA FORMA DE APAGAR UN EQUIPO ES: 
+
+     # shutdown -g0 -y  
+     Esta forma de apagar un servidor de produccion es la mas   
+     segura toma su tiempo y lo hace de manera correcta ..
+     -g 0   que tome el tiempo prudencial en cerrar la bdatos de       
+     usuarios y los archivos d gestion 
+     -y  que confirme todos lo avisos ..
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filtrar Procesos
+ ----------------
+ Si desea saber quienes estan ejecutando un     
+ proceso  escriba la orden:
+
+ # ps -ef | grep "bash" <-quienes estan   
+                          ejecutando el Login
+
+ Ejercicio: abrir varias consolas e ingrese con c/u de los
+             usuarios creados.
+
+Si deseas ver todos los procesos del sistema sin restriccion 
+ingrese la orden:
+
+ # clear
+
+ # ps -ef <--Muestra pero muy rapido...como lo detengo ..
+ # ps -ef| more  <--ver con pausa...
+
+si no encuentras el proceso lo filtras..
+
+
+
+Si desea ver los procesos en linea y el consumo de recursos  escriba la orden:
+
+ # top  
+
+ Ejercicio: Ingrese al mozzila firefox y cargue 5 paginas web ...
+            Monitoree con el top. 
+            y luego monitorear con el top matar esos procesos...
+
+
+
+
+
+
+
+
+
+
+
+
+ VER LOS REGISTROS DEL SISTEMA, si desea ver lo q los 
+usuarios han venido  haciendo ingrese al directorio:
+
+ # cd /var/log
+ # ls
+     secure   <--ARCHIVO DONDE SE REGISTRA ..!
+
+ # more secure
+
+
+ # who 
+
+SI DESEO BUSCAR UN PROCESO EN PARTICULAR.
+-----------------------------------------
+
+ # clear 
+ # more secure | grep "opened" > 31marzo2018 <---QUE LO ALMACENE  
+                                     EN UN ARCHIVO -- 31marzo2018
+        -------        -------   ------------
+  archivo a buscar    criterio    Archivo q va 
+                     de busqueda   a generar
+****************************************************
+ 
+  TAREA:FILTRAR A LOS USUARIOS QUE CERRARON SU SESION PARA DETECTAR EL ULTIMO USUARIO QUE SE FUE DEL SISTEMA. QUE GENERE UN ARCHIVO LLAMADO "POSIBLEINTRUSO".
+
+ # clear
+ # more secure | grep "closed" > /root/POSIBLEINTRUSO
+ # ls                                  --------------
+    POSIBLEINTRUSO                      archivo a crear
+
+ # more POSIBLEINTRUSO
+
+
+comprimir directorios (COMANDO TAR)
+----------------------
+Para comprimir directorios debemos tener un directorios
+extensos.
+
+ utilizamos la orden tar.
+
+  # tar -cvf  tuapellido.tar    Escritorio
+              --------------    -----------
+              Nombre que le     Directorio
+              vas a poner       a comprimir 
+
+  # ls -l 
+     tuapellido.tar
+
+  # comprimir aun mas. 
+  # gzip  tuapellido.tar
+     tuapellido.tar.gz  <---GENERO UN ARCHIVO CON EXTENSION
+                              .tar.gz.
+
+DESCOMPRIMIR UN DIRECTORIO
+--------------------------
+  # gzip -d tuapellido.tar.gz
+  # ls 
+     tuapellido.tar
+
+  # tar -xvf tuapellido.tar
+  # ls 
+       Escritorio
+  
+
+ EL ARCHIVO .bash_profile
+-------------------------
+Es un archivo que tienen todos los usuarios
+ahi se almacenan su perfile, su entorno, shell
+de conexion sus rutas.
+Cuando creas un usuario se crea su directorio.
+su bash_profile , bash_history, bash_logout
+Para ver esos archivos estan ocultos.
+ingrese en comando:
+ 
+ # ls -la 
+
+
+
+
+
+
+
+ 
+
+
+  
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ como quitar el entorno grafico del servidor:
+
+
+# ps -ef | grep "gnome session"
+ 
+
+
+ 
+
+
+
+
+
+
+ QUITAR EL ENTORNO GRAFICO DEL SERVIDOR
+ --------------------------------------
+ Para quitar el entorno grafico del servidor y 
+ hacerlo mas eficiente, ingrese al archivo.
+
+ # vi /etc/inittab  <--Este archivo muestra los niveles
+                       de arranque del servidor.Estos niveles 
+                       son:
+                        Nivel 0 --Nivel de apagado
+                                  (No setear como InitDefault)
+                        Nivel 1 --Modo a prueba de fallos
+                                  o modo mantenimiento.solo
+                                  un usuario permite hacer
+                                  inicio de sesion.
+                        Nivel 2 --Modo ful Multiusuario solo
+                                  con algunas opciones de Red
+     
+                        Nivel 3 -- Nivel Full Multiusuario
+                                   Nivel Optimo.-- ASI DEBE ESTA  
+                                   SETEADO TU SERVIDOR..
+                        Nivel 4 -- Sin uso. usado o para hacer 
+                                   entornos personalizados.
+                        Nivel 5 -- Similar al Nivel 3 con entorno 
+                                   grafico  añadido.
+                        Nivel 6 -- Nivel de reinicio del Equipo.
+                                    (No setear como InitDefault)
+
+ # vi /etc/inittab
+
+
+  Ir a la ultima fila 
+
+ id:5:initdefault  <--Pulse la tecla INSERT
+                      y CAMBIAR EL 5 POR EL NRO 3. GRABAR Y 
+                      SALIR. y reinicie el equipo. 
+
+  Pulse # init 6 <-- REINICIAR ..
+  
+
+PERMISOS
+--------
+
+# cd /root
+
+# vi ejercicio <--Elaboramos un archivo ejecutable..
+
+clear
+echo " Bienvenido al servidor:"
+hostname
+echo " El mes actual es..: "
+cal
+
+<GRABAR Y SALIR>
+
+EJECTANDO EL ARCHIVO
+---------------------
+# ./ejercicio   <--- ejecutando
+Permiso denegado
+
+# ls -l  ejercicio
+   u   g   o
+- rw- r-- r-- 1  ldiaz   logistica  145   17-abril 2018 21.50     ejercicio
+                 ------  --------- ------  -------------------    ---------
+                usuario   grupo    tamaÃ±o   Fecha y hora         Nobre del Archivo
+                                   en bytes  Ultim Moficacion
+
+DOnde:
+-  <--Indicador de archivo
+rw- <--Permisos para el archivo
+r-- <--Permisos para el grupo
+r-- <--Permisos para otros
+1  <-- Nivel de enlace (Similar a los atajos -Access Directos .) 
+
+
+OTORGANDO PERMISOS ( LA ORDEN chmod)
+# chmod u+x ejercicio <--otorgamos el permiso de ejecucion...!!! 
+# ./ejercicio  <--- EJECUTAS, QUE OBSERVAS ... ????
+Permio denegado ...!!
+
+Ejemplos:  Se pueden cambiar permisos para los usuarios y los grupo.. 
+
+
+# chmod g+rwx  ejercicio ..!  <--SOLO AÑADE A g+rwx <--GRUPO 
+# ls -l ejercicio
+# chmod go+rwx ejercicio      <--AÑADE A go+rwx <--GRUPO y OTROS 
+# ls -l ejercicio 
+
+# chmod go-wx ejercicio   <--QUITA LOS PERMISOS. .DE ESCRITURA Y   
+                             EJECUCION A GRUPOS Y OTROS..
+
+
+# chmod a+rwx ejercicio  <--- a(all <..TODOS  U  G  O ) + añade permisos.
+# chmod a-rwx ejercicio  <--- a(all <..TODOS  U  G  O ) - quita permisos.
+
+TAMBIEN FUNCIONA PARA DIRECTORIOS
+*********************************
+# mkdir compras  ventas normas .. <-----CREA 3 DIRECTORIOS
+# ls -l 
+drwxr-xr-x 2 root root 4096  Dic 1 20:38  compras
+drwxr-xr-x 2 root root 4096  Dic 1 20:38  ventas
+drwxr-xr-x 2 root root 4096  Dic 1 20:38  normas
+
+Tarea: solo debera tener todos los permisos para los grupos y otros solo lectura...
+
+
+
+
+    u   g  o   
+ d rwx rwx r--
+
+
+
+
+
+
+U M A S K  (MASCARA DEL USUARIO)
+--------------------------------
+Si desea otorgar permisos establecidos. .
+se puede elaborara con el comando UMASK.
+
